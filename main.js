@@ -77,7 +77,7 @@ function startAdapter(options) {
 		if(bigPolling) {
 			clearTimeout(bigPolling);
 		}
-		tahoma.logout(function (err, data) {
+		controller.logout(function (err, data) {
 			adapter.setState('info.connection', false, true);
             callback();
         });
@@ -169,7 +169,11 @@ function main() {
 	
 	controller = new tahoma.Tahoma(deviceUsername, devicePassword, adapter);
 	
-	pollStates();
+	controller.login(function(err, obj) {
+		if(!err) {
+			pollStates();
+		}
+	});
 }
 
 function pollStatesRelogin() {
@@ -178,10 +182,10 @@ function pollStatesRelogin() {
 		bigPolling = null;
 	}
 	
-	if (new Date().getTime() - tahoma.lastEventTime > 9 * 60 * 1000) {
+	if (new Date().getTime() - controller.lastEventTime > 9 * 60 * 1000) {
 		// no events within last 10 minutes
         adapter.log.info("update tahoma all 10 minutes (last event is older)");
-        tahoma.getAllStates();
+        controller.getAllStates();
     }
 	
 	bigPolling = setTimeout(function() {
@@ -196,11 +200,11 @@ function pollStates() {
 		polling = null;
 	}
 	
-	if(tahoma.isConnected()) {
-		tahoma.getAllStates(function() {
-			if (new Date().getTime() - tahoma.lastEventTime > 5 * 60 * 1000) {
+	if(controller.isConnected()) {
+		controller.getAllStates(function() {
+			if (new Date().getTime() - controller.lastEventTime > 5 * 60 * 1000) {
 				// no events within last 5 minutes
-				tahoma.logout(function () {});
+				controller.logout(function () {});
 			}
 		});
 	}
@@ -227,15 +231,15 @@ function processStateChange(id, value) {
 			adapter.setState('update', false, true);
 		}
 	} else if(id.match(/^devices.*\.states\.core:ClosureState$/)) {
-		tahoma.onClosureStateChange(id, value);
+		controller.onClosureStateChange(id, value);
 	} else if(id.match(/^devices.*\.states\.core:TargetClosureState$/)) {
-		tahoma.onClosureStateChange(id, value);
+		controller.onClosureStateChange(id, value);
 	} else if(id.match(/^devices.*\.states\.core:SlateOrientationState$/)) {
-		tahoma.onSetOrientation(id, value);
+		controller.onSetOrientation(id, value);
 	} else if(id.match(/^actionGroups.*\.commands\.execute/) && value) {
-        tahoma.onExecuteCommand(id, value);
+        controller.onExecuteCommand(id, value);
     } else if(id.match(/^devices.*\.commands\./) && value) {
-		tahoma.onExecuteDeviceCommand(id, value);
+		controller.onExecuteDeviceCommand(id, value);
 	}
 
 	return;
