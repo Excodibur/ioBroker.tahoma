@@ -39,7 +39,7 @@
 		],
 		"readme": "https://github.com/StrathCole/ioBroker.tahoma/blob/master/README.md",
 		"loglevel": "info",
-		"type": "iot",
+		"type": "iot-systems",
 		"license": "MIT",
 		"messagebox": true,
 		"materialize": true,
