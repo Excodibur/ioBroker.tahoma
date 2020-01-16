@@ -13,6 +13,14 @@ Based on the script taken from https://forum.iobroker.net/post/336001
 
 ## Changelog
 
+### 0.1.2
+
+-   Retry device command on error 400 (payload) once
+
+### 0.1.1
+
+-   No changes
+
 ### 0.1.0
 
 -   First running Version

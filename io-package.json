@@ -1,8 +1,32 @@
 {
 	"common": {
 		"name": "tahoma",
-		"version": "0.1.1",
+		"version": "0.1.2",
 		"news": {
+			"0.1.2": {
+				"en": "Retry device command on error 400 (payload) once",
+				"de": "Gerätebefehl bei Fehler 400 (payload) einmalig wiederholen",
+				"ru": "Повторите команду устройства на ошибку 400 (полезная нагрузка) один раз",
+				"pt": "Repetir o comando do dispositivo no erro 400 (carga útil) uma vez",
+				"nl": "Probeer apparaatopdracht opnieuw bij fout 400 (payload)",
+				"fr": "Réessayer la commande du périphérique en cas d'erreur 400 (charge utile) une fois",
+				"it": "Riprova il comando del dispositivo all'errore 400 (payload) una volta",
+				"es": "Vuelva a intentar el comando del dispositivo en el error 400 (carga útil) una vez",
+				"pl": "Ponów polecenie urządzenia po błędzie 400 (ładowność) jeden raz",
+				"zh-cn": "在错误400（有效负载）上重试设备命令一次"
+			},
+			"0.1.1": {
+				"en": "No changes",
+				"de": "Keine Änderungen",
+				"ru": "Без изменений",
+				"pt": "Sem alterações",
+				"nl": "Geen veranderingen",
+				"fr": "Aucun changement",
+				"it": "Nessun cambiamento",
+				"es": "Sin cambios",
+				"pl": "Bez zmian",
+				"zh-cn": "没有变化"
+			},
 			"0.1.0": {
 				"en": "Initial version",
 				"de": "Initiale Version",
