@@ -13,6 +13,12 @@ Based on the script taken from https://forum.iobroker.net/post/336001
 
 ## Changelog
 
+### 0.2.0
+
+-   Added deployment actions
+-   Added new state for moving direction
+-   Changed command buttons to boolean type
+
 ### 0.1.2
 
 -   Retry device command on error 400 (payload) once

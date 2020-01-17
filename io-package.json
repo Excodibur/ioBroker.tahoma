@@ -1,8 +1,20 @@
 {
 	"common": {
 		"name": "tahoma",
-		"version": "0.1.2",
+		"version": "0.2.0",
 		"news": {
+			"0.2.0": {
+				"en": "Added deployment actions\nAdded new state for moving direction\nChanged command buttons to boolean type",
+				"de": "Deployment-State-Handler hinzugefügt\nNeuer Zustand für Bewegungsrichtung hinzugefügt\nBefehlsschaltflächen in Booleschen Typ geändert",
+				"ru": "Добавлены действия по развертыванию\nДобавлено новое состояние для направления движения\nИзменены кнопки команд на логический тип",
+				"pt": "Ações de implantação adicionadas\nAdicionado novo estado para direção de movimento\nBotões de comando alterados para o tipo booleano",
+				"nl": "Implementatie-acties toegevoegd\nNieuwe status voor bewegingsrichting toegevoegd\nOpdrachtknoppen gewijzigd in Boolean-type",
+				"fr": "Actions de déploiement ajoutées\nAjout d'un nouvel état pour la direction de déplacement\nBoutons de commande modifiés en type booléen",
+				"it": "Aggiunte azioni di distribuzione\nAggiunto nuovo stato per la direzione in movimento\nModificati i pulsanti di comando in tipo booleano",
+				"es": "Acciones de implementación agregadas\nNuevo estado agregado para la dirección de movimiento\nSe cambiaron los botones de comando a tipo booleano",
+				"pl": "Dodano działania związane z wdrażaniem\nDodano nowy stan dla kierunku ruchu\nZmieniono przyciski poleceń na typ boolowski",
+				"zh-cn": "添加了部署操作\n为移动方向添加了新状态\n将命令按钮更改为布尔类型"
+			},
 			"0.1.2": {
 				"en": "Retry device command on error 400 (payload) once",
 				"de": "Gerätebefehl bei Fehler 400 (payload) einmalig wiederholen",

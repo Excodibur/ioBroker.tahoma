@@ -234,6 +234,10 @@ function processStateChange(id, value) {
 		controller.onClosureStateChange(id, value);
 	} else if(id.match(/^devices.*\.states\.core:TargetClosureState$/)) {
 		controller.onClosureStateChange(id, value);
+	} else if(id.match(/^devices.*\.states\.core:DeploymentState$/)) {
+		controller.onClosureStateChange(id, value, true);
+	} else if(id.match(/^devices.*\.states\.core:TargetDeploymentState$/)) {
+		controller.onClosureStateChange(id, value, true);
 	} else if(id.match(/^devices.*\.states\.core:SlateOrientationState$/)) {
 		controller.onSetOrientation(id, value);
 	} else if(id.match(/^actionGroups.*\.commands\.execute/) && value) {
