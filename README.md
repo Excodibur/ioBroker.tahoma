@@ -13,6 +13,10 @@ Based on the script taken from https://forum.iobroker.net/post/336001
 
 ## Changelog
 
+### 0.2.2
+
+-   Fixed problem with DeploymentState treated as ClosureState on setting values
+
 ### 0.2.1
 
 -   Fixed problems with too many simultanous commands/devices

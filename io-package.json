@@ -3,6 +3,18 @@
 		"name": "tahoma",
 		"version": "0.2.1",
 		"news": {
+			"0.2.2": {
+				"en": "Fixed problem with DeploymentState treated as ClosureState on setting values",
+				"de": "Problem mit DeploymentState behoben, dessen Werte beim Setzen als ClosureState behandelt wurden",
+				"ru": "Исправлена проблема с DeploymentState, рассматриваемой как ClosureState для значений настроек",
+				"pt": "Corrigido o problema com o DeploymentState tratado como ClosureState na configuração de valores",
+				"nl": "Probleem opgelost met DeploymentState behandeld als ClosureState bij het instellen van waarden",
+				"fr": "Correction d'un problème avec DeploymentState traité comme ClosureState lors de la définition des valeurs",
+				"it": "Risolto il problema con DeploymentState trattato come ClosureState sull'impostazione dei valori",
+				"es": "Se solucionó el problema con DeploymentState tratado como ClosureState al establecer valores",
+				"pl": "Naprawiono problem z DeploymentState traktowanym jako ClosureState podczas ustawiania wartości",
+				"zh-cn": "解决了将DeploymentState在设置值上视为ClosureState的问题"
+			},
 			"0.2.1": {
 				"en": "Fixed problems with too many simultanous commands/devices",
 				"de": "Probleme mit zu vielen gleichzeitigen Befehlen an Geräte behoben",
