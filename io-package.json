@@ -1,8 +1,20 @@
 {
 	"common": {
 		"name": "tahoma",
-		"version": "0.2.0",
+		"version": "0.2.1",
 		"news": {
+			"0.2.1": {
+				"en": "Fixed problems with too many simultanous commands/devices",
+				"de": "Probleme mit zu vielen gleichzeitigen Befehlen an Geräte behoben",
+				"ru": "Исправлены проблемы со слишком многими одновременными командами / устройствами",
+				"pt": "Corrigidos problemas com muitos comandos / dispositivos simultâneos",
+				"nl": "Problemen met te veel gelijktijdige opdrachten / apparaten opgelost",
+				"fr": "Correction de problèmes avec trop de commandes / appareils simultanés",
+				"it": "Risolti i problemi con troppi comandi / dispositivi simultanei",
+				"es": "Se corrigieron problemas con demasiados comandos / dispositivos simultáneos",
+				"pl": "Naprawiono problemy ze zbyt wieloma jednoczesnymi poleceniami / urządzeniami",
+				"zh-cn": "解决了太多同时执行的命令/设备的问题"
+			},
 			"0.2.0": {
 				"en": "Added deployment actions\nAdded new state for moving direction\nChanged command buttons to boolean type",
 				"de": "Deployment-State-Handler hinzugefügt\nNeuer Zustand für Bewegungsrichtung hinzugefügt\nBefehlsschaltflächen in Booleschen Typ geändert",

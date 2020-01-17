@@ -13,6 +13,10 @@ Based on the script taken from https://forum.iobroker.net/post/336001
 
 ## Changelog
 
+### 0.2.1
+
+-   Fixed problems with too many simultanous commands/devices
+
 ### 0.2.0
 
 -   Added deployment actions
