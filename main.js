@@ -3,7 +3,11 @@
 const utils = require('@iobroker/adapter-core'); // Get common adapter utils
 const tahoma = require('./lib/tahoma');
 
-const adapterName = require('./package.json').name.split('.').pop();
+const packageJson = require('./package.json');
+const adapterName = packageJson.name.split('.').pop();
+const adapterVersion = packageJson.version;
+
+const patchVersion = '.1';
 
 function createOrSetState(id, setobj, setval) {
 	adapter.getObject(id, function(err, obj) {
@@ -132,7 +136,7 @@ function startAdapter(options) {
 		} else if(!adapter.config.password) {
 			adapter.log.warn('[START] Password not set');
 		} else {
-			adapter.log.info('[START] Starting Tahoma adapter');
+			adapter.log.info('[START] Starting adapter ' + adapterName + ' v' + adapterVersion + '' + patchVersion);
 			adapter.getForeignObject('system.config', (err, obj) => {
 				if (obj && obj.native && obj.native.secret) {
 					//noinspection JSUnresolvedVariable
