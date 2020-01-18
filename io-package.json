@@ -1,8 +1,20 @@
 {
 	"common": {
 		"name": "tahoma",
-		"version": "0.2.3",
+		"version": "0.2.4",
 		"news": {
+			"0.2.4": {
+				"en": "Switched moving state values 1/2 for DeploymentState devices",
+				"de": "Werte 1 und 2 für den Bewegungsstatus bei DeploymentState-Geräten vertauscht",
+				"ru": "Переключенные подвижные значения 1/2 для устройств DeploymentState",
+				"pt": "Valores móveis alternados 1/2 para dispositivos DeploymentState",
+				"nl": "Geschakelde bewegende waarden 1/2 voor DeploymentState-apparaten",
+				"fr": "Valeurs mobiles commutées 1/2 pour les appareils DeploymentState",
+				"it": "Valori mobili commutati 1/2 per dispositivi DeploymentState",
+				"es": "Valores móviles cambiados 1/2 para dispositivos DeploymentState",
+				"pl": "Przełączane wartości ruchome 1/2 dla urządzeń DeploymentState",
+				"zh-cn": "部署状态设备的开关移动值1/2"
+			},
 			"0.2.3": {
 				"en": "Fixed direction (moving state) for deployment devices",
 				"de": "Korrigierter Bewegungsstatus für Geräte mit DeploymentState",

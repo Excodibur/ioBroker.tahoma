@@ -13,6 +13,10 @@ Based on the script taken from https://forum.iobroker.net/post/336001
 
 ## Changelog
 
+### 0.2.4
+
+-   Switched moving state values 1 / 2 for DeploymentState devices
+
 ### 0.2.3
 
 -   Fixed direction (moving state) for deployment devices
