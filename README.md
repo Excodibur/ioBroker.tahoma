@@ -13,6 +13,10 @@ Based on the script taken from https://forum.iobroker.net/post/336001
 
 ## Changelog
 
+### 0.2.3
+
+-   Fixed direction (moving state) for deployment devices
+
 ### 0.2.2
 
 -   Fixed problem with DeploymentState treated as ClosureState on setting values

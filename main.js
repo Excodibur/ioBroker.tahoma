@@ -7,7 +7,7 @@ const packageJson = require('./package.json');
 const adapterName = packageJson.name.split('.').pop();
 const adapterVersion = packageJson.version;
 
-const patchVersion = '.1';
+const patchVersion = '';
 
 function createOrSetState(id, setobj, setval) {
 	adapter.getObject(id, function(err, obj) {

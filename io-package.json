@@ -1,8 +1,20 @@
 {
 	"common": {
 		"name": "tahoma",
-		"version": "0.2.1",
+		"version": "0.2.3",
 		"news": {
+			"0.2.3": {
+				"en": "Fixed direction (moving state) for deployment devices",
+				"de": "Korrigierter Bewegungsstatus für Geräte mit DeploymentState",
+				"ru": "Исправленное направление (состояние движения) для устройств с состоянием развертывания",
+				"pt": "Direção corrigida (estado móvel) para dispositivos com estado de implantação",
+				"nl": "Gecorrigeerde richting (bewegende status) voor apparaten met implementatiestatus",
+				"fr": "Direction corrigée (état de déplacement) pour les appareils avec état de déploiement",
+				"it": "Direzione corretta (stato mobile) per dispositivi con stato di distribuzione",
+				"es": "Dirección corregida (estado de movimiento) para dispositivos con estado de implementación",
+				"pl": "Poprawiony kierunek (stan ruchomy) dla urządzeń ze stanem wdrożenia",
+				"zh-cn": "带有部署状态的设备的更正方向（移动状态）"
+			},
 			"0.2.2": {
 				"en": "Fixed problem with DeploymentState treated as ClosureState on setting values",
 				"de": "Problem mit DeploymentState behoben, dessen Werte beim Setzen als ClosureState behandelt wurden",
