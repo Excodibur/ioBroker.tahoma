@@ -30,11 +30,11 @@ These states contain button commands for controlling the devices. Most devices w
 These states contain current status of the devices as follows. All settings marked with `[**]` are editable to controll device's behaviour / send commands.
 
 `[**] tahoma.X.devices.*.states.core:DeploymentState` - Provides information about and controls the state of current deployment. 100 means fully deployed, 0 is undeployed. Not all devices have this value, some have `ClosureState` instead.  
-`[**] tahoma.X.devices.*.states.core:TargetDeploymentState` - See `tahoma.X.devices.*.states.core:DeploymentState`
+`[**] tahoma.X.devices.*.states.core:TargetDeploymentState` - See `tahoma.X.devices.*.states.core:DeploymentState`  
 `[**] tahoma.X.devices.*.states.coreClosureState` - Provides information about and controls the state of current closure. 100 means fully closed, 0 is open. Not all devices have this value, some have `DeploymentState` instead.  
-`[**] tahoma.X.devices.*.states.core:TargetClosureState` - See `tahoma.X.devices.*.states.core:ClosureState`
+`[**] tahoma.X.devices.*.states.core:TargetClosureState` - See `tahoma.X.devices.*.states.core:ClosureState`  
 `[**] tahoma.X.devices.*.states.core:OrientationState` - Provides information about and ocntrols the orientation (e. g. for shutters) of slats. Not all devices offer this value.  
-`[**] tahoma.X.devices.*.states.core:TargetOrientationState` - See `tahoma.X.devices.*.states.core:OrientationState`
+`[**] tahoma.X.devices.*.states.core:TargetOrientationState` - See `tahoma.X.devices.*.states.core:OrientationState`  
 `tahoma.X.devices.*.states.core:NameState` - Contains the current name of the device.  
 `tahoma.X.devices.*.states.core:OpenClosedState` - Contains `closed` if the device is 100% closed or 0% deployed and `open` otherwise.  
 `tahoma.X.devices.*.states.core:PriorityLockTimerState` - If a sensor has locked the device this is stated here, e. g. a wind sensor blocking an awning.  
