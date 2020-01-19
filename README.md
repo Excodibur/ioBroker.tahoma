@@ -30,11 +30,11 @@ These states contain button commands for controlling the devices. Most devices w
 These states contain current status of the devices as follows. All settings marked with `[**]` are editable to controll device's behaviour / send commands.
 
 `[**] tahoma.0.devices.Markise.states.core:DeploymentState` - Provides information about and controls the state of current deployment. 100 means fully deployed, 0 is undeployed. Not all devices have this value, some have `ClosureState` instead.  
-`[**] tahoma.0.devices.Markise.states.core:TargetDeploymentState` - See `tahoma.0.devices.Markise.states.core:DeploymentState`
+`[**] tahoma.0.devices.Markise.states.core:TargetDeploymentState` - See `tahoma.0.devices.Markise.states.core:DeploymentState`  
 `[**] tahoma.0.devices.Markise.states.core:ClosureState` - Provides information about and controls the state of current closure. 100 means fully closed, 0 is open. Not all devices have this value, some have `DeploymentState` instead.  
-`[**] tahoma.0.devices.Markise.states.core:TargetClosureState` - See `tahoma.0.devices.Markise.states.core:ClosureState`
+`[**] tahoma.0.devices.Markise.states.core:TargetClosureState` - See `tahoma.0.devices.Markise.states.core:ClosureState`  
 `[**] tahoma.0.devices.Markise.states.core:OrientationState` - Provides information about and ocntrols the orientation (e. g. for shutters) of slats. Not all devices offer this value.  
-`[**] tahoma.0.devices.Markise.states.core:TargetOrientationState` - See `tahoma.0.devices.Markise.states.core:OrientationState`
+`[**] tahoma.0.devices.Markise.states.core:TargetOrientationState` - See `tahoma.0.devices.Markise.states.core:OrientationState`  
 `tahoma.0.devices.Markise.states.core:NameState` - Contains the current name of the device.  
 `tahoma.0.devices.Markise.states.core:OpenClosedState` - Contains `closed` if the device is 100% closed or 0% deployed and `open` otherwise.  
 `tahoma.0.devices.Markise.states.core:PriorityLockTimerState` - If a sensor has locked the device this is stated here, e. g. a wind sensor blocking an awning.  
