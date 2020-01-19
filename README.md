@@ -13,36 +13,36 @@ The adapter is not feature-complete, yet, but it should support most actions for
 
 Follwing some of the states created by the adapter.
 
-## tahoma.0.location
+## tahoma.X.location
 
 The state in this tree contain the personal information of the user like city, street address and longitude/latitude.
 
-## tahoma.0.devices.*.deviceURL
+## tahoma.X.devices.*.deviceURL
 
 This state contains the device URL that is used by Tahoma to identify the device.
 
-## tahoma.0.devices.*.commands
+## tahoma.X.devices.*.commands
 
 These states contain button commands for controlling the devices. Most devices will support commands like `close` and `open` but also some more
 
-## tahoma.0.devices.*.states
+## tahoma.X.devices.*.states
 
 These states contain current status of the devices as follows. All settings marked with `[**]` are editable to controll device's behaviour / send commands.
 
-`[**] tahoma.0.devices.Markise.states.core:DeploymentState` - Provides information about and controls the state of current deployment. 100 means fully deployed, 0 is undeployed. Not all devices have this value, some have `ClosureState` instead.  
-`[**] tahoma.0.devices.Markise.states.core:TargetDeploymentState` - See `tahoma.0.devices.Markise.states.core:DeploymentState`
-`[**] tahoma.0.devices.Markise.states.core:ClosureState` - Provides information about and controls the state of current closure. 100 means fully closed, 0 is open. Not all devices have this value, some have `DeploymentState` instead.  
-`[**] tahoma.0.devices.Markise.states.core:TargetClosureState` - See `tahoma.0.devices.Markise.states.core:ClosureState`
-`[**] tahoma.0.devices.Markise.states.core:OrientationState` - Provides information about and ocntrols the orientation (e. g. for shutters) of slats. Not all devices offer this value.  
-`[**] tahoma.0.devices.Markise.states.core:TargetOrientationState` - See `tahoma.0.devices.Markise.states.core:OrientationState`
-`tahoma.0.devices.Markise.states.core:NameState` - Contains the current name of the device.  
-`tahoma.0.devices.Markise.states.core:OpenClosedState` - Contains `closed` if the device is 100% closed or 0% deployed and `open` otherwise.  
-`tahoma.0.devices.Markise.states.core:PriorityLockTimerState` - If a sensor has locked the device this is stated here, e. g. a wind sensor blocking an awning.  
-`tahoma.0.devices.Markise.states.core:RSSILevelState` - The current signal quality of the device.  
-`tahoma.0.devices.Markise.states.core:StatusState` - `available` if the device is currently available.  
-`tahoma.0.devices.Markise.states.io:PriorityLockLevelState` - See `tahoma.0.devices.Markise.states.core:PriorityLockTimerState`  
-`tahoma.0.devices.Markise.states.io:PriorityLockOriginatorState` - See `tahoma.0.devices.Markise.states.core:PriorityLockTimerState`  
-`tahoma.0.devices.Markise.states.moving` - States if the device is currently moving. `0 = stopped`, `1 = up/undeploy`, `2 = down/deploy`, `3 = unknown direction`  
+`[**] tahoma.X.devices.*.states.core:DeploymentState` - Provides information about and controls the state of current deployment. 100 means fully deployed, 0 is undeployed. Not all devices have this value, some have `ClosureState` instead.  
+`[**] tahoma.X.devices.*.states.core:TargetDeploymentState` - See `tahoma.X.devices.*.states.core:DeploymentState`
+`[**] tahoma.X.devices.*.states.coreClosureState` - Provides information about and controls the state of current closure. 100 means fully closed, 0 is open. Not all devices have this value, some have `DeploymentState` instead.  
+`[**] tahoma.X.devices.*.states.core:TargetClosureState` - See `tahoma.X.devices.*.states.core:ClosureState`
+`[**] tahoma.X.devices.*.states.core:OrientationState` - Provides information about and ocntrols the orientation (e. g. for shutters) of slats. Not all devices offer this value.  
+`[**] tahoma.X.devices.*.states.core:TargetOrientationState` - See `tahoma.X.devices.*.states.core:OrientationState`
+`tahoma.X.devices.*.states.core:NameState` - Contains the current name of the device.  
+`tahoma.X.devices.*.states.core:OpenClosedState` - Contains `closed` if the device is 100% closed or 0% deployed and `open` otherwise.  
+`tahoma.X.devices.*.states.core:PriorityLockTimerState` - If a sensor has locked the device this is stated here, e. g. a wind sensor blocking an awning.  
+`tahoma.X.devices.*.states.core:RSSILevelState` - The current signal quality of the device.  
+`tahoma.X.devices.*.states.core:StatusState` - `available` if the device is currently available.  
+`tahoma.X.devices.*.states.io:PriorityLockLevelState` - See `tahoma.X.devices.*.states.core:PriorityLockTimerState`  
+`tahoma.X.devices.*.states.io:PriorityLockOriginatorState` - See `tahoma.X.devices.*.states.core:PriorityLockTimerState`  
+`tahoma.X.devices.*.states.moving` - States if the device is currently moving. `0 = stopped`, `1 = up/undeploy`, `2 = down/deploy`, `3 = unknown direction`  
 
 
 ## Changelog
