@@ -47,9 +47,13 @@ These states contain current status of the devices as follows. All settings mark
 
 ## Changelog
 
+### 0.2.6
+
+-   Added queue for device commands not already covered by update to 0.2.1
+
 ### 0.2.5
 
--   added README for states
+-   Added README for states
 
 ### 0.2.4
 

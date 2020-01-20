@@ -1,8 +1,20 @@
 {
 	"common": {
 		"name": "tahoma",
-		"version": "0.2.5",
+		"version": "0.2.6",
 		"news": {
+			"0.2.6": {
+				"en": "Added queue for device commands not already covered by update to 0.2.1",
+				"de": "Warteschlange für Gerätebefehle hinzugefügt, die nicht bereits von der Aktualisierung auf 0.2.1 abgedeckt wurden",
+				"ru": "Добавлена очередь для команд устройства, которые еще не были обновлены до версии 0.2.1.",
+				"pt": "Fila adicionada para comandos do dispositivo ainda não cobertos pela atualização para 0.2.1",
+				"nl": "Wachtrij toegevoegd voor apparaatopdrachten die nog niet door update zijn bijgewerkt naar 0.2.1",
+				"fr": "Ajout d'une file d'attente pour les commandes de périphériques non déjà couvertes par la mise à jour vers 0.2.1",
+				"it": "Aggiunta coda per i comandi del dispositivo non già coperti dall'aggiornamento alla 0.2.1",
+				"es": "Cola agregada para comandos del dispositivo que aún no están cubiertos por la actualización a 0.2.1",
+				"pl": "Dodano kolejkę dla poleceń urządzeń, które nie są jeszcze objęte aktualizacją do wersji 0.2.1",
+				"zh-cn": "为更新至0.2.1尚未涵盖的设备命令添加了队列"
+			},
 			"0.2.5": {
 				"en": "Added README for states",
 				"de": "README für Zustände hinzugefügt",
