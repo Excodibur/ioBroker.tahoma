@@ -23,11 +23,13 @@ This state contains the device URL that is used by Tahoma to identify the device
 
 ## tahoma.X.devices.*.commands
 
-These states contain button commands for controlling the devices. Most devices will support commands like `close` and `open` but also some more
+These states contain button commands for controlling the devices. Most devices will support commands like `close` and `open` but also some more.  
+Some of the commands have a `:slow` at the end if supported by the device. Using those enables low speed or so-called silent mode.
 
 ## tahoma.X.devices.*.states
 
-These states contain current status of the devices as follows. All settings marked with `[**]` are editable to controll device's behaviour / send commands.
+These states contain current status of the devices as follows. All settings marked with `[**]` are editable to controll device's behaviour / send commands.  
+Some of the states have a `:slow` at the end if supported by the device. Setting those enables low speed or so-called silent mode.
 
 `[**] tahoma.X.devices.*.states.core:DeploymentState` - Provides information about and controls the state of current deployment. 100 means fully deployed, 0 is undeployed. Not all devices have this value, some have `ClosureState` instead.  
 `[**] tahoma.X.devices.*.states.core:TargetDeploymentState` - See `tahoma.X.devices.*.states.core:DeploymentState`  
@@ -46,6 +48,12 @@ These states contain current status of the devices as follows. All settings mark
 
 
 ## Changelog
+
+### 0.3.0
+
+-   Added possibility for low speed open and close on supported devices
+-   Fixed commands not stopping on next command for device
+-   Smaller fixes
 
 ### 0.2.6
 

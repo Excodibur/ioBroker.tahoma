@@ -1,8 +1,20 @@
 {
 	"common": {
 		"name": "tahoma",
-		"version": "0.2.6",
+		"version": "0.3.0",
 		"news": {
+			"0.3.0": {
+				"en": "Added possibility for low speed open and close on supported devices\nFixed commands not stopping on next command for device\nSmaller fixes",
+				"de": "Funktion für langsames Öffnen und Schließen auf unterstützten Geräten hinzugefügt\nBehoben, dass vorherige Befehle beim nächsten Befehl für das Gerät nicht aufgehoben wurden\nKleinere Korrekturen",
+				"ru": "Добавлена возможность открывать и закрывать на низкой скорости на поддерживаемых устройствах\nИсправлена ошибка, при которой команды не останавливались при следующей команде для устройства.\nНебольшие исправления",
+				"pt": "Possibilidade adicional de abrir e fechar em baixa velocidade em dispositivos suportados\nComandos corrigidos não parando no próximo comando do dispositivo\nCorreções menores",
+				"nl": "Mogelijkheid toegevoegd voor openen en sluiten op lage snelheid op ondersteunde apparaten\nVaste opdrachten stoppen niet bij volgende opdracht voor apparaat\nKleinere oplossingen",
+				"fr": "Ajout d'une possibilité d'ouverture et de fermeture à basse vitesse sur les appareils pris en charge\nCommandes fixes ne s'arrêtant pas à la prochaine commande pour l'appareil\nCorrections plus petites",
+				"it": "Aggiunta possibilità di apertura e chiusura a bassa velocità su dispositivi supportati\nRisolti i problemi che non si interrompevano al comando successivo per il dispositivo\nPiccole correzioni",
+				"es": "Posibilidad adicional de abrir y cerrar a baja velocidad en dispositivos compatibles\nSe corrigieron los comandos que no se detenían en el siguiente comando para el dispositivo\nPequeñas correcciones",
+				"pl": "Dodano możliwość otwierania i zamykania z małą prędkością na obsługiwanych urządzeniach\nNaprawiono zatrzymywanie się poleceń przy następnym poleceniu dla urządzenia\nMniejsze poprawki",
+				"zh-cn": "增加了在支持的设备上低速打开和关闭的可能性\n固定命令不会在设备的下一个命令上停止\n较小的修复"
+			},
 			"0.2.6": {
 				"en": "Added queue for device commands not already covered by update to 0.2.1",
 				"de": "Warteschlange für Gerätebefehle hinzugefügt, die nicht bereits von der Aktualisierung auf 0.2.1 abgedeckt wurden",
@@ -157,8 +169,9 @@
 		]
 	},
 	"native": {
+		"username": "",
 		"password": "",
-		"pollInterval": 20
+		"pollinterval": 20000
 	},
 	"objects": [],
 	"instanceObjects": [

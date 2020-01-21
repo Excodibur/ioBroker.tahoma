@@ -1,6 +1,7 @@
 'use strict';
 
 const utils = require('@iobroker/adapter-core'); // Get common adapter utils
+const ioBLib = require('@strathcole/iob-lib').ioBLib;
 const tahoma = require('./lib/tahoma');
 
 const packageJson = require('./package.json');
@@ -8,54 +9,6 @@ const adapterName = packageJson.name.split('.').pop();
 const adapterVersion = packageJson.version;
 
 const patchVersion = '';
-
-function createOrSetState(id, setobj, setval) {
-	adapter.getObject(id, function(err, obj) {
-		if(err || !obj) {
-			adapter.setObject(id, setobj, function() {
-				adapter.setState(id, setval, true);
-			});
-		} else {
-			adapter.setState(id, setval, true);
-		}
-	});
-}
-
-function setOrUpdateState(id, name, setval, setunit, settype, setrole) {
-        if(!setunit) {
-                setunit = '';
-        }
-        if(!settype) {
-                settype = 'number';
-        }
-        if(!setrole) {
-                setrole = 'value';
-        }
-        
-		let read = true;
-		let write = false;
-		if(setrole.substr(0, 6) === 'button') {
-			read = false;
-			write = true;
-		} else if(setrole.substr(0, 5) === 'level' || setrole.substr(0, 6) === 'switch') {
-			read = true;
-			write = true;
-		}
-		
-        let obj = {
-                type: 'state',
-                common: {
-                        name: name,
-                        type: settype,
-                        role: setrole,
-                        read: read,
-                        write: write,
-                        unit: setunit
-                },
-                native: {}
-        };
-        createOrSetState(id, obj, setval);
-}
 
 let adapter;
 var deviceUsername;
@@ -73,6 +26,7 @@ function startAdapter(options) {
 	});
 
 	adapter = new utils.Adapter(options);
+	ioBLib.init(adapter);
 
 	adapter.on('unload', function(callback) {
 		if(polling) {
@@ -82,8 +36,10 @@ function startAdapter(options) {
 			clearTimeout(bigPolling);
 		}
 		controller.logout(function (err, data) {
-			adapter.setState('info.connection', false, true);
-            callback();
+			controller.unload(function() {
+				adapter.setState('info.connection', false, true);
+				callback();
+			});
         });
 	});
 
@@ -97,13 +53,12 @@ function startAdapter(options) {
 			}
 			
 			if(state && id.substr(0, adapter.namespace.length + 1) !== adapter.namespace + '.') {
-				processStateChangeForeign(id, state);
+				//processStateChangeForeign(id, state);
 				return;
 			}
 			id = id.substring(adapter.namespace.length + 1); // remove instance name and id
 			
 			if(state && state.ack) {
-				processStateChangeAck(id, state);
 				return;
 			}
 			
@@ -117,19 +72,7 @@ function startAdapter(options) {
 			adapter.log.info("Error processing stateChange: " + e);
 		}
 	});
-
-	adapter.on('message', function(obj) {
-		if(typeof obj === 'object' && obj.message) {
-			if(obj.command === 'send') {
-				adapter.log.debug('send command');
-
-				if(obj.callback) {
-					adapter.sendTo(obj.from, obj.command, 'Message received', obj.callback);
-				}
-			}
-		}
-	});
-
+	
 	adapter.on('ready', function() {
 		if(!adapter.config.username) {
 			adapter.log.warn('[START] Username not set');
@@ -140,10 +83,10 @@ function startAdapter(options) {
 			adapter.getForeignObject('system.config', (err, obj) => {
 				if (obj && obj.native && obj.native.secret) {
 					//noinspection JSUnresolvedVariable
-					adapter.config.password = decrypt(obj.native.secret, adapter.config.password);
+					adapter.config.password = ioBLib.decrypt(obj.native.secret, adapter.config.password);
 				} else {
 					//noinspection JSUnresolvedVariable
-					adapter.config.password = decrypt('Zgfr56gFe87jJOM', adapter.config.password);
+					adapter.config.password = ioBLib.decrypt('Zgfr56gFe87jJOM', adapter.config.password);
 				}
 				
 				main();
@@ -159,7 +102,7 @@ function main() {
 	deviceUsername = adapter.config.username;
 	devicePassword = adapter.config.password;
 
-	pollingTime = adapter.config.pollinterval || 100000;
+	pollingTime = adapter.config.pollinterval || 10000;
 	if(pollingTime < 5000) {
 		pollingTime = 5000;
 	}
@@ -169,7 +112,7 @@ function main() {
 
 	adapter.subscribeStates('*');
 	
-	setOrUpdateState('update', 'Update device states', false, '', 'boolean', 'button.refresh');
+	ioBLib.setOrUpdateState('update', 'Update device states', false, '', 'boolean', 'button.refresh');
 	
 	controller = new tahoma.Tahoma(deviceUsername, devicePassword, adapter);
 	
@@ -218,14 +161,6 @@ function pollStates() {
 	}, pollingTime);
 }
 
-function processStateChangeAck(id, state) {
-	// not yet
-}
-
-function processStateChangeForeign(id, state) {
-	// not yet
-}
-
 function processStateChange(id, value) {
 	adapter.log.debug('StateChange: ' + JSON.stringify([id, value]));
 	
@@ -238,6 +173,10 @@ function processStateChange(id, value) {
 		controller.onClosureStateChange(id, value);
 	} else if(id.match(/^devices.*\.states\.core:TargetClosureState$/)) {
 		controller.onClosureStateChange(id, value);
+	} else if(id.match(/^devices.*\.states\.core:ClosureState:slow$/)) {
+		controller.onClosureStateChange(id, value, true);
+	} else if(id.match(/^devices.*\.states\.core:TargetClosureState:slow$/)) {
+		controller.onClosureStateChange(id, value, true);
 	} else if(id.match(/^devices.*\.states\.core:DeploymentState$/)) {
 		controller.onDeploymentStateChange(id, value);
 	} else if(id.match(/^devices.*\.states\.core:TargetDeploymentState$/)) {
@@ -247,18 +186,14 @@ function processStateChange(id, value) {
 	} else if(id.match(/^actionGroups.*\.commands\.execute/) && value) {
         controller.onExecuteCommand(id, value);
     } else if(id.match(/^devices.*\.commands\./) && value) {
-		controller.onExecuteDeviceCommand(id, value);
+		let slow = false;
+		if(id.endsWith(':slow')) {
+			slow = true;
+		}
+		controller.onExecuteDeviceCommand(id, slow);
 	}
 
 	return;
-}
-
-function decrypt(key, value) {
-	var result = '';
-	for(var i = 0; i < value.length; ++i) {
-			result += String.fromCharCode(key[i % key.length].charCodeAt(0) ^ value.charCodeAt(i));
-	}
-	return result;
 }
 
 
