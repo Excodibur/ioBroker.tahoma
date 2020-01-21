@@ -160,6 +160,7 @@
 		"readme": "https://github.com/StrathCole/ioBroker.tahoma/blob/master/README.md",
 		"loglevel": "info",
 		"type": "iot-systems",
+		"connection-type": "cloud polling",
 		"license": "MIT",
 		"messagebox": true,
 		"materialize": true,
