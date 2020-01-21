@@ -41,7 +41,7 @@ function startAdapter(options) {
 				adapter.setState('info.connection', false, true);
 				callback();
 			});
-        });
+        }) || callback();
 	});
 
 	adapter.on('stateChange', function(id, state) {
