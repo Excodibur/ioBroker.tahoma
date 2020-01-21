@@ -35,7 +35,8 @@ function startAdapter(options) {
 		if(bigPolling) {
 			clearTimeout(bigPolling);
 		}
-		controller.logout(function (err, data) {
+		
+		controller && controller.logout(function (err, data) {
 			controller.unload(function() {
 				adapter.setState('info.connection', false, true);
 				callback();
