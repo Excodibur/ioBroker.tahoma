@@ -191,6 +191,16 @@ function processStateChange(id, value) {
 		if(id.endsWith(':slow')) {
 			slow = true;
 			id = id.substr(0, -5);
+			let cmd = id.substr(id.lastIndexOf('.') + 1);
+			if(cmd === 'up' || cmd === 'open') {
+				id = id.replace(/\.commands\.[a-z]+$/, '.states.core:ClosureState');
+				controller.onClosureStateChange(id, 0, true);
+			} else if(cmd === 'down' || cmd === 'close') {
+				id = id.replace(/\.commands\.[a-z]+$/, '.states.core:ClosureState');
+				controller.onClosureStateChange(id, 0, true);
+			} else {
+				adapter.log.warn('Unknown slow command: ' + id);
+			}
 		}
 		controller.onExecuteDeviceCommand(id, slow);
 	}
