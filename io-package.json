@@ -1,8 +1,20 @@
 {
 	"common": {
 		"name": "tahoma",
-		"version": "0.3.0",
+		"version": "0.3.1",
 		"news": {
+			"0.3.1": {
+				"en": "Fixed adapter crash on empty response object after request error",
+				"de": "Adapterabsturz bei leerem Antwortobjekt nach Anfragefehler behoben",
+				"ru": "Исправлено падение адаптера на пустом объекте ответа после ошибки запроса",
+				"pt": "Corrigida a falha do adaptador no objeto de resposta vazio após um erro de solicitação",
+				"nl": "Vaste adaptercrash op leeg responsobject na aanvraagfout",
+				"fr": "Correction d'un plantage de l'adaptateur sur un objet de réponse vide après une erreur de demande",
+				"it": "Risolto crash dell'adattatore sull'oggetto risposta vuoto dopo errore di richiesta",
+				"es": "Se corrigió el bloqueo del adaptador en el objeto de respuesta vacío después del error de solicitud",
+				"pl": "Naprawiono awarię adaptera na pustym obiekcie odpowiedzi po błędzie żądania",
+				"zh-cn": "修复了请求错误后空响应对象上的适配器崩溃的问题"
+			},
 			"0.3.0": {
 				"en": "Added possibility for low speed open and close on supported devices\nFixed commands not stopping on next command for device\nSmaller fixes",
 				"de": "Funktion für langsames Öffnen und Schließen auf unterstützten Geräten hinzugefügt\nBehoben, dass vorherige Befehle beim nächsten Befehl für das Gerät nicht aufgehoben wurden\nKleinere Korrekturen",

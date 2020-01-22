@@ -49,6 +49,10 @@ Some of the states have a `:slow` at the end if supported by the device. Setting
 
 ## Changelog
 
+### 0.3.1
+
+-   Fixed adapter crash on empty response object after request error
+
 ### 0.3.0
 
 -   Added possibility for low speed open and close on supported devices
