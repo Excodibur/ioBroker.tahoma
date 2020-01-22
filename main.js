@@ -8,7 +8,7 @@ const packageJson = require('./package.json');
 const adapterName = packageJson.name.split('.').pop();
 const adapterVersion = packageJson.version;
 
-const patchVersion = '';
+const patchVersion = '.1';
 
 let adapter;
 var deviceUsername;
