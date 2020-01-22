@@ -8,7 +8,7 @@ const packageJson = require('./package.json');
 const adapterName = packageJson.name.split('.').pop();
 const adapterVersion = packageJson.version;
 
-const patchVersion = '.1';
+const patchVersion = '.2';
 
 let adapter;
 var deviceUsername;
@@ -190,6 +190,7 @@ function processStateChange(id, value) {
 		let slow = false;
 		if(id.endsWith(':slow')) {
 			slow = true;
+			id = id.substr(0, -5);
 		}
 		controller.onExecuteDeviceCommand(id, slow);
 	}
