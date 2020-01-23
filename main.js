@@ -191,7 +191,7 @@ function processStateChange(id, value) {
 		if(id.endsWith(':slow')) {
 			adapter.log.info('Triggered command with slow mode: ' + id);
 			slow = true;
-			id = id.substr(0, -5);
+			id = id.substr(0, id.length - 5);
 			let cmd = id.substr(id.lastIndexOf('.') + 1);
 			adapter.log.info('Extracted command from id: ' + id + ' => ' + cmd);
 			if(cmd === 'up' || cmd === 'open') {
