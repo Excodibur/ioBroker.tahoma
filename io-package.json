@@ -4,8 +4,16 @@
 		"version": "0.3.1",
 		"news": {
 			"0.3.1": {
-				"en": "Fixed adapter crash on empty response object after request error"
-				
+				"en": "Fixed adapter crash on empty response object after request error\nFixed problems with slow/silent mode for closure",
+				"de": "Adapterabsturz bei leerer Antwort auf Serveranfrage behoben\nProbleme mit dem Slow-/Silent-Modus behoben",
+				"ru": "Исправлено падение адаптера на пустом объекте ответа после ошибки запроса\nИсправлены проблемы с медленным / тихим режимом закрытия",
+				"pt": "Corrigida a falha do adaptador no objeto de resposta vazio após um erro de solicitação\nProblemas corrigidos no modo lento / silencioso para fechamento",
+				"nl": "Vaste adaptercrash op leeg responsobject na aanvraagfout\nProblemen met trage / stille modus voor sluiting opgelost",
+				"fr": "Correction d'un plantage de l'adaptateur sur un objet de réponse vide après une erreur de demande\nCorrection de problèmes avec le mode lent / silencieux pour la fermeture",
+				"it": "Risolto crash dell'adattatore sull'oggetto risposta vuoto dopo errore di richiesta\nRisolti i problemi con la modalità lenta / silenziosa per la chiusura",
+				"es": "Se corrigió el bloqueo del adaptador en el objeto de respuesta vacío después del error de solicitud\nSe corrigieron problemas con el modo lento / silencioso para el cierre",
+				"pl": "Naprawiono awarię adaptera na pustym obiekcie odpowiedzi po błędzie żądania\nNaprawiono problemy z trybem powolnym / cichym podczas zamykania",
+				"zh-cn": "修复了请求错误后空响应对象上的适配器崩溃的问题\n修复了慢/静音模式关闭的问题"
 			},
 			"0.3.0": {
 				"en": "Added possibility for low speed open and close on supported devices\nFixed commands not stopping on next command for device\nSmaller fixes",
