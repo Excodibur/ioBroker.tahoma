@@ -189,18 +189,15 @@ function processStateChange(id, value) {
     } else if(id.match(/^devices.*\.commands\./) && value) {
 		let slow = false;
 		if(id.endsWith(':slow')) {
-			adapter.log.info('Triggered command with slow mode: ' + id);
+			adapter.log.debug('Triggered command with slow mode: ' + id);
 			slow = true;
 			id = id.substr(0, id.length - 5);
 			let cmd = id.substr(id.lastIndexOf('.') + 1);
-			adapter.log.info('Extracted command from id: ' + id + ' => ' + cmd);
 			if(cmd === 'up' || cmd === 'open') {
 				id = id.replace(/\.commands\.[a-z]+$/, '.states.core:ClosureState');
-				adapter.log.info('Rewritten id for using slow mode: ' + id);
 				controller.onClosureStateChange(id, 0, true);
 			} else if(cmd === 'down' || cmd === 'close') {
 				id = id.replace(/\.commands\.[a-z]+$/, '.states.core:ClosureState');
-				adapter.log.info('Rewritten id for using slow mode: ' + id);
 				controller.onClosureStateChange(id, 100, true);
 			} else {
 				adapter.log.warn('Unknown slow command: ' + id);
