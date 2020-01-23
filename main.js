@@ -201,7 +201,7 @@ function processStateChange(id, value) {
 			} else if(cmd === 'down' || cmd === 'close') {
 				id = id.replace(/\.commands\.[a-z]+$/, '.states.core:ClosureState');
 				adapter.log.info('Rewritten id for using slow mode: ' + id);
-				controller.onClosureStateChange(id, 0, true);
+				controller.onClosureStateChange(id, 100, true);
 			} else {
 				adapter.log.warn('Unknown slow command: ' + id);
 			}
