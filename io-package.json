@@ -1,8 +1,20 @@
 {
 	"common": {
 		"name": "tahoma",
-		"version": "0.3.1",
+		"version": "0.3.2",
 		"news": {
+			"0.3.2": {
+				"en": "Fixed silent modes (low speed) for newer Somfy devices\nFixed problem with wrong reference to 'this'",
+				"de": "Flüstermodus (niedrige Geschwindigkeit) für neuere Somfy-Geräte behoben\nProblem mit falschem Verweis auf 'this' behoben",
+				"ru": "Исправлены медленные режимы (низкая скорость) для новых устройств Somfy\nИсправлена проблема с неправильной ссылкой на «это»",
+				"pt": "Corrigidos modos lentos (baixa velocidade) para dispositivos Somfy mais recentes\nCorrigido o problema com referência incorreta a 'this'",
+				"nl": "Vaste langzame modi (lage snelheid) voor nieuwere Somfy-apparaten\nProbleem opgelost met verkeerde verwijzing naar 'dit'",
+				"fr": "Modes lents fixes (basse vitesse) pour les nouveaux appareils Somfy\nCorrection d'un problème avec une mauvaise référence à «ceci»",
+				"it": "Risolto il problema con le modalità lente (bassa velocità) per i nuovi dispositivi Somfy\nRisolto problema con riferimento errato a \"questo\"",
+				"es": "Se corrigieron los modos lentos (baja velocidad) para los nuevos dispositivos Somfy\nSe corrigió el problema con una referencia incorrecta a 'esto'",
+				"pl": "Naprawiono tryby wolne (niska prędkość) dla nowszych urządzeń Somfy\nNaprawiono problem z nieprawidłowym odniesieniem do „tego”",
+				"zh-cn": "修正了慢速模式（低速），适用于较新的尚飞设备\n解决了错误引用“ this”的问题"
+			},
 			"0.3.1": {
 				"en": "Fixed adapter crash on empty response object after request error\nFixed problems with slow/silent mode for closure",
 				"de": "Adapterabsturz bei leerer Antwort auf Serveranfrage behoben\nProbleme mit dem Slow-/Silent-Modus behoben",
