@@ -4,7 +4,7 @@
 
 [![NPM](https://nodei.co/npm/iobroker.tahoma.png?downloads=true)](https://nodei.co/npm/iobroker.tahoma/)
 
-![Stable](http://iobroker.live/badges/vis-stable.svg)
+![Stable](http://iobroker.live/badges/tahoma-stable.svg)
 [![NPM version](https://img.shields.io/npm/v/iobroker.tahoma.svg)](https://www.npmjs.com/package/iobroker.tahoma)
 [![Build Status](https://travis-ci.org/StrathCole/ioBroker.tahoma.svg?branch=master)](https://travis-ci.org/StrathCole/ioBroker.tahoma)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/StrathCole/iobroker.tahoma/blob/master/LICENSE)
