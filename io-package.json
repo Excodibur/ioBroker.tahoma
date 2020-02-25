@@ -1,8 +1,20 @@
 {
 	"common": {
 		"name": "tahoma",
-		"version": "0.3.2",
+		"version": "0.3.3",
 		"news": {
+			"0.3.3": {
+				"en": "Removed credentials from log on error and debug",
+				"de": "Anmeldeinformationen aus Anmeldefehler und Debug entfernt",
+				"ru": "Удалены учетные данные из журнала при ошибке и отладке",
+				"pt": "Credenciais removidas do erro de logon e depuração",
+				"nl": "Referenties verwijderd uit aanmeldingsfout en foutopsporing",
+				"fr": "Suppression des informations d'identification de l'erreur de connexion et du débogage",
+				"it": "Rimosse le credenziali dall'errore di accesso e dal debug",
+				"es": "Se eliminaron las credenciales del error de inicio de sesión y la depuración",
+				"pl": "Usunięto poświadczenia z błędu logowania i debugowania",
+				"zh-cn": "从登录错误和调试中删除凭据"
+			},
 			"0.3.2": {
 				"en": "Fixed silent modes (low speed) for newer Somfy devices\nFixed problem with wrong reference to 'this'",
 				"de": "Flüstermodus (niedrige Geschwindigkeit) für neuere Somfy-Geräte behoben\nProblem mit falschem Verweis auf 'this' behoben",
