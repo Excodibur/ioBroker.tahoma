@@ -35,7 +35,7 @@ function startAdapter(options) {
 		if(bigPolling) {
 			clearTimeout(bigPolling);
 		}
-		
+
 		controller && controller.logout(function (err, data) {
 			controller.unload(function() {
 				adapter.setState('info.connection', false, true);
@@ -52,20 +52,20 @@ function startAdapter(options) {
 			if(!id) {
 				return;
 			}
-			
+
 			if(state && id.substr(0, adapter.namespace.length + 1) !== adapter.namespace + '.') {
 				//processStateChangeForeign(id, state);
 				return;
 			}
 			id = id.substring(adapter.namespace.length + 1); // remove instance name and id
-			
+
 			if(state && state.ack) {
 				return;
 			}
-			
+
 			state = state.val;
 			adapter.log.debug("id=" + id);
-			
+
 			if('undefined' !== typeof state && null !== state) {
 				processStateChange(id, state);
 			}
@@ -73,7 +73,7 @@ function startAdapter(options) {
 			adapter.log.info("Error processing stateChange: " + e);
 		}
 	});
-	
+
 	adapter.on('ready', function() {
 		if(!adapter.config.username) {
 			adapter.log.warn('[START] Username not set');
@@ -89,7 +89,7 @@ function startAdapter(options) {
 					//noinspection JSUnresolvedVariable
 					adapter.config.password = ioBLib.decrypt('Zgfr56gFe87jJOM', adapter.config.password);
 				}
-				
+
 				main();
 			});
 		}
@@ -107,16 +107,16 @@ function main() {
 	if(pollingTime < 5000) {
 		pollingTime = 5000;
 	}
-	
+
 	adapter.log.info('[INFO] Configured polling interval: ' + pollingTime);
 	adapter.log.debug('[START] Started Adapter');
 
 	adapter.subscribeStates('*');
-	
+
 	ioBLib.setOrUpdateState('update', 'Update device states', false, '', 'boolean', 'button.refresh');
-	
+
 	controller = new tahoma.Tahoma(deviceUsername, devicePassword, adapter);
-	
+
 	controller.login(function(err, obj) {
 		if(!err) {
 			pollStates();
@@ -129,13 +129,13 @@ function pollStatesRelogin() {
 		clearTimeout(bigPolling);
 		bigPolling = null;
 	}
-	
+
 	if (new Date().getTime() - controller.lastEventTime > 9 * 60 * 1000) {
 		// no events within last 10 minutes
         adapter.log.info("update tahoma all 10 minutes (last event is older)");
         controller.getAllStates();
     }
-	
+
 	bigPolling = setTimeout(function() {
 		pollStatesRelogin();
 	}, 10 * 60 * 1000);
@@ -147,7 +147,7 @@ function pollStates() {
 		clearTimeout(polling);
 		polling = null;
 	}
-	
+
 	if(controller.isConnected()) {
 		controller.getAllStates(function() {
 			if (new Date().getTime() - controller.lastEventTime > 5 * 60 * 1000) {
@@ -156,7 +156,7 @@ function pollStates() {
 			}
 		});
 	}
-	
+
 	polling = setTimeout(function() {
 		pollStates();
 	}, pollingTime);
@@ -164,7 +164,7 @@ function pollStates() {
 
 function processStateChange(id, value) {
 	adapter.log.debug('StateChange: ' + JSON.stringify([id, value]));
-	
+
 	if(id === 'update') {
 		if(value) {
 			pollStates();
