@@ -208,7 +208,8 @@
 	"native": {
 		"username": "",
 		"password": "",
-		"pollinterval": 20000
+		"pollinterval": 20000,
+        "tahomalinkurl": "https://www.tahomalink.com/enduser-mobile-web/enduserAPI/"
 	},
 	"objects": [],
 	"instanceObjects": [
