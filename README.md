@@ -1,15 +1,17 @@
 ![Logo](admin/tahoma.png)
 
-![Number of Installations](http://iobroker.live/badges/tahoma-installed.svg) [![Downloads](https://img.shields.io/npm/dm/iobroker.tahoma.svg)](https://www.npmjs.com/package/iobroker.tahoma)
-
 [![NPM](https://nodei.co/npm/iobroker.tahoma.png?downloads=true)](https://nodei.co/npm/iobroker.tahoma/)
 
-![Stable](http://iobroker.live/badges/tahoma-stable.svg)
 [![NPM version](https://img.shields.io/npm/v/iobroker.tahoma.svg)](https://www.npmjs.com/package/iobroker.tahoma)
-[![Build Status](https://travis-ci.org/StrathCole/ioBroker.tahoma.svg?branch=master)](https://travis-ci.org/StrathCole/ioBroker.tahoma)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/StrathCole/iobroker.tahoma/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/Excodibur/iobroker.tahoma/blob/master/LICENSE)
 
-# NOT MAINTAINED CURRENTLY !!!
+[![Dependency Status](https://img.shields.io/david/Excodibur/iobroker.schwoerer-ventcube.svg)](https://david-dm.org/Excodibur/iobroker.tahoma)
+
+![Number of Installations (latest)](http://iobroker.live/badges/tahoma-installed.svg)
+![Number of Installations (stable)](http://iobroker.live/badges/tahoma-stable.svg)
+
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Excodibur/ioBroker.tahoma.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Excodibur/ioBroker.tahoma/context:javascript)
+![Github release status](https://github.com/Excodibur/iobroker.tahoma/workflows/Build%2C%20Test%20and%20Release/badge.svg)
 
 
 # ioBroker.tahoma
@@ -20,6 +22,19 @@ The adapter connects to the Tahomalink end user API and controls the devices set
 The adapter is not feature-complete, yet, but it should support most actions for controlling blinds and shutters etc.
 
 Follwing some of the states created by the adapter.
+
+## Currently tested devices
+
+Generally, this adapter should support all devices that can be accessed via __tahomalink.com__, but for the adapter developer it is difficult to guarantee this. Mainly, because the documention of the used Somfy-API is (at least publically) non-existant and the developer can only test Somfy-devices which he owns himself, or is able to test with support of willing participants.
+
+The following Somfy devices were verified to work with this adapter:
+- Plug IO
+- RS 100 IO Smoove Uno
+- RS 100 IO Smoove Pure
+- Sun sensor Sunis IO
+- Temperature sensor IO
+- Smoke Sensor IO
+- Adapter Plug IO
 
 ## tahoma.X.location
 
@@ -56,68 +71,7 @@ Some of the states have a `:slow` at the end if supported by the device. Setting
 
 
 ## Changelog
-
-### 0.3.3
-
--  Removed credentials from log on error and debug
-
-### 0.3.2
-
--  Fixed silent modes (low speed) for newer Somfy devices
--  Fixed problem with wrong reference to `this`
-
-### 0.3.1
-
--   Fixed adapter crash on empty response object after request error
--   Fixed problems with slow/silent mode for closure
-
-### 0.3.0
-
--   Added possibility for low speed open and close on supported devices
--   Fixed commands not stopping on next command for device
--   Smaller fixes
-
-### 0.2.6
-
--   Added queue for device commands not already covered by update to 0.2.1
-
-### 0.2.5
-
--   Added README for states
-
-### 0.2.4
-
--   Switched moving state values 1 / 2 for DeploymentState devices
-
-### 0.2.3
-
--   Fixed direction (moving state) for deployment devices
-
-### 0.2.2
-
--   Fixed problem with DeploymentState treated as ClosureState on setting values
-
-### 0.2.1
-
--   Fixed problems with too many simultanous commands/devices
-
-### 0.2.0
-
--   Added deployment actions
--   Added new state for moving direction
--   Changed command buttons to boolean type
-
-### 0.1.2
-
--   Retry device command on error 400 (payload) once
-
-### 0.1.1
-
--   No changes
-
-### 0.1.0
-
--   First running Version
+See [Changelog](https://github.com/Excodibur/ioBroker.tahoma/blob/master/CHANGELOG.md).
 
 ## License
 
@@ -142,7 +96,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
-
-## Donate
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SFLJ8HCW9T698&source=url)

@@ -84,7 +84,7 @@ jobs:
               run: npm ci
               
             - name: Run integration tests on Linux/OSX env
-              run: npm run test:integration:complete
+              run: npm run test:integration
               env:
                   CI: true
 

@@ -42,7 +42,7 @@
     "@types/sinon": "^7.5.1",
     "@types/sinon-chai": "^3.2.3",
     "always-tail": "^0.2.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "eslint": "^6.7.1",
@@ -58,11 +58,11 @@
   "scripts": {
     "release": "release-script",
     "mockserver": "rm tahoma-mock.log 2>/dev/null || node test/tahoma-mock/server.js > tahoma-mock.log",
-    "test:js": "mocha --opts test/mocha.custom.opts",
     "test:package": "mocha test/package --exit",
     "test:unit": "mocha test/unit --exit",
-    "test:integration": "npm run mockserver & && mocha test/integration --exit",
-    "test": "npm run test:js && npm run test:package && npm run test:integration",
+    "test:integration": "npm run test:integration:mock && mocha test/integration --exit",
+    "test:integration:mock": "npm run mockserver &",
+    "test": "npm run test:package",
     "lint": "eslint",
     "build:lang": "gulp adminWords2languages"
   },
