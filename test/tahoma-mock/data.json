@@ -55,49 +55,15 @@
         },
         "response": [
             {
-                "creationTime": 1606313223000,
-                "lastUpdateTime": 1606313223000,
-                "label": "Weihn-Rollos-vorne",
-                "shortcut": false,
-                "notificationTypeMask": 0,
-                "notificationCondition": "NEVER",
-                "actions": [
-                    {
-                        "deviceURL": "io://1227-2602-7805/8966360",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosureAndLinearSpeed",
-                                "parameters": [
-                                    100,
-                                    "lowspeed"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/9401523",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "close",
-                                "parameters": []
-                            }
-                        ]
-                    }
-                ],
-                "oid": "22a2da09-d4ad-4ed8-a620-0996049202c5"
-            },
-            {
                 "creationTime": 1596559651000,
                 "lastUpdateTime": 1625689246000,
-                "label": "Alle Rollos zu #",
+                "label": "All blinds closed",
                 "shortcut": false,
                 "notificationTypeMask": 0,
                 "notificationCondition": "NEVER",
                 "actions": [
                     {
-                        "deviceURL": "io://1227-2602-7805/13468386",
+                        "deviceURL": "io://1234-2345-7890/1000001",
                         "commands": [
                             {
                                 "type": 1,
@@ -109,7 +75,7 @@
                         ]
                     },
                     {
-                        "deviceURL": "io://1227-2602-7805/14619891",
+                        "deviceURL": "io://1234-2345-7890/1000002",
                         "commands": [
                             {
                                 "type": 1,
@@ -117,98 +83,6 @@
                                 "parameters": [
                                     100
                                 ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/7131537",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosure",
-                                "parameters": [
-                                    100
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/11089547",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosure",
-                                "parameters": [
-                                    100
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/8966360",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosure",
-                                "parameters": [
-                                    82
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/4527110",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosure",
-                                "parameters": [
-                                    82
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/1104219",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosure",
-                                "parameters": [
-                                    81
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/14937871",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosure",
-                                "parameters": [
-                                    83
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/14071160",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "close",
-                                "parameters": []
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/9401523",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "close",
-                                "parameters": []
                             }
                         ]
                     }
@@ -218,13 +92,13 @@
             {
                 "creationTime": 1596561762000,
                 "lastUpdateTime": 1597655085000,
-                "label": "Alle Rollos hoch",
+                "label": "All blinds opened",
                 "shortcut": false,
                 "notificationTypeMask": 0,
                 "notificationCondition": "NEVER",
                 "actions": [
                     {
-                        "deviceURL": "io://1227-2602-7805/13468386",
+                        "deviceURL": "io://1234-2345-7890/1000001",
                         "commands": [
                             {
                                 "type": 1,
@@ -236,7 +110,7 @@
                         ]
                     },
                     {
-                        "deviceURL": "io://1227-2602-7805/14619891",
+                        "deviceURL": "io://1234-2345-7890/1000002",
                         "commands": [
                             {
                                 "type": 1,
@@ -244,215 +118,11 @@
                                 "parameters": [
                                     0
                                 ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/7131537",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosure",
-                                "parameters": [
-                                    0
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/11089547",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosure",
-                                "parameters": [
-                                    0
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/8966360",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosure",
-                                "parameters": [
-                                    0
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/4527110",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosure",
-                                "parameters": [
-                                    0
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/1104219",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosure",
-                                "parameters": [
-                                    0
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/14937871",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosure",
-                                "parameters": [
-                                    0
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/14071160",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "open",
-                                "parameters": []
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/9401523",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "open",
-                                "parameters": []
                             }
                         ]
                     }
                 ],
                 "oid": "c4c07729-1f16-4758-b65e-4cdf4e4b4c80"
-            },
-            {
-                "creationTime": 1606313298000,
-                "lastUpdateTime": 1606313298000,
-                "label": "Weihn-Rollos-rest",
-                "shortcut": false,
-                "notificationTypeMask": 0,
-                "notificationCondition": "NEVER",
-                "actions": [
-                    {
-                        "deviceURL": "io://1227-2602-7805/13468386",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosureAndLinearSpeed",
-                                "parameters": [
-                                    100,
-                                    "lowspeed"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/14619891",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosureAndLinearSpeed",
-                                "parameters": [
-                                    100,
-                                    "lowspeed"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/7131537",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosureAndLinearSpeed",
-                                "parameters": [
-                                    100,
-                                    "lowspeed"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/11089547",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosureAndLinearSpeed",
-                                "parameters": [
-                                    100,
-                                    "lowspeed"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/4527110",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosureAndLinearSpeed",
-                                "parameters": [
-                                    100,
-                                    "lowspeed"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/1104219",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosureAndLinearSpeed",
-                                "parameters": [
-                                    86,
-                                    "lowspeed"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/14937871",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "setClosureAndLinearSpeed",
-                                "parameters": [
-                                    84,
-                                    "lowspeed"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "deviceURL": "io://1227-2602-7805/14071160",
-                        "commands": [
-                            {
-                                "type": 1,
-                                "name": "close",
-                                "parameters": []
-                            }
-                        ]
-                    }
-                ],
-                "oid": "fd3c0193-bd99-4e11-9f13-017b3b34d59e"
             }
         ]
     },
@@ -464,18 +134,18 @@
         "response": {
             "creationTime": 1596543016000,
             "lastUpdateTime": 1596543016000,
-            "id": "SETUP-1227-2602-7805",
+            "id": "SETUP-1234-2345-7890",
             "location": {
                 "creationTime": 1596543016000,
                 "lastUpdateTime": 1596790126000,
                 "city": "Cologne",
                 "country": "Germany",
-                "postalCode": "52351",
-                "addressLine1": "Viktor-Schröder-Weg 24",
+                "postalCode": "00000",
+                "addressLine1": "Street 1",
                 "addressLine2": "",
                 "timezone": "Europe/Berlin",
-                "longitude": 4.4232689,
-                "latitude": 34.8455,
+                "longitude": 4.4252689,
+                "latitude": 32.8455,
                 "twilightMode": 2,
                 "twilightAngle": "CIVIL",
                 "twilightCity": "berlin",
@@ -488,10 +158,10 @@
             },
             "gateways": [
                 {
-                    "gatewayId": "1227-2602-7805",
+                    "gatewayId": "1234-2345-7890",
                     "type": 29,
                     "subType": 13,
-                    "placeOID": "b765d7b9-995c-46fe-b3ec-2b23efa4008f",
+                    "placeOID": "443dc53f-0356-4575-afe1-58f6007c0b6e",
                     "alive": true,
                     "timeReliable": true,
                     "connectivity": {
@@ -510,7 +180,7 @@
                     "creationTime": 1607797012000,
                     "lastUpdateTime": 1607797012000,
                     "label": "HOMEKIT (stack)",
-                    "deviceURL": "homekit://1227-2602-7805/stack",
+                    "deviceURL": "homekit://1234-2345-7890/stack",
                     "shortcut": false,
                     "controllableName": "homekit:StackComponent",
                     "definition": {
@@ -544,7 +214,7 @@
                     ],
                     "available": true,
                     "enabled": true,
-                    "placeOID": "b765d7b9-995c-46fe-b3ec-2b23efa4008f",
+                    "placeOID": "443dc53f-0356-4575-afe1-58f6007c0b6e",
                     "widget": "HomekitStack",
                     "type": 5,
                     "oid": "9aa79991-370d-4855-b45b-5d90d1d7ef44",
@@ -554,7 +224,7 @@
                     "creationTime": 1596543076000,
                     "lastUpdateTime": 1596543076000,
                     "label": "Alarm",
-                    "deviceURL": "internal://1227-2602-7805/alarm/0",
+                    "deviceURL": "internal://1234-2345-7890/alarm/0",
                     "shortcut": false,
                     "controllableName": "internal:TSKAlarmComponent",
                     "definition": {
@@ -704,7 +374,7 @@
                     ],
                     "available": true,
                     "enabled": true,
-                    "placeOID": "b765d7b9-995c-46fe-b3ec-2b23efa4008f",
+                    "placeOID": "443dc53f-0356-4575-afe1-58f6007c0b6e",
                     "widget": "TSKAlarmController",
                     "type": 1,
                     "oid": "d74feaec-f8d3-4db3-a0cd-b57be1dcf5cc",
@@ -714,7 +384,7 @@
                     "creationTime": 1596543016000,
                     "lastUpdateTime": 1596543016000,
                     "label": "Sensitive Taste",
-                    "deviceURL": "internal://1227-2602-7805/pod/0",
+                    "deviceURL": "internal://1234-2345-7890/pod/0",
                     "shortcut": false,
                     "controllableName": "internal:PodV2Component",
                     "metadata": "{\"tahoma\":{\"touchButtonFlag\":true}}",
@@ -850,1088 +520,17 @@
                     ],
                     "available": true,
                     "enabled": true,
-                    "placeOID": "b765d7b9-995c-46fe-b3ec-2b23efa4008f",
+                    "placeOID": "443dc53f-0356-4575-afe1-58f6007c0b6e",
                     "widget": "Pod",
                     "type": 1,
                     "oid": "a5f126a2-20cd-45e4-856d-e329a848f43d",
                     "uiClass": "Pod"
                 },
                 {
-                    "creationTime": 1596548840000,
-                    "lastUpdateTime": 1596548840000,
-                    "label": "OG Schlafz hinten",
-                    "deviceURL": "io://1227-2602-7805/1104219",
-                    "shortcut": false,
-                    "controllableName": "io:RollerShutterWithLowSpeedManagementIOComponent",
-                    "definition": {
-                        "commands": [
-                            {
-                                "commandName": "advancedRefresh",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "close",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "delayedStopIdentify",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "down",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "getName",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "identify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "my",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "open",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "refreshMemorized1Position",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "setClosureAndLinearSpeed",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "setClosure",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setDeployment",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setMemorized1Position",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setName",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setPositionAndLinearSpeed",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "setPosition",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setSecuredPosition",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "startIdentify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "stop",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "stopIdentify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "up",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "wink",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "runManufacturerSettingsCommand",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "keepOneWayControllersAndDeleteNode",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "pairOneWayController",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "sendIOKey",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "setConfigState",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "unpairAllOneWayControllersAndDeleteNode",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "unpairAllOneWayControllers",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "unpairOneWayController",
-                                "nparams": 2
-                            }
-                        ],
-                        "states": [
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:AdditionalStatusState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:ClosureState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "good",
-                                    "low",
-                                    "normal",
-                                    "verylow"
-                                ],
-                                "qualifiedName": "core:DiscreteRSSILevelState"
-                            },
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:ManufacturerSettingsState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:Memorized1PositionState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "false",
-                                    "true"
-                                ],
-                                "qualifiedName": "core:MovingState"
-                            },
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:NameState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "closed",
-                                    "open"
-                                ],
-                                "qualifiedName": "core:OpenClosedState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:PriorityLockTimerState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:RSSILevelState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:SecuredPositionState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "available",
-                                    "unavailable"
-                                ],
-                                "qualifiedName": "core:StatusState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:TargetClosureState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "comfortLevel1",
-                                    "comfortLevel2",
-                                    "comfortLevel3",
-                                    "comfortLevel4",
-                                    "environmentProtection",
-                                    "humanProtection",
-                                    "userLevel1",
-                                    "userLevel2"
-                                ],
-                                "qualifiedName": "io:PriorityLockLevelState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "LSC",
-                                    "SAAC",
-                                    "SFC",
-                                    "UPS",
-                                    "externalGateway",
-                                    "localUser",
-                                    "myself",
-                                    "rain",
-                                    "security",
-                                    "temperature",
-                                    "timer",
-                                    "user",
-                                    "wind"
-                                ],
-                                "qualifiedName": "io:PriorityLockOriginatorState"
-                            }
-                        ],
-                        "dataProperties": [
-                            {
-                                "value": "500",
-                                "qualifiedName": "core:identifyInterval"
-                            }
-                        ],
-                        "widgetName": "PositionableRollerShutterWithLowSpeedManagement",
-                        "uiProfiles": [
-                            "StatefulCloseableShutter",
-                            "StatefulCloseable",
-                            "Closeable",
-                            "StatefulOpenClose",
-                            "OpenClose"
-                        ],
-                        "uiClass": "RollerShutter",
-                        "qualifiedName": "io:RollerShutterWithLowSpeedManagementIOComponent",
-                        "type": "ACTUATOR"
-                    },
-                    "states": [
-                        {
-                            "name": "core:NameState",
-                            "type": 3,
-                            "value": "OG Schlafz hinte"
-                        },
-                        {
-                            "name": "core:PriorityLockTimerState",
-                            "type": 1,
-                            "value": 0
-                        },
-                        {
-                            "name": "core:StatusState",
-                            "type": 3,
-                            "value": "available"
-                        },
-                        {
-                            "name": "core:DiscreteRSSILevelState",
-                            "type": 3,
-                            "value": "normal"
-                        },
-                        {
-                            "name": "core:RSSILevelState",
-                            "type": 2,
-                            "value": 76
-                        },
-                        {
-                            "name": "core:MovingState",
-                            "type": 6,
-                            "value": false
-                        },
-                        {
-                            "name": "core:ClosureState",
-                            "type": 1,
-                            "value": 0
-                        },
-                        {
-                            "name": "core:OpenClosedState",
-                            "type": 3,
-                            "value": "open"
-                        },
-                        {
-                            "name": "core:Memorized1PositionState",
-                            "type": 1,
-                            "value": 85
-                        },
-                        {
-                            "name": "core:TargetClosureState",
-                            "type": 1,
-                            "value": 0
-                        }
-                    ],
-                    "attributes": [
-                        {
-                            "name": "core:SupportedManufacturerSettingsCommands",
-                            "type": 10,
-                            "value": [
-                                "dead_man_up",
-                                "dead_man_down",
-                                "dead_man_stop",
-                                "dead_man_impulse_up",
-                                "dead_man_impulse_down",
-                                "enter_settings_mode",
-                                "save_upper_end_limit",
-                                "save_lower_end_limit",
-                                "stop_after_save_limit",
-                                "set_auto_end_limits",
-                                "set_auto_upper_end_limit",
-                                "set_auto_lower_end_limit",
-                                "save_settings",
-                                "invert_rotation",
-                                "save_my_position",
-                                "delete_my_position",
-                                "set_smart_protect",
-                                "set_open_level",
-                                "set_security_level",
-                                "set_discreet_mode_speed",
-                                "set_nominal_mode_speed",
-                                "set_soft_start",
-                                "set_soft_stop",
-                                "reset_actuator",
-                                "double_power_cut",
-                                "eject_from_setting_mode"
-                            ]
-                        },
-                        {
-                            "name": "core:FirmwareRevision",
-                            "type": 3,
-                            "value": "5120725B13?"
-                        },
-                        {
-                            "name": "core:Manufacturer",
-                            "type": 3,
-                            "value": "Somfy"
-                        }
-                    ],
-                    "available": true,
-                    "enabled": true,
-                    "placeOID": "3faabc6c-64af-45a6-969f-170713a83136",
-                    "widget": "PositionableRollerShutterWithLowSpeedManagement",
-                    "type": 1,
-                    "oid": "35d270b2-06e0-4496-b621-6f65f1f96823",
-                    "uiClass": "RollerShutter"
-                },
-                {
-                    "creationTime": 1596546760000,
-                    "lastUpdateTime": 1596546760000,
-                    "label": "EG Wohnzimmer",
-                    "deviceURL": "io://1227-2602-7805/11089547",
-                    "shortcut": false,
-                    "controllableName": "io:RollerShutterWithLowSpeedManagementIOComponent",
-                    "definition": {
-                        "commands": [
-                            {
-                                "commandName": "advancedRefresh",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "close",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "delayedStopIdentify",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "down",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "getName",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "identify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "my",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "open",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "refreshMemorized1Position",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "setClosureAndLinearSpeed",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "setClosure",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setDeployment",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setMemorized1Position",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setName",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setPositionAndLinearSpeed",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "setPosition",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setSecuredPosition",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "startIdentify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "stop",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "stopIdentify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "up",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "wink",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "runManufacturerSettingsCommand",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "keepOneWayControllersAndDeleteNode",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "pairOneWayController",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "sendIOKey",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "setConfigState",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "unpairAllOneWayControllersAndDeleteNode",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "unpairAllOneWayControllers",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "unpairOneWayController",
-                                "nparams": 2
-                            }
-                        ],
-                        "states": [
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:AdditionalStatusState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:ClosureState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "good",
-                                    "low",
-                                    "normal",
-                                    "verylow"
-                                ],
-                                "qualifiedName": "core:DiscreteRSSILevelState"
-                            },
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:ManufacturerSettingsState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:Memorized1PositionState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "false",
-                                    "true"
-                                ],
-                                "qualifiedName": "core:MovingState"
-                            },
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:NameState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "closed",
-                                    "open"
-                                ],
-                                "qualifiedName": "core:OpenClosedState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:PriorityLockTimerState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:RSSILevelState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:SecuredPositionState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "available",
-                                    "unavailable"
-                                ],
-                                "qualifiedName": "core:StatusState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:TargetClosureState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "comfortLevel1",
-                                    "comfortLevel2",
-                                    "comfortLevel3",
-                                    "comfortLevel4",
-                                    "environmentProtection",
-                                    "humanProtection",
-                                    "userLevel1",
-                                    "userLevel2"
-                                ],
-                                "qualifiedName": "io:PriorityLockLevelState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "LSC",
-                                    "SAAC",
-                                    "SFC",
-                                    "UPS",
-                                    "externalGateway",
-                                    "localUser",
-                                    "myself",
-                                    "rain",
-                                    "security",
-                                    "temperature",
-                                    "timer",
-                                    "user",
-                                    "wind"
-                                ],
-                                "qualifiedName": "io:PriorityLockOriginatorState"
-                            }
-                        ],
-                        "dataProperties": [
-                            {
-                                "value": "500",
-                                "qualifiedName": "core:identifyInterval"
-                            }
-                        ],
-                        "widgetName": "PositionableRollerShutterWithLowSpeedManagement",
-                        "uiProfiles": [
-                            "StatefulCloseableShutter",
-                            "StatefulCloseable",
-                            "Closeable",
-                            "StatefulOpenClose",
-                            "OpenClose"
-                        ],
-                        "uiClass": "RollerShutter",
-                        "qualifiedName": "io:RollerShutterWithLowSpeedManagementIOComponent",
-                        "type": "ACTUATOR"
-                    },
-                    "states": [
-                        {
-                            "name": "core:NameState",
-                            "type": 3,
-                            "value": "EG Wohnzimmer"
-                        },
-                        {
-                            "name": "core:PriorityLockTimerState",
-                            "type": 1,
-                            "value": 0
-                        },
-                        {
-                            "name": "core:StatusState",
-                            "type": 3,
-                            "value": "available"
-                        },
-                        {
-                            "name": "core:DiscreteRSSILevelState",
-                            "type": 3,
-                            "value": "normal"
-                        },
-                        {
-                            "name": "core:RSSILevelState",
-                            "type": 2,
-                            "value": 64
-                        },
-                        {
-                            "name": "core:MovingState",
-                            "type": 6,
-                            "value": false
-                        },
-                        {
-                            "name": "core:ClosureState",
-                            "type": 1,
-                            "value": 0
-                        },
-                        {
-                            "name": "core:OpenClosedState",
-                            "type": 3,
-                            "value": "open"
-                        },
-                        {
-                            "name": "core:Memorized1PositionState",
-                            "type": 1,
-                            "value": 85
-                        },
-                        {
-                            "name": "core:TargetClosureState",
-                            "type": 1,
-                            "value": 0
-                        }
-                    ],
-                    "attributes": [
-                        {
-                            "name": "core:Manufacturer",
-                            "type": 3,
-                            "value": "Somfy"
-                        },
-                        {
-                            "name": "core:SupportedManufacturerSettingsCommands",
-                            "type": 10,
-                            "value": [
-                                "dead_man_up",
-                                "dead_man_down",
-                                "dead_man_stop",
-                                "dead_man_impulse_up",
-                                "dead_man_impulse_down",
-                                "enter_settings_mode",
-                                "save_upper_end_limit",
-                                "save_lower_end_limit",
-                                "stop_after_save_limit",
-                                "set_auto_end_limits",
-                                "set_auto_upper_end_limit",
-                                "set_auto_lower_end_limit",
-                                "save_settings",
-                                "invert_rotation",
-                                "save_my_position",
-                                "delete_my_position",
-                                "set_smart_protect",
-                                "set_open_level",
-                                "set_security_level",
-                                "set_discreet_mode_speed",
-                                "set_nominal_mode_speed",
-                                "set_soft_start",
-                                "set_soft_stop",
-                                "reset_actuator",
-                                "double_power_cut",
-                                "eject_from_setting_mode"
-                            ]
-                        },
-                        {
-                            "name": "core:FirmwareRevision",
-                            "type": 3,
-                            "value": "5120725B13?"
-                        }
-                    ],
-                    "available": true,
-                    "enabled": true,
-                    "placeOID": "b0b63f6b-7766-4bb1-8fb1-16787528643d",
-                    "widget": "PositionableRollerShutterWithLowSpeedManagement",
-                    "type": 1,
-                    "oid": "ed3ae1bb-a746-48f7-9480-dd2b25e496c6",
-                    "uiClass": "RollerShutter"
-                },
-                {
-                    "creationTime": 1596543819000,
-                    "lastUpdateTime": 1596543819000,
-                    "label": "EG Buero vorne",
-                    "deviceURL": "io://1227-2602-7805/13468386",
-                    "shortcut": false,
-                    "controllableName": "io:RollerShutterWithLowSpeedManagementIOComponent",
-                    "definition": {
-                        "commands": [
-                            {
-                                "commandName": "advancedRefresh",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "close",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "delayedStopIdentify",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "down",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "getName",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "identify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "my",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "open",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "refreshMemorized1Position",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "setClosureAndLinearSpeed",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "setClosure",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setDeployment",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setMemorized1Position",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setName",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setPositionAndLinearSpeed",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "setPosition",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setSecuredPosition",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "startIdentify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "stop",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "stopIdentify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "up",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "wink",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "runManufacturerSettingsCommand",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "keepOneWayControllersAndDeleteNode",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "pairOneWayController",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "sendIOKey",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "setConfigState",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "unpairAllOneWayControllersAndDeleteNode",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "unpairAllOneWayControllers",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "unpairOneWayController",
-                                "nparams": 2
-                            }
-                        ],
-                        "states": [
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:AdditionalStatusState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:ClosureState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "good",
-                                    "low",
-                                    "normal",
-                                    "verylow"
-                                ],
-                                "qualifiedName": "core:DiscreteRSSILevelState"
-                            },
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:ManufacturerSettingsState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:Memorized1PositionState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "false",
-                                    "true"
-                                ],
-                                "qualifiedName": "core:MovingState"
-                            },
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:NameState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "closed",
-                                    "open"
-                                ],
-                                "qualifiedName": "core:OpenClosedState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:PriorityLockTimerState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:RSSILevelState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:SecuredPositionState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "available",
-                                    "unavailable"
-                                ],
-                                "qualifiedName": "core:StatusState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:TargetClosureState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "comfortLevel1",
-                                    "comfortLevel2",
-                                    "comfortLevel3",
-                                    "comfortLevel4",
-                                    "environmentProtection",
-                                    "humanProtection",
-                                    "userLevel1",
-                                    "userLevel2"
-                                ],
-                                "qualifiedName": "io:PriorityLockLevelState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "LSC",
-                                    "SAAC",
-                                    "SFC",
-                                    "UPS",
-                                    "externalGateway",
-                                    "localUser",
-                                    "myself",
-                                    "rain",
-                                    "security",
-                                    "temperature",
-                                    "timer",
-                                    "user",
-                                    "wind"
-                                ],
-                                "qualifiedName": "io:PriorityLockOriginatorState"
-                            }
-                        ],
-                        "dataProperties": [
-                            {
-                                "value": "500",
-                                "qualifiedName": "core:identifyInterval"
-                            }
-                        ],
-                        "widgetName": "PositionableRollerShutterWithLowSpeedManagement",
-                        "uiProfiles": [
-                            "StatefulCloseableShutter",
-                            "StatefulCloseable",
-                            "Closeable",
-                            "StatefulOpenClose",
-                            "OpenClose"
-                        ],
-                        "uiClass": "RollerShutter",
-                        "qualifiedName": "io:RollerShutterWithLowSpeedManagementIOComponent",
-                        "type": "ACTUATOR"
-                    },
-                    "states": [
-                        {
-                            "name": "core:NameState",
-                            "type": 3,
-                            "value": "EG Buero vorne"
-                        },
-                        {
-                            "name": "core:PriorityLockTimerState",
-                            "type": 1,
-                            "value": 0
-                        },
-                        {
-                            "name": "core:StatusState",
-                            "type": 3,
-                            "value": "available"
-                        },
-                        {
-                            "name": "core:DiscreteRSSILevelState",
-                            "type": 3,
-                            "value": "good"
-                        },
-                        {
-                            "name": "core:RSSILevelState",
-                            "type": 2,
-                            "value": 92
-                        },
-                        {
-                            "name": "core:MovingState",
-                            "type": 6,
-                            "value": false
-                        },
-                        {
-                            "name": "core:ClosureState",
-                            "type": 1,
-                            "value": 85
-                        },
-                        {
-                            "name": "core:OpenClosedState",
-                            "type": 3,
-                            "value": "open"
-                        },
-                        {
-                            "name": "core:Memorized1PositionState",
-                            "type": 1,
-                            "value": 85
-                        },
-                        {
-                            "name": "core:TargetClosureState",
-                            "type": 1,
-                            "value": 85
-                        }
-                    ],
-                    "attributes": [
-                        {
-                            "name": "core:SupportedManufacturerSettingsCommands",
-                            "type": 10,
-                            "value": [
-                                "dead_man_up",
-                                "dead_man_down",
-                                "dead_man_stop",
-                                "dead_man_impulse_up",
-                                "dead_man_impulse_down",
-                                "enter_settings_mode",
-                                "save_upper_end_limit",
-                                "save_lower_end_limit",
-                                "stop_after_save_limit",
-                                "set_auto_end_limits",
-                                "set_auto_upper_end_limit",
-                                "set_auto_lower_end_limit",
-                                "save_settings",
-                                "invert_rotation",
-                                "save_my_position",
-                                "delete_my_position",
-                                "set_smart_protect",
-                                "set_open_level",
-                                "set_security_level",
-                                "set_discreet_mode_speed",
-                                "set_nominal_mode_speed",
-                                "set_soft_start",
-                                "set_soft_stop",
-                                "reset_actuator",
-                                "double_power_cut",
-                                "eject_from_setting_mode"
-                            ]
-                        },
-                        {
-                            "name": "core:FirmwareRevision",
-                            "type": 3,
-                            "value": "5120725B13?"
-                        },
-                        {
-                            "name": "core:Manufacturer",
-                            "type": 3,
-                            "value": "Somfy"
-                        }
-                    ],
-                    "available": true,
-                    "enabled": true,
-                    "placeOID": "443dc53f-0356-4575-afe1-58f6007c0b6e",
-                    "widget": "PositionableRollerShutterWithLowSpeedManagement",
-                    "type": 1,
-                    "oid": "c667b7e2-44cc-4252-b671-b794eb315080",
-                    "uiClass": "RollerShutter"
-                },
-                {
                     "creationTime": 1596545432000,
                     "lastUpdateTime": 1596545432000,
-                    "label": "EG Buero seite",
-                    "deviceURL": "io://1227-2602-7805/14071160",
+                    "label": "Blind 1 Somfy RS 100 IO Smoove Uno",
+                    "deviceURL": "io://1234-2345-7890/1000001",
                     "shortcut": false,
                     "controllableName": "io:RollerShutterUnoIOComponent",
                     "definition": {
@@ -2208,10 +807,10 @@
                     "uiClass": "RollerShutter"
                 },
                 {
-                    "creationTime": 1596546179000,
-                    "lastUpdateTime": 1596546179000,
-                    "label": "EG Küche",
-                    "deviceURL": "io://1227-2602-7805/14619891",
+                    "creationTime": 1555577307000,
+                    "lastUpdateTime": 1555577307000,
+                    "label": "Blind 2 Somfy RS 100 IO Smoove Pure",
+                    "deviceURL": "io://1234-2345-7890/1000002",
                     "shortcut": false,
                     "controllableName": "io:RollerShutterWithLowSpeedManagementIOComponent",
                     "definition": {
@@ -2464,7 +1063,7 @@
                         {
                             "name": "core:NameState",
                             "type": 3,
-                            "value": "EG Küche"
+                            "value": "4. Balkontüre"
                         },
                         {
                             "name": "core:PriorityLockTimerState",
@@ -2484,7 +1083,7 @@
                         {
                             "name": "core:RSSILevelState",
                             "type": 2,
-                            "value": 90
+                            "value": 100
                         },
                         {
                             "name": "core:MovingState",
@@ -2492,27 +1091,49 @@
                             "value": false
                         },
                         {
+                            "name": "core:ManufacturerSettingsState",
+                            "type": 11,
+                            "value": {
+                                "discreet_mode_speed": 7,
+                                "roll_end_limit_state": "Auto",
+                                "setting_state": "User mode",
+                                "open_level": 1,
+                                "soft_start": 133,
+                                "current_position": 51200,
+                                "soft_stop": 133,
+                                "nominal_mode_speed": 17,
+                                "smart_protect": 1,
+                                "unroll_end_limit_state": "Auto",
+                                "security_level": 1
+                            }
+                        },
+                        {
                             "name": "core:ClosureState",
                             "type": 1,
-                            "value": 0
+                            "value": 100
                         },
                         {
                             "name": "core:OpenClosedState",
                             "type": 3,
-                            "value": "open"
+                            "value": "closed"
                         },
                         {
                             "name": "core:Memorized1PositionState",
                             "type": 1,
-                            "value": 85
+                            "value": 48
                         },
                         {
                             "name": "core:TargetClosureState",
                             "type": 1,
-                            "value": 0
+                            "value": 100
                         }
                     ],
                     "attributes": [
+                        {
+                            "name": "core:Manufacturer",
+                            "type": 3,
+                            "value": "Somfy"
+                        },
                         {
                             "name": "core:SupportedManufacturerSettingsCommands",
                             "type": 10,
@@ -2548,29 +1169,24 @@
                         {
                             "name": "core:FirmwareRevision",
                             "type": 3,
-                            "value": "5120725B13?"
-                        },
-                        {
-                            "name": "core:Manufacturer",
-                            "type": 3,
-                            "value": "Somfy"
+                            "value": "5120726B12?"
                         }
                     ],
                     "available": true,
                     "enabled": true,
-                    "placeOID": "586b87a6-bac7-4f8f-b883-f278c146d86b",
+                    "placeOID": "443dc53f-0356-4575-afe1-58f6007c0b6e",
                     "widget": "PositionableRollerShutterWithLowSpeedManagement",
                     "type": 1,
-                    "oid": "9800ab1e-7c73-4e56-b66e-6bec283b93b0",
+                    "oid": "223a1864-1b6b-41cf-99f5-768402c20468",
                     "uiClass": "RollerShutter"
                 },
                 {
-                    "creationTime": 1596548768000,
-                    "lastUpdateTime": 1596548768000,
-                    "label": "OG Schlafz seite",
-                    "deviceURL": "io://1227-2602-7805/14937871",
+                    "creationTime": 1555577307000,
+                    "lastUpdateTime": 1555577307000,
+                    "label": "Smoke Sensor IO",
+                    "deviceURL": "io://1234-2345-7890/1000003",
                     "shortcut": false,
-                    "controllableName": "io:RollerShutterWithLowSpeedManagementIOComponent",
+                    "controllableName": "io:SomfySmokeIOSystemSensor",
                     "definition": {
                         "commands": [
                             {
@@ -2578,131 +1194,11 @@
                                 "nparams": 1
                             },
                             {
-                                "commandName": "close",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "delayedStopIdentify",
+                                "commandName": "checkEventTrigger",
                                 "nparams": 1
-                            },
-                            {
-                                "commandName": "down",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "getName",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "identify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "my",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "open",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "refreshMemorized1Position",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "setClosureAndLinearSpeed",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "setClosure",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setDeployment",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setMemorized1Position",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setName",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setPositionAndLinearSpeed",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "setPosition",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setSecuredPosition",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "startIdentify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "stop",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "stopIdentify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "up",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "wink",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "runManufacturerSettingsCommand",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "keepOneWayControllersAndDeleteNode",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "pairOneWayController",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "sendIOKey",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "setConfigState",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "unpairAllOneWayControllersAndDeleteNode",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "unpairAllOneWayControllers",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "unpairOneWayController",
-                                "nparams": 2
                             }
                         ],
                         "states": [
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:AdditionalStatusState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:ClosureState"
-                            },
                             {
                                 "type": "DiscreteState",
                                 "values": [
@@ -2714,44 +1210,27 @@
                                 "qualifiedName": "core:DiscreteRSSILevelState"
                             },
                             {
-                                "type": "DataState",
-                                "qualifiedName": "core:ManufacturerSettingsState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:Memorized1PositionState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "false",
-                                    "true"
-                                ],
-                                "qualifiedName": "core:MovingState"
-                            },
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:NameState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "closed",
-                                    "open"
-                                ],
-                                "qualifiedName": "core:OpenClosedState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:PriorityLockTimerState"
-                            },
-                            {
                                 "type": "ContinuousState",
                                 "qualifiedName": "core:RSSILevelState"
                             },
                             {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:SecuredPositionState"
+                                "type": "DiscreteState",
+                                "values": [
+                                    "dead",
+                                    "lowBattery",
+                                    "maintenanceRequired",
+                                    "noDefect"
+                                ],
+                                "qualifiedName": "core:SensorDefectState"
+                            },
+                            {
+                                "eventBased": true,
+                                "type": "DiscreteState",
+                                "values": [
+                                    "detected",
+                                    "notDetected"
+                                ],
+                                "qualifiedName": "core:SmokeState"
                             },
                             {
                                 "type": "DiscreteState",
@@ -2762,1479 +1241,55 @@
                                 "qualifiedName": "core:StatusState"
                             },
                             {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:TargetClosureState"
+                                "type": "DiscreteState",
+                                "values": [
+                                    "low",
+                                    "normal"
+                                ],
+                                "qualifiedName": "io:MaintenanceRadioPartBatteryState"
                             },
                             {
                                 "type": "DiscreteState",
                                 "values": [
-                                    "comfortLevel1",
-                                    "comfortLevel2",
-                                    "comfortLevel3",
-                                    "comfortLevel4",
-                                    "environmentProtection",
-                                    "humanProtection",
-                                    "userLevel1",
-                                    "userLevel2"
+                                    "absence",
+                                    "low",
+                                    "normal"
                                 ],
-                                "qualifiedName": "io:PriorityLockLevelState"
+                                "qualifiedName": "io:MaintenanceSensorPartBatteryState"
                             },
                             {
                                 "type": "DiscreteState",
                                 "values": [
-                                    "LSC",
-                                    "SAAC",
-                                    "SFC",
-                                    "UPS",
-                                    "externalGateway",
-                                    "localUser",
-                                    "myself",
-                                    "rain",
-                                    "security",
-                                    "temperature",
-                                    "timer",
-                                    "user",
-                                    "wind"
+                                    "clean",
+                                    "dirty"
                                 ],
-                                "qualifiedName": "io:PriorityLockOriginatorState"
+                                "qualifiedName": "io:SensorRoomState"
                             }
                         ],
-                        "dataProperties": [
-                            {
-                                "value": "500",
-                                "qualifiedName": "core:identifyInterval"
-                            }
-                        ],
-                        "widgetName": "PositionableRollerShutterWithLowSpeedManagement",
+                        "dataProperties": [],
+                        "widgetName": "SmokeSensor",
                         "uiProfiles": [
-                            "StatefulCloseableShutter",
-                            "StatefulCloseable",
-                            "Closeable",
-                            "StatefulOpenClose",
-                            "OpenClose"
+                            "SmokeDetector"
                         ],
-                        "uiClass": "RollerShutter",
-                        "qualifiedName": "io:RollerShutterWithLowSpeedManagementIOComponent",
-                        "type": "ACTUATOR"
+                        "uiClass": "SmokeSensor",
+                        "qualifiedName": "io:SomfySmokeIOSystemSensor",
+                        "type": "SENSOR"
                     },
                     "states": [
                         {
-                            "name": "core:NameState",
+                            "name": "core:SmokeState",
                             "type": 3,
-                            "value": "OG Schlafz seite"
+                            "value": "notDetected"
                         },
                         {
-                            "name": "core:PriorityLockTimerState",
-                            "type": 1,
-                            "value": 0
-                        },
-                        {
-                            "name": "core:StatusState",
-                            "type": 3,
-                            "value": "available"
-                        },
-                        {
-                            "name": "core:DiscreteRSSILevelState",
+                            "name": "io:MaintenanceRadioPartBatteryState",
                             "type": 3,
                             "value": "normal"
                         },
                         {
-                            "name": "core:RSSILevelState",
-                            "type": 2,
-                            "value": 56
-                        },
-                        {
-                            "name": "core:MovingState",
-                            "type": 6,
-                            "value": false
-                        },
-                        {
-                            "name": "core:ClosureState",
-                            "type": 1,
-                            "value": 0
-                        },
-                        {
-                            "name": "core:OpenClosedState",
+                            "name": "io:MaintenanceSensorPartBatteryState",
                             "type": 3,
-                            "value": "open"
-                        },
-                        {
-                            "name": "core:Memorized1PositionState",
-                            "type": 1,
-                            "value": 85
-                        },
-                        {
-                            "name": "core:TargetClosureState",
-                            "type": 1,
-                            "value": 0
-                        }
-                    ],
-                    "attributes": [
-                        {
-                            "name": "core:SupportedManufacturerSettingsCommands",
-                            "type": 10,
-                            "value": [
-                                "dead_man_up",
-                                "dead_man_down",
-                                "dead_man_stop",
-                                "dead_man_impulse_up",
-                                "dead_man_impulse_down",
-                                "enter_settings_mode",
-                                "save_upper_end_limit",
-                                "save_lower_end_limit",
-                                "stop_after_save_limit",
-                                "set_auto_end_limits",
-                                "set_auto_upper_end_limit",
-                                "set_auto_lower_end_limit",
-                                "save_settings",
-                                "invert_rotation",
-                                "save_my_position",
-                                "delete_my_position",
-                                "set_smart_protect",
-                                "set_open_level",
-                                "set_security_level",
-                                "set_discreet_mode_speed",
-                                "set_nominal_mode_speed",
-                                "set_soft_start",
-                                "set_soft_stop",
-                                "reset_actuator",
-                                "double_power_cut",
-                                "eject_from_setting_mode"
-                            ]
-                        },
-                        {
-                            "name": "core:FirmwareRevision",
-                            "type": 3,
-                            "value": "5120725B13?"
-                        },
-                        {
-                            "name": "core:Manufacturer",
-                            "type": 3,
-                            "value": "Somfy"
-                        }
-                    ],
-                    "available": true,
-                    "enabled": true,
-                    "placeOID": "3faabc6c-64af-45a6-969f-170713a83136",
-                    "widget": "PositionableRollerShutterWithLowSpeedManagement",
-                    "type": 1,
-                    "oid": "0a327614-9e7c-4355-bf2d-2da88a82e8b8",
-                    "uiClass": "RollerShutter"
-                },
-                {
-                    "creationTime": 1596549173000,
-                    "lastUpdateTime": 1596549173000,
-                    "label": "OG Gaestezimmer",
-                    "deviceURL": "io://1227-2602-7805/4527110",
-                    "shortcut": false,
-                    "controllableName": "io:RollerShutterWithLowSpeedManagementIOComponent",
-                    "definition": {
-                        "commands": [
-                            {
-                                "commandName": "advancedRefresh",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "close",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "delayedStopIdentify",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "down",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "getName",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "identify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "my",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "open",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "refreshMemorized1Position",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "setClosureAndLinearSpeed",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "setClosure",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setDeployment",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setMemorized1Position",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setName",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setPositionAndLinearSpeed",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "setPosition",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setSecuredPosition",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "startIdentify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "stop",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "stopIdentify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "up",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "wink",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "runManufacturerSettingsCommand",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "keepOneWayControllersAndDeleteNode",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "pairOneWayController",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "sendIOKey",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "setConfigState",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "unpairAllOneWayControllersAndDeleteNode",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "unpairAllOneWayControllers",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "unpairOneWayController",
-                                "nparams": 2
-                            }
-                        ],
-                        "states": [
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:AdditionalStatusState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:ClosureState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "good",
-                                    "low",
-                                    "normal",
-                                    "verylow"
-                                ],
-                                "qualifiedName": "core:DiscreteRSSILevelState"
-                            },
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:ManufacturerSettingsState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:Memorized1PositionState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "false",
-                                    "true"
-                                ],
-                                "qualifiedName": "core:MovingState"
-                            },
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:NameState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "closed",
-                                    "open"
-                                ],
-                                "qualifiedName": "core:OpenClosedState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:PriorityLockTimerState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:RSSILevelState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:SecuredPositionState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "available",
-                                    "unavailable"
-                                ],
-                                "qualifiedName": "core:StatusState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:TargetClosureState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "comfortLevel1",
-                                    "comfortLevel2",
-                                    "comfortLevel3",
-                                    "comfortLevel4",
-                                    "environmentProtection",
-                                    "humanProtection",
-                                    "userLevel1",
-                                    "userLevel2"
-                                ],
-                                "qualifiedName": "io:PriorityLockLevelState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "LSC",
-                                    "SAAC",
-                                    "SFC",
-                                    "UPS",
-                                    "externalGateway",
-                                    "localUser",
-                                    "myself",
-                                    "rain",
-                                    "security",
-                                    "temperature",
-                                    "timer",
-                                    "user",
-                                    "wind"
-                                ],
-                                "qualifiedName": "io:PriorityLockOriginatorState"
-                            }
-                        ],
-                        "dataProperties": [
-                            {
-                                "value": "500",
-                                "qualifiedName": "core:identifyInterval"
-                            }
-                        ],
-                        "widgetName": "PositionableRollerShutterWithLowSpeedManagement",
-                        "uiProfiles": [
-                            "StatefulCloseableShutter",
-                            "StatefulCloseable",
-                            "Closeable",
-                            "StatefulOpenClose",
-                            "OpenClose"
-                        ],
-                        "uiClass": "RollerShutter",
-                        "qualifiedName": "io:RollerShutterWithLowSpeedManagementIOComponent",
-                        "type": "ACTUATOR"
-                    },
-                    "states": [
-                        {
-                            "name": "core:NameState",
-                            "type": 3,
-                            "value": "OG Gaestezimmer"
-                        },
-                        {
-                            "name": "core:PriorityLockTimerState",
-                            "type": 1,
-                            "value": 0
-                        },
-                        {
-                            "name": "core:StatusState",
-                            "type": 3,
-                            "value": "available"
-                        },
-                        {
-                            "name": "core:DiscreteRSSILevelState",
-                            "type": 3,
-                            "value": "good"
-                        },
-                        {
-                            "name": "core:RSSILevelState",
-                            "type": 2,
-                            "value": 94
-                        },
-                        {
-                            "name": "core:MovingState",
-                            "type": 6,
-                            "value": false
-                        },
-                        {
-                            "name": "core:ClosureState",
-                            "type": 1,
-                            "value": 0
-                        },
-                        {
-                            "name": "core:OpenClosedState",
-                            "type": 3,
-                            "value": "open"
-                        },
-                        {
-                            "name": "core:Memorized1PositionState",
-                            "type": 1,
-                            "value": 85
-                        },
-                        {
-                            "name": "core:TargetClosureState",
-                            "type": 1,
-                            "value": 0
-                        }
-                    ],
-                    "attributes": [
-                        {
-                            "name": "core:Manufacturer",
-                            "type": 3,
-                            "value": "Somfy"
-                        },
-                        {
-                            "name": "core:SupportedManufacturerSettingsCommands",
-                            "type": 10,
-                            "value": [
-                                "dead_man_up",
-                                "dead_man_down",
-                                "dead_man_stop",
-                                "dead_man_impulse_up",
-                                "dead_man_impulse_down",
-                                "enter_settings_mode",
-                                "save_upper_end_limit",
-                                "save_lower_end_limit",
-                                "stop_after_save_limit",
-                                "set_auto_end_limits",
-                                "set_auto_upper_end_limit",
-                                "set_auto_lower_end_limit",
-                                "save_settings",
-                                "invert_rotation",
-                                "save_my_position",
-                                "delete_my_position",
-                                "set_smart_protect",
-                                "set_open_level",
-                                "set_security_level",
-                                "set_discreet_mode_speed",
-                                "set_nominal_mode_speed",
-                                "set_soft_start",
-                                "set_soft_stop",
-                                "reset_actuator",
-                                "double_power_cut",
-                                "eject_from_setting_mode"
-                            ]
-                        },
-                        {
-                            "name": "core:FirmwareRevision",
-                            "type": 3,
-                            "value": "5120725B13?"
-                        }
-                    ],
-                    "available": true,
-                    "enabled": true,
-                    "placeOID": "26d4e825-4a51-4100-893e-ca84dae9c0aa",
-                    "widget": "PositionableRollerShutterWithLowSpeedManagement",
-                    "type": 1,
-                    "oid": "e6d67bd1-593a-4ddf-a255-3e065cc90a74",
-                    "uiClass": "RollerShutter"
-                },
-                {
-                    "creationTime": 1596546663000,
-                    "lastUpdateTime": 1596546663000,
-                    "label": "EG Terasse",
-                    "deviceURL": "io://1227-2602-7805/7131537",
-                    "shortcut": false,
-                    "controllableName": "io:RollerShutterWithLowSpeedManagementIOComponent",
-                    "definition": {
-                        "commands": [
-                            {
-                                "commandName": "advancedRefresh",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "close",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "delayedStopIdentify",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "down",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "getName",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "identify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "my",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "open",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "refreshMemorized1Position",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "setClosureAndLinearSpeed",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "setClosure",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setDeployment",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setMemorized1Position",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setName",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setPositionAndLinearSpeed",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "setPosition",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setSecuredPosition",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "startIdentify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "stop",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "stopIdentify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "up",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "wink",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "runManufacturerSettingsCommand",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "keepOneWayControllersAndDeleteNode",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "pairOneWayController",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "sendIOKey",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "setConfigState",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "unpairAllOneWayControllersAndDeleteNode",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "unpairAllOneWayControllers",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "unpairOneWayController",
-                                "nparams": 2
-                            }
-                        ],
-                        "states": [
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:AdditionalStatusState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:ClosureState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "good",
-                                    "low",
-                                    "normal",
-                                    "verylow"
-                                ],
-                                "qualifiedName": "core:DiscreteRSSILevelState"
-                            },
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:ManufacturerSettingsState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:Memorized1PositionState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "false",
-                                    "true"
-                                ],
-                                "qualifiedName": "core:MovingState"
-                            },
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:NameState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "closed",
-                                    "open"
-                                ],
-                                "qualifiedName": "core:OpenClosedState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:PriorityLockTimerState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:RSSILevelState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:SecuredPositionState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "available",
-                                    "unavailable"
-                                ],
-                                "qualifiedName": "core:StatusState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:TargetClosureState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "comfortLevel1",
-                                    "comfortLevel2",
-                                    "comfortLevel3",
-                                    "comfortLevel4",
-                                    "environmentProtection",
-                                    "humanProtection",
-                                    "userLevel1",
-                                    "userLevel2"
-                                ],
-                                "qualifiedName": "io:PriorityLockLevelState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "LSC",
-                                    "SAAC",
-                                    "SFC",
-                                    "UPS",
-                                    "externalGateway",
-                                    "localUser",
-                                    "myself",
-                                    "rain",
-                                    "security",
-                                    "temperature",
-                                    "timer",
-                                    "user",
-                                    "wind"
-                                ],
-                                "qualifiedName": "io:PriorityLockOriginatorState"
-                            }
-                        ],
-                        "dataProperties": [
-                            {
-                                "value": "500",
-                                "qualifiedName": "core:identifyInterval"
-                            }
-                        ],
-                        "widgetName": "PositionableRollerShutterWithLowSpeedManagement",
-                        "uiProfiles": [
-                            "StatefulCloseableShutter",
-                            "StatefulCloseable",
-                            "Closeable",
-                            "StatefulOpenClose",
-                            "OpenClose"
-                        ],
-                        "uiClass": "RollerShutter",
-                        "qualifiedName": "io:RollerShutterWithLowSpeedManagementIOComponent",
-                        "type": "ACTUATOR"
-                    },
-                    "states": [
-                        {
-                            "name": "core:NameState",
-                            "type": 3,
-                            "value": "EG Terasse"
-                        },
-                        {
-                            "name": "io:PriorityLockOriginatorState",
-                            "type": 3,
-                            "value": "user"
-                        },
-                        {
-                            "name": "core:PriorityLockTimerState",
-                            "type": 1,
-                            "value": 7650
-                        },
-                        {
-                            "name": "io:PriorityLockLevelState",
-                            "type": 3,
-                            "value": "comfortLevel1"
-                        },
-                        {
-                            "name": "core:StatusState",
-                            "type": 3,
-                            "value": "available"
-                        },
-                        {
-                            "name": "core:DiscreteRSSILevelState",
-                            "type": 3,
-                            "value": "good"
-                        },
-                        {
-                            "name": "core:RSSILevelState",
-                            "type": 2,
-                            "value": 90
-                        },
-                        {
-                            "name": "core:MovingState",
-                            "type": 6,
-                            "value": false
-                        },
-                        {
-                            "name": "core:ClosureState",
-                            "type": 1,
-                            "value": 0
-                        },
-                        {
-                            "name": "core:OpenClosedState",
-                            "type": 3,
-                            "value": "open"
-                        },
-                        {
-                            "name": "core:Memorized1PositionState",
-                            "type": 1,
-                            "value": 85
-                        },
-                        {
-                            "name": "core:TargetClosureState",
-                            "type": 1,
-                            "value": 0
-                        }
-                    ],
-                    "attributes": [
-                        {
-                            "name": "core:Manufacturer",
-                            "type": 3,
-                            "value": "Somfy"
-                        },
-                        {
-                            "name": "core:SupportedManufacturerSettingsCommands",
-                            "type": 10,
-                            "value": [
-                                "dead_man_up",
-                                "dead_man_down",
-                                "dead_man_stop",
-                                "dead_man_impulse_up",
-                                "dead_man_impulse_down",
-                                "enter_settings_mode",
-                                "save_upper_end_limit",
-                                "save_lower_end_limit",
-                                "stop_after_save_limit",
-                                "set_auto_end_limits",
-                                "set_auto_upper_end_limit",
-                                "set_auto_lower_end_limit",
-                                "save_settings",
-                                "invert_rotation",
-                                "save_my_position",
-                                "delete_my_position",
-                                "set_smart_protect",
-                                "set_open_level",
-                                "set_security_level",
-                                "set_discreet_mode_speed",
-                                "set_nominal_mode_speed",
-                                "set_soft_start",
-                                "set_soft_stop",
-                                "reset_actuator",
-                                "double_power_cut",
-                                "eject_from_setting_mode"
-                            ]
-                        },
-                        {
-                            "name": "core:FirmwareRevision",
-                            "type": 3,
-                            "value": "5120725B13?"
-                        }
-                    ],
-                    "available": true,
-                    "enabled": true,
-                    "placeOID": "c17853bd-c68c-4c39-b825-a145b629609b",
-                    "widget": "PositionableRollerShutterWithLowSpeedManagement",
-                    "type": 1,
-                    "oid": "7e04e3c0-57b8-4006-9e8f-e7cef92b7310",
-                    "uiClass": "RollerShutter"
-                },
-                {
-                    "creationTime": 1596547606000,
-                    "lastUpdateTime": 1596547606000,
-                    "label": "OG Flur",
-                    "deviceURL": "io://1227-2602-7805/8966360",
-                    "shortcut": false,
-                    "controllableName": "io:RollerShutterWithLowSpeedManagementIOComponent",
-                    "definition": {
-                        "commands": [
-                            {
-                                "commandName": "advancedRefresh",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "close",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "delayedStopIdentify",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "down",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "getName",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "identify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "my",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "open",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "refreshMemorized1Position",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "setClosureAndLinearSpeed",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "setClosure",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setDeployment",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setMemorized1Position",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setName",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setPositionAndLinearSpeed",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "setPosition",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setSecuredPosition",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "startIdentify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "stop",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "stopIdentify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "up",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "wink",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "runManufacturerSettingsCommand",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "keepOneWayControllersAndDeleteNode",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "pairOneWayController",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "sendIOKey",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "setConfigState",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "unpairAllOneWayControllersAndDeleteNode",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "unpairAllOneWayControllers",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "unpairOneWayController",
-                                "nparams": 2
-                            }
-                        ],
-                        "states": [
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:AdditionalStatusState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:ClosureState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "good",
-                                    "low",
-                                    "normal",
-                                    "verylow"
-                                ],
-                                "qualifiedName": "core:DiscreteRSSILevelState"
-                            },
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:ManufacturerSettingsState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:Memorized1PositionState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "false",
-                                    "true"
-                                ],
-                                "qualifiedName": "core:MovingState"
-                            },
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:NameState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "closed",
-                                    "open"
-                                ],
-                                "qualifiedName": "core:OpenClosedState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:PriorityLockTimerState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:RSSILevelState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:SecuredPositionState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "available",
-                                    "unavailable"
-                                ],
-                                "qualifiedName": "core:StatusState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:TargetClosureState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "comfortLevel1",
-                                    "comfortLevel2",
-                                    "comfortLevel3",
-                                    "comfortLevel4",
-                                    "environmentProtection",
-                                    "humanProtection",
-                                    "userLevel1",
-                                    "userLevel2"
-                                ],
-                                "qualifiedName": "io:PriorityLockLevelState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "LSC",
-                                    "SAAC",
-                                    "SFC",
-                                    "UPS",
-                                    "externalGateway",
-                                    "localUser",
-                                    "myself",
-                                    "rain",
-                                    "security",
-                                    "temperature",
-                                    "timer",
-                                    "user",
-                                    "wind"
-                                ],
-                                "qualifiedName": "io:PriorityLockOriginatorState"
-                            }
-                        ],
-                        "dataProperties": [
-                            {
-                                "value": "500",
-                                "qualifiedName": "core:identifyInterval"
-                            }
-                        ],
-                        "widgetName": "PositionableRollerShutterWithLowSpeedManagement",
-                        "uiProfiles": [
-                            "StatefulCloseableShutter",
-                            "StatefulCloseable",
-                            "Closeable",
-                            "StatefulOpenClose",
-                            "OpenClose"
-                        ],
-                        "uiClass": "RollerShutter",
-                        "qualifiedName": "io:RollerShutterWithLowSpeedManagementIOComponent",
-                        "type": "ACTUATOR"
-                    },
-                    "states": [
-                        {
-                            "name": "core:NameState",
-                            "type": 3,
-                            "value": "OG Flur"
-                        },
-                        {
-                            "name": "core:PriorityLockTimerState",
-                            "type": 1,
-                            "value": 0
-                        },
-                        {
-                            "name": "core:StatusState",
-                            "type": 3,
-                            "value": "available"
-                        },
-                        {
-                            "name": "core:DiscreteRSSILevelState",
-                            "type": 3,
-                            "value": "good"
-                        },
-                        {
-                            "name": "core:RSSILevelState",
-                            "type": 2,
-                            "value": 82
-                        },
-                        {
-                            "name": "core:MovingState",
-                            "type": 6,
-                            "value": false
-                        },
-                        {
-                            "name": "core:ClosureState",
-                            "type": 1,
-                            "value": 0
-                        },
-                        {
-                            "name": "core:OpenClosedState",
-                            "type": 3,
-                            "value": "open"
-                        },
-                        {
-                            "name": "core:Memorized1PositionState",
-                            "type": 1,
-                            "value": 85
-                        },
-                        {
-                            "name": "core:TargetClosureState",
-                            "type": 1,
-                            "value": 0
-                        }
-                    ],
-                    "attributes": [
-                        {
-                            "name": "core:SupportedManufacturerSettingsCommands",
-                            "type": 10,
-                            "value": [
-                                "dead_man_up",
-                                "dead_man_down",
-                                "dead_man_stop",
-                                "dead_man_impulse_up",
-                                "dead_man_impulse_down",
-                                "enter_settings_mode",
-                                "save_upper_end_limit",
-                                "save_lower_end_limit",
-                                "stop_after_save_limit",
-                                "set_auto_end_limits",
-                                "set_auto_upper_end_limit",
-                                "set_auto_lower_end_limit",
-                                "save_settings",
-                                "invert_rotation",
-                                "save_my_position",
-                                "delete_my_position",
-                                "set_smart_protect",
-                                "set_open_level",
-                                "set_security_level",
-                                "set_discreet_mode_speed",
-                                "set_nominal_mode_speed",
-                                "set_soft_start",
-                                "set_soft_stop",
-                                "reset_actuator",
-                                "double_power_cut",
-                                "eject_from_setting_mode"
-                            ]
-                        },
-                        {
-                            "name": "core:FirmwareRevision",
-                            "type": 3,
-                            "value": "5120725B13?"
-                        },
-                        {
-                            "name": "core:Manufacturer",
-                            "type": 3,
-                            "value": "Somfy"
-                        }
-                    ],
-                    "available": true,
-                    "enabled": true,
-                    "placeOID": "4f05869f-dac6-466a-94c1-229f8707e2de",
-                    "widget": "PositionableRollerShutterWithLowSpeedManagement",
-                    "type": 1,
-                    "oid": "ae01dcd8-8154-46e1-9555-85eb27cdcfcb",
-                    "uiClass": "RollerShutter"
-                },
-                {
-                    "creationTime": 1596558160000,
-                    "lastUpdateTime": 1596558160000,
-                    "label": "OG Fitnessraum",
-                    "deviceURL": "io://1227-2602-7805/9401523",
-                    "shortcut": false,
-                    "controllableName": "io:RollerShutterUnoIOComponent",
-                    "definition": {
-                        "commands": [
-                            {
-                                "commandName": "advancedRefresh",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "close",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "delayedStopIdentify",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "down",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "getName",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "identify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "my",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "open",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "refreshMemorized1Position",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "setClosure",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setDeployment",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setMemorized1Position",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setName",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setPosition",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "setSecuredPosition",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "startIdentify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "stop",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "stopIdentify",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "up",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "wink",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "runManufacturerSettingsCommand",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "keepOneWayControllersAndDeleteNode",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "pairOneWayController",
-                                "nparams": 2
-                            },
-                            {
-                                "commandName": "sendIOKey",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "setConfigState",
-                                "nparams": 1
-                            },
-                            {
-                                "commandName": "unpairAllOneWayControllersAndDeleteNode",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "unpairAllOneWayControllers",
-                                "nparams": 0
-                            },
-                            {
-                                "commandName": "unpairOneWayController",
-                                "nparams": 2
-                            }
-                        ],
-                        "states": [
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:AdditionalStatusState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "good",
-                                    "low",
-                                    "normal",
-                                    "verylow"
-                                ],
-                                "qualifiedName": "core:DiscreteRSSILevelState"
-                            },
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:ManufacturerSettingsState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:Memorized1PositionState"
-                            },
-                            {
-                                "type": "DataState",
-                                "qualifiedName": "core:NameState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:PriorityLockTimerState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:RSSILevelState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:SecuredPositionState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "available",
-                                    "unavailable"
-                                ],
-                                "qualifiedName": "core:StatusState"
-                            },
-                            {
-                                "type": "ContinuousState",
-                                "qualifiedName": "core:TargetClosureState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "comfortLevel1",
-                                    "comfortLevel2",
-                                    "comfortLevel3",
-                                    "comfortLevel4",
-                                    "environmentProtection",
-                                    "humanProtection",
-                                    "userLevel1",
-                                    "userLevel2"
-                                ],
-                                "qualifiedName": "io:PriorityLockLevelState"
-                            },
-                            {
-                                "type": "DiscreteState",
-                                "values": [
-                                    "LSC",
-                                    "SAAC",
-                                    "SFC",
-                                    "UPS",
-                                    "externalGateway",
-                                    "localUser",
-                                    "myself",
-                                    "rain",
-                                    "security",
-                                    "temperature",
-                                    "timer",
-                                    "user",
-                                    "wind"
-                                ],
-                                "qualifiedName": "io:PriorityLockOriginatorState"
-                            }
-                        ],
-                        "dataProperties": [
-                            {
-                                "value": "500",
-                                "qualifiedName": "core:identifyInterval"
-                            }
-                        ],
-                        "widgetName": "PositionableRollerShutterUno",
-                        "uiProfiles": [
-                            "CloseableShutter",
-                            "Closeable",
-                            "OpenClose"
-                        ],
-                        "uiClass": "RollerShutter",
-                        "qualifiedName": "io:RollerShutterUnoIOComponent",
-                        "type": "ACTUATOR"
-                    },
-                    "states": [
-                        {
-                            "name": "core:NameState",
-                            "type": 3,
-                            "value": "OG Fitnessraum"
-                        },
-                        {
-                            "name": "core:PriorityLockTimerState",
-                            "type": 1,
-                            "value": 0
+                            "value": "normal"
                         },
                         {
                             "name": "core:StatusState",
@@ -4250,43 +1305,388 @@
                             "name": "core:RSSILevelState",
                             "type": 2,
                             "value": 78
-                        },
-                        {
-                            "name": "core:Memorized1PositionState",
-                            "type": 1,
-                            "value": 85
-                        },
-                        {
-                            "name": "core:TargetClosureState",
-                            "type": 1,
-                            "value": 0
                         }
                     ],
                     "attributes": [
                         {
+                            "name": "core:Manufacturer",
+                            "type": 3,
+                            "value": "Somfy"
+                        },
+                        {
                             "name": "core:FirmwareRevision",
                             "type": 3,
-                            "value": "5125936A04?"
+                            "value": "5120379A11?"
+                        },
+                        {
+                            "name": "core:PowerSourceType",
+                            "type": 3,
+                            "value": "battery"
+                        }
+                    ],
+                    "available": true,
+                    "enabled": true,
+                    "placeOID": "443dc53f-0356-4575-afe1-58f6007c0b6e",
+                    "widget": "SmokeSensor",
+                    "type": 2,
+                    "oid": "33f3c64c-6e0e-41e1-bd3d-3c665a5ba367",
+                    "uiClass": "SmokeSensor"
+                },
+                {
+                    "creationTime": 1555577307000,
+                    "lastUpdateTime": 1555577307000,
+                    "label": "Light Sensor Sunis IO",
+                    "deviceURL": "io://1234-2345-7890/1000004",
+                    "shortcut": false,
+                    "controllableName": "io:LightIOSystemSensor",
+                    "definition": {
+                        "commands": [],
+                        "states": [
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "good",
+                                    "low",
+                                    "normal",
+                                    "verylow"
+                                ],
+                                "qualifiedName": "core:DiscreteRSSILevelState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:LuminanceState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:RSSILevelState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "dead",
+                                    "lowBattery",
+                                    "maintenanceRequired",
+                                    "noDefect"
+                                ],
+                                "qualifiedName": "core:SensorDefectState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "available",
+                                    "unavailable"
+                                ],
+                                "qualifiedName": "core:StatusState"
+                            }
+                        ],
+                        "dataProperties": [
+                            {
+                                "value": {
+                                    "activationDelayMap": {
+                                        "middle": 0,
+                                        "lower": 1200,
+                                        "upper": 300
+                                    },
+                                    "referenceStates": [
+                                        "middle",
+                                        "lower",
+                                        "upper"
+                                    ],
+                                    "qualifiedName": "io:SunSensorHysteresisBehavior"
+                                },
+                                "qualifiedName": "core:timeBasedHysteresisBehavior"
+                            }
+                        ],
+                        "widgetName": "LuminanceSensor",
+                        "uiProfiles": [
+                            "Luminance"
+                        ],
+                        "uiClass": "LightSensor",
+                        "qualifiedName": "io:LightIOSystemSensor",
+                        "type": "SENSOR"
+                    },
+                    "states": [
+                        {
+                            "name": "core:StatusState",
+                            "type": 3,
+                            "value": "available"
+                        },
+                        {
+                            "name": "core:DiscreteRSSILevelState",
+                            "type": 3,
+                            "value": "normal"
+                        },
+                        {
+                            "name": "core:RSSILevelState",
+                            "type": 2,
+                            "value": 68
+                        },
+                        {
+                            "name": "core:LuminanceState",
+                            "type": 2,
+                            "value": 50
+                        }
+                    ],
+                    "attributes": [
+                        {
+                            "name": "core:MaxSensedValue",
+                            "type": 1,
+                            "value": 100000
+                        },
+                        {
+                            "name": "core:FirmwareRevision",
+                            "type": 3,
+                            "value": "GI1Missingÿ"
                         },
                         {
                             "name": "core:Manufacturer",
                             "type": 3,
                             "value": "Somfy"
+                        },
+                        {
+                            "name": "core:MinSensedValue",
+                            "type": 1,
+                            "value": 50
+                        },
+                        {
+                            "name": "core:MeasuredValueType",
+                            "type": 3,
+                            "value": "core:LuminanceInLux"
+                        },
+                        {
+                            "name": "core:PowerSourceType",
+                            "type": 3,
+                            "value": "battery"
                         }
                     ],
                     "available": true,
                     "enabled": true,
-                    "placeOID": "6c27723d-0882-4f9a-922e-e835709ba7db",
-                    "widget": "PositionableRollerShutterUno",
+                    "placeOID": "443dc53f-0356-4575-afe1-58f6007c0b6e",
+                    "widget": "LuminanceSensor",
+                    "type": 2,
+                    "oid": "77eb97b8-7c6c-457e-87f0-82e41b61b72a",
+                    "uiClass": "LightSensor"
+                },
+                {
+                    "creationTime": 1555577307000,
+                    "lastUpdateTime": 1555577307000,
+                    "label": "Adapter Plug IO",
+                    "deviceURL": "io://1234-2345-7890/1000004",
+                    "shortcut": false,
+                    "controllableName": "io:OnOffIOComponent",
+                    "definition": {
+                        "commands": [
+                            {
+                                "commandName": "advancedRefresh",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "delayedStopIdentify",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "getName",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "identify",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "off",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "on",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "onWithTimer",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "setName",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "setOnOff",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "startIdentify",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "stopIdentify",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "wink",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "pairOneWayController",
+                                "nparams": 2
+                            },
+                            {
+                                "commandName": "setConfigState",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "unpairAllOneWayControllers",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "unpairOneWayController",
+                                "nparams": 2
+                            }
+                        ],
+                        "states": [
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "good",
+                                    "low",
+                                    "normal",
+                                    "verylow"
+                                ],
+                                "qualifiedName": "core:DiscreteRSSILevelState"
+                            },
+                            {
+                                "type": "DataState",
+                                "qualifiedName": "core:NameState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "off",
+                                    "on"
+                                ],
+                                "qualifiedName": "core:OnOffState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:PriorityLockTimerState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:RSSILevelState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "available",
+                                    "unavailable"
+                                ],
+                                "qualifiedName": "core:StatusState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "comfortLevel1",
+                                    "comfortLevel2",
+                                    "comfortLevel3",
+                                    "comfortLevel4",
+                                    "environmentProtection",
+                                    "humanProtection",
+                                    "userLevel1",
+                                    "userLevel2"
+                                ],
+                                "qualifiedName": "io:PriorityLockLevelState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "LSC",
+                                    "SAAC",
+                                    "SFC",
+                                    "UPS",
+                                    "externalGateway",
+                                    "localUser",
+                                    "myself",
+                                    "rain",
+                                    "security",
+                                    "temperature",
+                                    "timer",
+                                    "user",
+                                    "wind"
+                                ],
+                                "qualifiedName": "io:PriorityLockOriginatorState"
+                            }
+                        ],
+                        "dataProperties": [
+                            {
+                                "value": "500",
+                                "qualifiedName": "core:identifyInterval"
+                            }
+                        ],
+                        "widgetName": "StatefulOnOff",
+                        "uiProfiles": [
+                            "StatefulSwitchablePlug",
+                            "StatefulSwitchable",
+                            "Switchable"
+                        ],
+                        "uiClass": "OnOff",
+                        "qualifiedName": "io:OnOffIOComponent",
+                        "type": "ACTUATOR"
+                    },
+                    "states": [
+                        {
+                            "name": "core:NameState",
+                            "type": 3,
+                            "value": "Stehlampe"
+                        },
+                        {
+                            "name": "core:PriorityLockTimerState",
+                            "type": 1,
+                            "value": 0
+                        },
+                        {
+                            "name": "core:StatusState",
+                            "type": 3,
+                            "value": "available"
+                        },
+                        {
+                            "name": "core:DiscreteRSSILevelState",
+                            "type": 3,
+                            "value": "good"
+                        },
+                        {
+                            "name": "core:RSSILevelState",
+                            "type": 2,
+                            "value": 88
+                        },
+                        {
+                            "name": "core:OnOffState",
+                            "type": 3,
+                            "value": "on"
+                        }
+                    ],
+                    "attributes": [
+                        {
+                            "name": "core:Manufacturer",
+                            "type": 3,
+                            "value": "Somfy"
+                        },
+                        {
+                            "name": "core:FirmwareRevision",
+                            "type": 3,
+                            "value": "5136974A01?"
+                        }
+                    ],
+                    "available": true,
+                    "enabled": true,
+                    "placeOID": "443dc53f-0356-4575-afe1-58f6007c0b6e",
+                    "widget": "StatefulOnOff",
                     "type": 1,
-                    "oid": "6a77ed21-fce6-40ae-b6e0-831d0c26c72b",
-                    "uiClass": "RollerShutter"
+                    "oid": "caa2aa23-70aa-483c-a4cf-e4f145a659e8",
+                    "uiClass": "OnOff"
                 },
                 {
                     "creationTime": 1600767806000,
                     "lastUpdateTime": 1600767806000,
                     "label": "IO (9494493)",
-                    "deviceURL": "io://1227-2602-7805/9494493",
+                    "deviceURL": "io://1234-2345-7890/1000005",
                     "shortcut": false,
                     "controllableName": "io:StackComponent",
                     "definition": {
@@ -4336,7 +1736,7 @@
                     },
                     "available": true,
                     "enabled": true,
-                    "placeOID": "b765d7b9-995c-46fe-b3ec-2b23efa4008f",
+                    "placeOID": "443dc53f-0356-4575-afe1-58f6007c0b6e",
                     "widget": "IOStack",
                     "type": 5,
                     "oid": "079bf28b-e075-4c21-8d0b-826e6d00df43",
@@ -4346,7 +1746,7 @@
                     "creationTime": 1596543204000,
                     "lastUpdateTime": 1596543204000,
                     "label": "OGP (00000BE8)",
-                    "deviceURL": "ogp://1227-2602-7805/00000BE8",
+                    "deviceURL": "ogp://1234-2345-7890/00000BE8",
                     "shortcut": false,
                     "controllableName": "ogp:Bridge",
                     "definition": {
@@ -4420,7 +1820,7 @@
                     ],
                     "available": true,
                     "enabled": true,
-                    "placeOID": "b765d7b9-995c-46fe-b3ec-2b23efa4008f",
+                    "placeOID": "443dc53f-0356-4575-afe1-58f6007c0b6e",
                     "widget": "DynamicBridge",
                     "type": 1,
                     "oid": "7fa0aaae-9093-40da-aaa4-7db75a6861ce",
@@ -4430,7 +1830,7 @@
                     "creationTime": 1596543205000,
                     "lastUpdateTime": 1596543205000,
                     "label": "OGP Siegenia Bridge",
-                    "deviceURL": "ogp://1227-2602-7805/039575E9",
+                    "deviceURL": "io://1234-2345-7890/039575E9",
                     "shortcut": false,
                     "controllableName": "ogp:Bridge",
                     "definition": {
@@ -4509,7 +1909,7 @@
                     ],
                     "available": true,
                     "enabled": true,
-                    "placeOID": "b765d7b9-995c-46fe-b3ec-2b23efa4008f",
+                    "placeOID": "443dc53f-0356-4575-afe1-58f6007c0b6e",
                     "widget": "DynamicBridge",
                     "type": 1,
                     "oid": "0236d923-c0ca-4ea4-8dff-02ac585342a0",
@@ -4519,7 +1919,7 @@
                     "creationTime": 1596543204000,
                     "lastUpdateTime": 1596543204000,
                     "label": "OGP Intesis Bridge",
-                    "deviceURL": "ogp://1227-2602-7805/09E45393",
+                    "deviceURL": "ogp://1234-2345-7890/09E45393",
                     "shortcut": false,
                     "controllableName": "ogp:Bridge",
                     "definition": {
@@ -4598,7 +1998,7 @@
                     ],
                     "available": true,
                     "enabled": true,
-                    "placeOID": "b765d7b9-995c-46fe-b3ec-2b23efa4008f",
+                    "placeOID": "443dc53f-0356-4575-afe1-58f6007c0b6e",
                     "widget": "DynamicBridge",
                     "type": 1,
                     "oid": "68a51337-e1a5-4318-8af5-14aa900850ef",
@@ -4608,7 +2008,7 @@
                     "creationTime": 1596551876000,
                     "lastUpdateTime": 1596551876000,
                     "label": "Fernbedienung",
-                    "deviceURL": "rtds://1227-2602-7805/165245",
+                    "deviceURL": "rtds://1234-2345-7890/165245",
                     "shortcut": false,
                     "controllableName": "rtds:RTDSRemoteControllerComponent",
                     "definition": {
@@ -4672,7 +2072,7 @@
                     ],
                     "available": true,
                     "enabled": true,
-                    "placeOID": "b765d7b9-995c-46fe-b3ec-2b23efa4008f",
+                    "placeOID": "443dc53f-0356-4575-afe1-58f6007c0b6e",
                     "widget": "AlarmRemoteController",
                     "type": 4,
                     "oid": "68f52792-801f-4331-9af8-0fde005f7436",
@@ -4701,116 +2101,17 @@
                     {
                         "creationTime": 1596543495000,
                         "lastUpdateTime": 1596543495000,
-                        "label": "Erdgeschoss",
+                        "label": "Basement",
                         "type": 101,
                         "oid": "87c54a7c-114e-411d-990e-1a108efa54be",
                         "subPlaces": [
                             {
                                 "creationTime": 1596543495000,
                                 "lastUpdateTime": 1596543495000,
-                                "label": "WC",
-                                "type": 22,
-                                "metadata": "{\"tahoma\":{\"order\":4}}",
-                                "oid": "b7881451-3e15-4a54-a25f-ac764f4dddd7",
-                                "subPlaces": []
-                            },
-                            {
-                                "creationTime": 1596543495000,
-                                "lastUpdateTime": 1596543495000,
-                                "label": "Küche",
-                                "type": 1,
-                                "metadata": "{\"tahoma\":{\"order\":2}}",
-                                "oid": "586b87a6-bac7-4f8f-b883-f278c146d86b",
-                                "subPlaces": []
-                            },
-                            {
-                                "creationTime": 1596543495000,
-                                "lastUpdateTime": 1596543495000,
-                                "label": "Wohnzimmer",
-                                "type": 14,
-                                "metadata": "{\"tahoma\":{\"order\":1}}",
-                                "oid": "b0b63f6b-7766-4bb1-8fb1-16787528643d",
-                                "subPlaces": []
-                            },
-                            {
-                                "creationTime": 1596543495000,
-                                "lastUpdateTime": 1596543495000,
-                                "label": "Büro",
+                                "label": "Testroom",
                                 "type": 16,
                                 "metadata": "{\"tahoma\":{\"order\":0}}",
                                 "oid": "443dc53f-0356-4575-afe1-58f6007c0b6e",
-                                "subPlaces": []
-                            },
-                            {
-                                "creationTime": 1596543495000,
-                                "lastUpdateTime": 1596543495000,
-                                "label": "Esszimmer",
-                                "type": 2,
-                                "metadata": "{\"tahoma\":{\"order\":3}}",
-                                "oid": "c17853bd-c68c-4c39-b825-a145b629609b",
-                                "subPlaces": []
-                            },
-                            {
-                                "creationTime": 1596543495000,
-                                "lastUpdateTime": 1596543495000,
-                                "label": "Garage",
-                                "type": 9,
-                                "metadata": "{\"tahoma\":{\"order\":5}}",
-                                "oid": "d41795c8-567e-476e-9bfd-3aa8813f3dee",
-                                "subPlaces": []
-                            }
-                        ]
-                    },
-                    {
-                        "creationTime": 1596543495000,
-                        "lastUpdateTime": 1596543495000,
-                        "label": "1. Stock",
-                        "type": 102,
-                        "oid": "7e15b402-e582-420a-8297-a4385aa65431",
-                        "subPlaces": [
-                            {
-                                "creationTime": 1596543495000,
-                                "lastUpdateTime": 1596547653000,
-                                "label": "Gästezimmer",
-                                "type": 11,
-                                "metadata": "{\"tahoma\":{\"order\":1}}",
-                                "oid": "26d4e825-4a51-4100-893e-ca84dae9c0aa",
-                                "subPlaces": []
-                            },
-                            {
-                                "creationTime": 1596543495000,
-                                "lastUpdateTime": 1596547653000,
-                                "label": "Schlafzimmer",
-                                "type": 6,
-                                "metadata": "{\"tahoma\":{\"order\":3}}",
-                                "oid": "3faabc6c-64af-45a6-969f-170713a83136",
-                                "subPlaces": []
-                            },
-                            {
-                                "creationTime": 1596547653000,
-                                "lastUpdateTime": 1596547653000,
-                                "label": "Gang",
-                                "type": 23,
-                                "metadata": "{\"tahoma\":{\"order\":0}}",
-                                "oid": "4f05869f-dac6-466a-94c1-229f8707e2de",
-                                "subPlaces": []
-                            },
-                            {
-                                "creationTime": 1596543495000,
-                                "lastUpdateTime": 1596558205000,
-                                "label": "Fitnessraum",
-                                "type": 20,
-                                "metadata": "{\"tahoma\":{\"order\":4}}",
-                                "oid": "6c27723d-0882-4f9a-922e-e835709ba7db",
-                                "subPlaces": []
-                            },
-                            {
-                                "creationTime": 1596543495000,
-                                "lastUpdateTime": 1596547653000,
-                                "label": "Bad",
-                                "type": 8,
-                                "metadata": "{\"tahoma\":{\"order\":2}}",
-                                "oid": "37702c77-e4c2-4749-bc0d-fec8ac61373b",
                                 "subPlaces": []
                             }
                         ]
@@ -4838,7 +2139,7 @@
     },
     {
         "endpoint": {
-            "path": "setup/gateways/1227-2602-7805",
+            "path": "setup/gateways/1234-2345-7890",
             "type": "GET"
         },
         "response": {
@@ -4852,9 +2153,9 @@
             ],
             "functions": "INTERNET_AUTHORIZATION,SCENARIO_DOWNLOAD,SCENARIO_AUTO_LAUNCHING,SCENARIO_TELECO_LAUNCHING,INTERNET_UPLOAD,INTERNET_UPDATE,TRIGGERS_SENSORS",
             "subType": 13,
-            "gatewayId": "1227-2602-7805",
+            "gatewayId": "1234-2345-7890",
             "alive": true,
-            "placeOID": "b765d7b9-995c-46fe-b3ec-2b23efa4008f",
+            "placeOID": "443dc53f-0356-4575-afe1-58f6007c0b6e",
             "timeReliable": true,
             "connectivity": {
                 "status": "OK",
@@ -4884,74 +2185,74 @@
         "response": [
             {
                 "timestamp": 1627927026265,
-                "gatewayId": "1227-2602-7805",
+                "gatewayId": "1234-2345-7890",
                 "name": "GatewaySynchronizationEndedEvent"
             },
             {
                 "timestamp": 1627927026362,
-                "gatewayId": "1227-2602-7805",
+                "gatewayId": "1234-2345-7890",
                 "name": "GatewaySynchronizationStartedEvent"
             },
             {
                 "timestamp": 1627927028613,
-                "gatewayId": "1227-2602-7805",
+                "gatewayId": "1234-2345-7890",
                 "protocolType": 22,
                 "name": "RefreshAllDevicesStatesCompletedEvent"
             },
             {
                 "timestamp": 1627927030610,
-                "gatewayId": "1227-2602-7805",
+                "gatewayId": "1234-2345-7890",
                 "name": "GatewaySynchronizationEndedEvent"
             },
             {
                 "timestamp": 1627927030748,
-                "gatewayId": "1227-2602-7805",
+                "gatewayId": "1234-2345-7890",
                 "name": "GatewaySynchronizationStartedEvent"
             },
             {
                 "timestamp": 1627927031093,
-                "gatewayId": "1227-2602-7805",
+                "gatewayId": "1234-2345-7890",
                 "name": "GatewaySynchronizationEndedEvent"
             },
             {
                 "timestamp": 1627927031249,
-                "gatewayId": "1227-2602-7805",
+                "gatewayId": "1234-2345-7890",
                 "protocolType": 22,
                 "name": "RefreshAllDevicesStatesCompletedEvent"
             },
             {
                 "timestamp": 1627927034656,
-                "gatewayId": "1227-2602-7805",
+                "gatewayId": "1234-2345-7890",
                 "name": "GatewaySynchronizationStartedEvent"
             },
             {
                 "timestamp": 1627927035319,
-                "gatewayId": "1227-2602-7805",
+                "gatewayId": "1234-2345-7890",
                 "name": "GatewaySynchronizationEndedEvent"
             },
             {
                 "timestamp": 1627927035408,
-                "gatewayId": "1227-2602-7805",
+                "gatewayId": "1234-2345-7890",
                 "name": "GatewaySynchronizationStartedEvent"
             },
             {
                 "timestamp": 1627927037434,
-                "gatewayId": "1227-2602-7805",
+                "gatewayId": "1234-2345-7890",
                 "name": "GatewaySynchronizationEndedEvent"
             },
             {
                 "timestamp": 1627927037663,
-                "gatewayId": "1227-2602-7805",
+                "gatewayId": "1234-2345-7890",
                 "name": "GatewaySynchronizationStartedEvent"
             },
             {
                 "timestamp": 1627927037935,
-                "gatewayId": "1227-2602-7805",
+                "gatewayId": "1234-2345-7890",
                 "name": "GatewaySynchronizationEndedEvent"
             },
             {
                 "timestamp": 1627927038164,
-                "gatewayId": "1227-2602-7805",
+                "gatewayId": "1234-2345-7890",
                 "protocolType": 22,
                 "name": "RefreshAllDevicesStatesCompletedEvent"
             }
@@ -4959,7 +2260,7 @@
     },
     {
         "endpoint": {
-            "path": "/exec/apply/highPriority",
+            "path": "exec/apply/highPriority",
             "type": "POST"
         },
         "request": {
@@ -4980,31 +2281,18 @@
                                 "items": {
                                     "type": "object",
                                     "properties": {
-                                        "name": {"type": "string"}, //get data from device list and then check against input
-                                        "parameters": {"type": "number"}
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "parameters": {
+                                            "type": "number"
+                                        }
                                     }
                                 }
                             }
                         }
                     }
                 }
-
-
-
-                "label": "EG_Buero_seite.states.core:TargetClosureState - Positioniere auf 50 % - ioBroker",
-                "actions": [
-                    {
-                        "deviceURL": "io://1227-2602-7805/14071160",
-                        "commands": [
-                            {
-                                "name": "setClosure",
-                                "parameters": [
-                                    50
-                                ]
-                            }
-                        ]
-                    }
-                ]
             }
         },
         "response": []
