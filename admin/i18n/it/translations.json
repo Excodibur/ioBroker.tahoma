@@ -1,0 +1,6 @@
+{
+    "on save adapter restarts with new config immediately": "on save adapter si riavvia immediatamente con la nuova configurazione",
+    "password": "parola d'ordine",
+    "pollinterval": "intervallo di polling",
+    "username": "Nome utente"
+}

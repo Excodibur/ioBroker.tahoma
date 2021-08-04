@@ -13,7 +13,7 @@ server.listen(port, () => {
     console.log("Tahomalink mock erver running on port " + port);
 });
 
-const mockData = JSON.parse(fs.readFileSync("data.json"));
+const mockData = JSON.parse(fs.readFileSync("test/tahoma-mock/data.json"));
 
 mockData.forEach(api => {
     const path = api.endpoint.path;
@@ -34,7 +34,6 @@ mockData.forEach(api => {
                 //Validate request, if needed
                 try {
                     if ((api.request) && (api.request.expected)) {
-                        console.log("checking stuff");
                         for (const [field, value] of Object.entries(api.request.expected)) {
                             if ((req.body[field] === undefined) || (req.body[field] != value)) {
                                 let error = new Error(api.request.elseError.message);

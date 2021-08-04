@@ -2,3 +2,4 @@ nbproject
 node_modules
 .gitignore
 .npmignore
+tahoma-mock.log

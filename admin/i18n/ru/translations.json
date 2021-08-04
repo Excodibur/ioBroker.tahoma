@@ -1,0 +1,6 @@
+{
+    "on save adapter restarts with new config immediately": "при сохранении адаптер перезапускается с новым конфигом немедленно",
+    "password": "пароль",
+    "pollinterval": "интервал опроса",
+    "username": "имя пользователя"
+}

@@ -1,5 +1,6 @@
 const path = require('path');
 const { tests } = require('@iobroker/testing');
+const Tail = require('always-tail');
 
 function delay (t, val) {
     return new Promise(function (resolve) {
@@ -9,10 +10,10 @@ function delay (t, val) {
     });
 }
 
-function readValuesFromMock () {
+function readMockData () {
     var fs = require('fs');
     try {
-        var fileData = fs.readFileSync('tahoma-mock/data.json', 'utf8');
+        var fileData = fs.readFileSync('test/tahoma-mock/data.json', 'utf8');
 
         var arr = JSON.parse(fileData);
         return arr;
@@ -21,18 +22,21 @@ function readValuesFromMock () {
     }
 }
 
+function monitorMockLogs (callback){
+    let tail = new Tail("tahoma-mock.log");
+    tail.on("line", callback);
+}
+
+
 function findStateByDeviceName (mockData, deviceName, stateName) {
-    console.log("++++++++++++++++++++++++++++");
     let result = null;
-    mockData.foreach(testdata => {
-        console.log("+++++Checking dataset: " + testdata.endpoint.path);
+    mockData.forEach(testdata => {
         if (!(testdata.endpoint.path == "setup"))
             return;
 
-        testdata.response.devices.foreach(device => {
-            console.log("+++++Checking device: " + device.label);
+        testdata.response.devices.forEach(device => {
             if (device.label == deviceName) {
-                device.states.foreach(state => {
+                device.states.forEach(state => {
                     if (state.name == stateName)
                         result = state;
                 })
@@ -79,35 +83,65 @@ tests.integration(path.join(__dirname, ".."), {
                         objs[0].native.password = encryptedPassword;
                         harness._objects.setObject(objs[0]._id, objs[0]);
 
-                        
+
                         await harness.startAdapterAndWait();
 
                         //check if states shown correlate to mock server
                         //read data from mock logs
-                        console.log("############################load mock values");
-                        let mockValues = readValuesFromMock();
+                        const mockValues = readMockData();
 
                         //get state from adapter, adapter need some time to load first values from mock
                         await delay(5000);
 
-                        //Check one value from mockservice and compare to state in adapter. In theory we could iterate over all values
-                        //but let's keep it simple for now.
-                        const mockValue = (findStatebyDeviceName(mockValues, "EG Buero seite", "core:TargetClosureState")).value;
-                        console.log("#########################");
-                        console.log("#########################MOCKVALUE:" + mockValue);
-                        console.log("#########################");
-                        harness.states.getState("tahoma.0.devices.EG_Buero_seite.states.core:TargetClosureState", function (error, state) {
+                        const state = findStateByDeviceName(mockValues, "Blind 1 Somfy RS 100 IO Smoove Uno", "core:TargetClosureState");
+                        const mockValue = state.value;
+
+                        harness.states.getState("tahoma.0.devices.Blind_1_Somfy_RS_100_IO_Smoove_Uno.states.core:TargetClosureState", function (error, state) {
 
                             if (state.val == mockValue)
                                 resolve();
                             else {
-                                reject("ERROR - Value Missmatch. State: tahoma.0.devices.EG_Buero_seite.states.core:TargetClosureState, Adapter value: " + state.val + ", Mock value:" + mockValue);
+                                reject("ERROR - Value Missmatch. State: tahoma.0.devices.Blind_1_Somfy_RS_100_IO_Smoove_Uno.states.core:TargetClosureState, Adapter value: " + state.val + ", Mock value:" + mockValue);
                             }
                         });
 
 
 
 
+                    });
+                });
+            }).timeout(30000);
+
+            it("should update device state correctly", () => {
+                return new Promise(async (resolve, reject) => {
+                    const harness = getHarness();
+
+                    harness._objects.getObjects(['system.adapter.tahoma.0', 'system.config'], async (err, objs) => {
+                        objs[0].native.tahomalinkurl = "http://localhost:3000/";
+                        objs[0].native.username = "some@mail.com";
+                        const password = "testpw";
+
+                        if (objs[1] && objs[1].native && objs[1].native.secret) {
+                            //noinspection JSUnresolvedVariable
+                            encryptedPassword = encrypt(objs[1].native.secret, password);
+                        } else {
+                            //noinspection JSUnresolvedVariable
+                            encryptedPassword = encrypt('Zgfr56gFe87jJOM', password);
+                        }
+
+                        objs[0].native.password = encryptedPassword;
+                        harness._objects.setObject(objs[0]._id, objs[0]);
+
+
+                        await harness.startAdapterAndWait();
+
+                        await delay(5000); //Give adapter time to fully start
+
+                        monitorMockLogs(line => {
+                            if ((line.includes("Blind_1_Somfy_RS_100_IO_Smoove_Uno.states.core:TargetClosureState")) && (line.includes("/exec/apply/highPriority"))) resolve();
+                        });                        
+
+                        await harness.states.setStateAsync("tahoma.0.devices.Blind_1_Somfy_RS_100_IO_Smoove_Uno.states.core:TargetClosureState", 100);
                     });
                 });
             }).timeout(30000);
