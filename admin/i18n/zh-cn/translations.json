@@ -1,0 +1,6 @@
+{
+    "on save adapter restarts with new config immediately": "保存适配器上的适配器立即以新配置重新启动",
+    "password": "密码",
+    "pollinterval": "轮询间隔",
+    "username": "用户名"
+}

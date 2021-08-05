@@ -180,23 +180,25 @@
 			"en": "Adapter to communicate with Somfy Tahoma"
 		},
 		"authors": [
-			"Marius Burkard <m.burkard@pixcept.de>"
+			"Marius Burkard <m.burkard@pixcept.de>",
+            "Excodibur"
 		],
 		"platform": "Javascript/Node.js",
 		"main": "main.js",
 		"mode": "daemon",
 		"icon": "tahoma.png",
-		"extIcon": "https://raw.githubusercontent.com/StrathCole/ioBroker.tahoma/master/admin/tahoma.png",
+		"extIcon": "https://raw.githubusercontent.com/Excodibur/ioBroker.tahoma/master/admin/tahoma.png",
 		"keywords": [
 			"somfy",
 			"blinds",
 			"tahoma",
 			"window"
 		],
-		"readme": "https://github.com/StrathCole/ioBroker.tahoma/blob/master/README.md",
+		"readme": "https://github.com/Excodibur/ioBroker.tahoma/blob/master/README.md",
 		"loglevel": "info",
 		"type": "iot-systems",
-		"connection-type": "cloud polling",
+		"connectionType": "cloud",
+        "dataSource": "poll",
 		"license": "MIT",
 		"messagebox": true,
 		"materialize": true,
@@ -208,7 +210,8 @@
 	"native": {
 		"username": "",
 		"password": "",
-		"pollinterval": 20000
+		"pollinterval": 20000,
+        "tahomalinkurl": "https://www.tahomalink.com/enduser-mobile-web/enduserAPI/"
 	},
 	"objects": [],
 	"instanceObjects": [

@@ -13,6 +13,7 @@ const patchVersion = '.3';
 let adapter;
 var deviceUsername;
 var devicePassword;
+let tahomalinkUrl;
 
 let bigPolling;
 let polling;
@@ -102,6 +103,7 @@ function startAdapter(options) {
 function main() {
 	deviceUsername = adapter.config.username;
 	devicePassword = adapter.config.password;
+    tahomalinkUrl = adapter.config.tahomalinkurl;
 
 	pollingTime = adapter.config.pollinterval || 10000;
 	if(pollingTime < 5000) {
@@ -115,7 +117,7 @@ function main() {
 
 	ioBLib.setOrUpdateState('update', 'Update device states', false, '', 'boolean', 'button.refresh');
 
-	controller = new tahoma.Tahoma(deviceUsername, devicePassword, adapter);
+	controller = new tahoma.Tahoma(deviceUsername, devicePassword, tahomalinkUrl, adapter);
 
 	controller.login(function(err, obj) {
 		if(!err) {
