@@ -16,7 +16,7 @@
 
 # ioBroker.tahoma
 
-An ioBroker adapter for Somfy Tahoma. This project has no affiliation with Somfy. Initially based on the script taken from https://forum.iobroker.net/post/336001.
+An ioBroker adapter for Somfy Tahoma. This project has no affiliation with Somfy. Initially based on the script taken from https://forum.iobroker.net/post/336001 and forked from https://github.com/StrathCole/ioBroker.tahoma.
 
 The adapter connects to the Tahomalink end user API and controls the devices set up through Tahoma Box (and most likely Connexoon).  
 The adapter is not feature-complete, yet, but it should support most actions for controlling blinds and shutters etc.
@@ -36,38 +36,42 @@ The following Somfy devices were verified to work with this adapter:
 - Smoke Sensor IO
 - Adapter Plug IO
 
-## tahoma.X.location
+## States
+
+### tahoma.X.location
 
 The state in this tree contain the personal information of the user like city, street address and longitude/latitude.
 
-## tahoma.X.devices.*.deviceURL
+### tahoma.X.devices.*.deviceURL
 
 This state contains the device URL that is used by Tahoma to identify the device.
 
-## tahoma.X.devices.*.commands
+### tahoma.X.devices.*.commands
 
 These states contain button commands for controlling the devices. Most devices will support commands like `close` and `open` but also some more.  
 Some of the commands have a `:slow` at the end if supported by the device. Using those enables low speed or so-called silent mode.
 
-## tahoma.X.devices.*.states
+### tahoma.X.devices.*.states
 
-These states contain current status of the devices as follows. All settings marked with `[**]` are editable to controll device's behaviour / send commands.  
-Some of the states have a `:slow` at the end if supported by the device. Setting those enables low speed or so-called silent mode.
+These states contain current status of the devices as follows. Some of the states have a `:slow` at the end if supported by the device. Setting those enables low speed or so-called silent mode.
 
-`[**] tahoma.X.devices.*.states.core:DeploymentState` - Provides information about and controls the state of current deployment. 100 means fully deployed, 0 is undeployed. Not all devices have this value, some have `ClosureState` instead.  
-`[**] tahoma.X.devices.*.states.core:TargetDeploymentState` - See `tahoma.X.devices.*.states.core:DeploymentState`  
-`[**] tahoma.X.devices.*.states.coreClosureState` - Provides information about and controls the state of current closure. 100 means fully closed, 0 is open. Not all devices have this value, some have `DeploymentState` instead.  
-`[**] tahoma.X.devices.*.states.core:TargetClosureState` - See `tahoma.X.devices.*.states.core:ClosureState`  
-`[**] tahoma.X.devices.*.states.core:OrientationState` - Provides information about and ocntrols the orientation (e. g. for shutters) of slats. Not all devices offer this value.  
-`[**] tahoma.X.devices.*.states.core:TargetOrientationState` - See `tahoma.X.devices.*.states.core:OrientationState`  
-`tahoma.X.devices.*.states.core:NameState` - Contains the current name of the device.  
-`tahoma.X.devices.*.states.core:OpenClosedState` - Contains `closed` if the device is 100% closed or 0% deployed and `open` otherwise.  
-`tahoma.X.devices.*.states.core:PriorityLockTimerState` - If a sensor has locked the device this is stated here, e. g. a wind sensor blocking an awning.  
-`tahoma.X.devices.*.states.core:RSSILevelState` - The current signal quality of the device.  
-`tahoma.X.devices.*.states.core:StatusState` - `available` if the device is currently available.  
-`tahoma.X.devices.*.states.io:PriorityLockLevelState` - See `tahoma.X.devices.*.states.core:PriorityLockTimerState`  
-`tahoma.X.devices.*.states.io:PriorityLockOriginatorState` - See `tahoma.X.devices.*.states.core:PriorityLockTimerState`  
-`tahoma.X.devices.*.states.moving` - States if the device is currently moving. `0 = stopped`, `1 = up/undeploy`, `2 = down/deploy`, `3 = unknown direction`  
+
+| Device state                                                | Editable | Purpose/Description |
+|-------------------------------------------------------------|----------|---------------------|
+| `tahoma.X.devices.*.states.core:DeploymentState`            | &#10003; | Provides information about and controls the state of current deployment. 100 means fully deployed, 0 is undeployed. Not all devices have this value, some have `ClosureState` instead. |
+| `tahoma.X.devices.*.states.core:TargetDeploymentState`      | &#10003; | See `tahoma.X.devices.*.states.core:DeploymentState`. Use this to e.g. change blind position directly. |
+| `tahoma.X.devices.*.states.coreClosureState`                | &#10003; | Provides information about and controls the state of current closure. 100 means fully closed, 0 is open. Not all devices have this value, some have `DeploymentState` instead. |
+| `tahoma.X.devices.*.states.core:TargetClosureState`         | &#10003; | See `tahoma.X.devices.*.states.core:ClosureState` |
+| `tahoma.X.devices.*.states.core:OrientationState`           | &#10003; | Provides information about and ocntrols the orientation (e. g. for shutters) of slats. Not all devices offer this value | 
+| `tahoma.X.devices.*.states.core:TargetOrientationState`     | &#10003; | See `tahoma.X.devices.*.states.core:OrientationState` |  
+| `tahoma.X.devices.*.states.core:NameState`                  |          | Contains the current name of the device. |
+| `tahoma.X.devices.*.states.core:OpenClosedState`            |          | Contains `closed` if the device is 100% closed or 0% deployed and `open` otherwise. |
+| `tahoma.X.devices.*.states.core:PriorityLockTimerState`     |          | If a sensor has locked the device this is stated here, e. g. a wind sensor blocking an awning. |
+| `tahoma.X.devices.*.states.core:RSSILevelState`             |          | The current signal quality of the device. |
+| `tahoma.X.devices.*.states.core:StatusState`                |          | `available` if the device is currently available. |
+| `tahoma.X.devices.*.states.io:PriorityLockLevelState`       |          | See `tahoma.X.devices.*.states.core:PriorityLockTimerState` |
+| `tahoma.X.devices.*.states.io:PriorityLockOriginatorState`  |          | See `tahoma.X.devices.*.states.core:PriorityLockTimerState` |
+| `tahoma.X.devices.*.states.moving`                          |          | States if the device is currently moving. `0 = stopped`, `1 = up/undeploy`, `2 = down/deploy`, `3 = unknown direction` |
 
 
 ## Changelog
