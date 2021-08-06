@@ -2,6 +2,7 @@
     "advanced connection settings": "geavanceerde verbindingsinstellingen",
     "basic settings": "basis instellingen",
     "delay after failed login": "vertraging na mislukte aanmelding (seconden)",
+    "delay before applyqueue retry": "vertraging vóór toepassingswachtrij opnieuw proberen (milliseconden)",
     "delay between login attempts": "vertraging tussen inlogpogingen (seconden)",
     "login attempts": "inlogpogingen",
     "on save adapter restarts with new config immediately": "on save adapter wordt onmiddellijk opnieuw gestart met de nieuwe configuratie",

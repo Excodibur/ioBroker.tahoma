@@ -28,13 +28,13 @@ Follwing some of the states created by the adapter.
 Generally, this adapter should support all devices that can be accessed via __tahomalink.com__, but for the adapter developer it is difficult to guarantee this. Mainly, because the documention of the used Somfy-API is (at least publically) non-existant and the developer can only test Somfy-devices which he owns himself, or is able to test with support of willing participants.
 
 The following Somfy devices were verified to work with this adapter:
-- Plug IO
-- RS 100 IO Smoove Uno
-- RS 100 IO Smoove Pure
-- Sun sensor Sunis IO
-- Temperature sensor IO
-- Smoke Sensor IO
-- Adapter Plug IO
+
+- S&SO RS100 io 
+- Oximo io
+- Sun sensor Sunis io
+- Temperature sensor io
+- Smoke Sensor io
+- Adapter Plug io
 
 ## Configuration
 
@@ -47,8 +47,10 @@ The following configuration parameters are supported by the adapter.
 | Login Attempts <sup>1</sup> <sup>2</sup>                | `3` | Amount of attempts to login again after login failure. |
 | Delay between login attempts <sup>1</sup> <sup>2</sup>  | `30` | Time (in seconds) to wait between login attempts. |
 | Delay after failed login  <sup>1</sup> <sup>2</sup>     | `120` | Time (in seconds) to wait, after all consecutive login attempts have failed. |
+| Delay before applyqueue retry <sup>1</sup> <sup>2</sup> | `1500` | Time (in milliseconds) to wait, before a second attempt is made to send changes from the internal apply queue to Tahoma, in case it got lost. |
 
  <sup>1</sup> These configuration values are only visible and configurable in Admin 5 (new GUI), or later.
+
  <sup>2</sup> All values are related to login to Tahomalink, which is mostly a blackbox from development point of view. If you configure the numbers too low here, experience has shown that there is a good chance Somfy will temporarily lock your account, so lower default values here with care!
 
 ## States
@@ -73,20 +75,20 @@ These states contain current status of the devices as follows. Some of the state
 
 | Device state                                                | Editable | Purpose/Description |
 |-------------------------------------------------------------|----------|---------------------|
-| `tahoma.X.devices.*.states.core:DeploymentState`            | &#10003; | Provides information about and controls the state of current deployment. 100 means fully deployed, 0 is undeployed. Not all devices have this value, some have `ClosureState` instead. |
-| `tahoma.X.devices.*.states.core:TargetDeploymentState`      | &#10003; | See `tahoma.X.devices.*.states.core:DeploymentState`. Use this to e.g. change blind position directly. |
-| `tahoma.X.devices.*.states.coreClosureState`                | &#10003; | Provides information about and controls the state of current closure. 100 means fully closed, 0 is open. Not all devices have this value, some have `DeploymentState` instead. |
-| `tahoma.X.devices.*.states.core:TargetClosureState`         | &#10003; | See `tahoma.X.devices.*.states.core:ClosureState` |
-| `tahoma.X.devices.*.states.core:OrientationState`           | &#10003; | Provides information about and ocntrols the orientation (e. g. for shutters) of slats. Not all devices offer this value | 
-| `tahoma.X.devices.*.states.core:TargetOrientationState`     | &#10003; | See `tahoma.X.devices.*.states.core:OrientationState` |  
-| `tahoma.X.devices.*.states.core:NameState`                  |          | Contains the current name of the device. |
-| `tahoma.X.devices.*.states.core:OpenClosedState`            |          | Contains `closed` if the device is 100% closed or 0% deployed and `open` otherwise. |
-| `tahoma.X.devices.*.states.core:PriorityLockTimerState`     |          | If a sensor has locked the device this is stated here, e. g. a wind sensor blocking an awning. |
-| `tahoma.X.devices.*.states.core:RSSILevelState`             |          | The current signal quality of the device. |
-| `tahoma.X.devices.*.states.core:StatusState`                |          | `available` if the device is currently available. |
-| `tahoma.X.devices.*.states.io:PriorityLockLevelState`       |          | See `tahoma.X.devices.*.states.core:PriorityLockTimerState` |
-| `tahoma.X.devices.*.states.io:PriorityLockOriginatorState`  |          | See `tahoma.X.devices.*.states.core:PriorityLockTimerState` |
-| `tahoma.X.devices.*.states.moving`                          |          | States if the device is currently moving. `0 = stopped`, `1 = up/undeploy`, `2 = down/deploy`, `3 = unknown direction` |
+| _tahoma.X.devices.*.states.core:DeploymentState_            | &#10003; | Provides information about and controls the state of current deployment. 100 means fully deployed, 0 is undeployed. Not all devices have this value, some have `ClosureState` instead. |
+| _tahoma.X.devices.*.states.core:TargetDeploymentState_      | &#10003; | See `tahoma.X.devices.*.states.core:DeploymentState`. Use this to e.g. change blind position directly. |
+| _tahoma.X.devices.*.states.coreClosureState_                | &#10003; | Provides information about and controls the state of current closure. 100 means fully closed, 0 is open. Not all devices have this value, some have `DeploymentState` instead. |
+| _tahoma.X.devices.*.states.core:TargetClosureState_         | &#10003; | See `tahoma.X.devices.*.states.core:ClosureState` |
+| _tahoma.X.devices.*.states.core:OrientationState_           | &#10003; | Provides information about and ocntrols the orientation (e. g. for shutters) of slats. Not all devices offer this value | 
+| _tahoma.X.devices.*.states.core:TargetOrientationState_     | &#10003; | See `tahoma.X.devices.*.states.core:OrientationState` |  
+| _tahoma.X.devices.*.states.core:NameState_                  |          | Contains the current name of the device. |
+| _tahoma.X.devices.*.states.core:OpenClosedState_            |          | Contains `closed` if the device is 100% closed or 0% deployed and `open` otherwise. |
+| _tahoma.X.devices.*.states.core:PriorityLockTimerState_     |          | If a sensor has locked the device this is stated here, e. g. a wind sensor blocking an awning. |
+| _tahoma.X.devices.*.states.core:RSSILevelState_             |          | The current signal quality of the device. |
+| _tahoma.X.devices.*.states.core:StatusState_                |          | `available` if the device is currently available. |
+| _tahoma.X.devices.*.states.io:PriorityLockLevelState_       |          | See `tahoma.X.devices.*.states.core:PriorityLockTimerState` |
+| _tahoma.X.devices.*.states.io:PriorityLockOriginatorState_  |          | See `tahoma.X.devices.*.states.core:PriorityLockTimerState` |
+| _tahoma.X.devices.*.states.moving_                          |          | States if the device is currently moving. `0 = stopped`, `1 = up/undeploy`, `2 = down/deploy`, `3 = unknown direction` |
 
 
 ## Changelog

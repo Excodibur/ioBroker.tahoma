@@ -109,5 +109,17 @@ systemDictionary = {
     "es": "retraso después de un inicio de sesión fallido (segundos)",
     "pl": "opóźnienie po nieudanym logowaniu (sekundy)",
     "zh-cn": "登录失败后延迟（秒）"
+  },
+  "delay before applyqueue retry": {
+    "en": "Delay before applyqueue retry (milliseconds)",
+    "de": "Verzögerung vor dem erneuten Versuch der Apply-Warteschlange (Millisekunden)",
+    "ru": "задержка перед повторной попыткой applyqueue (миллисекунды)",
+    "pt": "atraso antes da nova tentativa de aplicação da fila (milissegundos)",
+    "nl": "vertraging vóór toepassingswachtrij opnieuw proberen (milliseconden)",
+    "fr": "délai avant nouvelle tentative d'application de la file d'attente (millisecondes)",
+    "it": "ritardo prima del tentativo di applicare Queue (millisecondi)",
+    "es": "retraso antes de aplicar reintento en cola (milisegundos)",
+    "pl": "opóźnienie przed ponownym zastosowaniem kolejki (milisekundy)",
+    "zh-cn": "applyqueue 重试前的延迟（毫秒）"
   }
 };

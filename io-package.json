@@ -223,7 +223,8 @@
             {
                 "js-controller": ">=3.0.0"
             }
-        ]
+        ],
+        "tier": 2
     },
     "native": {
         "username": "",
@@ -232,7 +233,8 @@
         "tahomalinkurl": "https://www.tahomalink.com/enduser-mobile-web/enduserAPI/",
         "loginattempts": 3,
         "delaybetweenloginattempts": 30,
-        "delayafterfailedlogin": 120
+        "delayafterfailedlogin": 120,
+        "delayretryapplyqueue": 1500
     },
     "protectedNative": [
         "password"

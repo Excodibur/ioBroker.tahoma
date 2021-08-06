@@ -2,6 +2,7 @@
     "advanced connection settings": "paramètres de connexion avancés",
     "basic settings": "Paramètres de base",
     "delay after failed login": "délai après échec de connexion (secondes)",
+    "delay before applyqueue retry": "délai avant nouvelle tentative d'application de la file d'attente (millisecondes)",
     "delay between login attempts": "délai entre les tentatives de connexion (secondes)",
     "login attempts": "tentatives de connexion",
     "on save adapter restarts with new config immediately": "lors de l'enregistrement, l'adaptateur redémarre avec la nouvelle configuration immédiatement",

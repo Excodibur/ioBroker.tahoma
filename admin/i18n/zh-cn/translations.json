@@ -2,6 +2,7 @@
     "advanced connection settings": "高级连接设置",
     "basic settings": "基本设置",
     "delay after failed login": "登录失败后延迟（秒）",
+    "delay before applyqueue retry": "applyqueue 重试前的延迟（毫秒）",
     "delay between login attempts": "登录尝试之间的延迟（秒）",
     "login attempts": "登录尝试",
     "on save adapter restarts with new config immediately": "保存适配器上的适配器立即以新配置重新启动",

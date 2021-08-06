@@ -96,6 +96,9 @@ function main() {
         "delayAttempts": adapter.config.delaybetweenloginattempts,
         "delayAfterFailure": adapter.config.delayafterfailedlogin
     };
+    const applyOptions = {
+        "delayRetry": adapter.config.delayretryapplyqueue
+    }
 
 	pollingTime = adapter.config.pollinterval || 10000;
 	if(pollingTime < 5000) {
@@ -109,7 +112,7 @@ function main() {
 
 	ioBLib.setOrUpdateState('update', 'Update device states', false, '', 'boolean', 'button.refresh');
 
-	controller = new tahoma.Tahoma(deviceUsername, devicePassword, tahomalinkUrl, loginOptions, adapter);
+	controller = new tahoma.Tahoma(deviceUsername, devicePassword, tahomalinkUrl, loginOptions, applyOptions, adapter);
 
 	controller.login(function(err, obj) {
 		if(!err) {

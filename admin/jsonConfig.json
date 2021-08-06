@@ -56,6 +56,13 @@
                     "label": "delay after failed login",
                     "sm": 8,
                     "md": 4
+                },
+                "delayretryapplyqueue": {
+                    "newLine": true,
+                    "type": "number",
+                    "label": "delay before applyqueue retry",
+                    "sm": 8,
+                    "md": 4
                 }
             }
         }

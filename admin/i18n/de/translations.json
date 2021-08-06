@@ -2,6 +2,7 @@
     "advanced connection settings": "erweiterte Verbindungseinstellungen",
     "basic settings": "Grundeinstellungen",
     "delay after failed login": "Verzögerung nach fehlgeschlagener Anmeldung (Sekunden)",
+    "delay before applyqueue retry": "Verzögerung vor dem erneuten Versuch der Apply-Warteschlange (Millisekunden)",
     "delay between login attempts": "Verzögerung zwischen Anmeldeversuchen (Sekunden)",
     "login attempts": "Login-Versuche",
     "on save adapter restarts with new config immediately": "Beim Speichern wird der Adapter sofort mit der neuen Konfiguration neu gestartet",
