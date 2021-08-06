@@ -1,4 +1,9 @@
 {
+    "advanced connection settings": "Advanced Connection Settings",
+    "basic settings": "Basic Settings",
+    "delay after failed login": "Delay after failed login (seconds)",
+    "delay between login attempts": "Delay between login attempts (seconds)",
+    "login attempts": "Login attempts",
     "on save adapter restarts with new config immediately": "On save adapter restarts with new config immediately",
     "password": "Password",
     "pollinterval": "Polling interval",

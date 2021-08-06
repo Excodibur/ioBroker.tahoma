@@ -11,9 +11,6 @@ const adapterVersion = packageJson.version;
 const patchVersion = '.3';
 
 let adapter;
-var deviceUsername;
-var devicePassword;
-let tahomalinkUrl;
 
 let bigPolling;
 let polling;
@@ -82,17 +79,7 @@ function startAdapter(options) {
 			adapter.log.warn('[START] Password not set');
 		} else {
 			adapter.log.info('[START] Starting adapter ' + adapterName + ' v' + adapterVersion + '' + patchVersion);
-			adapter.getForeignObject('system.config', (err, obj) => {
-				if (obj && obj.native && obj.native.secret) {
-					//noinspection JSUnresolvedVariable
-					adapter.config.password = ioBLib.decrypt(obj.native.secret, adapter.config.password);
-				} else {
-					//noinspection JSUnresolvedVariable
-					adapter.config.password = ioBLib.decrypt('Zgfr56gFe87jJOM', adapter.config.password);
-				}
-
-				main();
-			});
+			main();
 		}
 	});
 
@@ -101,23 +88,28 @@ function startAdapter(options) {
 
 
 function main() {
-	deviceUsername = adapter.config.username;
-	devicePassword = adapter.config.password;
-    tahomalinkUrl = adapter.config.tahomalinkurl;
+	const deviceUsername = adapter.config.username;
+	const devicePassword = adapter.config.password;
+    const tahomalinkUrl = adapter.config.tahomalinkurl;
+    const loginOptions = {
+        "maxAttempts": adapter.config.loginattempts,
+        "delayAttempts": adapter.config.delaybetweenloginattempts,
+        "delayAfterFailure": adapter.config.delayafterfailedlogin
+    };
 
 	pollingTime = adapter.config.pollinterval || 10000;
 	if(pollingTime < 5000) {
 		pollingTime = 5000;
 	}
 
-	adapter.log.info('[INFO] Configured polling interval: ' + pollingTime);
+	adapter.log.info('Configured polling interval: ' + pollingTime);
 	adapter.log.debug('[START] Started Adapter');
 
 	adapter.subscribeStates('*');
 
 	ioBLib.setOrUpdateState('update', 'Update device states', false, '', 'boolean', 'button.refresh');
 
-	controller = new tahoma.Tahoma(deviceUsername, devicePassword, tahomalinkUrl, adapter);
+	controller = new tahoma.Tahoma(deviceUsername, devicePassword, tahomalinkUrl, loginOptions, adapter);
 
 	controller.login(function(err, obj) {
 		if(!err) {

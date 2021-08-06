@@ -49,5 +49,65 @@ systemDictionary = {
     "es": "al guardar el adaptador se reinicia con la nueva configuración inmediatamente",
     "pl": "po zapisaniu adapter natychmiast uruchamia się ponownie z nową konfiguracją",
     "zh-cn": "保存适配器上的适配器立即以新配置重新启动"
+  },
+  "basic settings": {
+    "en": "Basic Settings",
+    "de": "Grundeinstellungen",
+    "ru": "основные настройки",
+    "pt": "configurações básicas",
+    "nl": "basis instellingen",
+    "fr": "Paramètres de base",
+    "it": "impostazioni di base",
+    "es": "ajustes básicos",
+    "pl": "podstawowe ustawienia",
+    "zh-cn": "基本设置"
+  },
+  "advanced connection settings": {
+    "en": "Advanced Connection Settings",
+    "de": "erweiterte Verbindungseinstellungen",
+    "ru": "расширенные настройки подключения",
+    "pt": "configurações de conexão avançadas",
+    "nl": "geavanceerde verbindingsinstellingen",
+    "fr": "paramètres de connexion avancés",
+    "it": "impostazioni di connessione avanzate",
+    "es": "configuración de conexión avanzada",
+    "pl": "zaawansowane ustawienia połączenia",
+    "zh-cn": "高级连接设置"
+  },
+  "login attempts": {
+    "en": "Login attempts",
+    "de": "Login-Versuche",
+    "ru": "попытки входа в систему",
+    "pt": "tentativas de login",
+    "nl": "inlogpogingen",
+    "fr": "tentatives de connexion",
+    "it": "tentativi di accesso",
+    "es": "intentos de acceso",
+    "pl": "próby logowania",
+    "zh-cn": "登录尝试"
+  },
+  "delay between login attempts": {
+    "en": "Delay between login attempts (seconds)",
+    "de": "Verzögerung zwischen Anmeldeversuchen (Sekunden)",
+    "ru": "задержка между попытками входа в систему (секунды)",
+    "pt": "atraso entre tentativas de login (segundos)",
+    "nl": "vertraging tussen inlogpogingen (seconden)",
+    "fr": "délai entre les tentatives de connexion (secondes)",
+    "it": "ritardo tra i tentativi di accesso (secondi)",
+    "es": "retraso entre intentos de inicio de sesión (segundos)",
+    "pl": "opóźnienie między próbami logowania (sekundy)",
+    "zh-cn": "登录尝试之间的延迟（秒）"
+  },
+  "delay after failed login": {
+    "en": "Delay after failed login (seconds)",
+    "de": "Verzögerung nach fehlgeschlagener Anmeldung (Sekunden)",
+    "ru": "задержка после неудачного входа в систему (секунды)",
+    "pt": "atraso após falha no login (segundos)",
+    "nl": "vertraging na mislukte aanmelding (seconden)",
+    "fr": "délai après échec de connexion (secondes)",
+    "it": "ritardo dopo accesso fallito (secondi)",
+    "es": "retraso después de un inicio de sesión fallido (segundos)",
+    "pl": "opóźnienie po nieudanym logowaniu (sekundy)",
+    "zh-cn": "登录失败后延迟（秒）"
   }
 };

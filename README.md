@@ -36,6 +36,21 @@ The following Somfy devices were verified to work with this adapter:
 - Smoke Sensor IO
 - Adapter Plug IO
 
+## Configuration
+
+The following configuration parameters are supported by the adapter.
+| Parameter                                               | (Default) value | Description |
+|---------------------------------------------------------|-----------------|-------------|
+| Username                                                | _`<your Tahomalink user>`_ | Required to authenticate your Tahoma account. |
+| Password                                                | _`<Your Tahomalink password>`_ | Required to authenticate your Tahoma account. |
+| Polling interval                                        | `20000` | Time (in milliseconds) after which the adapter will try to get new data from Tahomalink. |
+| Login Attempts <sup>1</sup> <sup>2</sup>                | `3` | Amount of attempts to login again after login failure. |
+| Delay between login attempts <sup>1</sup> <sup>2</sup>  | `30` | Time (in seconds) to wait between login attempts. |
+| Delay after failed login  <sup>1</sup> <sup>2</sup>     | `120` | Time (in seconds) to wait, after all consecutive login attempts have failed. |
+
+ <sup>1</sup> These configuration values are only visible and configurable in Admin 5 (new GUI), or later.
+ <sup>2</sup> All values are related to login to Tahomalink, which is mostly a blackbox from development point of view. If you configure the numbers too low here, experience has shown that there is a good chance Somfy will temporarily lock your account, so lower default values here with care!
+
 ## States
 
 ### tahoma.X.location

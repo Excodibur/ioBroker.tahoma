@@ -1,25 +1,63 @@
 {
-    "type": "panel",
+    "type": "tabs",
     "i18n": true,
     "items": {
-        "username": {
-            "type": "text",
-            "label": "username",
-            "sm": 12,
-            "md": 8
+        "basicSettingsTab": {
+            "type": "panel",
+            "label": "basic settings",
+            "i18n": true,
+            "items": {
+                "username": {
+                    "type": "text",
+                    "label": "username",
+                    "sm": 12,
+                    "md": 4
+                },
+                "password": {
+                    "type": "password",
+                    "label": "password",
+                    "repeat": true,
+                    "sm": 12,
+                    "md": 8
+                },
+                "pollinterval": {
+                    "type": "number",
+                    "label": "pollinterval",
+                    "sm": 12,
+                    "md": 4
+                },
+                "note": {
+                    "type": "staticText",
+                    "newLine": true,
+                    "label": "on save adapter restarts with new config immediately",
+                    "text": "on save adapter restarts with new config immediately"
+                }
+            }
         },
-        "password": {
-            "type": "password",
-            "label": "password",
-            "repeat": true,
-            "sm": 12,
-            "md": 8
-        },
-        "pollinterval": {
-            "type": "number",
-            "label": "pollinterval",
-            "sm": 12,
-            "md": 4
+        "advancedConnectionSettingsTab": {
+            "type": "panel",
+            "label": "advanced connection settings",
+            "i18n": true,
+            "items": {
+                "loginattempts": {
+                    "type": "number",
+                    "label": "login attempts",
+                    "sm": 8,
+                    "md": 4
+                },
+                "delaybetweenloginattempts": {
+                    "type": "number",
+                    "label": "delay between login attempts",
+                    "sm": 8,
+                    "md": 4
+                },
+                "delayafterfailedlogin": {
+                    "type": "number",
+                    "label": "delay after failed login",
+                    "sm": 8,
+                    "md": 4
+                }
+            }
         }
     }
 }

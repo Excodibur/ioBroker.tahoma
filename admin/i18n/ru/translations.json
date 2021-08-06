@@ -1,4 +1,9 @@
 {
+    "advanced connection settings": "расширенные настройки подключения",
+    "basic settings": "основные настройки",
+    "delay after failed login": "задержка после неудачного входа в систему (секунды)",
+    "delay between login attempts": "задержка между попытками входа в систему (секунды)",
+    "login attempts": "попытки входа в систему",
     "on save adapter restarts with new config immediately": "при сохранении адаптер перезапускается с новым конфигом немедленно",
     "password": "пароль",
     "pollinterval": "интервал опроса",

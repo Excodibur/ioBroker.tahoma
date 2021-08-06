@@ -3,6 +3,11 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## __WORK IN PROGRESS__
 -->
+## 0.4.0 (2021-08-06)
+-  Added Admin 5 support
+-  Fixed login retry behaviour and added configuration parameters (Admin 5)
+-  Fixed issues with more complex states (e.g. ManufacturerSettingsState)
+
 ## 0.3.3
 
 -  Removed credentials from log on error and debug

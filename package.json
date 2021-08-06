@@ -1,6 +1,6 @@
 {
   "name": "iobroker.tahoma",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "description": "Somfy Tahoma",
   "author": {
     "name": "Marius Burkard",
@@ -10,7 +10,8 @@
     {
       "name": "Marius Burkard",
       "email": "m.burkard@pixcept.de"
-    }
+    },
+    "Excodibur"
   ],
   "homepage": "https://github.com/Excodibur/ioBroker.tahoma",
   "license": "MIT",
