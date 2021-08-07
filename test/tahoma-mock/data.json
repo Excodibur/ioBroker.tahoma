@@ -2005,6 +2005,987 @@
                     "uiClass": "ProtocolGateway"
                 },
                 {
+                    "creationTime": 1603391862000,
+                    "lastUpdateTime": 1603391862000,
+                    "label": "Heating Thermostat IO",
+                    "deviceURL": "io://1231-9859-6906/15800694#1",
+                    "shortcut": false,
+                    "controllableName": "io:HeatingValveIOComponent",
+                    "definition": {
+                        "commands": [
+                            {
+                                "commandName": "advancedRefresh",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "delayedStopIdentify",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "getName",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "identify",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "setName",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "setTimeProgramById",
+                                "nparams": 2
+                            },
+                            {
+                                "commandName": "startIdentify",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "stopIdentify",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "wink",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "exitDerogation",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "setAllModeTemperatures",
+                                "nparams": 4
+                            },
+                            {
+                                "commandName": "setDerogation",
+                                "nparams": 2
+                            },
+                            {
+                                "commandName": "setValveSettings",
+                                "nparams": 1
+                            }
+                        ],
+                        "states": [
+                            {
+                                "type": "DataState",
+                                "qualifiedName": "core:ActiveTimeProgramState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:BatteryLevelState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:ComfortRoomTemperatureState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:DerogatedTargetTemperatureState"
+                            },
+                            {
+                                "type": "DataState",
+                                "qualifiedName": "core:DerogationEndDateTimeState"
+                            },
+                            {
+                                "type": "DataState",
+                                "qualifiedName": "core:DerogationStartDateTimeState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "good",
+                                    "low",
+                                    "normal",
+                                    "verylow"
+                                ],
+                                "qualifiedName": "core:DiscreteRSSILevelState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:EcoTargetTemperatureState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:FrostProtectionRoomTemperatureState"
+                            },
+                            {
+                                "type": "DataState",
+                                "qualifiedName": "core:MaxSetpointState"
+                            },
+                            {
+                                "type": "DataState",
+                                "qualifiedName": "core:MinSetpointState"
+                            },
+                            {
+                                "type": "DataState",
+                                "qualifiedName": "core:NameState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "closed",
+                                    "open"
+                                ],
+                                "qualifiedName": "core:OpenClosedValveState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "active",
+                                    "inactive"
+                                ],
+                                "qualifiedName": "core:OpenWindowDetectionActivationState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "antifreeze",
+                                    "auto",
+                                    "away",
+                                    "eco",
+                                    "frostprotection",
+                                    "manual",
+                                    "max",
+                                    "normal",
+                                    "off",
+                                    "on",
+                                    "prog",
+                                    "program",
+                                    "boost"
+                                ],
+                                "qualifiedName": "core:OperatingModeState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:RSSILevelState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "dead",
+                                    "lowBattery",
+                                    "maintenanceRequired",
+                                    "noDefect"
+                                ],
+                                "qualifiedName": "core:SensorDefectState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "available",
+                                    "unavailable"
+                                ],
+                                "qualifiedName": "core:StatusState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:TargetRoomTemperatureState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:TargetTemperatureState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:TemperatureOffsetConfigurationState"
+                            },
+                            {
+                                "type": "DataState",
+                                "qualifiedName": "core:TimeProgram1State"
+                            },
+                            {
+                                "type": "DataState",
+                                "qualifiedName": "core:TimeProgram2State"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "io:AwayModeTargetTemperatureState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "disabled",
+                                    "enabled"
+                                ],
+                                "qualifiedName": "io:ByPassActivationState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "awayMode",
+                                    "comfort",
+                                    "eco",
+                                    "frostprotection",
+                                    "geofencingMode",
+                                    "manual",
+                                    "suddenDropMode"
+                                ],
+                                "qualifiedName": "io:CurrentHeatingModeState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "awayMode",
+                                    "comfort",
+                                    "eco",
+                                    "frostprotection",
+                                    "geofencingMode",
+                                    "manual",
+                                    "suddenDropMode"
+                                ],
+                                "qualifiedName": "io:DerogationHeatingModeState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "date",
+                                    "furtherNotice",
+                                    "nextMode"
+                                ],
+                                "qualifiedName": "io:DerogationTypeState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "io:GeofencingModeTargetTemperatureState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "disabled",
+                                    "enabled"
+                                ],
+                                "qualifiedName": "io:LockKeyActivationState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "io:ManualModeTargetTemperatureState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "io:OpenWindowDetectedTargetTemperatureState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "adjustment",
+                                    "finished",
+                                    "full_closed",
+                                    "full_open",
+                                    "pairing",
+                                    "reset"
+                                ],
+                                "qualifiedName": "io:ValveInstallationModeState"
+                            }
+                        ],
+                        "dataProperties": [
+                            {
+                                "value": "500",
+                                "qualifiedName": "core:identifyInterval"
+                            }
+                        ],
+                        "widgetName": "ValveHeatingTemperatureInterface",
+                        "uiProfiles": [
+                            "ThermostatTargetReader"
+                        ],
+                        "uiClass": "HeatingSystem",
+                        "uiClassifiers": [
+                            "emitter"
+                        ],
+                        "qualifiedName": "io:HeatingValveIOComponent",
+                        "type": "ACTUATOR"
+                    },
+                    "states": [
+                        {
+                            "name": "core:NameState",
+                            "type": 3,
+                            "value": "HZ Büro"
+                        },
+                        {
+                            "name": "core:StatusState",
+                            "type": 3,
+                            "value": "available"
+                        },
+                        {
+                            "name": "core:DiscreteRSSILevelState",
+                            "type": 3,
+                            "value": "good"
+                        },
+                        {
+                            "name": "core:RSSILevelState",
+                            "type": 2,
+                            "value": 84
+                        },
+                        {
+                            "name": "core:OpenClosedValveState",
+                            "type": 3,
+                            "value": "closed"
+                        },
+                        {
+                            "name": "core:OperatingModeState",
+                            "type": 3,
+                            "value": "manual"
+                        },
+                        {
+                            "name": "io:CurrentHeatingModeState",
+                            "type": 3,
+                            "value": "frostprotection"
+                        },
+                        {
+                            "name": "core:TargetRoomTemperatureState",
+                            "type": 2,
+                            "value": 8
+                        },
+                        {
+                            "name": "core:TargetTemperatureState",
+                            "type": 2,
+                            "value": 8
+                        },
+                        {
+                            "name": "io:DerogationTypeState",
+                            "type": 3,
+                            "value": "further_notice"
+                        },
+                        {
+                            "name": "io:DerogationHeatingModeState",
+                            "type": 3,
+                            "value": "frostprotection"
+                        },
+                        {
+                            "name": "core:DerogatedTargetTemperatureState",
+                            "type": 2,
+                            "value": 8
+                        },
+                        {
+                            "name": "io:ManualModeTargetTemperatureState",
+                            "type": 2,
+                            "value": 8
+                        },
+                        {
+                            "name": "core:DerogationStartDateTimeState",
+                            "type": 5,
+                            "value": 1625952265000
+                        },
+                        {
+                            "name": "core:DerogationEndDateTimeState",
+                            "type": 5,
+                            "value": 1625952265000
+                        },
+                        {
+                            "name": "io:ValveInstallationModeState",
+                            "type": 3,
+                            "value": "finished"
+                        },
+                        {
+                            "name": "core:BatteryLevelState",
+                            "type": 2,
+                            "value": 83
+                        },
+                        {
+                            "name": "core:OpenWindowDetectionActivationState",
+                            "type": 3,
+                            "value": "inactive"
+                        },
+                        {
+                            "name": "io:LockKeyActivationState",
+                            "type": 3,
+                            "value": "disable"
+                        },
+                        {
+                            "name": "io:ByPassActivationState",
+                            "type": 3,
+                            "value": "disable"
+                        },
+                        {
+                            "name": "core:ActiveTimeProgramState",
+                            "type": 3,
+                            "value": "none"
+                        },
+                        {
+                            "name": "core:MaxSetpointState",
+                            "type": 2,
+                            "value": 26
+                        },
+                        {
+                            "name": "core:MinSetpointState",
+                            "type": 2,
+                            "value": 5
+                        },
+                        {
+                            "name": "core:TemperatureOffsetConfigurationState",
+                            "type": 2,
+                            "value": 0
+                        },
+                        {
+                            "name": "core:ComfortRoomTemperatureState",
+                            "type": 2,
+                            "value": 19
+                        },
+                        {
+                            "name": "io:AwayModeTargetTemperatureState",
+                            "type": 2,
+                            "value": 17
+                        },
+                        {
+                            "name": "core:EcoTargetTemperatureState",
+                            "type": 2,
+                            "value": 17
+                        },
+                        {
+                            "name": "io:GeofencingModeTargetTemperatureState",
+                            "type": 2,
+                            "value": 20
+                        },
+                        {
+                            "name": "core:FrostProtectionRoomTemperatureState",
+                            "type": 2,
+                            "value": 8
+                        },
+                        {
+                            "name": "io:OpenWindowDetectedTargetTemperatureState",
+                            "type": 2,
+                            "value": 8
+                        },
+                        {
+                            "name": "core:TimeProgram1State",
+                            "type": 11,
+                            "value": {
+                                "sunday": {
+                                    "timeslots": [
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 0,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "comfort",
+                                            "from": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 24,
+                                                "minute": 0
+                                            }
+                                        }
+                                    ]
+                                },
+                                "saturday": {
+                                    "timeslots": [
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 0,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "comfort",
+                                            "from": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 24,
+                                                "minute": 0
+                                            }
+                                        }
+                                    ]
+                                },
+                                "tuesday": {
+                                    "timeslots": [
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 0,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "comfort",
+                                            "from": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 24,
+                                                "minute": 0
+                                            }
+                                        }
+                                    ]
+                                },
+                                "wednesday": {
+                                    "timeslots": [
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 0,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "comfort",
+                                            "from": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 24,
+                                                "minute": 0
+                                            }
+                                        }
+                                    ]
+                                },
+                                "friday": {
+                                    "timeslots": [
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 0,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "comfort",
+                                            "from": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 24,
+                                                "minute": 0
+                                            }
+                                        }
+                                    ]
+                                },
+                                "thursday": {
+                                    "timeslots": [
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 0,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "comfort",
+                                            "from": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 24,
+                                                "minute": 0
+                                            }
+                                        }
+                                    ]
+                                },
+                                "monday": {
+                                    "timeslots": [
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 0,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "comfort",
+                                            "from": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 24,
+                                                "minute": 0
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "core:TimeProgram2State",
+                            "type": 11,
+                            "value": {
+                                "sunday": {
+                                    "timeslots": [
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 0,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "comfort",
+                                            "from": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 24,
+                                                "minute": 0
+                                            }
+                                        }
+                                    ]
+                                },
+                                "saturday": {
+                                    "timeslots": [
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 0,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "comfort",
+                                            "from": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 24,
+                                                "minute": 0
+                                            }
+                                        }
+                                    ]
+                                },
+                                "tuesday": {
+                                    "timeslots": [
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 0,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "comfort",
+                                            "from": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 24,
+                                                "minute": 0
+                                            }
+                                        }
+                                    ]
+                                },
+                                "wednesday": {
+                                    "timeslots": [
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 0,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "comfort",
+                                            "from": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 24,
+                                                "minute": 0
+                                            }
+                                        }
+                                    ]
+                                },
+                                "friday": {
+                                    "timeslots": [
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 0,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "comfort",
+                                            "from": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 24,
+                                                "minute": 0
+                                            }
+                                        }
+                                    ]
+                                },
+                                "thursday": {
+                                    "timeslots": [
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 0,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "comfort",
+                                            "from": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 24,
+                                                "minute": 0
+                                            }
+                                        }
+                                    ]
+                                },
+                                "monday": {
+                                    "timeslots": [
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 0,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "comfort",
+                                            "from": {
+                                                "hour": 6,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            }
+                                        },
+                                        {
+                                            "mode": "eco",
+                                            "from": {
+                                                "hour": 21,
+                                                "minute": 0
+                                            },
+                                            "to": {
+                                                "hour": 24,
+                                                "minute": 0
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "available": true,
+                    "enabled": true,
+                    "placeOID": "6eb562cb-ed7d-462c-8992-2b2a86fac787",
+                    "widget": "ValveHeatingTemperatureInterface",
+                    "type": 1,
+                    "oid": "79860879-d278-4ac0-862a-dfd3cf21d929",
+                    "uiClass": "HeatingSystem"
+                },
+                {
                     "creationTime": 1596551876000,
                     "lastUpdateTime": 1596551876000,
                     "label": "Fernbedienung",

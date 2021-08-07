@@ -1,8 +1,11 @@
 # Changelog
 <!--
 	Placeholder for the next version (add instead of version-number-headline below):
-	## __WORK IN PROGRESS__
+	## **WORK IN PROGRESS**
 -->
+## 0.4.1 (2021-08-07)
+-  Fixed issue with way to complex state (TimeProgramXState)
+
 ## 0.4.0 (2021-08-06)
 -  Added Admin 5 support
 -  Fixed login retry behaviour and added configuration parameters (Admin 5)

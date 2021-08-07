@@ -1,6 +1,6 @@
 {
   "name": "iobroker.tahoma",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Somfy Tahoma",
   "author": {
     "name": "Marius Burkard",
@@ -61,7 +61,8 @@
     "mockserver": "rm tahoma-mock.log 2>/dev/null || node test/tahoma-mock/server.js > tahoma-mock.log",
     "test:package": "mocha test/package --exit",
     "test:unit": "mocha test/unit --exit",
-    "test:integration": "npm run test:integration:mock && mocha test/integration --exit",
+    "test:integration": "mocha test/integration --exit",
+    "test:integration:complete": "npm run test:integration:mock && npm run test:integration",
     "test:integration:mock": "npm run mockserver &",
     "test": "npm run test:package",
     "lint": "eslint",

@@ -92,12 +92,12 @@ function main() {
 	const devicePassword = adapter.config.password;
     const tahomalinkUrl = adapter.config.tahomalinkurl;
     const loginOptions = {
-        "maxAttempts": adapter.config.loginattempts,
-        "delayAttempts": adapter.config.delaybetweenloginattempts,
-        "delayAfterFailure": adapter.config.delayafterfailedlogin
+        "maxAttempts": adapter.config.loginattempts | 3,
+        "delayAttempts": adapter.config.delaybetweenloginattempts | 30,
+        "delayAfterFailure": adapter.config.delayafterfailedlogin | 120
     };
     const applyOptions = {
-        "delayRetry": adapter.config.delayretryapplyqueue
+        "delayRetry": adapter.config.delayretryapplyqueue | 1500
     }
 
 	pollingTime = adapter.config.pollinterval || 10000;

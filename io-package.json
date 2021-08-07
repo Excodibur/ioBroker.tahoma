@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "tahoma",
-        "version": "0.4.0",
+        "version": "0.4.1",
         "news": {
+            "0.4.1": {
+                "en": "Fixed issue with way to complex state (TimeProgramXState)",
+                "de": "Problem mit Weg zu komplexem Zustand behoben (TimeProgramXState)",
+                "ru": "Исправлена проблема с переходом к сложному состоянию (TimeProgramXState)",
+                "pt": "Corrigido o problema com o caminho para o estado complexo (TimeProgramXState)",
+                "nl": "Probleem opgelost met weg naar complexe status (TimeProgramXState)",
+                "fr": "Correction d'un problème avec le chemin vers un état complexe (TimeProgramXState)",
+                "it": "Risolto il problema con il modo per lo stato complesso (TimeProgramXState)",
+                "es": "Problema solucionado con forma de estado complejo (TimeProgramXState)",
+                "pl": "Naprawiono problem z drogą do stanu złożonego (TimeProgramXState)",
+                "zh-cn": "修复了复杂状态方式的问题（TimeProgramXState）"
+            },
             "0.4.0": {
                 "en": "Added Admin 5 support\nFixed login retry behaviour and added configuration parameters (Admin 5)\nFixed issues with more complex states (e.g. ManufacturerSettingsState)",
                 "de": "Unterstützung für Admin 5 hinzugefügt\nBehobenes Login-Wiederholungsverhalten und hinzugefügte Konfigurationsparameter (Admin 5)\nProbleme mit komplexeren Zuständen behoben (z. B. ManufacturerSettingsState)",
