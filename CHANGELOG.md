@@ -3,8 +3,12 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## 0.4.2 (2021-08-08)
+-  Code quality improvements & security fixes
+-  Fixed type-error for two states (core:LightIntensityState, core:TemperatureState)
+
 ## 0.4.1 (2021-08-07)
--  Fixed issue with way to complex state (TimeProgramXState)
+-  Fixed issue with way too complex state (TimeProgramXState)
 
 ## 0.4.0 (2021-08-06)
 -  Added Admin 5 support
