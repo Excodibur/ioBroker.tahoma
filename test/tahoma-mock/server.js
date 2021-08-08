@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 const fs = require("fs");
 const express = require("express");
@@ -31,24 +31,22 @@ mockData.forEach(api => {
         case "POST":
             server.post("/" + path, (req, res) => {
                 console.log("Received POST REQUEST: " + req.path + " Body: " + JSON.stringify(req.body));
-                //Validate request, if needed
+                // Validate request, if needed
                 try {
                     if ((api.request) && (api.request.expected)) {
                         for (const [field, value] of Object.entries(api.request.expected)) {
-                            if ((req.body[field] === undefined) || (req.body[field] != value)) {
-                                let error = new Error(api.request.elseError.message);
+                            if ((req.body[field] === undefined) || (req.body[field] !== value)) {
+                                const error = new Error(api.request.elseError.message);
                                 error.name = api.request.elseError.code;
                                 throw error;
                             }
                         }
                     }
-                    //console.log("trying to send response: " + JSON.stringify(response))
                     res.status(200).json(response);
                 } catch (error) {
-                    //console.error("ERROR: " + error.message);
                     res.status(error.name).send(error.message);
                 }
-                
             });
+            break;
     }
 });
