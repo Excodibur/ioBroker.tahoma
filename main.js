@@ -12,7 +12,6 @@ const patchVersion = ".3";
 
 let adapter;
 
-let bigPolling;
 let polling;
 let pollingTime;
 let controller;
@@ -29,9 +28,6 @@ function startAdapter (options) {
     adapter.on("unload", function (callback) {
         if (polling)
             clearTimeout(polling);
-
-        if (bigPolling)
-            clearTimeout(bigPolling);
 
         (controller && controller.logout(function (err, data) {
             if (err)
@@ -162,10 +158,8 @@ function processStateChange (id, value) {
     else if (id.match(/^actionGroups.*\.commands\.execute/) && value)
         controller.onExecuteCommand(id, value);
     else if (id.match(/^devices.*\.commands\./) && value) {
-        let slow = false;
         if (id.endsWith(":slow")) {
             adapter.log.debug("Triggered command with slow mode: " + id);
-            slow = true;
             id = id.substr(0, id.length - 5);
             const cmd = id.substr(id.lastIndexOf(".") + 1);
             if (cmd === "up" || cmd === "open") {
@@ -177,12 +171,12 @@ function processStateChange (id, value) {
             } else
                 adapter.log.warn("Unknown slow command: " + id);
         } else
-            controller.onExecuteDeviceCommand(id, slow);
+            controller.onExecuteDeviceCommand(id, false);
     }
 }
 
 // If started as allInOne/compact mode => return function to create instance
-if (module && module.parent)
+if (module.parent)
     module.exports = startAdapter;
 else {
     // or start the instance directly
