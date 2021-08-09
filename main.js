@@ -34,7 +34,8 @@ function startAdapter (options) {
             clearTimeout(bigPolling);
 
         (controller && controller.logout(function (err, data) {
-            controller.context.log.warn("Error during logout: " + err);
+            if (err)
+                controller.context.log.warn("Error during logout: " + err);
             controller.unload(function () {
                 adapter.setState("info.connection", false, true);
                 callback();
