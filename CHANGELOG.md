@@ -3,6 +3,11 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## 0.4.3 (2021-08-09)
+-  Fixed more type-errors for various states
+-  Fixed wanring during logout
+-  Code quality improvements
+
 ## 0.4.2 (2021-08-08)
 -  Code quality improvements & security fixes
 -  Fixed type-error for two states (core:LightIntensityState, core:TemperatureState)

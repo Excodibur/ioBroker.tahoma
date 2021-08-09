@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "tahoma",
-        "version": "0.4.2",
+        "version": "0.4.3",
         "news": {
+            "0.4.3": {
+                "en": "Fixed more type-errors for various states\nFixed wanring during logout\nCode quality improvements",
+                "de": "Weitere Typfehler für verschiedene Zustände behoben\nWarnung beim Abmelden behoben\nVerbesserungen der Codequalität",
+                "ru": "Исправлено больше ошибок типа для различных состояний\nИсправлено отторжение при выходе из системы\nУлучшения качества кода",
+                "pt": "Corrigidos mais erros de tipo para vários estados\nWanring fixo durante o logout\nMelhorias na qualidade do código",
+                "nl": "Meer typefouten opgelost voor verschillende staten\nVaste wanring tijdens uitloggen\nVerbeteringen in codekwaliteit",
+                "fr": "Correction de plus d'erreurs de type pour divers états\nCorrection de l'avertissement lors de la déconnexion\nAméliorations de la qualité du code",
+                "it": "Risolti più errori di tipo per vari stati\nRisolto problema durante il logout\nMiglioramenti della qualità del codice",
+                "es": "Se corrigieron más errores de tipo para varios estados.\nWanring fijo durante el cierre de sesión\nMejoras en la calidad del código",
+                "pl": "Naprawiono więcej błędów typograficznych dla różnych stanów\nNaprawiono ostrzeżenie podczas wylogowania\nPoprawa jakości kodu",
+                "zh-cn": "修复了各种状态的更多类型错误\n修复注销期间的警告\n代码质量改进"
+            },
             "0.4.2": {
                 "en": "Code quality improvements & security fixes\nFixed type-error for two states (core:LightIntensityState, core:TemperatureState)",
                 "de": "Verbesserungen der Codequalität und Sicherheitskorrekturen\nTypfehler für zwei Zustände behoben (core:LightIntensityState, core:TemperatureState)",
