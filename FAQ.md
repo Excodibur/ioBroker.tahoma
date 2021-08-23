@@ -14,6 +14,17 @@ The adapter can log the data received by Tahoma which immensely helps any develo
   - Too many failed login attemps with incorrect password. Deactivate the adapter temporarily and try again later. You could also tweak your reconnect-behaviour under `Advanced Connection Settings`.
   - Too many update-/state-polling-requests in a certain amount of time. Think about setting a bigger `Polling Interval` configuration.
 
+## My adapter keeps loosing the password. Why?
+The adapter stores the password in an encrypted form and also uses an ioBroker feature to protect the password from being extracted by external resources as part of the adapter-configuration. This is a security-mechanism that helps to protect your sensitive credentials from getting stolen, or leaked.
+
+If you try to retrieve the adapter-configuration (`getObject`), e.g. in JavaScript-adapter, ioBroker will provide it with the contents of the password-field being emptied out. Of course, if you then try to update and store that configuration again (`setObject`), the empty-password field will overwrite your set password and effectively your password will be lost.
+
+In case you just want to implement some external adapter restart logic, you should instead of altering the adapter-configuration modify the _alive_ status of the adapter:
+```
+setState("system.adapter.tahoma.0.alive", false);
+setState("system.adapter.tahoma.0.alive", true);
+```
+
 ## Why is it so difficult to provide this Adapter in a stable state?
 There are multiple reasons that lead to reoccuring problems:
 - The adapter uses an inofficial API, that is used by Somfy for their Tahomalink-frontend (and likely also by the mobile-app). Thanks to [research done by a forum-member](https://forum.iobroker.net/post/336001), we can utilize this for the adapter. But this means:
