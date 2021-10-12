@@ -3,6 +3,9 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## 0.5.0 (2021-10-12)
+-  Added support for additional RTS device commands
+
 ## 0.4.3 (2021-08-09)
 -  Fixed more type-errors for various states
 -  Fixed wanring during logout

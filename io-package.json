@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "tahoma",
-        "version": "0.4.3",
+        "version": "0.5.0",
         "news": {
+            "0.5.0": {
+                "en": "Added support for additional RTS device commands",
+                "de": "Unterstützung für zusätzliche RTS-Gerätebefehle hinzugefügt",
+                "ru": "Добавлена поддержка дополнительных команд устройства RTS.",
+                "pt": "Adicionado suporte para comandos de dispositivo RTS adicionais",
+                "nl": "Ondersteuning toegevoegd voor extra RTS-apparaatopdrachten",
+                "fr": "Ajout de la prise en charge de commandes de périphérique RTS supplémentaires",
+                "it": "Aggiunto il supporto per ulteriori comandi del dispositivo RTS",
+                "es": "Soporte agregado para comandos de dispositivo RTS adicionales",
+                "pl": "Dodano obsługę dodatkowych poleceń urządzenia RTS",
+                "zh-cn": "添加了对其他 RTS 设备命令的支持"
+            },
             "0.4.3": {
                 "en": "Fixed more type-errors for various states\nFixed wanring during logout\nCode quality improvements",
                 "de": "Weitere Typfehler für verschiedene Zustände behoben\nWarnung beim Abmelden behoben\nVerbesserungen der Codequalität",
