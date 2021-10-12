@@ -3058,6 +3058,172 @@
                     "type": 4,
                     "oid": "68f52792-801f-4331-9af8-0fde005f7436",
                     "uiClass": "RemoteController"
+                },
+                {
+                    "creationTime": 1434967095000,
+                    "label": "RTS Shutter",
+                    "deviceURL": "rts://1234-2345-7890/16763380",
+                    "shortcut": false,
+                    "controllableName": "rts:RollerShutterRTSComponent",
+                    "definition": {
+                        "commands": [
+                            {
+                                "commandName": "close",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "down",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "identify",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "my",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "open",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "rest",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "stop",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "test",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "up",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "openConfiguration",
+                                "nparams": 1
+                            }
+                        ],
+                        "states": [],
+                        "dataProperties": [
+                            {
+                                "value": "0",
+                                "qualifiedName": "core:identifyInterval"
+                            }
+                        ],
+                        "widgetName": "UpDownRollerShutter",
+                        "uiProfiles": [
+                            "OpenCloseShutter",
+                            "OpenClose"
+                        ],
+                        "uiClass": "RollerShutter",
+                        "qualifiedName": "rts:RollerShutterRTSComponent",
+                        "type": "ACTUATOR"
+                    },
+                    "attributes": [
+                        {
+                            "name": "rts:diy",
+                            "type": 6,
+                            "value": false
+                        }
+                    ],
+                    "available": true,
+                    "enabled": true,
+                    "placeOID": "07cbf021-dbd9-4473-baad-596b64b43cf8",
+                    "widget": "UpDownRollerShutter",
+                    "type": 1,
+                    "oid": "33f344a8-43fd-43a3-8142-3f8344d551d3",
+                    "uiClass": "RollerShutter"
+                },
+                {
+                    "creationTime": 1460913971000,
+                    "lastUpdateTime": 1460913971000,
+                    "label": "RTS Ext Heating",
+                    "deviceURL": "rts://1234-2345-7890/16774265",
+                    "shortcut": false,
+                    "controllableName": "rts:ExteriorHeatingRTSComponent",
+                    "definition": {
+                        "commands": [
+                            {
+                                "commandName": "down",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "identify",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "my",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "off",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "on",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "onWithTimer",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "rest",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "stop",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "test",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "up",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "openConfiguration",
+                                "nparams": 1
+                            }
+                        ],
+                        "states": [],
+                        "dataProperties": [
+                            {
+                                "value": "0",
+                                "qualifiedName": "core:identifyInterval"
+                            }
+                        ],
+                        "widgetName": "StatelessExteriorHeating",
+                        "uiProfiles": [
+                            "SwitchableHeating",
+                            "Switchable",
+                            "UpDown"
+                        ],
+                        "uiClass": "ExteriorHeatingSystem",
+                        "qualifiedName": "rts:ExteriorHeatingRTSComponent",
+                        "type": "ACTUATOR"
+                    },
+                    "attributes": [
+                        {
+                            "name": "rts:diy",
+                            "type": 6,
+                            "value": true
+                        }
+                    ],
+                    "available": true,
+                    "enabled": true,
+                    "placeOID": "6be2c6c0-cded-4ffd-b353-caadfbd28c48",
+                    "widget": "StatelessExteriorHeating",
+                    "type": 1,
+                    "oid": "acf84f5e-8153-4f35-92d9-b64a594614cd",
+                    "uiClass": "ExteriorHeatingSystem"
                 }
             ],
             "zones": [],
