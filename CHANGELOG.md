@@ -3,6 +3,9 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## 0.5.1 (2021-11-17)
+-  Allow changes to core:TargetTemperatureState
+
 ## 0.5.0 (2021-10-12)
 -  Added support for additional RTS device commands
 
