@@ -1,317 +1,173 @@
 {
-    "common": {
-        "name": "tahoma",
-        "version": "0.5.0",
-        "news": {
-            "0.5.0": {
-                "en": "Added support for additional RTS device commands",
-                "de": "Unterstützung für zusätzliche RTS-Gerätebefehle hinzugefügt",
-                "ru": "Добавлена поддержка дополнительных команд устройства RTS.",
-                "pt": "Adicionado suporte para comandos de dispositivo RTS adicionais",
-                "nl": "Ondersteuning toegevoegd voor extra RTS-apparaatopdrachten",
-                "fr": "Ajout de la prise en charge de commandes de périphérique RTS supplémentaires",
-                "it": "Aggiunto il supporto per ulteriori comandi del dispositivo RTS",
-                "es": "Soporte agregado para comandos de dispositivo RTS adicionales",
-                "pl": "Dodano obsługę dodatkowych poleceń urządzenia RTS",
-                "zh-cn": "添加了对其他 RTS 设备命令的支持"
-            },
-            "0.4.3": {
-                "en": "Fixed more type-errors for various states\nFixed wanring during logout\nCode quality improvements",
-                "de": "Weitere Typfehler für verschiedene Zustände behoben\nWarnung beim Abmelden behoben\nVerbesserungen der Codequalität",
-                "ru": "Исправлено больше ошибок типа для различных состояний\nИсправлено отторжение при выходе из системы\nУлучшения качества кода",
-                "pt": "Corrigidos mais erros de tipo para vários estados\nWanring fixo durante o logout\nMelhorias na qualidade do código",
-                "nl": "Meer typefouten opgelost voor verschillende staten\nVaste wanring tijdens uitloggen\nVerbeteringen in codekwaliteit",
-                "fr": "Correction de plus d'erreurs de type pour divers états\nCorrection de l'avertissement lors de la déconnexion\nAméliorations de la qualité du code",
-                "it": "Risolti più errori di tipo per vari stati\nRisolto problema durante il logout\nMiglioramenti della qualità del codice",
-                "es": "Se corrigieron más errores de tipo para varios estados.\nWanring fijo durante el cierre de sesión\nMejoras en la calidad del código",
-                "pl": "Naprawiono więcej błędów typograficznych dla różnych stanów\nNaprawiono ostrzeżenie podczas wylogowania\nPoprawa jakości kodu",
-                "zh-cn": "修复了各种状态的更多类型错误\n修复注销期间的警告\n代码质量改进"
-            },
-            "0.4.2": {
-                "en": "Code quality improvements & security fixes\nFixed type-error for two states (core:LightIntensityState, core:TemperatureState)",
-                "de": "Verbesserungen der Codequalität und Sicherheitskorrekturen\nTypfehler für zwei Zustände behoben (core:LightIntensityState, core:TemperatureState)",
-                "ru": "Улучшения качества кода и исправления безопасности\nИсправлена ошибка типа для двух состояний (core: LightIntensityState, core: TemperatureState)",
-                "pt": "Melhorias na qualidade do código e correções de segurança\nErro de tipo corrigido para dois estados (core: LightIntensityState, core: TemperatureState)",
-                "nl": "Verbeteringen in codekwaliteit en beveiligingsoplossingen\nTypefout opgelost voor twee toestanden (core:LightIntensityState, core:TemperatureState)",
-                "fr": "Améliorations de la qualité du code et correctifs de sécurité\nErreur de type fixe pour deux états (core:LightIntensityState, core:TemperatureState)",
-                "it": "Miglioramenti della qualità del codice e correzioni di sicurezza\nCorretto errore di tipo per due stati (core:LightIntensityState, core:TemperatureState)",
-                "es": "Mejoras en la calidad del código y correcciones de seguridad\nError de tipo fijo para dos estados (núcleo: LightIntensityState, núcleo: TemperatureState)",
-                "pl": "Ulepszenia jakości kodu i poprawki bezpieczeństwa\nNaprawiono błąd typu dla dwóch stanów (core:LightIntensityState, core:TemperatureState)",
-                "zh-cn": "代码质量改进和安全修复\n修复了两种状态的类型错误（核心：LightIntensityState，核心：TemperatureState）"
-            },
-            "0.4.1": {
-                "en": "Fixed issue with way to complex state (TimeProgramXState)",
-                "de": "Problem mit Weg zu komplexem Zustand behoben (TimeProgramXState)",
-                "ru": "Исправлена проблема с переходом к сложному состоянию (TimeProgramXState)",
-                "pt": "Corrigido o problema com o caminho para o estado complexo (TimeProgramXState)",
-                "nl": "Probleem opgelost met weg naar complexe status (TimeProgramXState)",
-                "fr": "Correction d'un problème avec le chemin vers un état complexe (TimeProgramXState)",
-                "it": "Risolto il problema con il modo per lo stato complesso (TimeProgramXState)",
-                "es": "Problema solucionado con forma de estado complejo (TimeProgramXState)",
-                "pl": "Naprawiono problem z drogą do stanu złożonego (TimeProgramXState)",
-                "zh-cn": "修复了复杂状态方式的问题（TimeProgramXState）"
-            },
-            "0.4.0": {
-                "en": "Added Admin 5 support\nFixed login retry behaviour and added configuration parameters (Admin 5)\nFixed issues with more complex states (e.g. ManufacturerSettingsState)",
-                "de": "Unterstützung für Admin 5 hinzugefügt\nBehobenes Login-Wiederholungsverhalten und hinzugefügte Konfigurationsparameter (Admin 5)\nProbleme mit komplexeren Zuständen behoben (z. B. ManufacturerSettingsState)",
-                "ru": "Добавлена поддержка Admin 5.\nИсправлено поведение при повторной попытке входа в систему и добавлены параметры конфигурации (Admin 5)\nИсправлены проблемы с более сложными состояниями (например, ManufacturerSettingsState)",
-                "pt": "Adicionado suporte Admin 5\nComportamento de nova tentativa de login corrigido e parâmetros de configuração adicionados (Admin 5)\nProblemas corrigidos com estados mais complexos (por exemplo, ManufacturerSettingsState)",
-                "nl": "Ondersteuning voor Admin 5 toegevoegd\nGedrag bij opnieuw inloggen opgelost en configuratieparameters toegevoegd (Admin 5)\nProblemen opgelost met complexere statussen (bijv. ManufacturerSettingsState)",
-                "fr": "Ajout de la prise en charge d'Admin 5\nCorrection du comportement de nouvelle tentative de connexion et ajout de paramètres de configuration (Admin 5)\nCorrection de problèmes avec des états plus complexes (par exemple, ManufacturerSettingsState)",
-                "it": "Aggiunto supporto per Admin 5\nCorretto il comportamento dei tentativi di accesso e aggiunti i parametri di configurazione (Admin 5)\nRisolti problemi con stati più complessi (ad es. ManufacturerSettingsState)",
-                "es": "Se agregó compatibilidad con Admin 5\nSe corrigió el comportamiento de reintento de inicio de sesión y se agregaron parámetros de configuración (Admin 5)\nProblemas resueltos con estados más complejos (por ejemplo, ManufacturerSettingsState)",
-                "pl": "Dodano obsługę Admin 5\nNaprawiono zachowanie ponownego logowania i dodano parametry konfiguracyjne (Administrator 5)\nNaprawiono problemy z bardziej złożonymi stanami (np. ManufacturerSettingsState)",
-                "zh-cn": "添加了 Admin 5 支持\n修复了登录重试行为并添加了配置参数（管理员 5）\n修复了更复杂状态的问题（例如 ManufacturerSettingsState）"
-            },
-            "0.3.3": {
-                "en": "Removed credentials from log on error and debug",
-                "de": "Anmeldeinformationen aus Anmeldefehler und Debug entfernt",
-                "ru": "Удалены учетные данные из журнала при ошибке и отладке",
-                "pt": "Credenciais removidas do erro de logon e depuração",
-                "nl": "Referenties verwijderd uit aanmeldingsfout en foutopsporing",
-                "fr": "Suppression des informations d'identification de l'erreur de connexion et du débogage",
-                "it": "Rimosse le credenziali dall'errore di accesso e dal debug",
-                "es": "Se eliminaron las credenciales del error de inicio de sesión y la depuración",
-                "pl": "Usunięto poświadczenia z błędu logowania i debugowania",
-                "zh-cn": "从登录错误和调试中删除凭据"
-            },
-            "0.3.2": {
-                "en": "Fixed silent modes (low speed) for newer Somfy devices\nFixed problem with wrong reference to 'this'",
-                "de": "Flüstermodus (niedrige Geschwindigkeit) für neuere Somfy-Geräte behoben\nProblem mit falschem Verweis auf 'this' behoben",
-                "ru": "Исправлены медленные режимы (низкая скорость) для новых устройств Somfy\nИсправлена проблема с неправильной ссылкой на «это»",
-                "pt": "Corrigidos modos lentos (baixa velocidade) para dispositivos Somfy mais recentes\nCorrigido o problema com referência incorreta a 'this'",
-                "nl": "Vaste langzame modi (lage snelheid) voor nieuwere Somfy-apparaten\nProbleem opgelost met verkeerde verwijzing naar 'dit'",
-                "fr": "Modes lents fixes (basse vitesse) pour les nouveaux appareils Somfy\nCorrection d'un problème avec une mauvaise référence à «ceci»",
-                "it": "Risolto il problema con le modalità lente (bassa velocità) per i nuovi dispositivi Somfy\nRisolto problema con riferimento errato a \"questo\"",
-                "es": "Se corrigieron los modos lentos (baja velocidad) para los nuevos dispositivos Somfy\nSe corrigió el problema con una referencia incorrecta a 'esto'",
-                "pl": "Naprawiono tryby wolne (niska prędkość) dla nowszych urządzeń Somfy\nNaprawiono problem z nieprawidłowym odniesieniem do „tego”",
-                "zh-cn": "修正了慢速模式（低速），适用于较新的尚飞设备\n解决了错误引用“ this”的问题"
-            },
-            "0.3.1": {
-                "en": "Fixed adapter crash on empty response object after request error\nFixed problems with slow/silent mode for closure",
-                "de": "Adapterabsturz bei leerer Antwort auf Serveranfrage behoben\nProbleme mit dem Slow-/Silent-Modus behoben",
-                "ru": "Исправлено падение адаптера на пустом объекте ответа после ошибки запроса\nИсправлены проблемы с медленным / тихим режимом закрытия",
-                "pt": "Corrigida a falha do adaptador no objeto de resposta vazio após um erro de solicitação\nProblemas corrigidos no modo lento / silencioso para fechamento",
-                "nl": "Vaste adaptercrash op leeg responsobject na aanvraagfout\nProblemen met trage / stille modus voor sluiting opgelost",
-                "fr": "Correction d'un plantage de l'adaptateur sur un objet de réponse vide après une erreur de demande\nCorrection de problèmes avec le mode lent / silencieux pour la fermeture",
-                "it": "Risolto crash dell'adattatore sull'oggetto risposta vuoto dopo errore di richiesta\nRisolti i problemi con la modalità lenta / silenziosa per la chiusura",
-                "es": "Se corrigió el bloqueo del adaptador en el objeto de respuesta vacío después del error de solicitud\nSe corrigieron problemas con el modo lento / silencioso para el cierre",
-                "pl": "Naprawiono awarię adaptera na pustym obiekcie odpowiedzi po błędzie żądania\nNaprawiono problemy z trybem powolnym / cichym podczas zamykania",
-                "zh-cn": "修复了请求错误后空响应对象上的适配器崩溃的问题\n修复了慢/静音模式关闭的问题"
-            },
-            "0.3.0": {
-                "en": "Added possibility for low speed open and close on supported devices\nFixed commands not stopping on next command for device\nSmaller fixes",
-                "de": "Funktion für langsames Öffnen und Schließen auf unterstützten Geräten hinzugefügt\nBehoben, dass vorherige Befehle beim nächsten Befehl für das Gerät nicht aufgehoben wurden\nKleinere Korrekturen",
-                "ru": "Добавлена возможность открывать и закрывать на низкой скорости на поддерживаемых устройствах\nИсправлена ошибка, при которой команды не останавливались при следующей команде для устройства.\nНебольшие исправления",
-                "pt": "Possibilidade adicional de abrir e fechar em baixa velocidade em dispositivos suportados\nComandos corrigidos não parando no próximo comando do dispositivo\nCorreções menores",
-                "nl": "Mogelijkheid toegevoegd voor openen en sluiten op lage snelheid op ondersteunde apparaten\nVaste opdrachten stoppen niet bij volgende opdracht voor apparaat\nKleinere oplossingen",
-                "fr": "Ajout d'une possibilité d'ouverture et de fermeture à basse vitesse sur les appareils pris en charge\nCommandes fixes ne s'arrêtant pas à la prochaine commande pour l'appareil\nCorrections plus petites",
-                "it": "Aggiunta possibilità di apertura e chiusura a bassa velocità su dispositivi supportati\nRisolti i problemi che non si interrompevano al comando successivo per il dispositivo\nPiccole correzioni",
-                "es": "Posibilidad adicional de abrir y cerrar a baja velocidad en dispositivos compatibles\nSe corrigieron los comandos que no se detenían en el siguiente comando para el dispositivo\nPequeñas correcciones",
-                "pl": "Dodano możliwość otwierania i zamykania z małą prędkością na obsługiwanych urządzeniach\nNaprawiono zatrzymywanie się poleceń przy następnym poleceniu dla urządzenia\nMniejsze poprawki",
-                "zh-cn": "增加了在支持的设备上低速打开和关闭的可能性\n固定命令不会在设备的下一个命令上停止\n较小的修复"
-            },
-            "0.2.6": {
-                "en": "Added queue for device commands not already covered by update to 0.2.1",
-                "de": "Warteschlange für Gerätebefehle hinzugefügt, die nicht bereits von der Aktualisierung auf 0.2.1 abgedeckt wurden",
-                "ru": "Добавлена очередь для команд устройства, которые еще не были обновлены до версии 0.2.1.",
-                "pt": "Fila adicionada para comandos do dispositivo ainda não cobertos pela atualização para 0.2.1",
-                "nl": "Wachtrij toegevoegd voor apparaatopdrachten die nog niet door update zijn bijgewerkt naar 0.2.1",
-                "fr": "Ajout d'une file d'attente pour les commandes de périphériques non déjà couvertes par la mise à jour vers 0.2.1",
-                "it": "Aggiunta coda per i comandi del dispositivo non già coperti dall'aggiornamento alla 0.2.1",
-                "es": "Cola agregada para comandos del dispositivo que aún no están cubiertos por la actualización a 0.2.1",
-                "pl": "Dodano kolejkę dla poleceń urządzeń, które nie są jeszcze objęte aktualizacją do wersji 0.2.1",
-                "zh-cn": "为更新至0.2.1尚未涵盖的设备命令添加了队列"
-            },
-            "0.2.5": {
-                "en": "Added README for states",
-                "de": "README für Zustände hinzugefügt",
-                "ru": "Добавлен README для состояний",
-                "pt": "README adicionado para estados",
-                "nl": "README voor staten toegevoegd",
-                "fr": "README ajouté pour les états",
-                "it": "Aggiunto README per gli stati",
-                "es": "README agregado para estados",
-                "pl": "Dodano README dla stanów",
-                "zh-cn": "添加了状态的自述文件"
-            },
-            "0.2.4": {
-                "en": "Switched moving state values 1/2 for DeploymentState devices",
-                "de": "Werte 1 und 2 für den Bewegungsstatus bei DeploymentState-Geräten vertauscht",
-                "ru": "Переключенные подвижные значения 1/2 для устройств DeploymentState",
-                "pt": "Valores móveis alternados 1/2 para dispositivos DeploymentState",
-                "nl": "Geschakelde bewegende waarden 1/2 voor DeploymentState-apparaten",
-                "fr": "Valeurs mobiles commutées 1/2 pour les appareils DeploymentState",
-                "it": "Valori mobili commutati 1/2 per dispositivi DeploymentState",
-                "es": "Valores móviles cambiados 1/2 para dispositivos DeploymentState",
-                "pl": "Przełączane wartości ruchome 1/2 dla urządzeń DeploymentState",
-                "zh-cn": "部署状态设备的开关移动值1/2"
-            },
-            "0.2.3": {
-                "en": "Fixed direction (moving state) for deployment devices",
-                "de": "Korrigierter Bewegungsstatus für Geräte mit DeploymentState",
-                "ru": "Исправленное направление (состояние движения) для устройств с состоянием развертывания",
-                "pt": "Direção corrigida (estado móvel) para dispositivos com estado de implantação",
-                "nl": "Gecorrigeerde richting (bewegende status) voor apparaten met implementatiestatus",
-                "fr": "Direction corrigée (état de déplacement) pour les appareils avec état de déploiement",
-                "it": "Direzione corretta (stato mobile) per dispositivi con stato di distribuzione",
-                "es": "Dirección corregida (estado de movimiento) para dispositivos con estado de implementación",
-                "pl": "Poprawiony kierunek (stan ruchomy) dla urządzeń ze stanem wdrożenia",
-                "zh-cn": "带有部署状态的设备的更正方向（移动状态）"
-            },
-            "0.2.2": {
-                "en": "Fixed problem with DeploymentState treated as ClosureState on setting values",
-                "de": "Problem mit DeploymentState behoben, dessen Werte beim Setzen als ClosureState behandelt wurden",
-                "ru": "Исправлена проблема с DeploymentState, рассматриваемой как ClosureState для значений настроек",
-                "pt": "Corrigido o problema com o DeploymentState tratado como ClosureState na configuração de valores",
-                "nl": "Probleem opgelost met DeploymentState behandeld als ClosureState bij het instellen van waarden",
-                "fr": "Correction d'un problème avec DeploymentState traité comme ClosureState lors de la définition des valeurs",
-                "it": "Risolto il problema con DeploymentState trattato come ClosureState sull'impostazione dei valori",
-                "es": "Se solucionó el problema con DeploymentState tratado como ClosureState al establecer valores",
-                "pl": "Naprawiono problem z DeploymentState traktowanym jako ClosureState podczas ustawiania wartości",
-                "zh-cn": "解决了将DeploymentState在设置值上视为ClosureState的问题"
-            },
-            "0.2.1": {
-                "en": "Fixed problems with too many simultanous commands/devices",
-                "de": "Probleme mit zu vielen gleichzeitigen Befehlen an Geräte behoben",
-                "ru": "Исправлены проблемы со слишком многими одновременными командами / устройствами",
-                "pt": "Corrigidos problemas com muitos comandos / dispositivos simultâneos",
-                "nl": "Problemen met te veel gelijktijdige opdrachten / apparaten opgelost",
-                "fr": "Correction de problèmes avec trop de commandes / appareils simultanés",
-                "it": "Risolti i problemi con troppi comandi / dispositivi simultanei",
-                "es": "Se corrigieron problemas con demasiados comandos / dispositivos simultáneos",
-                "pl": "Naprawiono problemy ze zbyt wieloma jednoczesnymi poleceniami / urządzeniami",
-                "zh-cn": "解决了太多同时执行的命令/设备的问题"
-            },
-            "0.2.0": {
-                "en": "Added deployment actions\nAdded new state for moving direction\nChanged command buttons to boolean type",
-                "de": "Deployment-State-Handler hinzugefügt\nNeuer Zustand für Bewegungsrichtung hinzugefügt\nBefehlsschaltflächen in Booleschen Typ geändert",
-                "ru": "Добавлены действия по развертыванию\nДобавлено новое состояние для направления движения\nИзменены кнопки команд на логический тип",
-                "pt": "Ações de implantação adicionadas\nAdicionado novo estado para direção de movimento\nBotões de comando alterados para o tipo booleano",
-                "nl": "Implementatie-acties toegevoegd\nNieuwe status voor bewegingsrichting toegevoegd\nOpdrachtknoppen gewijzigd in Boolean-type",
-                "fr": "Actions de déploiement ajoutées\nAjout d'un nouvel état pour la direction de déplacement\nBoutons de commande modifiés en type booléen",
-                "it": "Aggiunte azioni di distribuzione\nAggiunto nuovo stato per la direzione in movimento\nModificati i pulsanti di comando in tipo booleano",
-                "es": "Acciones de implementación agregadas\nNuevo estado agregado para la dirección de movimiento\nSe cambiaron los botones de comando a tipo booleano",
-                "pl": "Dodano działania związane z wdrażaniem\nDodano nowy stan dla kierunku ruchu\nZmieniono przyciski poleceń na typ boolowski",
-                "zh-cn": "添加了部署操作\n为移动方向添加了新状态\n将命令按钮更改为布尔类型"
-            },
-            "0.1.2": {
-                "en": "Retry device command on error 400 (payload) once",
-                "de": "Gerätebefehl bei Fehler 400 (payload) einmalig wiederholen",
-                "ru": "Повторите команду устройства на ошибку 400 (полезная нагрузка) один раз",
-                "pt": "Repetir o comando do dispositivo no erro 400 (carga útil) uma vez",
-                "nl": "Probeer apparaatopdracht opnieuw bij fout 400 (payload)",
-                "fr": "Réessayer la commande du périphérique en cas d'erreur 400 (charge utile) une fois",
-                "it": "Riprova il comando del dispositivo all'errore 400 (payload) una volta",
-                "es": "Vuelva a intentar el comando del dispositivo en el error 400 (carga útil) una vez",
-                "pl": "Ponów polecenie urządzenia po błędzie 400 (ładowność) jeden raz",
-                "zh-cn": "在错误400（有效负载）上重试设备命令一次"
-            },
-            "0.1.1": {
-                "en": "No changes",
-                "de": "Keine Änderungen",
-                "ru": "Без изменений",
-                "pt": "Sem alterações",
-                "nl": "Geen veranderingen",
-                "fr": "Aucun changement",
-                "it": "Nessun cambiamento",
-                "es": "Sin cambios",
-                "pl": "Bez zmian",
-                "zh-cn": "没有变化"
-            },
-            "0.1.0": {
-                "en": "Initial version",
-                "de": "Initiale Version",
-                "ru": "Первоначальный вариант",
-                "pt": "Versão inicial",
-                "nl": "Eerste versie",
-                "fr": "Version initiale",
-                "it": "Versione iniziale",
-                "es": "Versión inicial",
-                "pl": "Początkowa wersja",
-                "zh-cn": "初始版本"
-            }
-        },
-        "title": "Somfy Tahoma",
-        "titleLang": {
-            "en": "Somfy Tahoma"
-        },
-        "desc": {
-            "en": "Adapter to communicate with Somfy Tahoma"
-        },
-        "authors": [
-            "Marius Burkard <m.burkard@pixcept.de>",
-            "Excodibur"
-        ],
-        "platform": "Javascript/Node.js",
-        "main": "main.js",
-        "mode": "daemon",
-        "icon": "tahoma.png",
-        "extIcon": "https://raw.githubusercontent.com/Excodibur/ioBroker.tahoma/master/admin/tahoma.png",
-        "keywords": [
-            "somfy",
-            "blinds",
-            "tahoma",
-            "window"
-        ],
-        "readme": "https://github.com/Excodibur/ioBroker.tahoma/blob/master/README.md",
-        "loglevel": "info",
-        "type": "iot-systems",
-        "connectionType": "cloud",
-        "dataSource": "poll",
-        "license": "MIT",
-        "messagebox": true,
-        "materialize": true,
-        "adminUI": {
-            "config": "json"
-        },
-        "enabled": false,
-        "compact": true,
-        "dependencies": [
-            {
-                "js-controller": ">=3.0.0"
-            }
-        ],
-        "tier": 2
+  "common": {
+    "name": "tahoma",
+    "version": "0.5.1",
+    "news": {
+      "0.5.1": {
+        "en": "Allow changes to core:TargetTemperatureState",
+        "de": "Änderungen an core:TargetTemperatureState zulassen",
+        "ru": "Разрешить изменения в ядре: TargetTemperatureState",
+        "pt": "Permitir alterações no núcleo: TargetTemperatureState",
+        "nl": "Sta wijzigingen toe in core:TargetTemperatureState",
+        "fr": "Autoriser les modifications apportées au noyau : TargetTemperatureState",
+        "it": "Consenti modifiche al core:TargetTemperatureState",
+        "es": "Permitir cambios en el núcleo: TargetTemperatureState",
+        "pl": "Zezwalaj na zmiany w core: TargetTemperatureState",
+        "zh-cn": "允许更改核心：TargetTemperatureState"
+      },
+      "0.5.0": {
+        "en": "Added support for additional RTS device commands",
+        "de": "Unterstützung für zusätzliche RTS-Gerätebefehle hinzugefügt",
+        "ru": "Добавлена поддержка дополнительных команд устройства RTS.",
+        "pt": "Adicionado suporte para comandos de dispositivo RTS adicionais",
+        "nl": "Ondersteuning toegevoegd voor extra RTS-apparaatopdrachten",
+        "fr": "Ajout de la prise en charge de commandes de périphérique RTS supplémentaires",
+        "it": "Aggiunto il supporto per ulteriori comandi del dispositivo RTS",
+        "es": "Soporte agregado para comandos de dispositivo RTS adicionales",
+        "pl": "Dodano obsługę dodatkowych poleceń urządzenia RTS",
+        "zh-cn": "添加了对其他 RTS 设备命令的支持"
+      },
+      "0.4.3": {
+        "en": "Fixed more type-errors for various states\nFixed wanring during logout\nCode quality improvements",
+        "de": "Weitere Typfehler für verschiedene Zustände behoben\nWarnung beim Abmelden behoben\nVerbesserungen der Codequalität",
+        "ru": "Исправлено больше ошибок типа для различных состояний\nИсправлено отторжение при выходе из системы\nУлучшения качества кода",
+        "pt": "Corrigidos mais erros de tipo para vários estados\nWanring fixo durante o logout\nMelhorias na qualidade do código",
+        "nl": "Meer typefouten opgelost voor verschillende staten\nVaste wanring tijdens uitloggen\nVerbeteringen in codekwaliteit",
+        "fr": "Correction de plus d'erreurs de type pour divers états\nCorrection de l'avertissement lors de la déconnexion\nAméliorations de la qualité du code",
+        "it": "Risolti più errori di tipo per vari stati\nRisolto problema durante il logout\nMiglioramenti della qualità del codice",
+        "es": "Se corrigieron más errores de tipo para varios estados.\nWanring fijo durante el cierre de sesión\nMejoras en la calidad del código",
+        "pl": "Naprawiono więcej błędów typograficznych dla różnych stanów\nNaprawiono ostrzeżenie podczas wylogowania\nPoprawa jakości kodu",
+        "zh-cn": "修复了各种状态的更多类型错误\n修复注销期间的警告\n代码质量改进"
+      },
+      "0.4.2": {
+        "en": "Code quality improvements & security fixes\nFixed type-error for two states (core:LightIntensityState, core:TemperatureState)",
+        "de": "Verbesserungen der Codequalität und Sicherheitskorrekturen\nTypfehler für zwei Zustände behoben (core:LightIntensityState, core:TemperatureState)",
+        "ru": "Улучшения качества кода и исправления безопасности\nИсправлена ошибка типа для двух состояний (core: LightIntensityState, core: TemperatureState)",
+        "pt": "Melhorias na qualidade do código e correções de segurança\nErro de tipo corrigido para dois estados (core: LightIntensityState, core: TemperatureState)",
+        "nl": "Verbeteringen in codekwaliteit en beveiligingsoplossingen\nTypefout opgelost voor twee toestanden (core:LightIntensityState, core:TemperatureState)",
+        "fr": "Améliorations de la qualité du code et correctifs de sécurité\nErreur de type fixe pour deux états (core:LightIntensityState, core:TemperatureState)",
+        "it": "Miglioramenti della qualità del codice e correzioni di sicurezza\nCorretto errore di tipo per due stati (core:LightIntensityState, core:TemperatureState)",
+        "es": "Mejoras en la calidad del código y correcciones de seguridad\nError de tipo fijo para dos estados (núcleo: LightIntensityState, núcleo: TemperatureState)",
+        "pl": "Ulepszenia jakości kodu i poprawki bezpieczeństwa\nNaprawiono błąd typu dla dwóch stanów (core:LightIntensityState, core:TemperatureState)",
+        "zh-cn": "代码质量改进和安全修复\n修复了两种状态的类型错误（核心：LightIntensityState，核心：TemperatureState）"
+      },
+      "0.4.1": {
+        "en": "Fixed issue with way to complex state (TimeProgramXState)",
+        "de": "Problem mit Weg zu komplexem Zustand behoben (TimeProgramXState)",
+        "ru": "Исправлена проблема с переходом к сложному состоянию (TimeProgramXState)",
+        "pt": "Corrigido o problema com o caminho para o estado complexo (TimeProgramXState)",
+        "nl": "Probleem opgelost met weg naar complexe status (TimeProgramXState)",
+        "fr": "Correction d'un problème avec le chemin vers un état complexe (TimeProgramXState)",
+        "it": "Risolto il problema con il modo per lo stato complesso (TimeProgramXState)",
+        "es": "Problema solucionado con forma de estado complejo (TimeProgramXState)",
+        "pl": "Naprawiono problem z drogą do stanu złożonego (TimeProgramXState)",
+        "zh-cn": "修复了复杂状态方式的问题（TimeProgramXState）"
+      },
+      "0.4.0": {
+        "en": "Added Admin 5 support\nFixed login retry behaviour and added configuration parameters (Admin 5)\nFixed issues with more complex states (e.g. ManufacturerSettingsState)",
+        "de": "Unterstützung für Admin 5 hinzugefügt\nBehobenes Login-Wiederholungsverhalten und hinzugefügte Konfigurationsparameter (Admin 5)\nProbleme mit komplexeren Zuständen behoben (z. B. ManufacturerSettingsState)",
+        "ru": "Добавлена поддержка Admin 5.\nИсправлено поведение при повторной попытке входа в систему и добавлены параметры конфигурации (Admin 5)\nИсправлены проблемы с более сложными состояниями (например, ManufacturerSettingsState)",
+        "pt": "Adicionado suporte Admin 5\nComportamento de nova tentativa de login corrigido e parâmetros de configuração adicionados (Admin 5)\nProblemas corrigidos com estados mais complexos (por exemplo, ManufacturerSettingsState)",
+        "nl": "Ondersteuning voor Admin 5 toegevoegd\nGedrag bij opnieuw inloggen opgelost en configuratieparameters toegevoegd (Admin 5)\nProblemen opgelost met complexere statussen (bijv. ManufacturerSettingsState)",
+        "fr": "Ajout de la prise en charge d'Admin 5\nCorrection du comportement de nouvelle tentative de connexion et ajout de paramètres de configuration (Admin 5)\nCorrection de problèmes avec des états plus complexes (par exemple, ManufacturerSettingsState)",
+        "it": "Aggiunto supporto per Admin 5\nCorretto il comportamento dei tentativi di accesso e aggiunti i parametri di configurazione (Admin 5)\nRisolti problemi con stati più complessi (ad es. ManufacturerSettingsState)",
+        "es": "Se agregó compatibilidad con Admin 5\nSe corrigió el comportamiento de reintento de inicio de sesión y se agregaron parámetros de configuración (Admin 5)\nProblemas resueltos con estados más complejos (por ejemplo, ManufacturerSettingsState)",
+        "pl": "Dodano obsługę Admin 5\nNaprawiono zachowanie ponownego logowania i dodano parametry konfiguracyjne (Administrator 5)\nNaprawiono problemy z bardziej złożonymi stanami (np. ManufacturerSettingsState)",
+        "zh-cn": "添加了 Admin 5 支持\n修复了登录重试行为并添加了配置参数（管理员 5）\n修复了更复杂状态的问题（例如 ManufacturerSettingsState）"
+      },
+      "0.3.3": {
+        "en": "Removed credentials from log on error and debug",
+        "de": "Anmeldeinformationen aus Anmeldefehler und Debug entfernt",
+        "ru": "Удалены учетные данные из журнала при ошибке и отладке",
+        "pt": "Credenciais removidas do erro de logon e depuração",
+        "nl": "Referenties verwijderd uit aanmeldingsfout en foutopsporing",
+        "fr": "Suppression des informations d'identification de l'erreur de connexion et du débogage",
+        "it": "Rimosse le credenziali dall'errore di accesso e dal debug",
+        "es": "Se eliminaron las credenciales del error de inicio de sesión y la depuración",
+        "pl": "Usunięto poświadczenia z błędu logowania i debugowania",
+        "zh-cn": "从登录错误和调试中删除凭据"
+      }
     },
-    "native": {
-        "username": "",
-        "password": "",
-        "pollinterval": 20000,
-        "tahomalinkurl": "https://www.tahomalink.com/enduser-mobile-web/enduserAPI/",
-        "loginattempts": 3,
-        "delaybetweenloginattempts": 30,
-        "delayafterfailedlogin": 120,
-        "delayretryapplyqueue": 1500
+    "title": "Somfy Tahoma",
+    "titleLang": {
+      "en": "Somfy Tahoma"
     },
-    "protectedNative": [
-        "password"
+    "desc": {
+      "en": "Adapter to communicate with Somfy Tahoma"
+    },
+    "authors": [
+      "Marius Burkard <m.burkard@pixcept.de>",
+      "Excodibur"
     ],
-    "encryptedNative": [
-        "password"
+    "platform": "Javascript/Node.js",
+    "main": "main.js",
+    "mode": "daemon",
+    "icon": "tahoma.png",
+    "extIcon": "https://raw.githubusercontent.com/Excodibur/ioBroker.tahoma/master/admin/tahoma.png",
+    "keywords": [
+      "somfy",
+      "blinds",
+      "tahoma",
+      "window"
     ],
-    "objects": [],
-    "instanceObjects": [
-        {
-            "_id": "info",
-            "type": "channel",
-            "common": {
-                "name": "Adapter-Information"
-            },
-            "native": {}
-        },
-        {
-            "_id": "info.connection",
-            "type": "state",
-            "common": {
-                "role": "indicator.connected",
-                "name": "Whether the adapter is connected to the gateway",
-                "type": "boolean",
-                "read": true,
-                "write": false,
-                "def": false
-            },
-            "native": {}
-        }
-    ]
+    "readme": "https://github.com/Excodibur/ioBroker.tahoma/blob/master/README.md",
+    "loglevel": "info",
+    "type": "iot-systems",
+    "connectionType": "cloud",
+    "dataSource": "poll",
+    "license": "MIT",
+    "messagebox": true,
+    "materialize": true,
+    "adminUI": {
+      "config": "json"
+    },
+    "enabled": false,
+    "compact": true,
+    "dependencies": [
+      {
+        "js-controller": ">=3.0.0"
+      }
+    ],
+    "tier": 2
+  },
+  "native": {
+    "username": "",
+    "password": "",
+    "pollinterval": 20000,
+    "tahomalinkurl": "https://www.tahomalink.com/enduser-mobile-web/enduserAPI/",
+    "loginattempts": 3,
+    "delaybetweenloginattempts": 30,
+    "delayafterfailedlogin": 120,
+    "delayretryapplyqueue": 1500
+  },
+  "protectedNative": [
+    "password"
+  ],
+  "encryptedNative": [
+    "password"
+  ],
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Adapter-Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Whether the adapter is connected to the gateway",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
 }
