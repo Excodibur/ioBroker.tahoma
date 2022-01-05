@@ -59,3 +59,22 @@ As there is no official API-support or specifcation from Somfy, it is hard to te
 
 ## Why are some configuration options visible only Admin 5.x with the new React-based GUI?
 As this is meant to be the default GUI now (2021) and can be extended much easier, new configuration-features are only added here, to keep the implmentation effort manageable.
+
+## I want to steer my devices locally, without having to connect to online Somfy servers
+Currently there are multiple (inofficial) potential approaches to steer Somfy devices locally, without contacting the Somfy servers over the internet. None of the approaches is currently supported by the Tahoma-Adapter, but listed here to share known facts.
+### Option A: Use _Velux KLF200_ instead of Somfy Tahoma/Connexxon/Switch to control IO-devices
+Velux KLF 200 is another gateway that implements the IO-homecontrol protocol that is also used by Somfy IO devices. The advantage here is, that the device office a local network API, that can be used to steer not only Velux IO devices, but also Somfy IO products. 
+* You can connect up to 200 IO devices to it. 
+* There is an IOBroker adapter available for it, that works great already: https://github.com/MiSchroe/ioBroker.klf200. 
+* The downside is, that not all Somfy IO products are supported (e.g. _Smoove 1 A/M io_  works, _Smoove Uno A/M io_ does not), so it largely depends on the devices you want to connect. 
+* If devices were added to your Somfy-gateway already, you need to share its key with KLF200, otherwise devices won't be found. After adding the key, you can even use both Velux and Somfy gateway in parallel to control your IO devices.
+### Option B: [Dangerous] Flash your Somfy Connexoon/Tahoma device, to enable the "Local API"
+The _Local API_ seems to be advertised on a couple of Somfy product-pages, but it seems to be inactive by default. Smart people found ways to flash the firmware of the device to get SSH-access to it: https://blog.unauthorizedaccess.nl/2021/04/07/no-clouds-just-sunshine.html. Ultimately this will allow you to also enable the _Local API_, making the box accessible from your local network
+
+However, there are **severe risks** coming with it:
+* This is largely undiscovered territory at this point in time, so it is not clear for which Somfy gateway (Connexxoon, Tahoma, Switch) it will work and what parts of the Local API are actually usable.
+* Dumping the firmware requires you to open your box (Bye-bye warranty!) and manually bridge electrical circuits, which if done wrong can hurt your box, or you :-().
+* Likely this will conflict with software-updates Somfy regularly pushes to your box, meaning:
+  * Updates might undo everything you changed manually
+  * Updates might not work at all, or break your box
+  * Updates might render this jailbreak-scenario impossible at some point
