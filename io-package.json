@@ -1,8 +1,20 @@
 {
   "common": {
     "name": "tahoma",
-    "version": "0.5.1",
+    "version": "0.5.2",
     "news": {
+      "0.5.2": {
+        "en": "Fix issues/warnings with complex state updates through events",
+        "de": "Beheben Sie Probleme/Warnungen mit komplexen Statusaktualisierungen durch Ereignisse",
+        "ru": "Устранение проблем/предупреждений со сложными обновлениями состояния через события",
+        "pt": "Corrigir problemas/avisos com atualizações de estado complexas por meio de eventos",
+        "nl": "Los problemen/waarschuwingen op met complexe statusupdates via gebeurtenissen",
+        "fr": "Résoudre les problèmes/avertissements avec des mises à jour d'état complexes via des événements",
+        "it": "Risolvi problemi/avvisi con aggiornamenti di stato complessi tramite eventi",
+        "es": "Solucionar problemas/advertencias con actualizaciones de estado complejas a través de eventos",
+        "pl": "Napraw problemy/ostrzeżenia dzięki złożonym aktualizacjom stanu poprzez zdarzenia",
+        "zh-cn": "通过事件修复复杂状态更新的问题/警告"
+      },
       "0.5.1": {
         "en": "Allow changes to core:TargetTemperatureState",
         "de": "Änderungen an core:TargetTemperatureState zulassen",
@@ -74,18 +86,6 @@
         "es": "Se agregó compatibilidad con Admin 5\nSe corrigió el comportamiento de reintento de inicio de sesión y se agregaron parámetros de configuración (Admin 5)\nProblemas resueltos con estados más complejos (por ejemplo, ManufacturerSettingsState)",
         "pl": "Dodano obsługę Admin 5\nNaprawiono zachowanie ponownego logowania i dodano parametry konfiguracyjne (Administrator 5)\nNaprawiono problemy z bardziej złożonymi stanami (np. ManufacturerSettingsState)",
         "zh-cn": "添加了 Admin 5 支持\n修复了登录重试行为并添加了配置参数（管理员 5）\n修复了更复杂状态的问题（例如 ManufacturerSettingsState）"
-      },
-      "0.3.3": {
-        "en": "Removed credentials from log on error and debug",
-        "de": "Anmeldeinformationen aus Anmeldefehler und Debug entfernt",
-        "ru": "Удалены учетные данные из журнала при ошибке и отладке",
-        "pt": "Credenciais removidas do erro de logon e depuração",
-        "nl": "Referenties verwijderd uit aanmeldingsfout en foutopsporing",
-        "fr": "Suppression des informations d'identification de l'erreur de connexion et du débogage",
-        "it": "Rimosse le credenziali dall'errore di accesso e dal debug",
-        "es": "Se eliminaron las credenciales del error de inicio de sesión y la depuración",
-        "pl": "Usunięto poświadczenia z błędu logowania i debugowania",
-        "zh-cn": "从登录错误和调试中删除凭据"
       }
     },
     "title": "Somfy Tahoma",
