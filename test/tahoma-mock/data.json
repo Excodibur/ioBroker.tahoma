@@ -381,6 +381,395 @@
                     "uiClass": "Alarm"
                 },
                 {
+                    "creationTime": 1643753375000,
+                    "lastUpdateTime": 1643753375000,
+                    "label": "Raffstore",
+                    "deviceURL": "internal://1234-2345-7890-1000",
+                    "shortcut": false,
+                    "controllableName": "io:ExteriorVenetianBlindIOComponent",
+                    "definition": {
+                        "commands": [
+                            {
+                                "commandName": "advancedRefresh",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "close",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "delayedStopIdentify",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "down",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "getName",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "identify",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "my",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "open",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "refreshMemorized1Position",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "setClosureAndOrientation",
+                                "nparams": 2
+                            },
+                            {
+                                "commandName": "setClosure",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "setMemorized1Orientation",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "setMemorized1Position",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "setName",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "setPosition",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "setSecuredPosition",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "setOrientation",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "startIdentify",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "stop",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "stopIdentify",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "up",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "wink",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "runManufacturerSettingsCommand",
+                                "nparams": 2
+                            },
+                            {
+                                "commandName": "keepOneWayControllersAndDeleteNode",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "pairOneWayController",
+                                "nparams": 2
+                            },
+                            {
+                                "commandName": "sendIOKey",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "setConfigState",
+                                "nparams": 1
+                            },
+                            {
+                                "commandName": "unpairAllOneWayControllersAndDeleteNode",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "unpairAllOneWayControllers",
+                                "nparams": 0
+                            },
+                            {
+                                "commandName": "unpairOneWayController",
+                                "nparams": 2
+                            }
+                        ],
+                        "states": [
+                            {
+                                "type": "DataState",
+                                "qualifiedName": "core:AdditionalStatusState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:ClosureState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "good",
+                                    "low",
+                                    "normal",
+                                    "verylow"
+                                ],
+                                "qualifiedName": "core:DiscreteRSSILevelState"
+                            },
+                            {
+                                "type": "DataState",
+                                "qualifiedName": "core:ManufacturerSettingsState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:Memorized1OrientationState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:Memorized1PositionState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "false",
+                                    "true"
+                                ],
+                                "qualifiedName": "core:MovingState"
+                            },
+                            {
+                                "type": "DataState",
+                                "qualifiedName": "core:NameState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "closed",
+                                    "open"
+                                ],
+                                "qualifiedName": "core:OpenClosedState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:PriorityLockTimerState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:RSSILevelState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:SecuredPositionState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:SlateOrientationState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "available",
+                                    "unavailable"
+                                ],
+                                "qualifiedName": "core:StatusState"
+                            },
+                            {
+                                "type": "ContinuousState",
+                                "qualifiedName": "core:TargetClosureState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "comfortLevel1",
+                                    "comfortLevel2",
+                                    "comfortLevel3",
+                                    "comfortLevel4",
+                                    "environmentProtection",
+                                    "humanProtection",
+                                    "userLevel1",
+                                    "userLevel2"
+                                ],
+                                "qualifiedName": "io:PriorityLockLevelState"
+                            },
+                            {
+                                "type": "DiscreteState",
+                                "values": [
+                                    "LSC",
+                                    "SAAC",
+                                    "SFC",
+                                    "UPS",
+                                    "externalGateway",
+                                    "localUser",
+                                    "myself",
+                                    "rain",
+                                    "security",
+                                    "temperature",
+                                    "timer",
+                                    "user",
+                                    "wind"
+                                ],
+                                "qualifiedName": "io:PriorityLockOriginatorState"
+                            }
+                        ],
+                        "dataProperties": [
+                            {
+                                "value": "500",
+                                "qualifiedName": "core:identifyInterval"
+                            }
+                        ],
+                        "widgetName": "PositionableExteriorVenetianBlind",
+                        "uiProfiles": [
+                            "StatefulVenetianBlind",
+                            "StatefulOrientableAndCloseable",
+                            "OrientableAndCloseable",
+                            "OpenClose"
+                        ],
+                        "uiClass": "ExteriorVenetianBlind",
+                        "qualifiedName": "io:ExteriorVenetianBlindIOComponent",
+                        "type": "ACTUATOR"
+                    },
+                    "states": [
+                        {
+                            "name": "core:NameState",
+                            "type": 3,
+                            "value": "Raffstore Büro T"
+                        },
+                        {
+                            "name": "core:PriorityLockTimerState",
+                            "type": 1,
+                            "value": 0
+                        },
+                        {
+                            "name": "core:StatusState",
+                            "type": 3,
+                            "value": "available"
+                        },
+                        {
+                            "name": "core:DiscreteRSSILevelState",
+                            "type": 3,
+                            "value": "normal"
+                        },
+                        {
+                            "name": "core:RSSILevelState",
+                            "type": 2,
+                            "value": 70
+                        },
+                        {
+                            "name": "core:ManufacturerSettingsState",
+                            "type": 11,
+                            "value": {
+                                "x_time": 255,
+                                "roll_end_limit_state": "Manual",
+                                "setting_state": "User mode",
+                                "current_position": 0,
+                                "kinematics": 0,
+                                "unroll_end_limit_state": "Manual",
+                                "current_tilt": 0
+                            }
+                        },
+                        {
+                            "name": "core:ClosureState",
+                            "type": 1,
+                            "value": 0
+                        },
+                        {
+                            "name": "core:OpenClosedState",
+                            "type": 3,
+                            "value": "open"
+                        },
+                        {
+                            "name": "core:SlateOrientationState",
+                            "type": 1,
+                            "value": 0
+                        },
+                        {
+                            "name": "core:Memorized1PositionState",
+                            "type": 1,
+                            "value": 41
+                        },
+                        {
+                            "name": "core:SecuredPositionState",
+                            "type": 1,
+                            "value": 0
+                        },
+                        {
+                            "name": "core:TargetClosureState",
+                            "type": 1,
+                            "value": 0
+                        },
+                        {
+                            "name": "core:Memorized1OrientationState",
+                            "type": 1,
+                            "value": 72
+                        },
+                        {
+                            "name": "core:MovingState",
+                            "type": 6,
+                            "value": false
+                        }
+                    ],
+                    "attributes": [
+                        {
+                            "name": "core:Manufacturer",
+                            "type": 3,
+                            "value": "Somfy"
+                        },
+                        {
+                            "name": "core:SupportedManufacturerSettingsCommands",
+                            "type": 10,
+                            "value": [
+                                "dead_man_up",
+                                "dead_man_down",
+                                "dead_man_stop",
+                                "dead_man_impulse_up",
+                                "dead_man_impulse_down",
+                                "enter_settings_mode",
+                                "enter_auxiliary_parameter_settings_mode",
+                                "save_upper_end_limit",
+                                "save_lower_end_limit",
+                                "stop_after_save_limit",
+                                "save_settings",
+                                "save_flat_slats_position",
+                                "save_evb_tilting_travel",
+                                "save_my_position",
+                                "delete_my_position",
+                                "set_choregraphy_disable_variator_down_move_min",
+                                "set_choregraphy_disable_variator_up_move_min",
+                                "set_kinematics",
+                                "set_obstacle_detection",
+                                "reset_actuator",
+                                "double_power_cut",
+                                "eject_from_setting_mode",
+                                "set_x_time"
+                            ]
+                        },
+                        {
+                            "name": "core:FirmwareRevision",
+                            "type": 3,
+                            "value": "5128194A15"
+                        }
+                    ],
+                    "available": true,
+                    "enabled": true,
+                    "placeOID": "b3ad0a55-7460-4ff1-8de8-228487a5a257",
+                    "widget": "PositionableExteriorVenetianBlind",
+                    "type": 1,
+                    "oid": "784e8395-718a-4527-8a38-c5d22c95b89f",
+                    "uiClass": "ExteriorVenetianBlind"
+                },
+                {
                     "creationTime": 1596543016000,
                     "lastUpdateTime": 1596543016000,
                     "label": "Sensitive Taste",
@@ -3402,7 +3791,45 @@
                 "gatewayId": "1234-2345-7890",
                 "protocolType": 22,
                 "name": "RefreshAllDevicesStatesCompletedEvent"
-            }
+            },
+            {
+                "timestamp": 1644999127811,
+                "setupOID": "86eb7b8d-678b-40b9-953b-342d54a87b00",
+                "deviceURL": "internal://1234-2345-7890-1000",
+                "deviceStates": [
+                  {
+                    "name": "core:ManufacturerSettingsState",
+                    "type": 11,
+                    "value": "{\"x_time\": 255,\"roll_end_limit_state\": \"Manual\",\"setting_state\": \"User mode\",\"current_position\": 59,\"kinematics\": 0,\"unroll_end_limit_state\": \"Manual\",\"current_tilt\": 51200}"
+                  },
+                  {
+                    "name": "core:SlateOrientationState",
+                    "type": 1,
+                    "value": "100"
+                  },
+                  {
+                    "name": "core:ClosureState",
+                    "type": 1,
+                    "value": "0"
+                  },
+                  {
+                    "name": "core:OpenClosedState",
+                    "type": 3,
+                    "value": "open"
+                  },
+                  {
+                    "name": "core:TargetClosureState",
+                    "type": 1,
+                    "value": "100"
+                  },
+                  {
+                    "name": "core:MovingState",
+                    "type": 6,
+                    "value": "true"
+                  }
+                ],
+                "name": "DeviceStateChangedEvent"
+              }
         ]
     },
     {

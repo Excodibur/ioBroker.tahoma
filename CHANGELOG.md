@@ -3,6 +3,9 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## 0.5.2 (2022-02-18)
+-  Fix issues/warnings with complex state updates through events
+
 ## 0.5.1 (2021-11-18)
 -  Allow changes to core:TargetTemperatureState
 
