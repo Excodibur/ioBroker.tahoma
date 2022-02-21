@@ -6,3 +6,5 @@ main.test.js
 test
 gulpfile.js
 .travis.yml
+.github
+*.tgz
