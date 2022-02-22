@@ -149,6 +149,8 @@ function processStateChange (id, value) {
         controller.onClosureStateChange(id, value, true);
     else if (id.match(/^devices.*\.states\.core:TargetClosureState:slow$/))
         controller.onClosureStateChange(id, value, true);
+    else if (id.match(/^devices.*\.states\.core:TargetTemperatureState$/))
+        controller.onTemperatureStateChange(id, value);
     else if (id.match(/^devices.*\.states\.core:DeploymentState$/))
         controller.onDeploymentStateChange(id, value);
     else if (id.match(/^devices.*\.states\.core:TargetDeploymentState$/))
