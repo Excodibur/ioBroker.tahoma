@@ -3,6 +3,9 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## 0.5.3 (2022-02-22)
+-  Fix handling of special characters in device-names
+
 ## 0.5.2 (2022-02-18)
 -  Fix issues/warnings with complex state updates through events
 

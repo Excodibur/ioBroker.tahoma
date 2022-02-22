@@ -1,8 +1,20 @@
 {
   "common": {
     "name": "tahoma",
-    "version": "0.5.2",
+    "version": "0.5.3",
     "news": {
+      "0.5.3": {
+        "en": "Fix handling of special characters in device-names",
+        "de": "Behandlung von Sonderzeichen in Gerätenamen korrigiert",
+        "ru": "Исправлена обработка специальных символов в именах устройств.",
+        "pt": "Corrige o manuseio de caracteres especiais em nomes de dispositivos",
+        "nl": "Afhandeling van speciale tekens in apparaatnamen repareren",
+        "fr": "Correction de la gestion des caractères spéciaux dans les noms de périphériques",
+        "it": "Risolto il problema con la gestione dei caratteri speciali nei nomi dei dispositivi",
+        "es": "Arreglar el manejo de caracteres especiales en los nombres de los dispositivos",
+        "pl": "Popraw obsługę znaków specjalnych w nazwach urządzeń",
+        "zh-cn": "修复设备名称中特殊字符的处理"
+      },
       "0.5.2": {
         "en": "Fix issues/warnings with complex state updates through events",
         "de": "Beheben Sie Probleme/Warnungen mit komplexen Statusaktualisierungen durch Ereignisse",
@@ -74,18 +86,6 @@
         "es": "Problema solucionado con forma de estado complejo (TimeProgramXState)",
         "pl": "Naprawiono problem z drogą do stanu złożonego (TimeProgramXState)",
         "zh-cn": "修复了复杂状态方式的问题（TimeProgramXState）"
-      },
-      "0.4.0": {
-        "en": "Added Admin 5 support\nFixed login retry behaviour and added configuration parameters (Admin 5)\nFixed issues with more complex states (e.g. ManufacturerSettingsState)",
-        "de": "Unterstützung für Admin 5 hinzugefügt\nBehobenes Login-Wiederholungsverhalten und hinzugefügte Konfigurationsparameter (Admin 5)\nProbleme mit komplexeren Zuständen behoben (z. B. ManufacturerSettingsState)",
-        "ru": "Добавлена поддержка Admin 5.\nИсправлено поведение при повторной попытке входа в систему и добавлены параметры конфигурации (Admin 5)\nИсправлены проблемы с более сложными состояниями (например, ManufacturerSettingsState)",
-        "pt": "Adicionado suporte Admin 5\nComportamento de nova tentativa de login corrigido e parâmetros de configuração adicionados (Admin 5)\nProblemas corrigidos com estados mais complexos (por exemplo, ManufacturerSettingsState)",
-        "nl": "Ondersteuning voor Admin 5 toegevoegd\nGedrag bij opnieuw inloggen opgelost en configuratieparameters toegevoegd (Admin 5)\nProblemen opgelost met complexere statussen (bijv. ManufacturerSettingsState)",
-        "fr": "Ajout de la prise en charge d'Admin 5\nCorrection du comportement de nouvelle tentative de connexion et ajout de paramètres de configuration (Admin 5)\nCorrection de problèmes avec des états plus complexes (par exemple, ManufacturerSettingsState)",
-        "it": "Aggiunto supporto per Admin 5\nCorretto il comportamento dei tentativi di accesso e aggiunti i parametri di configurazione (Admin 5)\nRisolti problemi con stati più complessi (ad es. ManufacturerSettingsState)",
-        "es": "Se agregó compatibilidad con Admin 5\nSe corrigió el comportamiento de reintento de inicio de sesión y se agregaron parámetros de configuración (Admin 5)\nProblemas resueltos con estados más complejos (por ejemplo, ManufacturerSettingsState)",
-        "pl": "Dodano obsługę Admin 5\nNaprawiono zachowanie ponownego logowania i dodano parametry konfiguracyjne (Administrator 5)\nNaprawiono problemy z bardziej złożonymi stanami (np. ManufacturerSettingsState)",
-        "zh-cn": "添加了 Admin 5 支持\n修复了登录重试行为并添加了配置参数（管理员 5）\n修复了更复杂状态的问题（例如 ManufacturerSettingsState）"
       }
     },
     "title": "Somfy Tahoma",
