@@ -1,8 +1,20 @@
 {
   "common": {
     "name": "tahoma",
-    "version": "0.5.3",
+    "version": "0.5.4",
     "news": {
+      "0.5.4": {
+        "en": "Allow temperature control by state",
+        "de": "Temperaturregelung nach Bundesland zulassen",
+        "ru": "Разрешить контроль температуры по штатам",
+        "pt": "Permitir controle de temperatura por estado",
+        "nl": "Temperatuurregeling per staat toestaan",
+        "fr": "Autoriser le contrôle de la température par état",
+        "it": "Consenti il controllo della temperatura per stato",
+        "es": "Permitir control de temperatura por estado",
+        "pl": "Zezwalaj na kontrolę temperatury według stanu",
+        "zh-cn": "允许按状态控制温度"
+      },
       "0.5.3": {
         "en": "Fix handling of special characters in device-names",
         "de": "Behandlung von Sonderzeichen in Gerätenamen korrigiert",
@@ -74,18 +86,6 @@
         "es": "Mejoras en la calidad del código y correcciones de seguridad\nError de tipo fijo para dos estados (núcleo: LightIntensityState, núcleo: TemperatureState)",
         "pl": "Ulepszenia jakości kodu i poprawki bezpieczeństwa\nNaprawiono błąd typu dla dwóch stanów (core:LightIntensityState, core:TemperatureState)",
         "zh-cn": "代码质量改进和安全修复\n修复了两种状态的类型错误（核心：LightIntensityState，核心：TemperatureState）"
-      },
-      "0.4.1": {
-        "en": "Fixed issue with way to complex state (TimeProgramXState)",
-        "de": "Problem mit Weg zu komplexem Zustand behoben (TimeProgramXState)",
-        "ru": "Исправлена проблема с переходом к сложному состоянию (TimeProgramXState)",
-        "pt": "Corrigido o problema com o caminho para o estado complexo (TimeProgramXState)",
-        "nl": "Probleem opgelost met weg naar complexe status (TimeProgramXState)",
-        "fr": "Correction d'un problème avec le chemin vers un état complexe (TimeProgramXState)",
-        "it": "Risolto il problema con il modo per lo stato complesso (TimeProgramXState)",
-        "es": "Problema solucionado con forma de estado complejo (TimeProgramXState)",
-        "pl": "Naprawiono problem z drogą do stanu złożonego (TimeProgramXState)",
-        "zh-cn": "修复了复杂状态方式的问题（TimeProgramXState）"
       }
     },
     "title": "Somfy Tahoma",

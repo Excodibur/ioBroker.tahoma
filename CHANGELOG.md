@@ -3,6 +3,9 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## 0.5.4 (2022-02-23)
+-  Allow temperature control by state
+
 ## 0.5.3 (2022-02-22)
 -  Fix handling of special characters in device-names
 
