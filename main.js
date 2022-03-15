@@ -155,6 +155,8 @@ function processStateChange (id, value) {
         controller.onDeploymentStateChange(id, value);
     else if (id.match(/^devices.*\.states\.core:TargetDeploymentState$/))
         controller.onDeploymentStateChange(id, value);
+    else if (id.match(/^devices.*\.states\.core:OnOffState$/))
+        controller.onOnOffStateChange(id, value);
     else if (id.match(/^devices.*\.states\.core:SlateOrientationState$/))
         controller.onSetOrientation(id, value);
     else if (id.match(/^actionGroups.*\.commands\.execute/) && value)
