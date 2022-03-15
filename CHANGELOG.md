@@ -3,6 +3,9 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## 0.5.5 (2022-03-15)
+-  Made core:OnOffState changeable
+
 ## 0.5.4 (2022-02-23)
 -  Allow temperature control by state
 

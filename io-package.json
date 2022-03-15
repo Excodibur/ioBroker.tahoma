@@ -1,8 +1,20 @@
 {
   "common": {
     "name": "tahoma",
-    "version": "0.5.4",
+    "version": "0.5.5",
     "news": {
+      "0.5.5": {
+        "en": "Made core:OnOffState changeable",
+        "de": "Core:OnOffState änderbar gemacht",
+        "ru": "Сделано ядро: OnOffState изменяемым",
+        "pt": "Núcleo feito: OnOffState mutável",
+        "nl": "Kern gemaakt:AanUitState veranderlijk",
+        "fr": "Noyau rendu : OnOffState modifiable",
+        "it": "Nucleo reso: OnOffState modificabile",
+        "es": "Núcleo hecho: OnOffState cambiable",
+        "pl": "Wykonany rdzeń: OnOffState zmienny",
+        "zh-cn": "使 core:OnOffState 可变"
+      },
       "0.5.4": {
         "en": "Allow temperature control by state",
         "de": "Temperaturregelung nach Bundesland zulassen",
@@ -74,18 +86,6 @@
         "es": "Se corrigieron más errores de tipo para varios estados.\nWanring fijo durante el cierre de sesión\nMejoras en la calidad del código",
         "pl": "Naprawiono więcej błędów typograficznych dla różnych stanów\nNaprawiono ostrzeżenie podczas wylogowania\nPoprawa jakości kodu",
         "zh-cn": "修复了各种状态的更多类型错误\n修复注销期间的警告\n代码质量改进"
-      },
-      "0.4.2": {
-        "en": "Code quality improvements & security fixes\nFixed type-error for two states (core:LightIntensityState, core:TemperatureState)",
-        "de": "Verbesserungen der Codequalität und Sicherheitskorrekturen\nTypfehler für zwei Zustände behoben (core:LightIntensityState, core:TemperatureState)",
-        "ru": "Улучшения качества кода и исправления безопасности\nИсправлена ошибка типа для двух состояний (core: LightIntensityState, core: TemperatureState)",
-        "pt": "Melhorias na qualidade do código e correções de segurança\nErro de tipo corrigido para dois estados (core: LightIntensityState, core: TemperatureState)",
-        "nl": "Verbeteringen in codekwaliteit en beveiligingsoplossingen\nTypefout opgelost voor twee toestanden (core:LightIntensityState, core:TemperatureState)",
-        "fr": "Améliorations de la qualité du code et correctifs de sécurité\nErreur de type fixe pour deux états (core:LightIntensityState, core:TemperatureState)",
-        "it": "Miglioramenti della qualità del codice e correzioni di sicurezza\nCorretto errore di tipo per due stati (core:LightIntensityState, core:TemperatureState)",
-        "es": "Mejoras en la calidad del código y correcciones de seguridad\nError de tipo fijo para dos estados (núcleo: LightIntensityState, núcleo: TemperatureState)",
-        "pl": "Ulepszenia jakości kodu i poprawki bezpieczeństwa\nNaprawiono błąd typu dla dwóch stanów (core:LightIntensityState, core:TemperatureState)",
-        "zh-cn": "代码质量改进和安全修复\n修复了两种状态的类型错误（核心：LightIntensityState，核心：TemperatureState）"
       }
     },
     "title": "Somfy Tahoma",
