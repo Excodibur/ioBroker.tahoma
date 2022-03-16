@@ -3,6 +3,9 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## 0.5.6 (2022-03-16)
+-  Smaller bugfixes (core:OnOffState)
+
 ## 0.5.5 (2022-03-15)
 -  Made core:OnOffState changeable
 

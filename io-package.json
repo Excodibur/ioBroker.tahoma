@@ -1,8 +1,20 @@
 {
   "common": {
     "name": "tahoma",
-    "version": "0.5.5",
+    "version": "0.5.6",
     "news": {
+      "0.5.6": {
+        "en": "Smaller bugfixes (core:OnOffState)",
+        "de": "Kleinere Bugfixes (core:OnOffState)",
+        "ru": "Мелкие исправления (core:OnOffState)",
+        "pt": "Correções de bugs menores (core:OnOffState)",
+        "nl": "Kleinere bugfixes (kern:OnOffState)",
+        "fr": "Petites corrections de bugs (core : OnOffState)",
+        "it": "Correzioni di bug minori (core: OnOffState)",
+        "es": "Corrección de errores más pequeños (núcleo: OnOffState)",
+        "pl": "Mniejsze poprawki (core:OnOffState)",
+        "zh-cn": "较小的错误修正（核心：OnOffState）"
+      },
       "0.5.5": {
         "en": "Made core:OnOffState changeable",
         "de": "Core:OnOffState änderbar gemacht",
@@ -74,18 +86,6 @@
         "es": "Soporte agregado para comandos de dispositivo RTS adicionales",
         "pl": "Dodano obsługę dodatkowych poleceń urządzenia RTS",
         "zh-cn": "添加了对其他 RTS 设备命令的支持"
-      },
-      "0.4.3": {
-        "en": "Fixed more type-errors for various states\nFixed wanring during logout\nCode quality improvements",
-        "de": "Weitere Typfehler für verschiedene Zustände behoben\nWarnung beim Abmelden behoben\nVerbesserungen der Codequalität",
-        "ru": "Исправлено больше ошибок типа для различных состояний\nИсправлено отторжение при выходе из системы\nУлучшения качества кода",
-        "pt": "Corrigidos mais erros de tipo para vários estados\nWanring fixo durante o logout\nMelhorias na qualidade do código",
-        "nl": "Meer typefouten opgelost voor verschillende staten\nVaste wanring tijdens uitloggen\nVerbeteringen in codekwaliteit",
-        "fr": "Correction de plus d'erreurs de type pour divers états\nCorrection de l'avertissement lors de la déconnexion\nAméliorations de la qualité du code",
-        "it": "Risolti più errori di tipo per vari stati\nRisolto problema durante il logout\nMiglioramenti della qualità del codice",
-        "es": "Se corrigieron más errores de tipo para varios estados.\nWanring fijo durante el cierre de sesión\nMejoras en la calidad del código",
-        "pl": "Naprawiono więcej błędów typograficznych dla różnych stanów\nNaprawiono ostrzeżenie podczas wylogowania\nPoprawa jakości kodu",
-        "zh-cn": "修复了各种状态的更多类型错误\n修复注销期间的警告\n代码质量改进"
       }
     },
     "title": "Somfy Tahoma",
