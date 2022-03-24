@@ -1,8 +1,20 @@
 {
   "common": {
     "name": "tahoma",
-    "version": "0.5.6",
+    "version": "0.6.0",
     "news": {
+      "0.6.0": {
+        "en": "Improved state handling of commands. Issued commands will be acknowledged once \"in progress\" and be set to false, once completed. Aborted/Interupted commands will be set to false again.",
+        "de": "Verbesserte Zustandsbehandlung von Befehlen. Ausgegebene Befehle werden bestätigt, sobald sie \"in Bearbeitung\" sind, und auf \"false\" gesetzt, sobald sie abgeschlossen sind. Abgebrochene/unterbrochene Befehle werden wieder auf false gesetzt.",
+        "ru": "Улучшена обработка состояния команд. Выданные команды будут подтверждены, как только они будут «выполнены», и будут установлены как «ложные» после завершения. Для прерванных/прерванных команд снова будет установлено значение false.",
+        "pt": "Manipulação de estado aprimorada de comandos. Os comandos emitidos serão reconhecidos uma vez \"em andamento\" e definidos como falsos, uma vez concluídos. Os comandos abortados/interrompidos serão definidos como falsos novamente.",
+        "nl": "Verbeterde statusafhandeling van opdrachten. Uitgegeven commando's zullen worden bevestigd zodra ze \"in uitvoering\" zijn en worden ingesteld op onwaar, zodra ze zijn voltooid. Afgebroken/onderbroken opdrachten worden weer op false gezet.",
+        "fr": "Amélioration de la gestion de l'état des commandes. Les commandes émises seront reconnues une fois \"en cours\" et seront définies sur faux, une fois terminées. Les commandes abandonnées/interrompues seront à nouveau définies sur faux.",
+        "it": "Migliorata la gestione dello stato dei comandi. I comandi emessi verranno confermati una volta \"in corso\" e verranno impostati su false, una volta completati. I comandi interrotti/interrotti verranno nuovamente impostati su false.",
+        "es": "Manejo de estado mejorado de los comandos. Los comandos emitidos se reconocerán una vez que estén \"en progreso\" y se establecerán en falso, una vez que se completen. Los comandos cancelados/interrumpidos se configurarán como falsos nuevamente.",
+        "pl": "Ulepszona obsługa stanów poleceń. Wydane polecenia będą potwierdzane, gdy będą „w toku”, a po zakończeniu zostaną ustawione na fałszywe. Polecenia przerwane/przerwane zostaną ponownie ustawione na fałsz.",
+        "zh-cn": "改进了命令的状态处理。发出的命令将在“进行中”得到确认，并在完成后设置为 false。 Aborted/Interupted 命令将再次设置为 false。"
+      },
       "0.5.6": {
         "en": "Smaller bugfixes (core:OnOffState)",
         "de": "Kleinere Bugfixes (core:OnOffState)",
@@ -74,18 +86,6 @@
         "es": "Permitir cambios en el núcleo: TargetTemperatureState",
         "pl": "Zezwalaj na zmiany w core: TargetTemperatureState",
         "zh-cn": "允许更改核心：TargetTemperatureState"
-      },
-      "0.5.0": {
-        "en": "Added support for additional RTS device commands",
-        "de": "Unterstützung für zusätzliche RTS-Gerätebefehle hinzugefügt",
-        "ru": "Добавлена поддержка дополнительных команд устройства RTS.",
-        "pt": "Adicionado suporte para comandos de dispositivo RTS adicionais",
-        "nl": "Ondersteuning toegevoegd voor extra RTS-apparaatopdrachten",
-        "fr": "Ajout de la prise en charge de commandes de périphérique RTS supplémentaires",
-        "it": "Aggiunto il supporto per ulteriori comandi del dispositivo RTS",
-        "es": "Soporte agregado para comandos de dispositivo RTS adicionales",
-        "pl": "Dodano obsługę dodatkowych poleceń urządzenia RTS",
-        "zh-cn": "添加了对其他 RTS 设备命令的支持"
       }
     },
     "title": "Somfy Tahoma",
