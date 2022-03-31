@@ -3,6 +3,9 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## 0.6.1 (2022-03-31)
+-  Fixed issue with refresh of device state
+
 ## 0.6.0 (2022-03-24)
 -  Improved state handling of commands. Issued commands will be acknowledged once "in progress" and be set to false, once completed. Aborted/Interupted commands will be set to false again.
 

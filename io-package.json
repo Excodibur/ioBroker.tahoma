@@ -1,8 +1,20 @@
 {
   "common": {
     "name": "tahoma",
-    "version": "0.6.0",
+    "version": "0.6.1",
     "news": {
+      "0.6.1": {
+        "en": "Fixed issue with refresh of device state",
+        "de": "Problem mit der Aktualisierung des Gerätestatus behoben",
+        "ru": "Исправлена проблема с обновлением состояния устройства",
+        "pt": "Corrigido problema com atualização do estado do dispositivo",
+        "nl": "Probleem opgelost met het vernieuwen van de apparaatstatus",
+        "fr": "Correction d'un problème avec l'actualisation de l'état de l'appareil",
+        "it": "Risolto il problema con l'aggiornamento dello stato del dispositivo",
+        "es": "Problema solucionado con la actualización del estado del dispositivo",
+        "pl": "Naprawiono problem z odświeżaniem stanu urządzenia",
+        "zh-cn": "修复了设备状态刷新问题"
+      },
       "0.6.0": {
         "en": "Improved state handling of commands. Issued commands will be acknowledged once \"in progress\" and be set to false, once completed. Aborted/Interupted commands will be set to false again.",
         "de": "Verbesserte Zustandsbehandlung von Befehlen. Ausgegebene Befehle werden bestätigt, sobald sie \"in Bearbeitung\" sind, und auf \"false\" gesetzt, sobald sie abgeschlossen sind. Abgebrochene/unterbrochene Befehle werden wieder auf false gesetzt.",
@@ -74,18 +86,6 @@
         "es": "Solucionar problemas/advertencias con actualizaciones de estado complejas a través de eventos",
         "pl": "Napraw problemy/ostrzeżenia dzięki złożonym aktualizacjom stanu poprzez zdarzenia",
         "zh-cn": "通过事件修复复杂状态更新的问题/警告"
-      },
-      "0.5.1": {
-        "en": "Allow changes to core:TargetTemperatureState",
-        "de": "Änderungen an core:TargetTemperatureState zulassen",
-        "ru": "Разрешить изменения в ядре: TargetTemperatureState",
-        "pt": "Permitir alterações no núcleo: TargetTemperatureState",
-        "nl": "Sta wijzigingen toe in core:TargetTemperatureState",
-        "fr": "Autoriser les modifications apportées au noyau : TargetTemperatureState",
-        "it": "Consenti modifiche al core:TargetTemperatureState",
-        "es": "Permitir cambios en el núcleo: TargetTemperatureState",
-        "pl": "Zezwalaj na zmiany w core: TargetTemperatureState",
-        "zh-cn": "允许更改核心：TargetTemperatureState"
       }
     },
     "title": "Somfy Tahoma",
