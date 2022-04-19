@@ -39,6 +39,18 @@ systemDictionary = {
         "pl": "interwał sondowania",
         "zh-cn": "轮询间隔"
     },
+	"gatewaypin": {
+		"en": "PIN of the Tahoma box (e.g. 1234-5678-9012)",
+		"de": "PIN der Tahoma-Box (z. B. 1234-5678-9012)",
+		"ru": "PIN-код ящика Tahoma (например, 1234-5678-9012)",
+		"pt": "PIN da caixa Tahoma (por exemplo, 1234-5678-9012)",
+		"nl": "PIN van de Tahoma-box (bijv. 1234-5678-9012)",
+		"fr": "PIN de la boîte Tahoma (par exemple 1234-5678-9012)",
+		"it": "PIN della scatola Tahoma (es. 1234-5678-9012)",
+		"es": "PIN de la caja Tahoma (ej. 1234-5678-9012)",
+		"pl": "PIN skrzynki Tahoma (np. 1234-5678-9012)",
+		"zh-cn": "Tahoma 盒子的 PIN 码（例如 1234-5678-9012）"
+	},
     "on save adapter restarts with new config immediately": {
         "en": "On save adapter restarts with new config immediately",
         "de": "Beim Speichern wird der Adapter sofort mit der neuen Konfiguration neu gestartet",

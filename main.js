@@ -83,7 +83,20 @@ function startAdapter (options) {
 function main () {
     const deviceUsername = adapter.config.username;
     const devicePassword = adapter.config.password;
-    const tahomalinkUrl = adapter.config.tahomalinkurl;
+	const gatewaypin = adapter.config.gatewaypin;
+	let localUrl;
+	if(gatewaypin) {
+		localUrl = "https://gateway-" + gatewaypin + ".local:8443/enduser-mobile-web/1/enduserAPI/";
+	} else {
+		localUrl = "";
+	}
+
+	let tahomalinkUrl;
+	if(localUrl) {
+	    tahomalinkUrl = adapter.config.devapi_authurl;
+	} else {
+		tahomalinkUrl = adapter.config.tahomalinkurl;
+	}
     const loginOptions = {
         "maxAttempts": adapter.config.loginattempts | 3,
         "delayAttempts": adapter.config.delaybetweenloginattempts | 30,
@@ -104,7 +117,7 @@ function main () {
 
     ioBLib.setOrUpdateState("update", "Update device states", false, "", "boolean", "button.refresh");
 
-    controller = new tahoma.Tahoma(deviceUsername, devicePassword, tahomalinkUrl, loginOptions, applyOptions, adapter);
+    controller = new tahoma.Tahoma(deviceUsername, devicePassword, tahomalinkUrl, localUrl, loginOptions, applyOptions, adapter);
 
     controller.login(function (err, obj) {
         if (!err)

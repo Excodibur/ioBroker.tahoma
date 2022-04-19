@@ -8,5 +8,6 @@
     "on save adapter restarts with new config immediately": "On save adapter restarts with new config immediately",
     "password": "Password",
     "pollinterval": "Polling interval",
+	"gatewaypin": "PIN of the Tahoma box (e.g. 1234-5678-9012)",
     "username": "Username"
 }

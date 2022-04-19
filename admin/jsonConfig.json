@@ -26,6 +26,12 @@
                     "sm": 12,
                     "md": 4
                 },
+                "gatewaypin": {
+                    "type": "text",
+                    "label": "gatewaypin",
+                    "sm": 12,
+                    "md": 4
+                },
                 "note": {
                     "type": "staticText",
                     "newLine": true,
