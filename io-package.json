@@ -142,7 +142,8 @@
     "loginattempts": 3,
     "delaybetweenloginattempts": 30,
     "delayafterfailedlogin": 120,
-    "delayretryapplyqueue": 1500
+    "delayretryapplyqueue": 1500,
+    "usemdns": false
   },
   "protectedNative": [
     "password"

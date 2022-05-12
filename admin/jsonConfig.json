@@ -26,17 +26,31 @@
                     "sm": 12,
                     "md": 4
                 },
-                "gatewaypin": {
-                    "type": "text",
-                    "label": "gatewaypin",
-                    "sm": 12,
-                    "md": 4
-                },
                 "note": {
                     "type": "staticText",
                     "newLine": true,
                     "label": "on save adapter restarts with new config immediately",
                     "text": "on save adapter restarts with new config immediately"
+                }
+            }
+        },
+        "localApiSettings": {
+            "type": "panel",
+            "label": "local api settings",
+            "i18n": true,
+            "items": {
+                "gatewaypin": {
+                    "newLine": true,
+                    "type": "text",
+                    "label": "gatewaypin",
+                    "sm": 6,
+                    "md": 4
+                },
+                "usemdns": {
+                    "type": "checkbox",
+                    "label": "Use MDNS for local network name resolution",
+                    "sm": 6,
+                    "md": 4
                 }
             }
         },

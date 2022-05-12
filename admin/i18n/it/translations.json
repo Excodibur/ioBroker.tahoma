@@ -1,9 +1,12 @@
 {
+    "Use MDNS for local network name resolution": "Utilizzare MDNS per la risoluzione dei nomi di rete locale",
     "advanced connection settings": "impostazioni di connessione avanzate",
     "basic settings": "impostazioni di base",
     "delay after failed login": "ritardo dopo accesso fallito (secondi)",
     "delay before applyqueue retry": "ritardo prima del tentativo di applicare Queue (millisecondi)",
     "delay between login attempts": "ritardo tra i tentativi di accesso (secondi)",
+    "gatewaypin": "PIN della scatola Tahoma (es. 1234-5678-9012)",
+    "local api settings": "impostazioni dell'API locale",
     "login attempts": "tentativi di accesso",
     "on save adapter restarts with new config immediately": "on save adapter si riavvia immediatamente con la nuova configurazione",
     "password": "parola d'ordine",

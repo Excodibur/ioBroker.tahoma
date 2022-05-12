@@ -1,13 +1,15 @@
 {
+    "Use MDNS for local network name resolution": "Use MDNS for local network name resolution",
     "advanced connection settings": "Advanced Connection Settings",
     "basic settings": "Basic Settings",
     "delay after failed login": "Delay after failed login (seconds)",
     "delay before applyqueue retry": "Delay before applyqueue retry (milliseconds)",
     "delay between login attempts": "Delay between login attempts (seconds)",
+    "gatewaypin": "PIN of the Tahoma box (e.g. 1234-5678-9012)",
+    "local api settings": "local api settings",
     "login attempts": "Login attempts",
     "on save adapter restarts with new config immediately": "On save adapter restarts with new config immediately",
     "password": "Password",
     "pollinterval": "Polling interval",
-	"gatewaypin": "PIN of the Tahoma box (e.g. 1234-5678-9012)",
     "username": "Username"
 }

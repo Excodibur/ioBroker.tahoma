@@ -1,9 +1,12 @@
 {
+    "Use MDNS for local network name resolution": "Gebruik MDNS voor het omzetten van lokale netwerknamen",
     "advanced connection settings": "geavanceerde verbindingsinstellingen",
     "basic settings": "basis instellingen",
     "delay after failed login": "vertraging na mislukte aanmelding (seconden)",
     "delay before applyqueue retry": "vertraging vóór toepassingswachtrij opnieuw proberen (milliseconden)",
     "delay between login attempts": "vertraging tussen inlogpogingen (seconden)",
+    "gatewaypin": "PIN van de Tahoma-box (bijv. 1234-5678-9012)",
+    "local api settings": "lokale api-instellingen",
     "login attempts": "inlogpogingen",
     "on save adapter restarts with new config immediately": "on save adapter wordt onmiddellijk opnieuw gestart met de nieuwe configuratie",
     "password": "wachtwoord",

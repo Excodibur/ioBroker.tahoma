@@ -83,20 +83,20 @@ function startAdapter (options) {
 function main () {
     const deviceUsername = adapter.config.username;
     const devicePassword = adapter.config.password;
-	const gatewaypin = adapter.config.gatewaypin;
-	let localUrl;
-	if(gatewaypin) {
-		localUrl = "https://gateway-" + gatewaypin + ".local:8443/enduser-mobile-web/1/enduserAPI/";
-	} else {
-		localUrl = "";
-	}
+    const gatewaypin = adapter.config.gatewaypin;
+    const useMDNS = adapter.config.usemdns;
+    let localUrl;
+    if (gatewaypin)
+        localUrl = "https://gateway-" + gatewaypin + ((useMDNS) ? ".local" : "") + ":8443/enduser-mobile-web/1/enduserAPI/";
+    else
+        localUrl = "";
 
-	let tahomalinkUrl;
-	if(localUrl) {
-	    tahomalinkUrl = adapter.config.devapi_authurl;
-	} else {
-		tahomalinkUrl = adapter.config.tahomalinkurl;
-	}
+    let tahomalinkUrl;
+    if (localUrl)
+        tahomalinkUrl = adapter.config.devapi_authurl;
+    else
+        tahomalinkUrl = adapter.config.tahomalinkurl;
+
     const loginOptions = {
         "maxAttempts": adapter.config.loginattempts | 3,
         "delayAttempts": adapter.config.delaybetweenloginattempts | 30,
