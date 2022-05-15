@@ -1,8 +1,20 @@
 {
   "common": {
     "name": "tahoma",
-    "version": "0.7.0",
+    "version": "0.7.1",
     "news": {
+      "0.7.1": {
+        "en": "Fixed parsing issues as result of latest Tahoma Box update by Somfy",
+        "de": "Parsing-Probleme als Ergebnis des neuesten Tahoma Box-Updates von Somfy behoben",
+        "ru": "Исправлены проблемы с синтаксическим анализом в результате последнего обновления Tahoma Box от Somfy.",
+        "pt": "Corrigidos problemas de análise como resultado da atualização mais recente da Tahoma Box da Somfy",
+        "nl": "Parseerproblemen opgelost als gevolg van de laatste Tahoma Box-update van Somfy",
+        "fr": "Correction de problèmes d'analyse à la suite de la dernière mise à jour de Tahoma Box par Somfy",
+        "it": "Risolti problemi di analisi come risultato dell'ultimo aggiornamento di Tahoma Box di Somfy",
+        "es": "Se corrigieron problemas de análisis como resultado de la última actualización de Tahoma Box de Somfy",
+        "pl": "Naprawiono problemy z analizowaniem w wyniku ostatniej aktualizacji Tahoma Box przez Somfy",
+        "zh-cn": "修复了由于尚飞最新的 Tahoma Box 更新导致的解析问题"
+      },
       "0.7.0": {
         "en": "Added local API support to adapter\nSome fixes for newly added functionality",
         "de": "Lokale API-Unterstützung zum Adapter hinzugefügt\nEinige Korrekturen für neu hinzugefügte Funktionen",
@@ -74,18 +86,6 @@
         "es": "Permitir control de temperatura por estado",
         "pl": "Zezwalaj na kontrolę temperatury według stanu",
         "zh-cn": "允许按状态控制温度"
-      },
-      "0.5.3": {
-        "en": "Fix handling of special characters in device-names",
-        "de": "Behandlung von Sonderzeichen in Gerätenamen korrigiert",
-        "ru": "Исправлена обработка специальных символов в именах устройств.",
-        "pt": "Corrige o manuseio de caracteres especiais em nomes de dispositivos",
-        "nl": "Afhandeling van speciale tekens in apparaatnamen repareren",
-        "fr": "Correction de la gestion des caractères spéciaux dans les noms de périphériques",
-        "it": "Risolto il problema con la gestione dei caratteri speciali nei nomi dei dispositivi",
-        "es": "Arreglar el manejo de caracteres especiales en los nombres de los dispositivos",
-        "pl": "Popraw obsługę znaków specjalnych w nazwach urządzeń",
-        "zh-cn": "修复设备名称中特殊字符的处理"
       }
     },
     "title": "Somfy Tahoma",
