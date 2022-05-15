@@ -34,6 +34,26 @@
                 }
             }
         },
+        "localApiSettings": {
+            "type": "panel",
+            "label": "local api settings",
+            "i18n": true,
+            "items": {
+                "gatewaypin": {
+                    "newLine": true,
+                    "type": "text",
+                    "label": "gatewaypin",
+                    "sm": 6,
+                    "md": 4
+                },
+                "usemdns": {
+                    "type": "checkbox",
+                    "label": "Use MDNS for local network name resolution",
+                    "sm": 6,
+                    "md": 4
+                }
+            }
+        },
         "advancedConnectionSettingsTab": {
             "type": "panel",
             "label": "advanced connection settings",

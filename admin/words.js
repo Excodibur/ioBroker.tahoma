@@ -39,6 +39,18 @@ systemDictionary = {
         "pl": "interwał sondowania",
         "zh-cn": "轮询间隔"
     },
+    "gatewaypin": {
+        "en": "PIN of the Tahoma box (e.g. 1234-5678-9012)",
+        "de": "PIN der Tahoma-Box (z. B. 1234-5678-9012)",
+        "ru": "PIN-код ящика Tahoma (например, 1234-5678-9012)",
+        "pt": "PIN da caixa Tahoma (por exemplo, 1234-5678-9012)",
+        "nl": "PIN van de Tahoma-box (bijv. 1234-5678-9012)",
+        "fr": "PIN de la boîte Tahoma (par exemple 1234-5678-9012)",
+        "it": "PIN della scatola Tahoma (es. 1234-5678-9012)",
+        "es": "PIN de la caja Tahoma (ej. 1234-5678-9012)",
+        "pl": "PIN skrzynki Tahoma (np. 1234-5678-9012)",
+        "zh-cn": "Tahoma 盒子的 PIN 码（例如 1234-5678-9012）"
+    },
     "on save adapter restarts with new config immediately": {
         "en": "On save adapter restarts with new config immediately",
         "de": "Beim Speichern wird der Adapter sofort mit der neuen Konfiguration neu gestartet",
@@ -122,5 +134,29 @@ systemDictionary = {
         "es": "retraso antes de aplicar reintento en cola (milisegundos)",
         "pl": "opóźnienie przed ponownym zastosowaniem kolejki (milisekundy)",
         "zh-cn": "applyqueue 重试前的延迟（毫秒）"
+    },
+    "Use MDNS for local network name resolution": {
+        "en": "Use MDNS for local network name resolution",
+        "de": "Verwenden Sie MDNS für die Namensauflösung im lokalen Netzwerk",
+        "ru": "Используйте MDNS для разрешения имен в локальной сети",
+        "pt": "Use MDNS para resolução de nomes de rede local",
+        "nl": "Gebruik MDNS voor het omzetten van lokale netwerknamen",
+        "fr": "Utiliser MDNS pour la résolution de noms de réseau local",
+        "it": "Utilizzare MDNS per la risoluzione dei nomi di rete locale",
+        "es": "Utilice MDNS para la resolución de nombres de red local",
+        "pl": "Użyj MDNS do rozpoznawania nazw sieci lokalnej",
+        "zh-cn": "使用 MDNS 进行本地网络名称解析"
+    },
+    "local api settings": {
+        "en": "local api settings",
+        "de": "lokale API-Einstellungen",
+        "ru": "локальные настройки API",
+        "pt": "configurações da API local",
+        "nl": "lokale api-instellingen",
+        "fr": "paramètres de l'API locale",
+        "it": "impostazioni dell'API locale",
+        "es": "configuración de la API local",
+        "pl": "lokalne ustawienia API",
+        "zh-cn": "本地 api 设置"
     }
 };

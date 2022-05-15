@@ -3,6 +3,10 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## 0.7.0 (2022-05-12)
+- (StrathCole) Added local API support to adapter
+- Some fixes for newly added functionality
+
 ## 0.6.1 (2022-03-31)
 -  Fixed issue with refresh of device state
 

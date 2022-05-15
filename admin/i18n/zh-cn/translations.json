@@ -1,9 +1,12 @@
 {
+    "Use MDNS for local network name resolution": "使用 MDNS 进行本地网络名称解析",
     "advanced connection settings": "高级连接设置",
     "basic settings": "基本设置",
     "delay after failed login": "登录失败后延迟（秒）",
     "delay before applyqueue retry": "applyqueue 重试前的延迟（毫秒）",
     "delay between login attempts": "登录尝试之间的延迟（秒）",
+    "gatewaypin": "Tahoma 盒子的 PIN 码（例如 1234-5678-9012）",
+    "local api settings": "本地 api 设置",
     "login attempts": "登录尝试",
     "on save adapter restarts with new config immediately": "保存适配器上的适配器立即以新配置重新启动",
     "password": "密码",

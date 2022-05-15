@@ -1,8 +1,20 @@
 {
   "common": {
     "name": "tahoma",
-    "version": "0.6.1",
+    "version": "0.7.0",
     "news": {
+      "0.7.0": {
+        "en": "Added local API support to adapter\nSome fixes for newly added functionality",
+        "de": "Lokale API-Unterstützung zum Adapter hinzugefügt\nEinige Korrekturen für neu hinzugefügte Funktionen",
+        "ru": "Добавлена поддержка локального API для адаптера.\nНекоторые исправления для недавно добавленной функциональности",
+        "pt": "Adicionado suporte de API local ao adaptador\nAlgumas correções para funcionalidades recém-adicionadas",
+        "nl": "Lokale API-ondersteuning toegevoegd aan adapter\nEnkele oplossingen voor nieuw toegevoegde functionaliteit",
+        "fr": "Ajout de la prise en charge de l'API locale à l'adaptateur\nQuelques correctifs pour les fonctionnalités nouvellement ajoutées",
+        "it": "Aggiunto supporto API locale all'adattatore\nAlcune correzioni per funzionalità appena aggiunte",
+        "es": "Se agregó soporte de API local al adaptador\nAlgunas correcciones para la funcionalidad recién agregada",
+        "pl": "Dodano obsługę lokalnego API do adaptera\nNiektóre poprawki dla nowo dodanej funkcjonalności",
+        "zh-cn": "向适配器添加了本地 API 支持\n针对新增功能的一些修复"
+      },
       "0.6.1": {
         "en": "Fixed issue with refresh of device state",
         "de": "Problem mit der Aktualisierung des Gerätestatus behoben",
@@ -74,18 +86,6 @@
         "es": "Arreglar el manejo de caracteres especiales en los nombres de los dispositivos",
         "pl": "Popraw obsługę znaków specjalnych w nazwach urządzeń",
         "zh-cn": "修复设备名称中特殊字符的处理"
-      },
-      "0.5.2": {
-        "en": "Fix issues/warnings with complex state updates through events",
-        "de": "Beheben Sie Probleme/Warnungen mit komplexen Statusaktualisierungen durch Ereignisse",
-        "ru": "Устранение проблем/предупреждений со сложными обновлениями состояния через события",
-        "pt": "Corrigir problemas/avisos com atualizações de estado complexas por meio de eventos",
-        "nl": "Los problemen/waarschuwingen op met complexe statusupdates via gebeurtenissen",
-        "fr": "Résoudre les problèmes/avertissements avec des mises à jour d'état complexes via des événements",
-        "it": "Risolvi problemi/avvisi con aggiornamenti di stato complessi tramite eventi",
-        "es": "Solucionar problemas/advertencias con actualizaciones de estado complejas a través de eventos",
-        "pl": "Napraw problemy/ostrzeżenia dzięki złożonym aktualizacjom stanu poprzez zdarzenia",
-        "zh-cn": "通过事件修复复杂状态更新的问题/警告"
       }
     },
     "title": "Somfy Tahoma",
@@ -135,10 +135,15 @@
     "password": "",
     "pollinterval": 20000,
     "tahomalinkurl": "https://www.tahomalink.com/enduser-mobile-web/enduserAPI/",
+    "devapi_authurl": "https://ha101-1.overkiz.com/enduser-mobile-web/enduserAPI/",
+    "localurl": "",
+    "bearer_token": "",
+    "gatewaypin": "",
     "loginattempts": 3,
     "delaybetweenloginattempts": 30,
     "delayafterfailedlogin": 120,
-    "delayretryapplyqueue": 1500
+    "delayretryapplyqueue": 1500,
+    "usemdns": false
   },
   "protectedNative": [
     "password"
