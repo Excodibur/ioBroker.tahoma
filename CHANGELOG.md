@@ -3,6 +3,9 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## 0.7.2 (2022-06-15)
+- Fix switching between local and online api
+
 ## 0.7.1 (2022-05-15)
 - (StrathCole) Fixed parsing issues as result of latest Tahoma Box update by Somfy
 

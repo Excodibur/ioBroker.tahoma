@@ -1,8 +1,20 @@
 {
   "common": {
     "name": "tahoma",
-    "version": "0.7.1",
+    "version": "0.7.2",
     "news": {
+      "0.7.2": {
+        "en": "Fix switching between local and online api",
+        "de": "Schalten zwischen lokalen und online api",
+        "ru": "Исправление переключения между локальным и онлайн api",
+        "pt": "Fix switching entre api local e on-line",
+        "nl": "Quality over Quantity (QoQ) Releases Vertaling:",
+        "fr": "Interrupteur fixe entre api local et en ligne",
+        "it": "Fissare la commutazione tra api locali e online",
+        "es": "Corrección de conmutación entre api local y en línea",
+        "pl": "Fix przełącza się między lokalną i internetową apią",
+        "zh-cn": "地方和网上配件之间的固定转账"
+      },
       "0.7.1": {
         "en": "Fixed parsing issues as result of latest Tahoma Box update by Somfy",
         "de": "Parsing-Probleme als Ergebnis des neuesten Tahoma Box-Updates von Somfy behoben",
@@ -74,18 +86,6 @@
         "es": "Núcleo hecho: OnOffState cambiable",
         "pl": "Wykonany rdzeń: OnOffState zmienny",
         "zh-cn": "使 core:OnOffState 可变"
-      },
-      "0.5.4": {
-        "en": "Allow temperature control by state",
-        "de": "Temperaturregelung nach Bundesland zulassen",
-        "ru": "Разрешить контроль температуры по штатам",
-        "pt": "Permitir controle de temperatura por estado",
-        "nl": "Temperatuurregeling per staat toestaan",
-        "fr": "Autoriser le contrôle de la température par état",
-        "it": "Consenti il controllo della temperatura per stato",
-        "es": "Permitir control de temperatura por estado",
-        "pl": "Zezwalaj na kontrolę temperatury według stanu",
-        "zh-cn": "允许按状态控制温度"
       }
     },
     "title": "Somfy Tahoma",
