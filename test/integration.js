@@ -56,102 +56,104 @@ function encrypt (key, value) {
 
 // Run integration tests - See https://github.com/ioBroker/testing for a detailed explanation and further options
 tests.integration(path.join(__dirname, ".."), {
-    defineAdditionalTests (getHarness) {
-        describe("Adapter core functions", () => {
-            it("should read correct values from Ventcube mock", () => {
-                return new Promise(async (resolve, reject) => {
-                    const harness = getHarness();
-                    harness.objects.getObjects(["system.adapter.tahoma.0", "system.config"], async (err, objs) => {
-                        if (err)
-                            reject(new Error("Can't modify adapter configuration to prepare testcase. Error: " + err));
+    defineAdditionalTests ({ suite }) {
+        suite("Adapter core tests", (getHarness) => {
+            describe("Adapter core functions", () => {
+                it("should read correct values from Ventcube mock", () => {
+                    return new Promise(async (resolve, reject) => {
+                        const harness = getHarness();
+                        harness.objects.getObjects(["system.adapter.tahoma.0", "system.config"], async (err, objs) => {
+                            if (err)
+                                reject(new Error("Can't modify adapter configuration to prepare testcase. Error: " + err));
 
-                        objs[0].native.tahomalinkurl = "http://localhost:3000/";
-                        objs[0].native.username = "some@mail.com";
-                        const password = "testpw";
+                            objs[0].native.tahomalinkurl = "http://localhost:3000/";
+                            objs[0].native.username = "some@mail.com";
+                            const password = "testpw";
 
-                        let encryptedPassword;
-                        if (objs[1] && objs[1].native && objs[1].native.secret) {
-                            // noinspection JSUnresolvedVariable
-                            encryptedPassword = encrypt(objs[1].native.secret, password);
-                        } else {
-                            // noinspection JSUnresolvedVariable
-                            encryptedPassword = encrypt("Zgfr56gFe87jJOM", password);
-                        }
+                            let encryptedPassword;
+                            if (objs[1] && objs[1].native && objs[1].native.secret) {
+                                // noinspection JSUnresolvedVariable
+                                encryptedPassword = encrypt(objs[1].native.secret, password);
+                            } else {
+                                // noinspection JSUnresolvedVariable
+                                encryptedPassword = encrypt("Zgfr56gFe87jJOM", password);
+                            }
 
-                        objs[0].native.password = encryptedPassword;
-                        // harness._objects.setObject(objs[0]._id, objs[0]);
-                        await harness.changeAdapterConfig("tahoma", objs[0]);
+                            objs[0].native.password = encryptedPassword;
+                            // harness._objects.setObject(objs[0]._id, objs[0]);
+                            await harness.changeAdapterConfig("tahoma", objs[0]);
 
-                        harness.objects.getObject("system.adapter.tahoma.0", async (err, obj) => {
-                            if (err) console.error(err);
-                            console.log("### ADAPTER SETTINGS ", JSON.stringify(obj));
-                            await harness.startAdapterAndWait();
+                            harness.objects.getObject("system.adapter.tahoma.0", async (err, obj) => {
+                                if (err) console.error(err);
+                                console.log("### ADAPTER SETTINGS ", JSON.stringify(obj));
+                                await harness.startAdapterAndWait();
 
-                            // check if states shown correlate to mock server
-                            // read data from mock logs
-                            const mockValues = readMockData();
+                                // check if states shown correlate to mock server
+                                // read data from mock logs
+                                const mockValues = readMockData();
 
-                            // get state from adapter, adapter need some time to load first values from mock
-                            await delay(5000);
+                                // get state from adapter, adapter need some time to load first values from mock
+                                await delay(5000);
 
-                            const state = findStateByDeviceName(mockValues, "Blind 1 Somfy RS 100 IO Smoove Uno", "core:TargetClosureState");
-                            const mockValue = state.value;
+                                const state = findStateByDeviceName(mockValues, "Blind 1 Somfy RS 100 IO Smoove Uno", "core:TargetClosureState");
+                                const mockValue = state.value;
 
-                            harness.states.getState("tahoma.0.devices.Blind_1_Somfy_RS_100_IO_Smoove_Uno.states.core:TargetClosureState", function (error, state) {
-                                if (error)
-                                    reject(new Error("Can't get state from adapter for validation. Error: " + error));
+                                harness.states.getState("tahoma.0.devices.Blind_1_Somfy_RS_100_IO_Smoove_Uno.states.core:TargetClosureState", function (error, state) {
+                                    if (error)
+                                        reject(new Error("Can't get state from adapter for validation. Error: " + error));
 
-                                if (state.val === mockValue)
-                                    resolve();
-                                else
-                                    reject(new Error("Value Missmatch. State: tahoma.0.devices.Blind_1_Somfy_RS_100_IO_Smoove_Uno.states.core:TargetClosureState, Adapter value: " + state.val + ", Mock value:" + mockValue));
+                                    if (state.val === mockValue)
+                                        resolve();
+                                    else
+                                        reject(new Error("Value Missmatch. State: tahoma.0.devices.Blind_1_Somfy_RS_100_IO_Smoove_Uno.states.core:TargetClosureState, Adapter value: " + state.val + ", Mock value:" + mockValue));
+                                });
                             });
                         });
                     });
-                });
-            }).timeout(30000);
+                }).timeout(30000);
 
-            it("should update device state correctly", () => {
-                return new Promise(async (resolve, reject) => {
-                    const harness = getHarness();
+                it("should update device state correctly", () => {
+                    return new Promise(async (resolve, reject) => {
+                        const harness = getHarness();
 
-                    harness.objects.getObjects(["system.adapter.tahoma.0", "system.config"], async (err, objs) => {
-                        if (err)
-                            reject(new Error("Can't modify adapter configuration to prepare testcase. Error: " + err));
+                        harness.objects.getObjects(["system.adapter.tahoma.0", "system.config"], async (err, objs) => {
+                            if (err)
+                                reject(new Error("Can't modify adapter configuration to prepare testcase. Error: " + err));
 
-                        objs[0].native.tahomalinkurl = "http://localhost:3000/";
-                        objs[0].native.username = "some@mail.com";
-                        const password = "testpw";
+                            objs[0].native.tahomalinkurl = "http://localhost:3000/";
+                            objs[0].native.username = "some@mail.com";
+                            const password = "testpw";
 
-                        let encryptedPassword;
-                        if (objs[1] && objs[1].native && objs[1].native.secret) {
-                            // noinspection JSUnresolvedVariable
-                            encryptedPassword = encrypt(objs[1].native.secret, password);
-                        } else {
-                            // noinspection JSUnresolvedVariable
-                            encryptedPassword = encrypt("Zgfr56gFe87jJOM", password);
-                        }
+                            let encryptedPassword;
+                            if (objs[1] && objs[1].native && objs[1].native.secret) {
+                                // noinspection JSUnresolvedVariable
+                                encryptedPassword = encrypt(objs[1].native.secret, password);
+                            } else {
+                                // noinspection JSUnresolvedVariable
+                                encryptedPassword = encrypt("Zgfr56gFe87jJOM", password);
+                            }
 
-                        objs[0].native.password = encryptedPassword;
-                        // harness._objects.setObject(objs[0]._id, objs[0]);
-                        await harness.changeAdapterConfig("tahoma", objs[0]);
+                            objs[0].native.password = encryptedPassword;
+                            // harness._objects.setObject(objs[0]._id, objs[0]);
+                            await harness.changeAdapterConfig("tahoma", objs[0]);
 
-                        harness.objects.getObject("system.adapter.tahoma.0", async (err, obj) => {
-                            if (err) console.error(err);
-                            console.log("### ADAPTER SETTINGS ", JSON.stringify(obj));
-                            await harness.startAdapterAndWait();
+                            harness.objects.getObject("system.adapter.tahoma.0", async (err, obj) => {
+                                if (err) console.error(err);
+                                console.log("### ADAPTER SETTINGS ", JSON.stringify(obj));
+                                await harness.startAdapterAndWait();
 
-                            await delay(5000); // Give adapter time to fully start
+                                await delay(5000); // Give adapter time to fully start
 
-                            monitorMockLogs(line => {
-                                if ((line.includes("Blind_1_Somfy_RS_100_IO_Smoove_Uno.states.core:TargetClosureState")) && (line.includes("/exec/apply/highPriority"))) resolve();
+                                monitorMockLogs(line => {
+                                    if ((line.includes("Blind_1_Somfy_RS_100_IO_Smoove_Uno.states.core:TargetClosureState")) && (line.includes("/exec/apply/highPriority"))) resolve();
+                                });
+
+                                await harness.states.setStateAsync("tahoma.0.devices.Blind_1_Somfy_RS_100_IO_Smoove_Uno.states.core:TargetClosureState", 100);
                             });
-
-                            await harness.states.setStateAsync("tahoma.0.devices.Blind_1_Somfy_RS_100_IO_Smoove_Uno.states.core:TargetClosureState", 100);
                         });
                     });
-                });
-            }).timeout(30000);
+                }).timeout(30000);
+            });
         });
     }
 });
