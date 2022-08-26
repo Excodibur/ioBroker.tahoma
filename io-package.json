@@ -1,178 +1,190 @@
 {
-  "common": {
-    "name": "tahoma",
-    "version": "0.7.2",
-    "news": {
-      "0.7.2": {
-        "en": "Fix switching between local and online api",
-        "de": "Schalten zwischen lokalen und online api",
-        "ru": "Исправление переключения между локальным и онлайн api",
-        "pt": "Fix switching entre api local e on-line",
-        "nl": "Quality over Quantity (QoQ) Releases Vertaling:",
-        "fr": "Interrupteur fixe entre api local et en ligne",
-        "it": "Fissare la commutazione tra api locali e online",
-        "es": "Corrección de conmutación entre api local y en línea",
-        "pl": "Fix przełącza się między lokalną i internetową apią",
-        "zh-cn": "地方和网上配件之间的固定转账"
-      },
-      "0.7.1": {
-        "en": "Fixed parsing issues as result of latest Tahoma Box update by Somfy",
-        "de": "Parsing-Probleme als Ergebnis des neuesten Tahoma Box-Updates von Somfy behoben",
-        "ru": "Исправлены проблемы с синтаксическим анализом в результате последнего обновления Tahoma Box от Somfy.",
-        "pt": "Corrigidos problemas de análise como resultado da atualização mais recente da Tahoma Box da Somfy",
-        "nl": "Parseerproblemen opgelost als gevolg van de laatste Tahoma Box-update van Somfy",
-        "fr": "Correction de problèmes d'analyse à la suite de la dernière mise à jour de Tahoma Box par Somfy",
-        "it": "Risolti problemi di analisi come risultato dell'ultimo aggiornamento di Tahoma Box di Somfy",
-        "es": "Se corrigieron problemas de análisis como resultado de la última actualización de Tahoma Box de Somfy",
-        "pl": "Naprawiono problemy z analizowaniem w wyniku ostatniej aktualizacji Tahoma Box przez Somfy",
-        "zh-cn": "修复了由于尚飞最新的 Tahoma Box 更新导致的解析问题"
-      },
-      "0.7.0": {
-        "en": "Added local API support to adapter\nSome fixes for newly added functionality",
-        "de": "Lokale API-Unterstützung zum Adapter hinzugefügt\nEinige Korrekturen für neu hinzugefügte Funktionen",
-        "ru": "Добавлена поддержка локального API для адаптера.\nНекоторые исправления для недавно добавленной функциональности",
-        "pt": "Adicionado suporte de API local ao adaptador\nAlgumas correções para funcionalidades recém-adicionadas",
-        "nl": "Lokale API-ondersteuning toegevoegd aan adapter\nEnkele oplossingen voor nieuw toegevoegde functionaliteit",
-        "fr": "Ajout de la prise en charge de l'API locale à l'adaptateur\nQuelques correctifs pour les fonctionnalités nouvellement ajoutées",
-        "it": "Aggiunto supporto API locale all'adattatore\nAlcune correzioni per funzionalità appena aggiunte",
-        "es": "Se agregó soporte de API local al adaptador\nAlgunas correcciones para la funcionalidad recién agregada",
-        "pl": "Dodano obsługę lokalnego API do adaptera\nNiektóre poprawki dla nowo dodanej funkcjonalności",
-        "zh-cn": "向适配器添加了本地 API 支持\n针对新增功能的一些修复"
-      },
-      "0.6.1": {
-        "en": "Fixed issue with refresh of device state",
-        "de": "Problem mit der Aktualisierung des Gerätestatus behoben",
-        "ru": "Исправлена проблема с обновлением состояния устройства",
-        "pt": "Corrigido problema com atualização do estado do dispositivo",
-        "nl": "Probleem opgelost met het vernieuwen van de apparaatstatus",
-        "fr": "Correction d'un problème avec l'actualisation de l'état de l'appareil",
-        "it": "Risolto il problema con l'aggiornamento dello stato del dispositivo",
-        "es": "Problema solucionado con la actualización del estado del dispositivo",
-        "pl": "Naprawiono problem z odświeżaniem stanu urządzenia",
-        "zh-cn": "修复了设备状态刷新问题"
-      },
-      "0.6.0": {
-        "en": "Improved state handling of commands. Issued commands will be acknowledged once \"in progress\" and be set to false, once completed. Aborted/Interupted commands will be set to false again.",
-        "de": "Verbesserte Zustandsbehandlung von Befehlen. Ausgegebene Befehle werden bestätigt, sobald sie \"in Bearbeitung\" sind, und auf \"false\" gesetzt, sobald sie abgeschlossen sind. Abgebrochene/unterbrochene Befehle werden wieder auf false gesetzt.",
-        "ru": "Улучшена обработка состояния команд. Выданные команды будут подтверждены, как только они будут «выполнены», и будут установлены как «ложные» после завершения. Для прерванных/прерванных команд снова будет установлено значение false.",
-        "pt": "Manipulação de estado aprimorada de comandos. Os comandos emitidos serão reconhecidos uma vez \"em andamento\" e definidos como falsos, uma vez concluídos. Os comandos abortados/interrompidos serão definidos como falsos novamente.",
-        "nl": "Verbeterde statusafhandeling van opdrachten. Uitgegeven commando's zullen worden bevestigd zodra ze \"in uitvoering\" zijn en worden ingesteld op onwaar, zodra ze zijn voltooid. Afgebroken/onderbroken opdrachten worden weer op false gezet.",
-        "fr": "Amélioration de la gestion de l'état des commandes. Les commandes émises seront reconnues une fois \"en cours\" et seront définies sur faux, une fois terminées. Les commandes abandonnées/interrompues seront à nouveau définies sur faux.",
-        "it": "Migliorata la gestione dello stato dei comandi. I comandi emessi verranno confermati una volta \"in corso\" e verranno impostati su false, una volta completati. I comandi interrotti/interrotti verranno nuovamente impostati su false.",
-        "es": "Manejo de estado mejorado de los comandos. Los comandos emitidos se reconocerán una vez que estén \"en progreso\" y se establecerán en falso, una vez que se completen. Los comandos cancelados/interrumpidos se configurarán como falsos nuevamente.",
-        "pl": "Ulepszona obsługa stanów poleceń. Wydane polecenia będą potwierdzane, gdy będą „w toku”, a po zakończeniu zostaną ustawione na fałszywe. Polecenia przerwane/przerwane zostaną ponownie ustawione na fałsz.",
-        "zh-cn": "改进了命令的状态处理。发出的命令将在“进行中”得到确认，并在完成后设置为 false。 Aborted/Interupted 命令将再次设置为 false。"
-      },
-      "0.5.6": {
-        "en": "Smaller bugfixes (core:OnOffState)",
-        "de": "Kleinere Bugfixes (core:OnOffState)",
-        "ru": "Мелкие исправления (core:OnOffState)",
-        "pt": "Correções de bugs menores (core:OnOffState)",
-        "nl": "Kleinere bugfixes (kern:OnOffState)",
-        "fr": "Petites corrections de bugs (core : OnOffState)",
-        "it": "Correzioni di bug minori (core: OnOffState)",
-        "es": "Corrección de errores más pequeños (núcleo: OnOffState)",
-        "pl": "Mniejsze poprawki (core:OnOffState)",
-        "zh-cn": "较小的错误修正（核心：OnOffState）"
-      },
-      "0.5.5": {
-        "en": "Made core:OnOffState changeable",
-        "de": "Core:OnOffState änderbar gemacht",
-        "ru": "Сделано ядро: OnOffState изменяемым",
-        "pt": "Núcleo feito: OnOffState mutável",
-        "nl": "Kern gemaakt:AanUitState veranderlijk",
-        "fr": "Noyau rendu : OnOffState modifiable",
-        "it": "Nucleo reso: OnOffState modificabile",
-        "es": "Núcleo hecho: OnOffState cambiable",
-        "pl": "Wykonany rdzeń: OnOffState zmienny",
-        "zh-cn": "使 core:OnOffState 可变"
-      }
+    "common": {
+        "name": "tahoma",
+        "version": "0.8.0",
+        "news": {
+            "0.8.0": {
+                "en": "Added support for dimming via core:LightIntensityState",
+                "de": "Unterstützung für Dimmen über Kern: LichtintensitätState",
+                "ru": "Добавлена поддержка затемнения через ядро: LightIntensityState",
+                "pt": "Adicionado suporte para dimming através do núcleo: Sistema de Intensidade de Luz",
+                "nl": "Toegevoegd ondersteuning voor dimmen via kern: Lichte intensiteit",
+                "fr": "Ajout du support pour le dimming via core: LightIntensityState",
+                "it": "Aggiunto supporto per dimming via core: Intensità della luce",
+                "es": "Agregado soporte para la regulación a través del núcleo: LightIntensityState",
+                "pl": "Wsparcie dla mnożenia przez rdzenie. Oficjalna strona LightIntensityState",
+                "zh-cn": "增加通过核心分娩的支助: A. 小规模国家"
+            },
+            "0.7.2": {
+                "en": "Fix switching between local and online api",
+                "de": "Schalten zwischen lokalen und online api",
+                "ru": "Исправление переключения между локальным и онлайн api",
+                "pt": "Fix switching entre api local e on-line",
+                "nl": "Quality over Quantity (QoQ) Releases Vertaling:",
+                "fr": "Interrupteur fixe entre api local et en ligne",
+                "it": "Fissare la commutazione tra api locali e online",
+                "es": "Corrección de conmutación entre api local y en línea",
+                "pl": "Fix przełącza się między lokalną i internetową apią",
+                "zh-cn": "地方和网上配件之间的固定转账"
+            },
+            "0.7.1": {
+                "en": "Fixed parsing issues as result of latest Tahoma Box update by Somfy",
+                "de": "Parsing-Probleme als Ergebnis des neuesten Tahoma Box-Updates von Somfy behoben",
+                "ru": "Исправлены проблемы с синтаксическим анализом в результате последнего обновления Tahoma Box от Somfy.",
+                "pt": "Corrigidos problemas de análise como resultado da atualização mais recente da Tahoma Box da Somfy",
+                "nl": "Parseerproblemen opgelost als gevolg van de laatste Tahoma Box-update van Somfy",
+                "fr": "Correction de problèmes d'analyse à la suite de la dernière mise à jour de Tahoma Box par Somfy",
+                "it": "Risolti problemi di analisi come risultato dell'ultimo aggiornamento di Tahoma Box di Somfy",
+                "es": "Se corrigieron problemas de análisis como resultado de la última actualización de Tahoma Box de Somfy",
+                "pl": "Naprawiono problemy z analizowaniem w wyniku ostatniej aktualizacji Tahoma Box przez Somfy",
+                "zh-cn": "修复了由于尚飞最新的 Tahoma Box 更新导致的解析问题"
+            },
+            "0.7.0": {
+                "en": "Added local API support to adapter\nSome fixes for newly added functionality",
+                "de": "Lokale API-Unterstützung zum Adapter hinzugefügt\nEinige Korrekturen für neu hinzugefügte Funktionen",
+                "ru": "Добавлена поддержка локального API для адаптера.\nНекоторые исправления для недавно добавленной функциональности",
+                "pt": "Adicionado suporte de API local ao adaptador\nAlgumas correções para funcionalidades recém-adicionadas",
+                "nl": "Lokale API-ondersteuning toegevoegd aan adapter\nEnkele oplossingen voor nieuw toegevoegde functionaliteit",
+                "fr": "Ajout de la prise en charge de l'API locale à l'adaptateur\nQuelques correctifs pour les fonctionnalités nouvellement ajoutées",
+                "it": "Aggiunto supporto API locale all'adattatore\nAlcune correzioni per funzionalità appena aggiunte",
+                "es": "Se agregó soporte de API local al adaptador\nAlgunas correcciones para la funcionalidad recién agregada",
+                "pl": "Dodano obsługę lokalnego API do adaptera\nNiektóre poprawki dla nowo dodanej funkcjonalności",
+                "zh-cn": "向适配器添加了本地 API 支持\n针对新增功能的一些修复"
+            },
+            "0.6.1": {
+                "en": "Fixed issue with refresh of device state",
+                "de": "Problem mit der Aktualisierung des Gerätestatus behoben",
+                "ru": "Исправлена проблема с обновлением состояния устройства",
+                "pt": "Corrigido problema com atualização do estado do dispositivo",
+                "nl": "Probleem opgelost met het vernieuwen van de apparaatstatus",
+                "fr": "Correction d'un problème avec l'actualisation de l'état de l'appareil",
+                "it": "Risolto il problema con l'aggiornamento dello stato del dispositivo",
+                "es": "Problema solucionado con la actualización del estado del dispositivo",
+                "pl": "Naprawiono problem z odświeżaniem stanu urządzenia",
+                "zh-cn": "修复了设备状态刷新问题"
+            },
+            "0.6.0": {
+                "en": "Improved state handling of commands. Issued commands will be acknowledged once \"in progress\" and be set to false, once completed. Aborted/Interupted commands will be set to false again.",
+                "de": "Verbesserte Zustandsbehandlung von Befehlen. Ausgegebene Befehle werden bestätigt, sobald sie \"in Bearbeitung\" sind, und auf \"false\" gesetzt, sobald sie abgeschlossen sind. Abgebrochene/unterbrochene Befehle werden wieder auf false gesetzt.",
+                "ru": "Улучшена обработка состояния команд. Выданные команды будут подтверждены, как только они будут «выполнены», и будут установлены как «ложные» после завершения. Для прерванных/прерванных команд снова будет установлено значение false.",
+                "pt": "Manipulação de estado aprimorada de comandos. Os comandos emitidos serão reconhecidos uma vez \"em andamento\" e definidos como falsos, uma vez concluídos. Os comandos abortados/interrompidos serão definidos como falsos novamente.",
+                "nl": "Verbeterde statusafhandeling van opdrachten. Uitgegeven commando's zullen worden bevestigd zodra ze \"in uitvoering\" zijn en worden ingesteld op onwaar, zodra ze zijn voltooid. Afgebroken/onderbroken opdrachten worden weer op false gezet.",
+                "fr": "Amélioration de la gestion de l'état des commandes. Les commandes émises seront reconnues une fois \"en cours\" et seront définies sur faux, une fois terminées. Les commandes abandonnées/interrompues seront à nouveau définies sur faux.",
+                "it": "Migliorata la gestione dello stato dei comandi. I comandi emessi verranno confermati una volta \"in corso\" e verranno impostati su false, una volta completati. I comandi interrotti/interrotti verranno nuovamente impostati su false.",
+                "es": "Manejo de estado mejorado de los comandos. Los comandos emitidos se reconocerán una vez que estén \"en progreso\" y se establecerán en falso, una vez que se completen. Los comandos cancelados/interrumpidos se configurarán como falsos nuevamente.",
+                "pl": "Ulepszona obsługa stanów poleceń. Wydane polecenia będą potwierdzane, gdy będą „w toku”, a po zakończeniu zostaną ustawione na fałszywe. Polecenia przerwane/przerwane zostaną ponownie ustawione na fałsz.",
+                "zh-cn": "改进了命令的状态处理。发出的命令将在“进行中”得到确认，并在完成后设置为 false。 Aborted/Interupted 命令将再次设置为 false。"
+            },
+            "0.5.6": {
+                "en": "Smaller bugfixes (core:OnOffState)",
+                "de": "Kleinere Bugfixes (core:OnOffState)",
+                "ru": "Мелкие исправления (core:OnOffState)",
+                "pt": "Correções de bugs menores (core:OnOffState)",
+                "nl": "Kleinere bugfixes (kern:OnOffState)",
+                "fr": "Petites corrections de bugs (core : OnOffState)",
+                "it": "Correzioni di bug minori (core: OnOffState)",
+                "es": "Corrección de errores más pequeños (núcleo: OnOffState)",
+                "pl": "Mniejsze poprawki (core:OnOffState)",
+                "zh-cn": "较小的错误修正（核心：OnOffState）"
+            },
+            "0.5.5": {
+                "en": "Made core:OnOffState changeable",
+                "de": "Core:OnOffState änderbar gemacht",
+                "ru": "Сделано ядро: OnOffState изменяемым",
+                "pt": "Núcleo feito: OnOffState mutável",
+                "nl": "Kern gemaakt:AanUitState veranderlijk",
+                "fr": "Noyau rendu : OnOffState modifiable",
+                "it": "Nucleo reso: OnOffState modificabile",
+                "es": "Núcleo hecho: OnOffState cambiable",
+                "pl": "Wykonany rdzeń: OnOffState zmienny",
+                "zh-cn": "使 core:OnOffState 可变"
+            }
+        },
+        "title": "Somfy Tahoma",
+        "titleLang": {
+            "en": "Somfy Tahoma"
+        },
+        "desc": {
+            "en": "Adapter to communicate with Somfy Tahoma"
+        },
+        "authors": [
+            "Marius Burkard <m.burkard@pixcept.de>",
+            "Excodibur"
+        ],
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "mode": "daemon",
+        "icon": "tahoma.png",
+        "extIcon": "https://raw.githubusercontent.com/Excodibur/ioBroker.tahoma/master/admin/tahoma.png",
+        "keywords": [
+            "somfy",
+            "blinds",
+            "tahoma",
+            "window"
+        ],
+        "readme": "https://github.com/Excodibur/ioBroker.tahoma/blob/master/README.md",
+        "loglevel": "info",
+        "type": "iot-systems",
+        "connectionType": "cloud",
+        "dataSource": "poll",
+        "license": "MIT",
+        "messagebox": true,
+        "materialize": true,
+        "adminUI": {
+            "config": "json"
+        },
+        "enabled": false,
+        "compact": true,
+        "dependencies": [
+            {
+                "js-controller": ">=3.0.0"
+            }
+        ],
+        "tier": 2
     },
-    "title": "Somfy Tahoma",
-    "titleLang": {
-      "en": "Somfy Tahoma"
+    "native": {
+        "username": "",
+        "password": "",
+        "pollinterval": 20000,
+        "tahomalinkurl": "https://www.tahomalink.com/enduser-mobile-web/enduserAPI/",
+        "devapi_authurl": "https://ha101-1.overkiz.com/enduser-mobile-web/enduserAPI/",
+        "localurl": "",
+        "bearer_token": "",
+        "gatewaypin": "",
+        "loginattempts": 3,
+        "delaybetweenloginattempts": 30,
+        "delayafterfailedlogin": 120,
+        "delayretryapplyqueue": 1500,
+        "usemdns": false
     },
-    "desc": {
-      "en": "Adapter to communicate with Somfy Tahoma"
-    },
-    "authors": [
-      "Marius Burkard <m.burkard@pixcept.de>",
-      "Excodibur"
+    "protectedNative": [
+        "password"
     ],
-    "platform": "Javascript/Node.js",
-    "main": "main.js",
-    "mode": "daemon",
-    "icon": "tahoma.png",
-    "extIcon": "https://raw.githubusercontent.com/Excodibur/ioBroker.tahoma/master/admin/tahoma.png",
-    "keywords": [
-      "somfy",
-      "blinds",
-      "tahoma",
-      "window"
+    "encryptedNative": [
+        "password"
     ],
-    "readme": "https://github.com/Excodibur/ioBroker.tahoma/blob/master/README.md",
-    "loglevel": "info",
-    "type": "iot-systems",
-    "connectionType": "cloud",
-    "dataSource": "poll",
-    "license": "MIT",
-    "messagebox": true,
-    "materialize": true,
-    "adminUI": {
-      "config": "json"
-    },
-    "enabled": false,
-    "compact": true,
-    "dependencies": [
-      {
-        "js-controller": ">=3.0.0"
-      }
-    ],
-    "tier": 2
-  },
-  "native": {
-    "username": "",
-    "password": "",
-    "pollinterval": 20000,
-    "tahomalinkurl": "https://www.tahomalink.com/enduser-mobile-web/enduserAPI/",
-    "devapi_authurl": "https://ha101-1.overkiz.com/enduser-mobile-web/enduserAPI/",
-    "localurl": "",
-    "bearer_token": "",
-    "gatewaypin": "",
-    "loginattempts": 3,
-    "delaybetweenloginattempts": 30,
-    "delayafterfailedlogin": 120,
-    "delayretryapplyqueue": 1500,
-    "usemdns": false
-  },
-  "protectedNative": [
-    "password"
-  ],
-  "encryptedNative": [
-    "password"
-  ],
-  "objects": [],
-  "instanceObjects": [
-    {
-      "_id": "info",
-      "type": "channel",
-      "common": {
-        "name": "Adapter-Information"
-      },
-      "native": {}
-    },
-    {
-      "_id": "info.connection",
-      "type": "state",
-      "common": {
-        "role": "indicator.connected",
-        "name": "Whether the adapter is connected to the gateway",
-        "type": "boolean",
-        "read": true,
-        "write": false,
-        "def": false
-      },
-      "native": {}
-    }
-  ]
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Adapter-Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Whether the adapter is connected to the gateway",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
 }
