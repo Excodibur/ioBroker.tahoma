@@ -174,6 +174,8 @@ function processStateChange (id, value) {
         controller.onSetOrientation(id, value);
     else if (id.match(/^actionGroups.*\.commands\.execute/) && value)
         controller.onExecuteCommand(id, value);
+    else if (id.match(/^devices.*\.states\.core:LightIntensityState$/))
+        controller.onIntensityStateChange(id, value);
     else if (id.match(/^devices.*\.commands\./) && value) {
         if (id.endsWith(":slow")) {
             adapter.log.debug("Triggered command with slow mode: " + id);
