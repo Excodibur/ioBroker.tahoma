@@ -3,6 +3,9 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## 0.9.0 (2022-10-21)
+- Added support for Somfy Connectivity Kit devices
+
 ## 0.8.0 (2022-08-26)
 - Added support for dimming via core:LightIntensityState
 
