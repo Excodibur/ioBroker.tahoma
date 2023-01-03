@@ -3,6 +3,9 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## 0.10.0 (2023-01-03)
+- Fixed warnings about _Failed getting execution state_ when using the local API.
+
 ## 0.9.0 (2022-10-21)
 - Added support for Somfy Connectivity Kit devices
 
