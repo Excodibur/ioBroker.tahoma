@@ -1,180 +1,181 @@
 {
-    "common": {
-        "name": "tahoma",
-        "version": "0.10.0",
-        "news": {
-            "0.10.0": {
-                "en": "Fixed warnings about _Failed getting execution state_ when using the local API.",
-                "de": "Behobene Warnungen über _Failed getting execution state_ bei der Verwendung der lokalen API.",
-                "ru": "Исправлены предупреждения о _Не удалось получить состояние исполнения_ при использовании локального API.",
-                "pt": "Avisos fixos sobre _Failed ficando state_ execução ao usar a API local.",
-                "nl": "Gevestigde waarschuwingen over het krijgen van executie staat als je de lokale API gebruikt.",
-                "fr": "Avertissements fixes sur _Failed get execution state_ lors de l'utilisation de l'API locale.",
-                "it": "Avvertenze riparate su _Failed ottenere l'esecuzione stato_ quando si utilizza l'API locale.",
-                "es": "Advertencias fijas sobre _Failed get execution state_ cuando utiliza la API local.",
-                "pl": "Fixed ostrzega o _Failed, gdy wykorzystuje lokalny API.",
-                "uk": "Виправлені попередження про стан виконання _.",
-                "zh-cn": "利用当地的免疫计划,对“没有获得执行的国家”发出警告。."
-            },
-            "0.9.0": {
-                "en": "Added support for Somfy Connectivity Kit devices",
-                "de": "Unterstützung für Somfy Connectivity Kit-Geräte",
-                "ru": "Добавлена поддержка Somfy Connectivity Kit устройства",
-                "pt": "Adicionado suporte para Somfy Connectivity Dispositivos de Kit",
-                "nl": "Verleende steun voor Somfy Connectivity Kit apparatuur",
-                "fr": "Ajout du support pour la connectivité Somfy Dispositifs de kit",
-                "it": "Aggiunto supporto per Connettività Somfy Dispositivi di kit",
-                "es": "Apoyo añadido para la conectividad Somfy Dispositivos de kit",
-                "pl": "Strona domowa Somfy urządzenia do gier",
-                "uk": "Додано підтримку підключення Somfy Комплекти",
-                "zh-cn": "增加对免疫接种的支持 Kit装置"
-            },
-            "0.8.0": {
-                "en": "Added support for dimming via core:LightIntensityState",
-                "de": "Unterstützung für Dimmen über Kern: LichtintensitätState",
-                "ru": "Добавлена поддержка затемнения через ядро: LightIntensityState",
-                "pt": "Adicionado suporte para dimming através do núcleo: Sistema de Intensidade de Luz",
-                "nl": "Toegevoegd ondersteuning voor dimmen via kern: Lichte intensiteit",
-                "fr": "Ajout du support pour le dimming via core: LightIntensityState",
-                "it": "Aggiunto supporto per dimming via core: Intensità della luce",
-                "es": "Agregado soporte para la regulación a través del núcleo: LightIntensityState",
-                "pl": "Wsparcie dla mnożenia przez rdzenie. Oficjalna strona LightIntensityState",
-                "zh-cn": "增加通过核心分娩的支助: A. 小规模国家"
-            },
-            "0.7.2": {
-                "en": "Fix switching between local and online api",
-                "de": "Schalten zwischen lokalen und online api",
-                "ru": "Исправление переключения между локальным и онлайн api",
-                "pt": "Fix switching entre api local e on-line",
-                "nl": "Quality over Quantity (QoQ) Releases Vertaling:",
-                "fr": "Interrupteur fixe entre api local et en ligne",
-                "it": "Fissare la commutazione tra api locali e online",
-                "es": "Corrección de conmutación entre api local y en línea",
-                "pl": "Fix przełącza się między lokalną i internetową apią",
-                "zh-cn": "地方和网上配件之间的固定转账"
-            },
-            "0.7.1": {
-                "en": "Fixed parsing issues as result of latest Tahoma Box update by Somfy",
-                "de": "Parsing-Probleme als Ergebnis des neuesten Tahoma Box-Updates von Somfy behoben",
-                "ru": "Исправлены проблемы с синтаксическим анализом в результате последнего обновления Tahoma Box от Somfy.",
-                "pt": "Corrigidos problemas de análise como resultado da atualização mais recente da Tahoma Box da Somfy",
-                "nl": "Parseerproblemen opgelost als gevolg van de laatste Tahoma Box-update van Somfy",
-                "fr": "Correction de problèmes d'analyse à la suite de la dernière mise à jour de Tahoma Box par Somfy",
-                "it": "Risolti problemi di analisi come risultato dell'ultimo aggiornamento di Tahoma Box di Somfy",
-                "es": "Se corrigieron problemas de análisis como resultado de la última actualización de Tahoma Box de Somfy",
-                "pl": "Naprawiono problemy z analizowaniem w wyniku ostatniej aktualizacji Tahoma Box przez Somfy",
-                "zh-cn": "修复了由于尚飞最新的 Tahoma Box 更新导致的解析问题"
-            },
-            "0.7.0": {
-                "en": "Added local API support to adapter\nSome fixes for newly added functionality",
-                "de": "Lokale API-Unterstützung zum Adapter hinzugefügt\nEinige Korrekturen für neu hinzugefügte Funktionen",
-                "ru": "Добавлена поддержка локального API для адаптера.\nНекоторые исправления для недавно добавленной функциональности",
-                "pt": "Adicionado suporte de API local ao adaptador\nAlgumas correções para funcionalidades recém-adicionadas",
-                "nl": "Lokale API-ondersteuning toegevoegd aan adapter\nEnkele oplossingen voor nieuw toegevoegde functionaliteit",
-                "fr": "Ajout de la prise en charge de l'API locale à l'adaptateur\nQuelques correctifs pour les fonctionnalités nouvellement ajoutées",
-                "it": "Aggiunto supporto API locale all'adattatore\nAlcune correzioni per funzionalità appena aggiunte",
-                "es": "Se agregó soporte de API local al adaptador\nAlgunas correcciones para la funcionalidad recién agregada",
-                "pl": "Dodano obsługę lokalnego API do adaptera\nNiektóre poprawki dla nowo dodanej funkcjonalności",
-                "zh-cn": "向适配器添加了本地 API 支持\n针对新增功能的一些修复"
-            },
-            "0.6.1": {
-                "en": "Fixed issue with refresh of device state",
-                "de": "Problem mit der Aktualisierung des Gerätestatus behoben",
-                "ru": "Исправлена проблема с обновлением состояния устройства",
-                "pt": "Corrigido problema com atualização do estado do dispositivo",
-                "nl": "Probleem opgelost met het vernieuwen van de apparaatstatus",
-                "fr": "Correction d'un problème avec l'actualisation de l'état de l'appareil",
-                "it": "Risolto il problema con l'aggiornamento dello stato del dispositivo",
-                "es": "Problema solucionado con la actualización del estado del dispositivo",
-                "pl": "Naprawiono problem z odświeżaniem stanu urządzenia",
-                "zh-cn": "修复了设备状态刷新问题"
-            }
-        },
-        "title": "Somfy Tahoma",
-        "titleLang": {
-            "en": "Somfy Tahoma"
-        },
-        "desc": {
-            "en": "Adapter to communicate with Somfy Tahoma"
-        },
-        "authors": [
-            "Marius Burkard <m.burkard@pixcept.de>",
-            "Excodibur"
-        ],
-        "platform": "Javascript/Node.js",
-        "main": "main.js",
-        "mode": "daemon",
-        "icon": "tahoma.png",
-        "extIcon": "https://raw.githubusercontent.com/Excodibur/ioBroker.tahoma/master/admin/tahoma.png",
-        "keywords": [
-            "somfy",
-            "blinds",
-            "tahoma",
-            "window"
-        ],
-        "readme": "https://github.com/Excodibur/ioBroker.tahoma/blob/master/README.md",
-        "loglevel": "info",
-        "type": "iot-systems",
-        "connectionType": "cloud",
-        "dataSource": "poll",
-        "license": "MIT",
-        "messagebox": true,
-        "materialize": true,
-        "adminUI": {
-            "config": "json"
-        },
-        "enabled": false,
-        "compact": true,
-        "dependencies": [
-            {
-                "js-controller": ">=3.0.0"
-            }
-        ],
-        "tier": 2
+  "common": {
+    "name": "tahoma",
+    "version": "0.10.1",
+    "news": {
+      "0.10.1": {
+        "en": "Fixed: Clear bearer token, if connection to local API fails, so new one can be fetched.",
+        "de": "Behoben: Klares Trager-Token, wenn die Verbindung mit der lokalen API ausfällt, so kann neu eingeholt werden.",
+        "ru": "Исправлено: Ясный токен медведя, если подключение к местному API не работает, так что новый можно забрать.",
+        "pt": "Corrigido: Token de portador claro, se a conexão com a API local falhar, então novo pode ser buscado.",
+        "nl": "Duidelijk draaggebruik, als de connectie met de lokale API faalt, kan er nieuwe worden opgehaald.",
+        "fr": "Correction : Un jeton d'ours clair, si la connexion à l'API locale échoue, donc un nouveau peut être fétiché.",
+        "it": "Risolto: Token chiaro del portatore, se la connessione all'API locale fallisce, in modo nuovo può essere catturato.",
+        "es": "Fijo: Borrar token del portador, si la conexión a la API local falla, por lo que se puede buscar uno nuevo.",
+        "pl": "Fixed: Clear bearer token, jeśli połączenia z lokalnym API nie powiodą się, to może zostać przyciągnięta nowa.",
+        "uk": "Виправлено: Чистий токени ведмедя, якщо підключення до локального API не виходить, так що новий може бути позапланшений.",
+        "zh-cn": "固定:如果与当地的消费者权利计划失败有关,那么新的人可以被搁置。."
+      },
+      "0.10.0": {
+        "en": "Fixed warnings about _Failed getting execution state_ when using the local API.",
+        "de": "Behobene Warnungen über _Failed getting execution state_ bei der Verwendung der lokalen API.",
+        "ru": "Исправлены предупреждения о _Не удалось получить состояние исполнения_ при использовании локального API.",
+        "pt": "Avisos fixos sobre _Failed ficando state_ execução ao usar a API local.",
+        "nl": "Gevestigde waarschuwingen over het krijgen van executie staat als je de lokale API gebruikt.",
+        "fr": "Avertissements fixes sur _Failed get execution state_ lors de l'utilisation de l'API locale.",
+        "it": "Avvertenze riparate su _Failed ottenere l'esecuzione stato_ quando si utilizza l'API locale.",
+        "es": "Advertencias fijas sobre _Failed get execution state_ cuando utiliza la API local.",
+        "pl": "Fixed ostrzega o _Failed, gdy wykorzystuje lokalny API.",
+        "uk": "Виправлені попередження про стан виконання _.",
+        "zh-cn": "利用当地的免疫计划,对“没有获得执行的国家”发出警告。."
+      },
+      "0.9.0": {
+        "en": "Added support for Somfy Connectivity Kit devices",
+        "de": "Unterstützung für Somfy Connectivity Kit-Geräte",
+        "ru": "Добавлена поддержка Somfy Connectivity Kit устройства",
+        "pt": "Adicionado suporte para Somfy Connectivity Dispositivos de Kit",
+        "nl": "Verleende steun voor Somfy Connectivity Kit apparatuur",
+        "fr": "Ajout du support pour la connectivité Somfy Dispositifs de kit",
+        "it": "Aggiunto supporto per Connettività Somfy Dispositivi di kit",
+        "es": "Apoyo añadido para la conectividad Somfy Dispositivos de kit",
+        "pl": "Strona domowa Somfy urządzenia do gier",
+        "uk": "Додано підтримку підключення Somfy Комплекти",
+        "zh-cn": "增加对免疫接种的支持 Kit装置"
+      },
+      "0.8.0": {
+        "en": "Added support for dimming via core:LightIntensityState",
+        "de": "Unterstützung für Dimmen über Kern: LichtintensitätState",
+        "ru": "Добавлена поддержка затемнения через ядро: LightIntensityState",
+        "pt": "Adicionado suporte para dimming através do núcleo: Sistema de Intensidade de Luz",
+        "nl": "Toegevoegd ondersteuning voor dimmen via kern: Lichte intensiteit",
+        "fr": "Ajout du support pour le dimming via core: LightIntensityState",
+        "it": "Aggiunto supporto per dimming via core: Intensità della luce",
+        "es": "Agregado soporte para la regulación a través del núcleo: LightIntensityState",
+        "pl": "Wsparcie dla mnożenia przez rdzenie. Oficjalna strona LightIntensityState",
+        "zh-cn": "增加通过核心分娩的支助: A. 小规模国家"
+      },
+      "0.7.2": {
+        "en": "Fix switching between local and online api",
+        "de": "Schalten zwischen lokalen und online api",
+        "ru": "Исправление переключения между локальным и онлайн api",
+        "pt": "Fix switching entre api local e on-line",
+        "nl": "Quality over Quantity (QoQ) Releases Vertaling:",
+        "fr": "Interrupteur fixe entre api local et en ligne",
+        "it": "Fissare la commutazione tra api locali e online",
+        "es": "Corrección de conmutación entre api local y en línea",
+        "pl": "Fix przełącza się między lokalną i internetową apią",
+        "zh-cn": "地方和网上配件之间的固定转账"
+      },
+      "0.7.1": {
+        "en": "Fixed parsing issues as result of latest Tahoma Box update by Somfy",
+        "de": "Parsing-Probleme als Ergebnis des neuesten Tahoma Box-Updates von Somfy behoben",
+        "ru": "Исправлены проблемы с синтаксическим анализом в результате последнего обновления Tahoma Box от Somfy.",
+        "pt": "Corrigidos problemas de análise como resultado da atualização mais recente da Tahoma Box da Somfy",
+        "nl": "Parseerproblemen opgelost als gevolg van de laatste Tahoma Box-update van Somfy",
+        "fr": "Correction de problèmes d'analyse à la suite de la dernière mise à jour de Tahoma Box par Somfy",
+        "it": "Risolti problemi di analisi come risultato dell'ultimo aggiornamento di Tahoma Box di Somfy",
+        "es": "Se corrigieron problemas de análisis como resultado de la última actualización de Tahoma Box de Somfy",
+        "pl": "Naprawiono problemy z analizowaniem w wyniku ostatniej aktualizacji Tahoma Box przez Somfy",
+        "zh-cn": "修复了由于尚飞最新的 Tahoma Box 更新导致的解析问题"
+      },
+      "0.7.0": {
+        "en": "Added local API support to adapter\nSome fixes for newly added functionality",
+        "de": "Lokale API-Unterstützung zum Adapter hinzugefügt\nEinige Korrekturen für neu hinzugefügte Funktionen",
+        "ru": "Добавлена поддержка локального API для адаптера.\nНекоторые исправления для недавно добавленной функциональности",
+        "pt": "Adicionado suporte de API local ao adaptador\nAlgumas correções para funcionalidades recém-adicionadas",
+        "nl": "Lokale API-ondersteuning toegevoegd aan adapter\nEnkele oplossingen voor nieuw toegevoegde functionaliteit",
+        "fr": "Ajout de la prise en charge de l'API locale à l'adaptateur\nQuelques correctifs pour les fonctionnalités nouvellement ajoutées",
+        "it": "Aggiunto supporto API locale all'adattatore\nAlcune correzioni per funzionalità appena aggiunte",
+        "es": "Se agregó soporte de API local al adaptador\nAlgunas correcciones para la funcionalidad recién agregada",
+        "pl": "Dodano obsługę lokalnego API do adaptera\nNiektóre poprawki dla nowo dodanej funkcjonalności",
+        "zh-cn": "向适配器添加了本地 API 支持\n针对新增功能的一些修复"
+      }
     },
-    "native": {
-        "username": "",
-        "password": "",
-        "pollinterval": 20000,
-        "tahomalinkurl": "https://www.tahomalink.com/enduser-mobile-web/enduserAPI/",
-        "devapi_authurl": "https://ha101-1.overkiz.com/enduser-mobile-web/enduserAPI/",
-        "localurl": "",
-        "bearer_token": "",
-        "gatewaypin": "",
-        "loginattempts": 3,
-        "delaybetweenloginattempts": 30,
-        "delayafterfailedlogin": 120,
-        "delayretryapplyqueue": 1500,
-        "usemdns": false
+    "title": "Somfy Tahoma",
+    "titleLang": {
+      "en": "Somfy Tahoma"
     },
-    "protectedNative": [
-        "password"
+    "desc": {
+      "en": "Adapter to communicate with Somfy Tahoma"
+    },
+    "authors": [
+      "Marius Burkard <m.burkard@pixcept.de>",
+      "Excodibur"
     ],
-    "encryptedNative": [
-        "password"
+    "platform": "Javascript/Node.js",
+    "main": "main.js",
+    "mode": "daemon",
+    "icon": "tahoma.png",
+    "extIcon": "https://raw.githubusercontent.com/Excodibur/ioBroker.tahoma/master/admin/tahoma.png",
+    "keywords": [
+      "somfy",
+      "blinds",
+      "tahoma",
+      "window"
     ],
-    "objects": [],
-    "instanceObjects": [
-        {
-            "_id": "info",
-            "type": "channel",
-            "common": {
-                "name": "Adapter-Information"
-            },
-            "native": {}
-        },
-        {
-            "_id": "info.connection",
-            "type": "state",
-            "common": {
-                "role": "indicator.connected",
-                "name": "Whether the adapter is connected to the gateway",
-                "type": "boolean",
-                "read": true,
-                "write": false,
-                "def": false
-            },
-            "native": {}
-        }
-    ]
+    "readme": "https://github.com/Excodibur/ioBroker.tahoma/blob/master/README.md",
+    "loglevel": "info",
+    "type": "iot-systems",
+    "connectionType": "cloud",
+    "dataSource": "poll",
+    "license": "MIT",
+    "messagebox": true,
+    "materialize": true,
+    "adminUI": {
+      "config": "json"
+    },
+    "enabled": false,
+    "compact": true,
+    "dependencies": [
+      {
+        "js-controller": ">=3.0.0"
+      }
+    ],
+    "tier": 2
+  },
+  "native": {
+    "username": "",
+    "password": "",
+    "pollinterval": 20000,
+    "tahomalinkurl": "https://www.tahomalink.com/enduser-mobile-web/enduserAPI/",
+    "devapi_authurl": "https://ha101-1.overkiz.com/enduser-mobile-web/enduserAPI/",
+    "localurl": "",
+    "bearer_token": "",
+    "gatewaypin": "",
+    "loginattempts": 3,
+    "delaybetweenloginattempts": 30,
+    "delayafterfailedlogin": 120,
+    "delayretryapplyqueue": 1500,
+    "usemdns": false
+  },
+  "protectedNative": [
+    "password"
+  ],
+  "encryptedNative": [
+    "password"
+  ],
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Adapter-Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Whether the adapter is connected to the gateway",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
 }
