@@ -3,6 +3,9 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## 0.10.2 (2023-03-25)
+- Fixed: Improved core:MovingState. Should reflect moving blinds correctly now.
+
 ## 0.10.1 (2023-01-23)
 - Fixed: Clear bearer token, if connection to local API fails, so new one can be fetched.
 

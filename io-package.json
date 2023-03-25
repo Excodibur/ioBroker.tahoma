@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "tahoma",
-    "version": "0.10.1",
+    "version": "0.10.2",
     "news": {
+      "0.10.2": {
+        "en": "Fixed: Improved core:MovingState. Should reflect moving blinds correctly now.",
+        "de": "Behoben: Verbesserter Kern:MovingState. Sollten bewegte Jalousien jetzt korrekt reflektieren.",
+        "ru": "Исправлено: Улучшенное ядро: MovingState. Должны правильно отражать движущиеся жалюзи.",
+        "pt": "Corrigido: núcleo melhorado:MovingState. Deve refletir persianas em movimento corretamente agora.",
+        "nl": "Geïmproviseerde kern: Je moet nu de blinden weerspiegelen.",
+        "fr": "Fixed: Improved core:MovingState. Devrait refléter les stores mobiles correctement maintenant.",
+        "it": "Risolto: nucleo migliorato:MovingState. Dovrebbe riflettere le tende in movimento correttamente ora.",
+        "es": "Fijo: Mejora del núcleo: Estado en movimiento. Debería reflejar las persianas móviles correctamente ahora.",
+        "pl": "Współredaktor: Improved core:MovingState. Odwraca się do niewidomych.",
+        "uk": "Виправлено: Покращено ядро:MovingState. Чи слід відобразити рухомі жалюзі прямо зараз.",
+        "zh-cn": "固定:改进核心:Moving State。 如果反映现在正确的态度。."
+      },
       "0.10.1": {
         "en": "Fixed: Clear bearer token, if connection to local API fails, so new one can be fetched.",
         "de": "Behoben: Klares Trager-Token, wenn die Verbindung mit der lokalen API ausfällt, so kann neu eingeholt werden.",
@@ -77,18 +90,6 @@
         "es": "Se corrigieron problemas de análisis como resultado de la última actualización de Tahoma Box de Somfy",
         "pl": "Naprawiono problemy z analizowaniem w wyniku ostatniej aktualizacji Tahoma Box przez Somfy",
         "zh-cn": "修复了由于尚飞最新的 Tahoma Box 更新导致的解析问题"
-      },
-      "0.7.0": {
-        "en": "Added local API support to adapter\nSome fixes for newly added functionality",
-        "de": "Lokale API-Unterstützung zum Adapter hinzugefügt\nEinige Korrekturen für neu hinzugefügte Funktionen",
-        "ru": "Добавлена поддержка локального API для адаптера.\nНекоторые исправления для недавно добавленной функциональности",
-        "pt": "Adicionado suporte de API local ao adaptador\nAlgumas correções para funcionalidades recém-adicionadas",
-        "nl": "Lokale API-ondersteuning toegevoegd aan adapter\nEnkele oplossingen voor nieuw toegevoegde functionaliteit",
-        "fr": "Ajout de la prise en charge de l'API locale à l'adaptateur\nQuelques correctifs pour les fonctionnalités nouvellement ajoutées",
-        "it": "Aggiunto supporto API locale all'adattatore\nAlcune correzioni per funzionalità appena aggiunte",
-        "es": "Se agregó soporte de API local al adaptador\nAlgunas correcciones para la funcionalidad recién agregada",
-        "pl": "Dodano obsługę lokalnego API do adaptera\nNiektóre poprawki dla nowo dodanej funkcjonalności",
-        "zh-cn": "向适配器添加了本地 API 支持\n针对新增功能的一些修复"
       }
     },
     "title": "Somfy Tahoma",
