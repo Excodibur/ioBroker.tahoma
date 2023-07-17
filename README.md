@@ -8,7 +8,6 @@
 ![Number of Installations (latest)](http://iobroker.live/badges/tahoma-installed.svg)
 ![Number of Installations (stable)](http://iobroker.live/badges/tahoma-stable.svg)
 
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Excodibur/ioBroker.tahoma.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Excodibur/ioBroker.tahoma/context:javascript)
 ![Github release status](https://github.com/Excodibur/iobroker.tahoma/workflows/Build%2C%20Test%20and%20Release/badge.svg)
 
 [![Translation status](https://weblate.iobroker.net/widgets/adapters/-/tahoma/svg-badge.svg)](https://weblate.iobroker.net/engage/adapters/?utm_source=widget)

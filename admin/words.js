@@ -13,6 +13,7 @@ systemDictionary = {
         "it": "Nome utente",
         "es": "Nombre de usuario",
         "pl": "Nazwa Użytkownika",
+        "uk": "ім'я користувача",
         "zh-cn": "用户名"
     },
     "password": {
@@ -25,6 +26,7 @@ systemDictionary = {
         "it": "parola d'ordine",
         "es": "contraseña",
         "pl": "hasło",
+        "uk": "увійти",
         "zh-cn": "密码"
     },
     "pollinterval": {
@@ -37,6 +39,7 @@ systemDictionary = {
         "it": "intervallo di polling",
         "es": "intervalo de votación",
         "pl": "interwał sondowania",
+        "uk": "інтервал опитування",
         "zh-cn": "轮询间隔"
     },
     "gatewaypin": {
@@ -49,6 +52,7 @@ systemDictionary = {
         "it": "PIN della scatola Tahoma (es. 1234-5678-9012)",
         "es": "PIN de la caja Tahoma (ej. 1234-5678-9012)",
         "pl": "PIN skrzynki Tahoma (np. 1234-5678-9012)",
+        "uk": "PIN коробки Tahoma (наприклад, 1234-5678-9012",
         "zh-cn": "Tahoma 盒子的 PIN 码（例如 1234-5678-9012）"
     },
     "on save adapter restarts with new config immediately": {
@@ -61,6 +65,7 @@ systemDictionary = {
         "it": "on save adapter si riavvia immediatamente con la nuova configurazione",
         "es": "al guardar el adaptador se reinicia con la nueva configuración inmediatamente",
         "pl": "po zapisaniu adapter natychmiast uruchamia się ponownie z nową konfiguracją",
+        "uk": "на збереження перезавантаження адаптера з новим налаштуванням відразу",
         "zh-cn": "保存适配器上的适配器立即以新配置重新启动"
     },
     "basic settings": {
@@ -73,6 +78,7 @@ systemDictionary = {
         "it": "impostazioni di base",
         "es": "ajustes básicos",
         "pl": "podstawowe ustawienia",
+        "uk": "базові налаштування",
         "zh-cn": "基本设置"
     },
     "advanced connection settings": {
@@ -85,6 +91,7 @@ systemDictionary = {
         "it": "impostazioni di connessione avanzate",
         "es": "configuración de conexión avanzada",
         "pl": "zaawansowane ustawienia połączenia",
+        "uk": "розширені налаштування підключення",
         "zh-cn": "高级连接设置"
     },
     "login attempts": {
@@ -97,6 +104,7 @@ systemDictionary = {
         "it": "tentativi di accesso",
         "es": "intentos de acceso",
         "pl": "próby logowania",
+        "uk": "логін",
         "zh-cn": "登录尝试"
     },
     "delay between login attempts": {
@@ -109,6 +117,7 @@ systemDictionary = {
         "it": "ritardo tra i tentativi di accesso (secondi)",
         "es": "retraso entre intentos de inicio de sesión (segundos)",
         "pl": "opóźnienie między próbami logowania (sekundy)",
+        "uk": "затримки між спробами входу",
         "zh-cn": "登录尝试之间的延迟（秒）"
     },
     "delay after failed login": {
@@ -121,6 +130,7 @@ systemDictionary = {
         "it": "ritardo dopo accesso fallito (secondi)",
         "es": "retraso después de un inicio de sesión fallido (segundos)",
         "pl": "opóźnienie po nieudanym logowaniu (sekundy)",
+        "uk": "Заборонений логін (секунди)",
         "zh-cn": "登录失败后延迟（秒）"
     },
     "delay before applyqueue retry": {
@@ -133,6 +143,7 @@ systemDictionary = {
         "it": "ritardo prima del tentativo di applicare Queue (millisecondi)",
         "es": "retraso antes de aplicar reintento en cola (milisegundos)",
         "pl": "opóźnienie przed ponownym zastosowaniem kolejki (milisekundy)",
+        "uk": "Перед застосуванням птиця (milliсекунди)",
         "zh-cn": "applyqueue 重试前的延迟（毫秒）"
     },
     "Use MDNS for local network name resolution": {
@@ -145,6 +156,7 @@ systemDictionary = {
         "it": "Utilizzare MDNS per la risoluzione dei nomi di rete locale",
         "es": "Utilice MDNS para la resolución de nombres de red local",
         "pl": "Użyj MDNS do rozpoznawania nazw sieci lokalnej",
+        "uk": "Використовуйте MDNS для локальної мережі",
         "zh-cn": "使用 MDNS 进行本地网络名称解析"
     },
     "local api settings": {
@@ -157,6 +169,7 @@ systemDictionary = {
         "it": "impostazioni dell'API locale",
         "es": "configuración de la API local",
         "pl": "lokalne ustawienia API",
+        "uk": "локальні настройки api",
         "zh-cn": "本地 api 设置"
     }
 };

@@ -54,42 +54,6 @@
                 "pl": "Strona domowa Somfy urządzenia do gier",
                 "uk": "Додано підтримку підключення Somfy Комплекти",
                 "zh-cn": "增加对免疫接种的支持 Kit装置"
-            },
-            "0.8.0": {
-                "en": "Added support for dimming via core:LightIntensityState",
-                "de": "Unterstützung für Dimmen über Kern: LichtintensitätState",
-                "ru": "Добавлена поддержка затемнения через ядро: LightIntensityState",
-                "pt": "Adicionado suporte para dimming através do núcleo: Sistema de Intensidade de Luz",
-                "nl": "Toegevoegd ondersteuning voor dimmen via kern: Lichte intensiteit",
-                "fr": "Ajout du support pour le dimming via core: LightIntensityState",
-                "it": "Aggiunto supporto per dimming via core: Intensità della luce",
-                "es": "Agregado soporte para la regulación a través del núcleo: LightIntensityState",
-                "pl": "Wsparcie dla mnożenia przez rdzenie. Oficjalna strona LightIntensityState",
-                "zh-cn": "增加通过核心分娩的支助: A. 小规模国家"
-            },
-            "0.7.2": {
-                "en": "Fix switching between local and online api",
-                "de": "Schalten zwischen lokalen und online api",
-                "ru": "Исправление переключения между локальным и онлайн api",
-                "pt": "Fix switching entre api local e on-line",
-                "nl": "Quality over Quantity (QoQ) Releases Vertaling:",
-                "fr": "Interrupteur fixe entre api local et en ligne",
-                "it": "Fissare la commutazione tra api locali e online",
-                "es": "Corrección de conmutación entre api local y en línea",
-                "pl": "Fix przełącza się między lokalną i internetową apią",
-                "zh-cn": "地方和网上配件之间的固定转账"
-            },
-            "0.7.1": {
-                "en": "Fixed parsing issues as result of latest Tahoma Box update by Somfy",
-                "de": "Parsing-Probleme als Ergebnis des neuesten Tahoma Box-Updates von Somfy behoben",
-                "ru": "Исправлены проблемы с синтаксическим анализом в результате последнего обновления Tahoma Box от Somfy.",
-                "pt": "Corrigidos problemas de análise como resultado da atualização mais recente da Tahoma Box da Somfy",
-                "nl": "Parseerproblemen opgelost als gevolg van de laatste Tahoma Box-update van Somfy",
-                "fr": "Correction de problèmes d'analyse à la suite de la dernière mise à jour de Tahoma Box par Somfy",
-                "it": "Risolti problemi di analisi come risultato dell'ultimo aggiornamento di Tahoma Box di Somfy",
-                "es": "Se corrigieron problemas de análisis como resultado de la última actualización de Tahoma Box de Somfy",
-                "pl": "Naprawiono problemy z analizowaniem w wyniku ostatniej aktualizacji Tahoma Box przez Somfy",
-                "zh-cn": "修复了由于尚飞最新的 Tahoma Box 更新导致的解析问题"
             }
         },
         "titleLang": {

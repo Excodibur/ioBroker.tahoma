@@ -1,0 +1,15 @@
+{
+    "Use MDNS for local network name resolution": "Використовуйте MDNS для локальної мережі",
+    "advanced connection settings": "розширені налаштування підключення",
+    "basic settings": "базові налаштування",
+    "delay after failed login": "Заборонений логін (секунди)",
+    "delay before applyqueue retry": "Перед застосуванням птиця (milliсекунди)",
+    "delay between login attempts": "затримки між спробами входу",
+    "gatewaypin": "PIN коробки Tahoma (наприклад, 1234-5678-9012",
+    "local api settings": "локальні настройки api",
+    "login attempts": "логін",
+    "on save adapter restarts with new config immediately": "на збереження перезавантаження адаптера з новим налаштуванням відразу",
+    "password": "увійти",
+    "pollinterval": "інтервал опитування",
+    "username": "ім'я користувача"
+}
