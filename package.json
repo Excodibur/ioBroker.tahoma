@@ -27,7 +27,7 @@
     "url": "https://github.com/Excodibur/ioBroker.tahoma"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^2.6.8",
+    "@iobroker/adapter-core": "^3.0.3",
     "@strathcole/iob-lib": "^0.1.0",
     "request": "^2.88.0"
   },
