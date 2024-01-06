@@ -11,5 +11,5 @@
     "on save adapter restarts with new config immediately": "Beim Speichern wird der Adapter sofort mit der neuen Konfiguration neu gestartet",
     "password": "Passwort",
     "pollinterval": "Abrufintervall",
-    "username": "Nutzername"
+    "username": "Benutzername"
 }
