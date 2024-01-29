@@ -3,7 +3,7 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
-## **WORK IN PROGRESS**
+## 0.10.3 (2024-01-29)
 - Fixed: Some crashed caused by event-updates were fixed with a workaround.
 
 ## 0.10.2 (2023-03-25)

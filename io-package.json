@@ -1,165 +1,178 @@
 {
-    "common": {
-        "name": "tahoma",
-        "version": "0.10.2",
-        "news": {
-            "0.10.2": {
-                "en": "Fixed: Improved core:MovingState. Should reflect moving blinds correctly now.",
-                "de": "Behoben: Verbesserter Kern:MovingState. Sollten bewegte Jalousien jetzt korrekt reflektieren.",
-                "ru": "Исправлено: Улучшенное ядро: MovingState. Должны правильно отражать движущиеся жалюзи.",
-                "pt": "Corrigido: núcleo melhorado:MovingState. Deve refletir persianas em movimento corretamente agora.",
-                "nl": "Geïmproviseerde kern: Je moet nu de blinden weerspiegelen.",
-                "fr": "Fixed: Improved core:MovingState. Devrait refléter les stores mobiles correctement maintenant.",
-                "it": "Risolto: nucleo migliorato:MovingState. Dovrebbe riflettere le tende in movimento correttamente ora.",
-                "es": "Fijo: Mejora del núcleo: Estado en movimiento. Debería reflejar las persianas móviles correctamente ahora.",
-                "pl": "Współredaktor: Improved core:MovingState. Odwraca się do niewidomych.",
-                "uk": "Виправлено: Покращено ядро:MovingState. Чи слід відобразити рухомі жалюзі прямо зараз.",
-                "zh-cn": "固定:改进核心:Moving State。 如果反映现在正确的态度。."
-            },
-            "0.10.1": {
-                "en": "Fixed: Clear bearer token, if connection to local API fails, so new one can be fetched.",
-                "de": "Behoben: Klares Trager-Token, wenn die Verbindung mit der lokalen API ausfällt, so kann neu eingeholt werden.",
-                "ru": "Исправлено: Ясный токен медведя, если подключение к местному API не работает, так что новый можно забрать.",
-                "pt": "Corrigido: Token de portador claro, se a conexão com a API local falhar, então novo pode ser buscado.",
-                "nl": "Duidelijk draaggebruik, als de connectie met de lokale API faalt, kan er nieuwe worden opgehaald.",
-                "fr": "Correction : Un jeton d'ours clair, si la connexion à l'API locale échoue, donc un nouveau peut être fétiché.",
-                "it": "Risolto: Token chiaro del portatore, se la connessione all'API locale fallisce, in modo nuovo può essere catturato.",
-                "es": "Fijo: Borrar token del portador, si la conexión a la API local falla, por lo que se puede buscar uno nuevo.",
-                "pl": "Fixed: Clear bearer token, jeśli połączenia z lokalnym API nie powiodą się, to może zostać przyciągnięta nowa.",
-                "uk": "Виправлено: Чистий токени ведмедя, якщо підключення до локального API не виходить, так що новий може бути позапланшений.",
-                "zh-cn": "固定:如果与当地的消费者权利计划失败有关,那么新的人可以被搁置。."
-            },
-            "0.10.0": {
-                "en": "Fixed warnings about _Failed getting execution state_ when using the local API.",
-                "de": "Behobene Warnungen über _Failed getting execution state_ bei der Verwendung der lokalen API.",
-                "ru": "Исправлены предупреждения о _Не удалось получить состояние исполнения_ при использовании локального API.",
-                "pt": "Avisos fixos sobre _Failed ficando state_ execução ao usar a API local.",
-                "nl": "Gevestigde waarschuwingen over het krijgen van executie staat als je de lokale API gebruikt.",
-                "fr": "Avertissements fixes sur _Failed get execution state_ lors de l'utilisation de l'API locale.",
-                "it": "Avvertenze riparate su _Failed ottenere l'esecuzione stato_ quando si utilizza l'API locale.",
-                "es": "Advertencias fijas sobre _Failed get execution state_ cuando utiliza la API local.",
-                "pl": "Fixed ostrzega o _Failed, gdy wykorzystuje lokalny API.",
-                "uk": "Виправлені попередження про стан виконання _.",
-                "zh-cn": "利用当地的免疫计划,对“没有获得执行的国家”发出警告。."
-            },
-            "0.9.0": {
-                "en": "Added support for Somfy Connectivity Kit devices",
-                "de": "Unterstützung für Somfy Connectivity Kit-Geräte",
-                "ru": "Добавлена поддержка Somfy Connectivity Kit устройства",
-                "pt": "Adicionado suporte para Somfy Connectivity Dispositivos de Kit",
-                "nl": "Verleende steun voor Somfy Connectivity Kit apparatuur",
-                "fr": "Ajout du support pour la connectivité Somfy Dispositifs de kit",
-                "it": "Aggiunto supporto per Connettività Somfy Dispositivi di kit",
-                "es": "Apoyo añadido para la conectividad Somfy Dispositivos de kit",
-                "pl": "Strona domowa Somfy urządzenia do gier",
-                "uk": "Додано підтримку підключення Somfy Комплекти",
-                "zh-cn": "增加对免疫接种的支持 Kit装置"
-            }
-        },
-        "titleLang": {
-            "en": "Somfy Tahoma",
-            "de": "Somfy Tahoma",
-            "ru": "Сомфи Тахома",
-            "pt": "Somfy Tahoma",
-            "nl": "Somfy Tahoma",
-            "fr": "Somfy Tahoma",
-            "it": "Somfy Tahoma",
-            "es": "Somfy Tahoma",
-            "pl": "Somfy Tahoma",
-            "uk": "Сомфія Тагома",
-            "zh-cn": "Somfy Tahoma"
-        },
-        "desc": {
-            "en": "Adapter to communicate with Somfy Tahoma",
-            "de": "Adapter zur Kommunikation mit Somfy Tahoma",
-            "ru": "Адаптер для общения с Somfy Tahoma",
-            "pt": "Adaptador para se comunicar com Somfy Tahoma",
-            "nl": "Adapter om te communiceren met Somfy Tahoma",
-            "fr": "Adaptateur pour communiquer avec Somfy Tahoma",
-            "it": "Adattatore per comunicare con Somfy Tahoma",
-            "es": "Adaptador para comunicarse con Somfy Tahoma",
-            "pl": "Połącz do Somfy Tahoma",
-            "uk": "Адаптер для спілкування з Somfy Tahoma",
-            "zh-cn": "与Somfy Tahoma联系的道歉"
-        },
-        "authors": [
-            "Marius Burkard <m.burkard@pixcept.de>",
-            "Excodibur"
-        ],
-        "platform": "Javascript/Node.js",
-        "main": "main.js",
-        "mode": "daemon",
-        "icon": "tahoma.png",
-        "extIcon": "https://raw.githubusercontent.com/Excodibur/ioBroker.tahoma/master/admin/tahoma.png",
-        "keywords": [
-            "somfy",
-            "blinds",
-            "tahoma",
-            "window"
-        ],
-        "readme": "https://github.com/Excodibur/ioBroker.tahoma/blob/master/README.md",
-        "loglevel": "info",
-        "type": "iot-systems",
-        "connectionType": "cloud",
-        "dataSource": "poll",
-        "license": "MIT",
-        "messagebox": true,
-        "materialize": true,
-        "adminUI": {
-            "config": "json"
-        },
-        "enabled": false,
-        "compact": true,
-        "dependencies": [
-            {
-                "js-controller": ">=3.0.0"
-            }
-        ],
-        "tier": 2
+  "common": {
+    "name": "tahoma",
+    "version": "0.10.3",
+    "news": {
+      "0.10.3": {
+        "en": "Fixed: Some crashed caused by event-updates were fixed with a workaround.",
+        "de": "Behoben: Einige von Event-Updates verursachte Absturz wurden mit einem Workaround behoben.",
+        "ru": "Исправлено: некоторые аварии, вызванные обновлением событий, были зафиксированы с обходом.",
+        "pt": "Corrigido: Alguns acidentes causados por eventos-updates foram corrigidos com uma solução alternativa.",
+        "nl": "Fixed: Sommige crashen veroorzaakt door gebeurtenissen-updates werden opgelost met een oplossing.",
+        "fr": "Correction : Certains accidentés causés par des mises à jour d'événements ont été corrigés avec une solution de rechange.",
+        "it": "Risolto: Alcuni crash causati da eventi-updates sono stati fissati con un workaround.",
+        "es": "Arreglado: Algunos se estrellaron causados por las actualizaciones de eventos fueron fijos con una solución de trabajo.",
+        "pl": "Naprawiono: Niektóre awarie spowodowane przez event- updates zostały naprawione za pomocą obejścia.",
+        "uk": "Виправлено: Деякі збитки, викликані подіями, були виправлені за допомогою завдання.",
+        "zh-cn": "固定:有的因事件更新而坠毁,有的则固定在工作间隙."
+      },
+      "0.10.2": {
+        "en": "Fixed: Improved core:MovingState. Should reflect moving blinds correctly now.",
+        "de": "Behoben: Verbesserter Kern:MovingState. Sollten bewegte Jalousien jetzt korrekt reflektieren.",
+        "ru": "Исправлено: Улучшенное ядро: MovingState. Должны правильно отражать движущиеся жалюзи.",
+        "pt": "Corrigido: núcleo melhorado:MovingState. Deve refletir persianas em movimento corretamente agora.",
+        "nl": "Geïmproviseerde kern: Je moet nu de blinden weerspiegelen.",
+        "fr": "Fixed: Improved core:MovingState. Devrait refléter les stores mobiles correctement maintenant.",
+        "it": "Risolto: nucleo migliorato:MovingState. Dovrebbe riflettere le tende in movimento correttamente ora.",
+        "es": "Fijo: Mejora del núcleo: Estado en movimiento. Debería reflejar las persianas móviles correctamente ahora.",
+        "pl": "Współredaktor: Improved core:MovingState. Odwraca się do niewidomych.",
+        "uk": "Виправлено: Покращено ядро:MovingState. Чи слід відобразити рухомі жалюзі прямо зараз.",
+        "zh-cn": "固定:改进核心:Moving State。 如果反映现在正确的态度。."
+      },
+      "0.10.1": {
+        "en": "Fixed: Clear bearer token, if connection to local API fails, so new one can be fetched.",
+        "de": "Behoben: Klares Trager-Token, wenn die Verbindung mit der lokalen API ausfällt, so kann neu eingeholt werden.",
+        "ru": "Исправлено: Ясный токен медведя, если подключение к местному API не работает, так что новый можно забрать.",
+        "pt": "Corrigido: Token de portador claro, se a conexão com a API local falhar, então novo pode ser buscado.",
+        "nl": "Duidelijk draaggebruik, als de connectie met de lokale API faalt, kan er nieuwe worden opgehaald.",
+        "fr": "Correction : Un jeton d'ours clair, si la connexion à l'API locale échoue, donc un nouveau peut être fétiché.",
+        "it": "Risolto: Token chiaro del portatore, se la connessione all'API locale fallisce, in modo nuovo può essere catturato.",
+        "es": "Fijo: Borrar token del portador, si la conexión a la API local falla, por lo que se puede buscar uno nuevo.",
+        "pl": "Fixed: Clear bearer token, jeśli połączenia z lokalnym API nie powiodą się, to może zostać przyciągnięta nowa.",
+        "uk": "Виправлено: Чистий токени ведмедя, якщо підключення до локального API не виходить, так що новий може бути позапланшений.",
+        "zh-cn": "固定:如果与当地的消费者权利计划失败有关,那么新的人可以被搁置。."
+      },
+      "0.10.0": {
+        "en": "Fixed warnings about _Failed getting execution state_ when using the local API.",
+        "de": "Behobene Warnungen über _Failed getting execution state_ bei der Verwendung der lokalen API.",
+        "ru": "Исправлены предупреждения о _Не удалось получить состояние исполнения_ при использовании локального API.",
+        "pt": "Avisos fixos sobre _Failed ficando state_ execução ao usar a API local.",
+        "nl": "Gevestigde waarschuwingen over het krijgen van executie staat als je de lokale API gebruikt.",
+        "fr": "Avertissements fixes sur _Failed get execution state_ lors de l'utilisation de l'API locale.",
+        "it": "Avvertenze riparate su _Failed ottenere l'esecuzione stato_ quando si utilizza l'API locale.",
+        "es": "Advertencias fijas sobre _Failed get execution state_ cuando utiliza la API local.",
+        "pl": "Fixed ostrzega o _Failed, gdy wykorzystuje lokalny API.",
+        "uk": "Виправлені попередження про стан виконання _.",
+        "zh-cn": "利用当地的免疫计划,对“没有获得执行的国家”发出警告。."
+      },
+      "0.9.0": {
+        "en": "Added support for Somfy Connectivity Kit devices",
+        "de": "Unterstützung für Somfy Connectivity Kit-Geräte",
+        "ru": "Добавлена поддержка Somfy Connectivity Kit устройства",
+        "pt": "Adicionado suporte para Somfy Connectivity Dispositivos de Kit",
+        "nl": "Verleende steun voor Somfy Connectivity Kit apparatuur",
+        "fr": "Ajout du support pour la connectivité Somfy Dispositifs de kit",
+        "it": "Aggiunto supporto per Connettività Somfy Dispositivi di kit",
+        "es": "Apoyo añadido para la conectividad Somfy Dispositivos de kit",
+        "pl": "Strona domowa Somfy urządzenia do gier",
+        "uk": "Додано підтримку підключення Somfy Комплекти",
+        "zh-cn": "增加对免疫接种的支持 Kit装置"
+      }
     },
-    "native": {
-        "username": "",
-        "password": "",
-        "pollinterval": 20000,
-        "tahomalinkurl": "https://www.tahomalink.com/enduser-mobile-web/enduserAPI/",
-        "devapi_authurl": "https://ha101-1.overkiz.com/enduser-mobile-web/enduserAPI/",
-        "localurl": "",
-        "bearer_token": "",
-        "gatewaypin": "",
-        "loginattempts": 3,
-        "delaybetweenloginattempts": 30,
-        "delayafterfailedlogin": 120,
-        "delayretryapplyqueue": 1500,
-        "usemdns": false
+    "titleLang": {
+      "en": "Somfy Tahoma",
+      "de": "Somfy Tahoma",
+      "ru": "Сомфи Тахома",
+      "pt": "Somfy Tahoma",
+      "nl": "Somfy Tahoma",
+      "fr": "Somfy Tahoma",
+      "it": "Somfy Tahoma",
+      "es": "Somfy Tahoma",
+      "pl": "Somfy Tahoma",
+      "uk": "Сомфія Тагома",
+      "zh-cn": "Somfy Tahoma"
     },
-    "protectedNative": [
-        "password"
+    "desc": {
+      "en": "Adapter to communicate with Somfy Tahoma",
+      "de": "Adapter zur Kommunikation mit Somfy Tahoma",
+      "ru": "Адаптер для общения с Somfy Tahoma",
+      "pt": "Adaptador para se comunicar com Somfy Tahoma",
+      "nl": "Adapter om te communiceren met Somfy Tahoma",
+      "fr": "Adaptateur pour communiquer avec Somfy Tahoma",
+      "it": "Adattatore per comunicare con Somfy Tahoma",
+      "es": "Adaptador para comunicarse con Somfy Tahoma",
+      "pl": "Połącz do Somfy Tahoma",
+      "uk": "Адаптер для спілкування з Somfy Tahoma",
+      "zh-cn": "与Somfy Tahoma联系的道歉"
+    },
+    "authors": [
+      "Marius Burkard <m.burkard@pixcept.de>",
+      "Excodibur"
     ],
-    "encryptedNative": [
-        "password"
+    "platform": "Javascript/Node.js",
+    "main": "main.js",
+    "mode": "daemon",
+    "icon": "tahoma.png",
+    "extIcon": "https://raw.githubusercontent.com/Excodibur/ioBroker.tahoma/master/admin/tahoma.png",
+    "keywords": [
+      "somfy",
+      "blinds",
+      "tahoma",
+      "window"
     ],
-    "objects": [],
-    "instanceObjects": [
-        {
-            "_id": "info",
-            "type": "channel",
-            "common": {
-                "name": "Adapter-Information"
-            },
-            "native": {}
-        },
-        {
-            "_id": "info.connection",
-            "type": "state",
-            "common": {
-                "role": "indicator.connected",
-                "name": "Whether the adapter is connected to the gateway",
-                "type": "boolean",
-                "read": true,
-                "write": false,
-                "def": false
-            },
-            "native": {}
-        }
-    ]
+    "readme": "https://github.com/Excodibur/ioBroker.tahoma/blob/master/README.md",
+    "loglevel": "info",
+    "type": "iot-systems",
+    "connectionType": "cloud",
+    "dataSource": "poll",
+    "license": "MIT",
+    "messagebox": true,
+    "materialize": true,
+    "adminUI": {
+      "config": "json"
+    },
+    "enabled": false,
+    "compact": true,
+    "dependencies": [
+      {
+        "js-controller": ">=3.0.0"
+      }
+    ],
+    "tier": 2
+  },
+  "native": {
+    "username": "",
+    "password": "",
+    "pollinterval": 20000,
+    "tahomalinkurl": "https://www.tahomalink.com/enduser-mobile-web/enduserAPI/",
+    "devapi_authurl": "https://ha101-1.overkiz.com/enduser-mobile-web/enduserAPI/",
+    "localurl": "",
+    "bearer_token": "",
+    "gatewaypin": "",
+    "loginattempts": 3,
+    "delaybetweenloginattempts": 30,
+    "delayafterfailedlogin": 120,
+    "delayretryapplyqueue": 1500,
+    "usemdns": false
+  },
+  "protectedNative": [
+    "password"
+  ],
+  "encryptedNative": [
+    "password"
+  ],
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Adapter-Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Whether the adapter is connected to the gateway",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
 }
