@@ -3,6 +3,9 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## 0.10.4 (2024-04-28)
+- Fixed: Warning resolved about invalid element in jsonConfig
+
 ## 0.10.3 (2024-01-29)
 - Fixed: Some crashed caused by event-updates were fixed with a workaround.
 

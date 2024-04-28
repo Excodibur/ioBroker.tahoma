@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "tahoma",
-    "version": "0.10.3",
+    "version": "0.10.4",
     "news": {
+      "0.10.4": {
+        "en": "Fixed: Warning resolved about invalid element in jsonConfig",
+        "de": "Behoben: Warnung über ungültiges Element in jsonConfig behoben",
+        "ru": "Исправлено предупреждение о недействительном элементе в jsonConfig",
+        "pt": "Corrigido: Aviso resolvido sobre elemento inválido em jsonConfig",
+        "nl": "Fixed: Waarschuwing opgelost over ongeldig element in jsonConfig",
+        "fr": "Correction : Avertissement résolu à propos de l'élément invalide dans jsonConfig",
+        "it": "Risolto: Attenzione risolto su elemento non valido in jsonConfig",
+        "es": "Fijo: Advertencia resuelta sobre el elemento inválido en jsonConfig",
+        "pl": "Naprawiono: Ostrzeżenie zostało usunięte o niepoprawnym elemencie w jsonConfig",
+        "uk": "Виправлено: Попередження вирішило про недійсний елемент в jsonConfig",
+        "zh-cn": "固定: 关于 jsonConfig 中无效元素的警告已解决"
+      },
       "0.10.3": {
         "en": "Fixed: Some crashed caused by event-updates were fixed with a workaround.",
         "de": "Behoben: Einige von Event-Updates verursachte Absturz wurden mit einem Workaround behoben.",
