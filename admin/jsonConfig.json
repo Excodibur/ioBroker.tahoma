@@ -5,7 +5,6 @@
         "basicSettingsTab": {
             "type": "panel",
             "label": "basic settings",
-            "i18n": true,
             "items": {
                 "username": {
                     "type": "text",
@@ -37,7 +36,6 @@
         "localApiSettings": {
             "type": "panel",
             "label": "local api settings",
-            "i18n": true,
             "items": {
                 "gatewaypin": {
                     "newLine": true,
@@ -57,7 +55,6 @@
         "advancedConnectionSettingsTab": {
             "type": "panel",
             "label": "advanced connection settings",
-            "i18n": true,
             "items": {
                 "loginattempts": {
                     "type": "number",
