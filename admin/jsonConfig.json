@@ -10,26 +10,40 @@
                     "type": "text",
                     "label": "username",
                     "sm": 12,
-                    "md": 4
+                    "md": 4,
+                    "xs": 12,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "password": {
                     "type": "password",
                     "label": "password",
                     "repeat": true,
                     "sm": 12,
-                    "md": 8
+                    "md": 8,
+                    "xs": 12,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "pollinterval": {
                     "type": "number",
                     "label": "pollinterval",
                     "sm": 12,
-                    "md": 4
+                    "md": 4,
+                    "xs": 12,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "note": {
                     "type": "staticText",
                     "newLine": true,
                     "label": "on save adapter restarts with new config immediately",
-                    "text": "on save adapter restarts with new config immediately"
+                    "text": "on save adapter restarts with new config immediately",
+                    "sm": 12,
+                    "md": 4,
+                    "xs": 12,
+                    "lg": 4,
+                    "xl": 4
                 }
             }
         },
@@ -42,13 +56,19 @@
                     "type": "text",
                     "label": "gatewaypin",
                     "sm": 6,
-                    "md": 4
+                    "md": 4,
+                    "xs": 12,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "usemdns": {
                     "type": "checkbox",
                     "label": "Use MDNS for local network name resolution",
                     "sm": 6,
-                    "md": 4
+                    "md": 4,
+                    "xs": 12,
+                    "lg": 4,
+                    "xl": 4
                 }
             }
         },
@@ -60,26 +80,38 @@
                     "type": "number",
                     "label": "login attempts",
                     "sm": 8,
-                    "md": 4
+                    "md": 4,
+                    "xs": 12,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "delaybetweenloginattempts": {
                     "type": "number",
                     "label": "delay between login attempts",
                     "sm": 8,
-                    "md": 4
+                    "md": 4,
+                    "xs": 12,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "delayafterfailedlogin": {
                     "type": "number",
                     "label": "delay after failed login",
                     "sm": 8,
-                    "md": 4
+                    "md": 4,
+                    "xs": 12,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "delayretryapplyqueue": {
                     "newLine": true,
                     "type": "number",
                     "label": "delay before applyqueue retry",
                     "sm": 8,
-                    "md": 4
+                    "md": 4,
+                    "xs": 12,
+                    "lg": 4,
+                    "xl": 4
                 }
             }
         }
