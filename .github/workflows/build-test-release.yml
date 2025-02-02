@@ -21,7 +21,7 @@ jobs:
         runs-on: ubuntu-latest
         strategy:
             matrix:
-                node-version: [18.x, 20.x]
+                node-version: [18.x, 20.x, 22.x]
 
         steps:
             - uses: actions/checkout@v4
@@ -44,7 +44,7 @@ jobs:
         runs-on: ${{ matrix.os }}
         strategy:
             matrix:
-                node-version: [18.x, 20.x]
+                node-version: [18.x, 20.x, 22.x]
                 os: [ubuntu-latest]
 
         steps:
@@ -70,7 +70,7 @@ jobs:
         runs-on: ${{ matrix.os }}
         strategy:
             matrix:
-                node-version: [18.x, 20.x]
+                node-version: [18.x, 20.x, 22.x]
                 os: [ubuntu-latest, macos-latest]
 
         steps:

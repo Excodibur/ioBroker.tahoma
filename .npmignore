@@ -8,3 +8,5 @@ gulpfile.js
 .travis.yml
 .github
 *.tgz
+eslint.config.mjs
+prettier.config.mjs
