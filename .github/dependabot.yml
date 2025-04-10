@@ -7,6 +7,8 @@ updates:
     time: "04:00"
     timezone: Europe/Berlin
 - package-ecosystem: npm
+  allow:
+  - dependency-type: "production"
   directory: "/"
   schedule:
     interval: monthly
