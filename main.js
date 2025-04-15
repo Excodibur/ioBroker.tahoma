@@ -91,10 +91,14 @@ function main() {
     const deviceUsername = adapter.config.username;
     const devicePassword = adapter.config.password;
     const gatewaypin = adapter.config.gatewaypin;
+    const localIP = adapter.config.localip;
     const useMDNS = adapter.config.usemdns;
     let localUrl;
     if (gatewaypin) {
-        localUrl = `https://gateway-${gatewaypin}${useMDNS ? '.local' : ''}:8443/enduser-mobile-web/1/enduserAPI/`;
+        if (localIP) 
+            localUrl = `https://${localIP}:8443/enduser-mobile-web/1/enduserAPI/`;
+        else
+            localUrl = `https://gateway-${gatewaypin}${useMDNS ? '.local' : ''}:8443/enduser-mobile-web/1/enduserAPI/`;
     } else {
         localUrl = '';
     }

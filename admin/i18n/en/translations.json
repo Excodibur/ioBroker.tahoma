@@ -7,6 +7,7 @@
     "delay between login attempts": "Delay between login attempts (seconds)",
     "gatewaypin": "PIN of the Tahoma box (e.g. 1234-5678-9012)",
     "local api settings": "local api settings",
+    "localip": "Local IP (Optional. Instead of resolving box via DNS)",
     "login attempts": "Login attempts",
     "on save adapter restarts with new config immediately": "On save adapter restarts with new config immediately",
     "password": "Password",

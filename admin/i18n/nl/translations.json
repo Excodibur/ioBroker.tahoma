@@ -7,6 +7,7 @@
     "delay between login attempts": "vertraging tussen inlogpogingen (seconden)",
     "gatewaypin": "PIN van de Tahoma-box (bijv. 1234-5678-9012)",
     "local api settings": "lokale api-instellingen",
+    "localip": "Lokale IP (facultatief. In plaats van het oplossen van doos via DNS)",
     "login attempts": "inlogpogingen",
     "on save adapter restarts with new config immediately": "on save adapter wordt onmiddellijk opnieuw gestart met de nieuwe configuratie",
     "password": "wachtwoord",

@@ -64,6 +64,16 @@
                     "lg": 4,
                     "xl": 4
                 },
+                "localip": {
+                    "newLine": true,
+                    "type": "text",
+                    "label": "localip",
+                    "sm": 6,
+                    "md": 4,
+                    "xs": 12,
+                    "lg": 4,
+                    "xl": 4
+                },
                 "usemdns": {
                     "type": "checkbox",
                     "label": "Use MDNS for local network name resolution",
