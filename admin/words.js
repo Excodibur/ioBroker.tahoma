@@ -55,6 +55,19 @@ systemDictionary = {
         "uk": "PIN коробки Tahoma (наприклад, 1234-5678-9012",
         "zh-cn": "Tahoma 盒子的 PIN 码（例如 1234-5678-9012）"
     },
+    "localip": {
+        "en": "Local IP (Optional. Instead of resolving box via DNS)",
+        "de": "Lokale IP (Optional. Anstatt Box über DNS aufzulösen)",
+        "ru": "Локальный IP (необязательно). Вместо того, чтобы использовать DNS",
+        "pt": "IP local (opcional. Em vez de resolver caixa via DNS)",
+        "nl": "Lokale IP (facultatief. In plaats van het oplossen van doos via DNS)",
+        "fr": "IP locale (facultatif. Au lieu de résoudre la boîte via DNS)",
+        "it": "IP locale (opzionale. Invece di risolvere la casella tramite DNS)",
+        "es": "IP local (Opcional. En lugar de resolver la caja vía DNS)",
+        "pl": "Lokalne IP (opcjonalne. Zamiast rozwiązać pole za pośrednictwem DNS)",
+        "uk": "Місцевий IP-адреса замість розв'язання коробки через DNS)",
+        "zh-cn": "本地IP(可选). 而不是通过 DNS 解析框)"
+    },
     "on save adapter restarts with new config immediately": {
         "en": "On save adapter restarts with new config immediately",
         "de": "Beim Speichern wird der Adapter sofort mit der neuen Konfiguration neu gestartet",

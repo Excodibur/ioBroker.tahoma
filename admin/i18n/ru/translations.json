@@ -7,6 +7,7 @@
     "delay between login attempts": "задержка между попытками входа в систему (секунды)",
     "gatewaypin": "PIN-код ящика Tahoma (например, 1234-5678-9012)",
     "local api settings": "локальные настройки API",
+    "localip": "Локальный IP (необязательно). Вместо того, чтобы использовать DNS",
     "login attempts": "попытки входа в систему",
     "on save adapter restarts with new config immediately": "при сохранении адаптер перезапускается с новым конфигом немедленно",
     "password": "пароль",

@@ -7,6 +7,7 @@
     "delay between login attempts": "登录尝试之间的延迟（秒）",
     "gatewaypin": "Tahoma 盒子的 PIN 码（例如 1234-5678-9012）",
     "local api settings": "本地 api 设置",
+    "localip": "本地IP(可选). 而不是通过 DNS 解析框)",
     "login attempts": "登录尝试",
     "on save adapter restarts with new config immediately": "保存适配器上的适配器立即以新配置重新启动",
     "password": "密码",
