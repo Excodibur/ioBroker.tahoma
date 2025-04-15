@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "tahoma",
-    "version": "0.10.4",
+    "version": "0.11.0",
     "news": {
+      "0.11.0": {
+        "en": "Feature: Added option to specify IP address for access to local API (https://github.com/Excodibur/ioBroker.tahoma/issues/424)",
+        "de": "Feature: Option hinzugefügt, um IP-Adresse für den Zugriff auf lokale API angeben (https://github.com/Excodibur/ioBroker.tahoma/issues/424)",
+        "ru": "Функция: Добавлена возможность указать IP-адрес для доступа к локальному API (https://github.com/Excodibur/ioBroker.tahoma/issues/424)",
+        "pt": "Característica: Adicionado opção para especificar endereço IP para acesso à API local (https://github.com/Excodibur/ioBroker.tahoma/issues/424)",
+        "nl": "Functie: Toegevoegde optie om IP-adres op te geven voor toegang tot lokale API (https://github.com/Excodibur/ioBroker.tahoma/issues/424)",
+        "fr": "Fonctionnalité: Ajout d'une option pour spécifier l'adresse IP pour accéder à l'API locale (https://github.com/Excodibur/ioBroker.tahoma/issues/424)",
+        "it": "Caratteristica: opzione aggiunta per specificare l'indirizzo IP per l'accesso alle API locali (https://github.com/Excodibur/ioBroker.tahoma/issues/424)",
+        "es": "Característica: opción adicional para especificar la dirección IP para el acceso a la API local (https://github.com/Excodibur/ioBroker.tahoma/issues/424)",
+        "pl": "Cecha: Dodano opcję podania adresu IP w celu uzyskania dostępu do lokalnych API (https: / / github.com / Excribur / ioBroker.taemounts / issues / 424)",
+        "uk": "Функція: Додана можливість вказати IP-адресу для доступу до локального API (https://github.com/Excodibur/ioBroker.tahoma/issues/424)",
+        "zh-cn": "特性:添加了指定访问本地API的IP地址的选项(https://github.com/Excodibur/ioBroker.tahoma/issues/424)"
+      },
       "0.10.4": {
         "en": "Fixed: Warning resolved about invalid element in jsonConfig",
         "de": "Behoben: Warnung über ungültiges Element in jsonConfig behoben",

@@ -107,6 +107,9 @@ See [Changelog](https://github.com/Excodibur/ioBroker.tahoma/blob/master/CHANGEL
 	Placeholder for the next version (add instead of version-number-headline below):
 	## __WORK IN PROGRESS__
 -->
+### 0.11.0 (2025-04-15)
+- Feature: Added option to specify IP address for access to local API (https://github.com/Excodibur/ioBroker.tahoma/issues/424)
+
 ### 0.10.4 (2024-04-28)
 - Fixed: Warning resolved about invalid element in jsonConfig
 
