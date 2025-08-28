@@ -3,6 +3,9 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## **WORK IN PROGRESS**
+- Fixed JSON Config schema errors #391
+
 ## 0.11.0 (2025-04-15)
 - Feature: Added option to specify IP address for access to local API (https://github.com/Excodibur/ioBroker.tahoma/issues/424)
 
