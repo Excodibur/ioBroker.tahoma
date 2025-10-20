@@ -4,3 +4,6 @@ node_modules
 .npmignore
 tahoma-mock.log
 *.tgz
+
+#ignore .commitinfo created by ioBroker release script
+.commitinfo
