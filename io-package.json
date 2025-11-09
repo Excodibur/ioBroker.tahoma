@@ -141,7 +141,10 @@
     "type": "iot-systems",
     "connectionType": "cloud",
     "dataSource": "poll",
-    "license": "MIT",
+    "licenseInformation": {
+      "type": "free",
+      "license": "MIT"
+    },
     "messagebox": true,
     "materialize": true,
     "adminUI": {
