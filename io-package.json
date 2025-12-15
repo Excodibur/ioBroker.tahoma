@@ -126,7 +126,6 @@
       "Excodibur"
     ],
     "platform": "Javascript/Node.js",
-    "main": "main.js",
     "mode": "daemon",
     "icon": "tahoma.png",
     "extIcon": "https://raw.githubusercontent.com/Excodibur/ioBroker.tahoma/master/admin/tahoma.png",
