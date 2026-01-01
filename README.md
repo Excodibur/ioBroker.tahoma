@@ -129,7 +129,7 @@ See [Changelog](https://github.com/Excodibur/ioBroker.tahoma/blob/master/CHANGEL
 
 The MIT License (MIT)
 
-Copyright (c) 2020-2025 Marius Burkard & Excodibur
+Copyright (c) 2020-2026 Marius Burkard & Excodibur
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
