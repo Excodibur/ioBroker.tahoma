@@ -101,6 +101,9 @@ These states contain current status of the devices as follows. Some of the state
 
 
 ## Changelog
+### **WORK IN PROGRESS**
+- (copilot) Adapter requires node.js >= 22 now
+
 See [Changelog](https://github.com/Excodibur/ioBroker.tahoma/blob/master/CHANGELOG.md).
 
 <!--
