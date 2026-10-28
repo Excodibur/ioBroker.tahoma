@@ -4,6 +4,7 @@
 	## **WORK IN PROGRESS**
 -->
 ## **WORK IN PROGRESS**
+- (Breaking) Adapter requires js-controller >= 6.0.11 and admin >= 7.6.17 now
 - (Breaking) Node.js 22 or newer is required now. Tested with Node.js 22, 24 and 26 (https://github.com/Excodibur/ioBroker.tahoma/issues/467)
 
 ## 0.11.0 (2025-04-15)
