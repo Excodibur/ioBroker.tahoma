@@ -123,7 +123,7 @@
     },
     "authors": [
       "Marius Burkard <m.burkard@pixcept.de>",
-      "Excodibur"
+      "Excodibur <excodibur@users.noreply.github.com>"
     ],
     "platform": "Javascript/Node.js",
     "main": "main.js",
@@ -141,7 +141,10 @@
     "type": "iot-systems",
     "connectionType": "cloud",
     "dataSource": "poll",
-    "license": "MIT",
+    "licenseInformation": {
+      "type": "free",
+      "license": "MIT"
+    },
     "messagebox": true,
     "materialize": true,
     "adminUI": {
@@ -151,7 +154,12 @@
     "compact": true,
     "dependencies": [
       {
-        "js-controller": ">=5.0.19"
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=7.6.17"
       }
     ],
     "tier": 2

@@ -40,7 +40,6 @@
                 "note": {
                     "type": "staticText",
                     "newLine": true,
-                    "label": "on save adapter restarts with new config immediately",
                     "text": "on save adapter restarts with new config immediately",
                     "sm": 12,
                     "md": 4,
