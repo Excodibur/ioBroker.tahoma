@@ -1,20 +1,31 @@
 version: 2
 updates:
-- package-ecosystem: github-actions
-  directory: "/"
-  schedule:
-    interval: monthly
-    time: "04:00"
-    timezone: Europe/Berlin
-- package-ecosystem: npm
-  allow:
-  - dependency-type: "production"
-  directory: "/"
-  schedule:
-    interval: monthly
-    time: "04:00"
-    timezone: Europe/Berlin
-  open-pull-requests-limit: 20
-  assignees:
-  - Excodibur
-  versioning-strategy: increase
+  # Runs on day 5 of each month at 03:47 (Europe/Berlin) to spread the load, as recommended by ioBroker
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: cron
+      cronjob: "47 3 5 * *"
+      timezone: Europe/Berlin
+    open-pull-requests-limit: 15
+
+  - package-ecosystem: npm
+    allow:
+      - dependency-type: "production"
+    directory: "/"
+    schedule:
+      interval: cron
+      cronjob: "47 3 5 * *"
+      timezone: Europe/Berlin
+    open-pull-requests-limit: 20
+    assignees:
+      - Excodibur
+    versioning-strategy: increase
+    # Wait 7 days before proposing new versions to reduce supply chain risk, security updates are not delayed
+    cooldown:
+      default-days: 7
+    ignore:
+      # @types/node must match the minimum supported Node.js version
+      - dependency-name: "@types/node"
+        update-types:
+          - "version-update:semver-major"
