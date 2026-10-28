@@ -127,4 +127,104 @@ describe('lib/tahoma', () => {
             expect(updateDeviceActionState).to.not.have.been.called;
         });
     });
+
+    describe('connection reuse (#399)', () => {
+        it('uses keep-alive connections with an own agent pool', () => {
+            expect(tahoma.req_defaults.forever).to.equal(true);
+            expect(tahoma.req_defaults.pool).to.be.an('object');
+        });
+    });
+
+    describe('reconnect handling (#243)', () => {
+        const expiredBody = { error: '"No registered event listener."', errorCode: 'UNSPECIFIED_ERROR' };
+
+        function respondWith(target, error, response, body) {
+            const reply = (params, callback) => callback(error, response, body);
+            target.post = sinon.stub().callsFake(reply);
+            target.get = sinon.stub().callsFake(reply);
+        }
+
+        for (const local of [false, true]) {
+            const api = local ? 'local API' : 'cloud API';
+
+            it(`registers a new event listener when the box no longer knows the old one (${api})`, () => {
+                tahoma = new Tahoma(
+                    'user',
+                    'pass',
+                    'https://example.com/',
+                    local ? 'https://box/' : '',
+                    {},
+                    {},
+                    context,
+                );
+                tahoma.eventRegisterID = 'old-id';
+                const req = {};
+                respondWith(req, null, { statusCode: 400 }, expiredBody);
+                if (local) {
+                    tahoma.localRequest = req;
+                } else {
+                    tahoma.baseRequest = req;
+                }
+                const callback = sinon.stub();
+
+                tahoma.sendInternalRequest('POST', 'events/old-id/fetch', {}, callback, local);
+
+                expect(tahoma.eventRegisterID).to.equal('-1');
+                expect(callback).to.have.been.calledOnceWith(true);
+                expect(tahoma.retryTimeout).to.equal(null);
+            });
+        }
+
+        it('re-registers the event listener and warns only once while the box is unreachable', () => {
+            tahoma.eventRegisterID = 'old-id';
+            const error = new Error('getaddrinfo ENOTFOUND gateway-1234.local');
+            respondWith((tahoma.baseRequest = {}), error, undefined, undefined);
+
+            tahoma.sendInternalRequest('POST', 'events/old-id/fetch', {}, sinon.stub(), false);
+            tahoma.sendInternalRequest('GET', 'setup/gateways', {}, sinon.stub(), false);
+
+            expect(tahoma.eventRegisterID).to.equal('-1');
+            expect(context.log.warn).to.have.been.calledOnce;
+            expect(context.setState).to.have.been.calledWith('info.connection', false, true);
+        });
+
+        it('logs when the connection is restored and sets info.connection again', () => {
+            tahoma.setConnected(true);
+            respondWith((tahoma.baseRequest = {}), new Error('ETIMEDOUT'), undefined, undefined);
+            tahoma.sendInternalRequest('POST', 'events/id/fetch', {}, sinon.stub(), false);
+
+            respondWith(tahoma.baseRequest, null, { statusCode: 200 }, []);
+            tahoma.sendInternalRequest('POST', 'events/register', {}, sinon.stub(), false);
+
+            expect(context.log.info).to.have.been.calledWith('Connection to Tahoma restored.');
+            expect(context.setState.lastCall).to.have.been.calledWith('info.connection', true, true);
+        });
+
+        it('sets info.connection to the actual connection state', () => {
+            tahoma.setConnected(true);
+            tahoma.setConnected(false);
+
+            expect(context.setState.firstCall).to.have.been.calledWith('info.connection', true, true);
+            expect(context.setState.secondCall).to.have.been.calledWith('info.connection', false, true);
+        });
+
+        it('keeps only one gateway update loop when logging in again', () => {
+            const clock = sinon.useFakeTimers();
+            try {
+                const updateGateWays = sinon.stub(tahoma, 'updateGateWays');
+                tahoma.scheduleGatewayUpdate(10000);
+                tahoma.scheduleGatewayUpdate(10000);
+                clock.tick(10000);
+                expect(updateGateWays).to.have.been.calledOnce;
+            } finally {
+                clock.restore();
+            }
+        });
+
+        it('only treats events/<id>/fetch as event fetch request', () => {
+            expect(tahoma.isEventFetchRequest('events/089201ec-180a-42de-8aad-21583977f5fa/fetch')).to.equal(true);
+            expect(tahoma.isEventFetchRequest('events/register')).to.equal(false);
+            expect(tahoma.isEventFetchRequest('setup/gateways')).to.equal(false);
+        });
+    });
 });

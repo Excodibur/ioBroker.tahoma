@@ -15,6 +15,10 @@ let adapter;
 let polling;
 let pollingTime;
 let controller;
+let loginRetry;
+
+// delay before retrying the initial login, e.g. if the box or the internet is not reachable on startup
+const loginRetryDelay = 60000;
 
 function startAdapter(options) {
     options = options || {};
@@ -28,6 +32,9 @@ function startAdapter(options) {
     adapter.on('unload', function (callback) {
         if (polling) {
             clearTimeout(polling);
+        }
+        if (loginRetry) {
+            clearTimeout(loginRetry);
         }
 
         (controller &&
@@ -141,10 +148,19 @@ function main() {
         adapter,
     );
 
+    connect();
+}
+
+function connect() {
+    loginRetry = null;
     controller.login(function (err, _obj) {
         if (!err) {
             pollStates();
+            return;
         }
+
+        adapter.log.warn(`Login failed. Retrying in ${loginRetryDelay / 1000} seconds.`);
+        loginRetry = setTimeout(connect, loginRetryDelay);
     });
 }
 

@@ -6,6 +6,11 @@
 ## **WORK IN PROGRESS**
 - (Breaking) Adapter requires js-controller >= 6.0.11 and admin >= 7.6.17 now
 - (Breaking) Node.js 22 or newer is required now. Tested with Node.js 22, 24 and 26 (https://github.com/Excodibur/ioBroker.tahoma/issues/467)
+- Fixed: Adapter registers a new event listener when the Tahoma box was restarted or not reachable, instead of failing until the adapter is restarted (https://github.com/Excodibur/ioBroker.tahoma/issues/243)
+- Fixed: Adapter retries the login if the box or the cloud is not reachable on startup
+- Fixed: `info.connection` now shows whether the adapter is actually connected
+- Fixed: Connection errors are only logged once per outage
+- Improved: Connections to Tahoma are reused, which reduces DNS lookups and TLS handshakes (https://github.com/Excodibur/ioBroker.tahoma/issues/399)
 - Fixed: `core:ClosureState`, `core:DeploymentState` and their target states are capped at 100 (https://github.com/Excodibur/ioBroker.tahoma/issues/409)
 - Fixed: `core:MovingState` was set as string instead of boolean (https://github.com/Excodibur/ioBroker.tahoma/issues/466)
 - Fixed: Adapter crashed when a state update arrived for an object that no longer exists (https://github.com/Excodibur/ioBroker.tahoma/issues/464)
