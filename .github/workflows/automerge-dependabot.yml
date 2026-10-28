@@ -1,0 +1,29 @@
+# Automatically merge Dependabot PRs when version comparison is within the range
+# that is configured in .github/auto-merge.yml
+
+name: Auto-Merge Dependabot PRs
+
+on:
+  # Dependabot PRs get a GITHUB_TOKEN with write access on pull_request,
+  # so pull_request_target (restricted by GitHub from 2026-11-02) is not needed
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Auto-merge Dependabot PRs
+        uses: iobroker-bot-orga/action-automerge-dependabot@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          # By default, squash and merge, so Github chooses nice commit messages
+          merge-method: 'squash'
+          # Only merge once the build and tests are green
+          wait-for-checks: 'true'
