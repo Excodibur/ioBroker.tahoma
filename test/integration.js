@@ -46,14 +46,6 @@ function findStateByDeviceName (mockData, deviceName, stateName) {
     return result;
 }
 
-function encrypt (key, value) {
-    let result = "";
-    for (let i = 0; i < value.length; ++i)
-        result += String.fromCharCode(key[i % key.length].charCodeAt(0) ^ value.charCodeAt(i));
-
-    return result;
-}
-
 // Run integration tests - See https://github.com/ioBroker/testing for a detailed explanation and further options
 tests.integration(path.join(__dirname, ".."), {
     defineAdditionalTests ({ suite }) {
@@ -68,18 +60,8 @@ tests.integration(path.join(__dirname, ".."), {
 
                             objs[0].native.tahomalinkurl = "http://localhost:3000/";
                             objs[0].native.username = "some@mail.com";
-                            const password = "testpw";
-
-                            let encryptedPassword;
-                            if (objs[1] && objs[1].native && objs[1].native.secret) {
-                                // noinspection JSUnresolvedVariable
-                                encryptedPassword = encrypt(objs[1].native.secret, password);
-                            } else {
-                                // noinspection JSUnresolvedVariable
-                                encryptedPassword = encrypt("Zgfr56gFe87jJOM", password);
-                            }
-
-                            objs[0].native.password = encryptedPassword;
+                            // changeAdapterConfig encrypts the encryptedNative properties (e.g. password) itself
+                            objs[0].native.password = "testpw";
                             // harness._objects.setObject(objs[0]._id, objs[0]);
                             await harness.changeAdapterConfig("tahoma", objs[0]);
 
@@ -122,18 +104,8 @@ tests.integration(path.join(__dirname, ".."), {
 
                             objs[0].native.tahomalinkurl = "http://localhost:3000/";
                             objs[0].native.username = "some@mail.com";
-                            const password = "testpw";
-
-                            let encryptedPassword;
-                            if (objs[1] && objs[1].native && objs[1].native.secret) {
-                                // noinspection JSUnresolvedVariable
-                                encryptedPassword = encrypt(objs[1].native.secret, password);
-                            } else {
-                                // noinspection JSUnresolvedVariable
-                                encryptedPassword = encrypt("Zgfr56gFe87jJOM", password);
-                            }
-
-                            objs[0].native.password = encryptedPassword;
+                            // changeAdapterConfig encrypts the encryptedNative properties (e.g. password) itself
+                            objs[0].native.password = "testpw";
                             // harness._objects.setObject(objs[0]._id, objs[0]);
                             await harness.changeAdapterConfig("tahoma", objs[0]);
 
