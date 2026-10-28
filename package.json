@@ -67,10 +67,11 @@
     "mockserver": "rm tahoma-mock.log 2>/dev/null || node test/tahoma-mock/server.js 2>&1 | tee -a tahoma-mock.log",
     "test:package": "mocha test/package --exit",
     "test:unit": "mocha test/unit --exit",
+    "test:lib": "mocha test/lib.tahoma.js --exit",
     "test:integration": "mocha test/integration --exit",
     "test:integration:complete": "npm run test:integration:mock && npm run test:integration",
     "test:integration:mock": "npm run mockserver &",
-    "test": "npm run test:package",
+    "test": "npm run test:package && npm run test:lib",
     "lint": "eslint -c eslint.config.mjs .",
     "translate": "translate-adapter"
   },

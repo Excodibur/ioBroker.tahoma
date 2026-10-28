@@ -110,6 +110,11 @@ See [Changelog](https://github.com/Excodibur/ioBroker.tahoma/blob/master/CHANGEL
 ### __WORK IN PROGRESS__
 - (Breaking) Adapter requires js-controller >= 6.0.11 and admin >= 7.6.17 now
 - (Breaking) Node.js 22 or newer is required now. Tested with Node.js 22, 24 and 26 (https://github.com/Excodibur/ioBroker.tahoma/issues/467)
+- Fixed: `core:MovingState` was set as string instead of boolean (https://github.com/Excodibur/ioBroker.tahoma/issues/466)
+- Fixed: Adapter crashed when a state update arrived for an object that no longer exists (https://github.com/Excodibur/ioBroker.tahoma/issues/464)
+- Fixed: Adapter crashed on startup for devices without command definitions (https://github.com/Excodibur/ioBroker.tahoma/issues/468)
+- Fixed: Adapter crashed / restarted in a loop when an execution without actions was received (https://github.com/Excodibur/ioBroker.tahoma/issues/416, https://github.com/Excodibur/ioBroker.tahoma/issues/428)
+- Fixed: Warning about invalid jsonConfig (https://github.com/Excodibur/ioBroker.tahoma/issues/391, https://github.com/Excodibur/ioBroker.tahoma/issues/471)
 
 ### 0.11.0 (2025-04-15)
 - Feature: Added option to specify IP address for access to local API (https://github.com/Excodibur/ioBroker.tahoma/issues/424)
