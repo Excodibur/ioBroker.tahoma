@@ -46,6 +46,26 @@ describe('lib/tahoma', () => {
         }
     });
 
+    describe('mapValueTahoma2ioBroker - percentage states (#409)', () => {
+        for (const stateName of [
+            'core:ClosureState',
+            'core:TargetClosureState',
+            'core:DeploymentState',
+            'core:TargetDeploymentState',
+        ]) {
+            it(`caps ${stateName} at 100`, () => {
+                expect(tahoma.mapValueTahoma2ioBroker(stateName, 124)).to.equal(100);
+                expect(tahoma.mapValueTahoma2ioBroker(stateName, '124')).to.equal(100);
+            });
+
+            it(`keeps valid ${stateName} values`, () => {
+                expect(tahoma.mapValueTahoma2ioBroker(stateName, 0)).to.equal(0);
+                expect(tahoma.mapValueTahoma2ioBroker(stateName, '42')).to.equal(42);
+                expect(tahoma.mapValueTahoma2ioBroker(stateName, 100)).to.equal(100);
+            });
+        }
+    });
+
     describe('updateDeviceState (#464)', () => {
         it('does not throw when the ioBroker object no longer exists', () => {
             tahoma.Map_DeviceURL2StateName['io://1234/5678'] = 'devices.Blind';
@@ -96,7 +116,9 @@ describe('lib/tahoma', () => {
 
     describe('updateEventState (#416, #428)', () => {
         it('ignores executions without actions instead of throwing', () => {
-            sinon.stub(tahoma, 'sendGET').callsFake((url, payload, callback) => callback(null, { state: 'IN_PROGRESS' }));
+            sinon
+                .stub(tahoma, 'sendGET')
+                .callsFake((url, payload, callback) => callback(null, { state: 'IN_PROGRESS' }));
             const updateDeviceActionState = sinon.stub(tahoma, 'updateDeviceActionState');
 
             tahoma.updateEventState({ name: 'ExecutionStateChangedEvent', execId: 'abc', newState: 'IN_PROGRESS' });

@@ -110,6 +110,7 @@ See [Changelog](https://github.com/Excodibur/ioBroker.tahoma/blob/master/CHANGEL
 ### __WORK IN PROGRESS__
 - (Breaking) Adapter requires js-controller >= 6.0.11 and admin >= 7.6.17 now
 - (Breaking) Node.js 22 or newer is required now. Tested with Node.js 22, 24 and 26 (https://github.com/Excodibur/ioBroker.tahoma/issues/467)
+- Fixed: `core:ClosureState`, `core:DeploymentState` and their target states are capped at 100 (https://github.com/Excodibur/ioBroker.tahoma/issues/409)
 - Fixed: `core:MovingState` was set as string instead of boolean (https://github.com/Excodibur/ioBroker.tahoma/issues/466)
 - Fixed: Adapter crashed when a state update arrived for an object that no longer exists (https://github.com/Excodibur/ioBroker.tahoma/issues/464)
 - Fixed: Adapter crashed on startup for devices without command definitions (https://github.com/Excodibur/ioBroker.tahoma/issues/468)
