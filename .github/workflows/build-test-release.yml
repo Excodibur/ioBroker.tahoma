@@ -100,10 +100,16 @@ jobs:
 
         needs: [unit-tests, integration-tests]
 
+        # id-token is required for npm trusted publishing (OIDC), contents for creating the Github release
+        permissions:
+            contents: write
+            id-token: write
+
         runs-on: ubuntu-latest
         strategy:
             matrix:
-                node-version: [18.x]
+                # trusted publishing requires npm >= 11.5.1, which ships with Node.js 24
+                node-version: [24.x]
 
         steps:
             - uses: actions/checkout@v4
@@ -111,28 +117,28 @@ jobs:
               uses: actions/setup-node@v4
               with:
                   node-version: ${{ matrix.node-version }}
-            
+                  registry-url: https://registry.npmjs.org
+
             - name: Extract the version and commit body from the tag
               id: extract_release
-              # The body may be multiline, therefore we need to escape some characters
+              # The body may be multiline, therefore it is written with a delimiter
               run: |
                   VERSION="${{ github.ref }}"
                   VERSION=${VERSION##*/v}
-                  echo "::set-output name=VERSION::$VERSION"
-                  BODY=$(git show -s --format=%b)
-                  BODY="${BODY//'%'/'%25'}"
-                  BODY="${BODY//$'\n'/'%0A'}"
-                  BODY="${BODY//$'\r'/'%0D'}"
-                  echo "::set-output name=BODY::$BODY"
+                  echo "VERSION=$VERSION" >> "$GITHUB_OUTPUT"
+                  {
+                      echo "BODY<<EOF_RELEASE_BODY"
+                      git show -s --format=%b
+                      echo "EOF_RELEASE_BODY"
+                  } >> "$GITHUB_OUTPUT"
 
             - name: Install dependencies
               run: npm ci
 
+            # Uses npm trusted publishing, no NPM_TOKEN needed.
+            # Requires a trusted publisher for this repository and workflow on npmjs.com
             - name: Publish package to npm
-              run: |
-                  npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
-                  npm whoami
-                  npm publish
+              run: npm publish
 
             - name: Create Github Release
               uses: actions/create-release@v1
