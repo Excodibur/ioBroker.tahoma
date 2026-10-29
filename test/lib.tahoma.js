@@ -1,7 +1,7 @@
 'use strict';
 
 const sinon = require('sinon');
-const sinonChai = require('sinon-chai');
+const sinonChai = require('sinon-chai').default;
 const { expect, use } = require('chai');
 const { Tahoma } = require('../lib/tahoma');
 
