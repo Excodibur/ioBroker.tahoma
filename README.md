@@ -103,11 +103,7 @@ These states contain current status of the devices as follows. Some of the state
 ## Changelog
 See [Changelog](https://github.com/Excodibur/ioBroker.tahoma/blob/master/CHANGELOG.md).
 
-<!--
-	Placeholder for the next version (add instead of version-number-headline below):
-	## __WORK IN PROGRESS__
--->
-### __WORK IN PROGRESS__
+### 0.12.0 (2026-10-29)
 - (Breaking) Adapter requires js-controller >= 6.0.11 and admin >= 7.6.17 now
 - (Breaking) Node.js 22 or newer is required now. Tested with Node.js 22, 24 and 26 (https://github.com/Excodibur/ioBroker.tahoma/issues/467)
 - Fixed: Adapter registers a new event listener when the Tahoma box was restarted or not reachable, instead of failing until the adapter is restarted (https://github.com/Excodibur/ioBroker.tahoma/issues/243)
