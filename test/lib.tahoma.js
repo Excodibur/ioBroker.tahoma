@@ -20,6 +20,9 @@ function createContext() {
         },
         getObject: sinon.stub(),
         setState: sinon.stub(),
+        // resolved on each call, so sinon fake timers still apply
+        setTimeout: (cb, timeout, ...args) => setTimeout(cb, timeout, ...args),
+        clearTimeout: timer => clearTimeout(timer),
     };
 }
 

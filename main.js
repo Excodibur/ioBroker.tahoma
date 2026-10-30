@@ -31,10 +31,10 @@ function startAdapter(options) {
 
     adapter.on('unload', function (callback) {
         if (polling) {
-            clearTimeout(polling);
+            adapter.clearTimeout(polling);
         }
         if (loginRetry) {
-            clearTimeout(loginRetry);
+            adapter.clearTimeout(loginRetry);
         }
 
         (controller &&
@@ -161,14 +161,14 @@ function connect() {
         }
 
         adapter.log.warn(`Login failed. Retrying in ${loginRetryDelay / 1000} seconds.`);
-        loginRetry = setTimeout(connect, loginRetryDelay);
+        loginRetry = adapter.setTimeout(connect, loginRetryDelay);
     });
 }
 
 function pollStates() {
     adapter.log.debug('Starting state polling');
     if (polling) {
-        clearTimeout(polling);
+        adapter.clearTimeout(polling);
         polling = null;
     }
 
@@ -181,7 +181,7 @@ function pollStates() {
         });
     }
 
-    polling = setTimeout(function () {
+    polling = adapter.setTimeout(function () {
         pollStates();
     }, pollingTime);
 }
