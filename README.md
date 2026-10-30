@@ -140,6 +140,8 @@ See [Changelog](https://github.com/Excodibur/ioBroker.tahoma/blob/master/CHANGEL
 ### 0.10.0 (2023-01-03)
 - Fixed warnings about _Failed getting execution state_ when using the local API.
 
+[Older changelogs can be found there](CHANGELOG_OLD.md)
+
 ## License
 
 The MIT License (MIT)
