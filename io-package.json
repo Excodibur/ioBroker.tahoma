@@ -145,7 +145,6 @@
       "license": "MIT"
     },
     "messagebox": true,
-    "materialize": true,
     "adminUI": {
       "config": "json"
     },
