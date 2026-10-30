@@ -102,10 +102,11 @@ function main() {
     const useMDNS = adapter.config.usemdns;
     let localUrl;
     if (gatewaypin) {
-        if (localIP) 
+        if (localIP) {
             localUrl = `https://${localIP}:8443/enduser-mobile-web/1/enduserAPI/`;
-        else
+        } else {
             localUrl = `https://gateway-${gatewaypin}${useMDNS ? '.local' : ''}:8443/enduser-mobile-web/1/enduserAPI/`;
+        }
     } else {
         localUrl = '';
     }
