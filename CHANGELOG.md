@@ -3,6 +3,11 @@
 	Placeholder for the next version (add instead of version-number-headline below):
 	## **WORK IN PROGRESS**
 -->
+## **WORK IN PROGRESS**
+- (Breaking) Adapter requires admin >= 7.6.20 now
+- Removed the outdated admin UI files. The settings were already shown with jsonConfig
+- Local API token and gateway PIN are now protected from other adapters (`protectedNative`)
+
 ## 0.12.0 (2026-10-29)
 - (Breaking) Adapter requires js-controller >= 6.0.11 and admin >= 7.6.17 now
 - (Breaking) Node.js 22 or newer is required now. Tested with Node.js 22, 24 and 26 (https://github.com/Excodibur/ioBroker.tahoma/issues/467)
