@@ -101,7 +101,14 @@ These states contain current status of the devices as follows. Some of the state
 
 
 ## Changelog
-See [Changelog](https://github.com/Excodibur/ioBroker.tahoma/blob/master/CHANGELOG.md).
+<!--
+	Placeholder for the next version (at the beginning of the line):
+	### **WORK IN PROGRESS**
+-->
+### **WORK IN PROGRESS**
+- (Breaking) Adapter requires admin >= 7.6.20 now
+- Removed the outdated admin UI files. The settings were already shown with jsonConfig
+- Local API token and gateway PIN are now protected from other adapters (`protectedNative`)
 
 ### 0.12.0 (2026-10-29)
 - (Breaking) Adapter requires js-controller >= 6.0.11 and admin >= 7.6.17 now
