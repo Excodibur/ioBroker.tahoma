@@ -10,7 +10,7 @@
     "localip": "IP locale (facultatif. Au lieu de résoudre la boîte via DNS)",
     "login attempts": "tentatives de connexion",
     "on save adapter restarts with new config immediately": "lors de l'enregistrement, l'adaptateur redémarre avec la nouvelle configuration immédiatement",
-    "password": "mot de passe",
+    "password": "Mot de passe",
     "pollinterval": "intervalle d'interrogation",
     "username": "Nom d'utilisateur"
 }
